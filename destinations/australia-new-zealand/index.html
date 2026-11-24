@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=41" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -59,17 +59,17 @@
 <body>
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" rel="noopener">
+      <div class="brand stayodds-brand-group">
         <span class="stayodds-brand-stack">
-          <span class="stayodds-wordmark-lg">StayOdds<span class="stayodds-dot">.</span></span>
-          <span class="stayodds-brand-by">by The Uncharted Itinerary</span>
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
-      </a>
+      </div>
       <nav class="nav-links" aria-label="Main site navigation">
-        <a href="https://uncharteditinerary.com/">Home</a>
-        <a href="/">StayOdds</a>
+        <a href="/" class="active">StayOdds</a>
         <a href="/hotels/">Hotel Map</a>
-        <a href="https://uncharteditinerary.com/">Videos</a>
+        <a href="/brands/">Brands</a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
         <a href="https://uncharteditinerary.com/about/">About</a>
         <a href="https://uncharteditinerary.com/faq/">FAQ</a>
         <a href="https://uncharteditinerary.com/contact/">Contact</a>
@@ -86,9 +86,10 @@
         <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Latest Videos</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
+        <a class="hub-tab" href="/brands/">Brands</a>
+        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
@@ -161,14 +162,17 @@
         <div class="dest-grid">
           
         <article class="dest-card" data-resort-name="Annandale Coastal Farm Escape">
-          <a class="dest-card-media" href="/stayodds/annandale-coastal-farm/">
-            <img src="/assets/thumbs/annandale-coastal-farm.webp?v=169" alt="Annandale Coastal Farm Escape" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#1</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/annandale-coastal-farm/">
+              <img src="/assets/thumbs/annandale-coastal-farm.webp?v=169" alt="Annandale Coastal Farm Escape" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#1</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="annandale-coastal-farm" data-shortlist-icon-only="1" data-resort-name="Annandale Coastal Farm Escape" aria-label="Save Annandale Coastal Farm Escape to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/annandale-coastal-farm/">Annandale Coastal Farm Escape</a></h3>
@@ -185,19 +189,22 @@
         </article>
 
         <article class="dest-card" data-resort-name="Pretty Beach House">
-          <a class="dest-card-media" href="/stayodds/pretty-beach-house/">
-            <img src="/assets/thumbs/pretty-beach-house.webp?v=169" alt="Pretty Beach House" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#2</span>
-            <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/pretty-beach-house/">
+              <img src="/assets/thumbs/pretty-beach-house.webp?v=169" alt="Pretty Beach House" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#2</span>
+              <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="pretty-beach-house" data-shortlist-icon-only="1" data-resort-name="Pretty Beach House" aria-label="Save Pretty Beach House to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/pretty-beach-house/">Pretty Beach House</a></h3>
             <div class="dest-card-loc">Pretty Beach, New South Wales, Australia &bull; £1,400+/night</div>
-            
+            <p class="dest-card-blurb">Thoughtful and attentive team • Delicious and seasonal meals</p>
             
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/pretty-beach-house/">Full Breakdown &rarr;</a>
@@ -209,14 +216,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Rosewood Kauri Cliffs">
-          <a class="dest-card-media" href="/stayodds/rosewood-kauri-cliffs/">
-            <img src="/assets/thumbs/rosewood-kauri-cliffs.webp?v=169" alt="Rosewood Kauri Cliffs" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#3</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/rosewood-kauri-cliffs/">
+              <img src="/assets/thumbs/rosewood-kauri-cliffs.webp?v=169" alt="Rosewood Kauri Cliffs" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#3</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="rosewood-kauri-cliffs" data-shortlist-icon-only="1" data-resort-name="Rosewood Kauri Cliffs" aria-label="Save Rosewood Kauri Cliffs to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Rosewood</span>
             </div>
             <h3><a href="/stayodds/rosewood-kauri-cliffs/">Rosewood Kauri Cliffs</a></h3>
@@ -233,14 +243,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Huka Lodge">
-          <a class="dest-card-media" href="/stayodds/huka-lodge-taupo/">
-            <img src="/assets/thumbs/huka-lodge-taupo.webp?v=169" alt="Huka Lodge" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#4</span>
-            <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/huka-lodge-taupo/">
+              <img src="/assets/thumbs/huka-lodge-taupo.webp?v=169" alt="Huka Lodge" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#4</span>
+              <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="huka-lodge-taupo" data-shortlist-icon-only="1" data-resort-name="Huka Lodge" aria-label="Save Huka Lodge to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Baillie Lodges</span>
             </div>
             <h3><a href="/stayodds/huka-lodge-taupo/">Huka Lodge</a></h3>
@@ -257,14 +270,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Boatshed">
-          <a class="dest-card-media" href="/stayodds/the-boatshed-waiheke/">
-            <img src="/assets/thumbs/the-boatshed-waiheke.webp?v=169" alt="The Boatshed" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#5</span>
-            <span class="dest-card-odds"><strong>99%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-boatshed-waiheke/">
+              <img src="/assets/thumbs/the-boatshed-waiheke.webp?v=169" alt="The Boatshed" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#5</span>
+              <span class="dest-card-odds"><strong>99%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-boatshed-waiheke" data-shortlist-icon-only="1" data-resort-name="The Boatshed" aria-label="Save The Boatshed to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Small Luxury Hotels</span>
             </div>
             <h3><a href="/stayodds/the-boatshed-waiheke/">The Boatshed</a></h3>
@@ -281,14 +297,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Blanket Bay">
-          <a class="dest-card-media" href="/stayodds/blanket-bay-glenorchy/">
-            <img src="/assets/thumbs/blanket-bay-glenorchy.webp?v=169" alt="Blanket Bay" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#6</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/blanket-bay-glenorchy/">
+              <img src="/assets/thumbs/blanket-bay-glenorchy.webp?v=169" alt="Blanket Bay" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#6</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="blanket-bay-glenorchy" data-shortlist-icon-only="1" data-resort-name="Blanket Bay" aria-label="Save Blanket Bay to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/blanket-bay-glenorchy/">Blanket Bay</a></h3>
@@ -305,14 +324,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Lizard Island Resort">
-          <a class="dest-card-media" href="/stayodds/lizard-island-resort/">
-            <img src="/assets/thumbs/lizard-island-resort.webp?v=169" alt="Lizard Island Resort" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#7</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/lizard-island-resort/">
+              <img src="/assets/thumbs/lizard-island-resort.webp?v=169" alt="Lizard Island Resort" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#7</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="lizard-island-resort" data-shortlist-icon-only="1" data-resort-name="Lizard Island Resort" aria-label="Save Lizard Island Resort to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Delaware North</span>
             </div>
             <h3><a href="/stayodds/lizard-island-resort/">Lizard Island Resort</a></h3>
@@ -329,14 +351,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Spicers Peak Lodge">
-          <a class="dest-card-media" href="/stayodds/spicers-peak-lodge/">
-            <img src="/assets/thumbs/spicers-peak-lodge.webp?v=169" alt="Spicers Peak Lodge" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#8</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/spicers-peak-lodge/">
+              <img src="/assets/thumbs/spicers-peak-lodge.webp?v=169" alt="Spicers Peak Lodge" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#8</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="spicers-peak-lodge" data-shortlist-icon-only="1" data-resort-name="Spicers Peak Lodge" aria-label="Save Spicers Peak Lodge to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/spicers-peak-lodge/">Spicers Peak Lodge</a></h3>
@@ -353,14 +378,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Capella Sydney">
-          <a class="dest-card-media" href="/stayodds/capella-sydney/">
-            <img src="/assets/thumbs/capella-sydney.webp?v=169" alt="Capella Sydney" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#9</span>
-            <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/capella-sydney/">
+              <img src="/assets/thumbs/capella-sydney.webp?v=169" alt="Capella Sydney" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#9</span>
+              <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="capella-sydney" data-shortlist-icon-only="1" data-resort-name="Capella Sydney" aria-label="Save Capella Sydney to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Capella</span>
             </div>
             <h3><a href="/stayodds/capella-sydney/">Capella Sydney</a></h3>
@@ -377,14 +405,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="COMO The Treasury">
-          <a class="dest-card-media" href="/stayodds/como-the-treasury-perth/">
-            <img src="/assets/thumbs/como-the-treasury-perth.webp?v=169" alt="COMO The Treasury" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#10</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/como-the-treasury-perth/">
+              <img src="/assets/thumbs/como-the-treasury-perth.webp?v=169" alt="COMO The Treasury" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#10</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="como-the-treasury-perth" data-shortlist-icon-only="1" data-resort-name="COMO The Treasury" aria-label="Save COMO The Treasury to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">COMO Hotels</span>
             </div>
             <h3><a href="/stayodds/como-the-treasury-perth/">COMO The Treasury</a></h3>
@@ -401,14 +432,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Halcyon House">
-          <a class="dest-card-media" href="/stayodds/halcyon-house-cabarita/">
-            <img src="/assets/thumbs/halcyon-house-cabarita.webp?v=169" alt="Halcyon House" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#11</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/halcyon-house-cabarita/">
+              <img src="/assets/thumbs/halcyon-house-cabarita.webp?v=169" alt="Halcyon House" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#11</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="halcyon-house-cabarita" data-shortlist-icon-only="1" data-resort-name="Halcyon House" aria-label="Save Halcyon House to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/halcyon-house-cabarita/">Halcyon House</a></h3>
@@ -425,14 +459,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Silky Oaks Lodge">
-          <a class="dest-card-media" href="/stayodds/silky-oaks-lodge-daintree/">
-            <img src="/assets/thumbs/silky-oaks-lodge-daintree.webp?v=169" alt="Silky Oaks Lodge" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#12</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/silky-oaks-lodge-daintree/">
+              <img src="/assets/thumbs/silky-oaks-lodge-daintree.webp?v=169" alt="Silky Oaks Lodge" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#12</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="silky-oaks-lodge-daintree" data-shortlist-icon-only="1" data-resort-name="Silky Oaks Lodge" aria-label="Save Silky Oaks Lodge to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Baillie Lodges</span>
             </div>
             <h3><a href="/stayodds/silky-oaks-lodge-daintree/">Silky Oaks Lodge</a></h3>
@@ -449,14 +486,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="qualia">
-          <a class="dest-card-media" href="/stayodds/qualia-hamilton-island/">
-            <img src="/assets/thumbs/qualia-hamilton-island.webp?v=169" alt="qualia" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#13</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/qualia-hamilton-island/">
+              <img src="/assets/thumbs/qualia-hamilton-island.webp?v=169" alt="qualia" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#13</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="qualia-hamilton-island" data-shortlist-icon-only="1" data-resort-name="qualia" aria-label="Save qualia to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Luxury Lodges of Australia</span>
             </div>
             <h3><a href="/stayodds/qualia-hamilton-island/">qualia</a></h3>
@@ -473,14 +513,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Lindis">
-          <a class="dest-card-media" href="/stayodds/the-lindis-ahuriri/">
-            <img src="/assets/thumbs/the-lindis-ahuriri.webp?v=169" alt="The Lindis" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#14</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-lindis-ahuriri/">
+              <img src="/assets/thumbs/the-lindis-ahuriri.webp?v=169" alt="The Lindis" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#14</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-lindis-ahuriri" data-shortlist-icon-only="1" data-resort-name="The Lindis" aria-label="Save The Lindis to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/the-lindis-ahuriri/">The Lindis</a></h3>
@@ -497,14 +540,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jackalope Hotel">
-          <a class="dest-card-media" href="/stayodds/jackalope-hotel-mornington/">
-            <img src="/assets/thumbs/jackalope-hotel-mornington.webp?v=169" alt="Jackalope Hotel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#15</span>
-            <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jackalope-hotel-mornington/">
+              <img src="/assets/thumbs/jackalope-hotel-mornington.webp?v=169" alt="Jackalope Hotel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#15</span>
+              <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jackalope-hotel-mornington" data-shortlist-icon-only="1" data-resort-name="Jackalope Hotel" aria-label="Save Jackalope Hotel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/jackalope-hotel-mornington/">Jackalope Hotel</a></h3>
@@ -521,14 +567,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Park Hyatt Auckland">
-          <a class="dest-card-media" href="/stayodds/park-hyatt-auckland/">
-            <img src="/assets/thumbs/park-hyatt-auckland.webp?v=169" alt="Park Hyatt Auckland" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#16</span>
-            <span class="dest-card-odds"><strong>88%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/park-hyatt-auckland/">
+              <img src="/assets/thumbs/park-hyatt-auckland.webp?v=169" alt="Park Hyatt Auckland" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#16</span>
+              <span class="dest-card-odds"><strong>88%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="park-hyatt-auckland" data-shortlist-icon-only="1" data-resort-name="Park Hyatt Auckland" aria-label="Save Park Hyatt Auckland to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Park Hyatt</span>
             </div>
             <h3><a href="/stayodds/park-hyatt-auckland/">Park Hyatt Auckland</a></h3>
@@ -545,14 +594,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Park Hyatt Sydney">
-          <a class="dest-card-media" href="/stayodds/park-hyatt-sydney/">
-            <img src="/assets/thumbs/park-hyatt-sydney.webp?v=169" alt="Park Hyatt Sydney" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#17</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/park-hyatt-sydney/">
+              <img src="/assets/thumbs/park-hyatt-sydney.webp?v=169" alt="Park Hyatt Sydney" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#17</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="park-hyatt-sydney" data-shortlist-icon-only="1" data-resort-name="Park Hyatt Sydney" aria-label="Save Park Hyatt Sydney to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Hyatt / Park Hyatt</span>
             </div>
             <h3><a href="/stayodds/park-hyatt-sydney/">Park Hyatt Sydney</a></h3>
@@ -569,14 +621,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Louise">
-          <a class="dest-card-media" href="/stayodds/the-louise-barossa/">
-            <img src="/assets/thumbs/the-louise-barossa.webp?v=169" alt="The Louise" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#18</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-louise-barossa/">
+              <img src="/assets/thumbs/the-louise-barossa.webp?v=169" alt="The Louise" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#18</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-louise-barossa" data-shortlist-icon-only="1" data-resort-name="The Louise" aria-label="Save The Louise to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Baillie Lodges</span>
             </div>
             <h3><a href="/stayodds/the-louise-barossa/">The Louise</a></h3>
@@ -593,14 +648,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Rosewood Cape Kidnappers">
-          <a class="dest-card-media" href="/stayodds/rosewood-cape-kidnappers/">
-            <img src="/assets/thumbs/rosewood-cape-kidnappers.webp?v=169" alt="Rosewood Cape Kidnappers" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#19</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/rosewood-cape-kidnappers/">
+              <img src="/assets/thumbs/rosewood-cape-kidnappers.webp?v=169" alt="Rosewood Cape Kidnappers" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#19</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="rosewood-cape-kidnappers" data-shortlist-icon-only="1" data-resort-name="Rosewood Cape Kidnappers" aria-label="Save Rosewood Cape Kidnappers to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Rosewood Hotels &amp; Resorts</span>
             </div>
             <h3><a href="/stayodds/rosewood-cape-kidnappers/">Rosewood Cape Kidnappers</a></h3>
@@ -617,14 +675,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Ritz-Carlton, Melbourne">
-          <a class="dest-card-media" href="/stayodds/the-ritz-carlton-melbourne/">
-            <img src="/assets/thumbs/the-ritz-carlton-melbourne.webp?v=169" alt="The Ritz-Carlton, Melbourne" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#20</span>
-            <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-ritz-carlton-melbourne/">
+              <img src="/assets/thumbs/the-ritz-carlton-melbourne.webp?v=169" alt="The Ritz-Carlton, Melbourne" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#20</span>
+              <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-ritz-carlton-melbourne" data-shortlist-icon-only="1" data-resort-name="The Ritz-Carlton, Melbourne" aria-label="Save The Ritz-Carlton, Melbourne to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">The Ritz-Carlton</span>
             </div>
             <h3><a href="/stayodds/the-ritz-carlton-melbourne/">The Ritz-Carlton, Melbourne</a></h3>
@@ -641,14 +702,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Park Hyatt Melbourne">
-          <a class="dest-card-media" href="/stayodds/park-hyatt-melbourne/">
-            <img src="/assets/thumbs/park-hyatt-melbourne.webp?v=169" alt="Park Hyatt Melbourne" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#21</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/park-hyatt-melbourne/">
+              <img src="/assets/thumbs/park-hyatt-melbourne.webp?v=169" alt="Park Hyatt Melbourne" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#21</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="park-hyatt-melbourne" data-shortlist-icon-only="1" data-resort-name="Park Hyatt Melbourne" aria-label="Save Park Hyatt Melbourne to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Park Hyatt</span>
             </div>
             <h3><a href="/stayodds/park-hyatt-melbourne/">Park Hyatt Melbourne</a></h3>
@@ -665,14 +729,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Rosewood Matakauri">
-          <a class="dest-card-media" href="/stayodds/rosewood-matakauri-queenstown/">
-            <img src="/assets/thumbs/rosewood-matakauri-queenstown.webp?v=169" alt="Rosewood Matakauri" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#22</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/rosewood-matakauri-queenstown/">
+              <img src="/assets/thumbs/rosewood-matakauri-queenstown.webp?v=169" alt="Rosewood Matakauri" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#22</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="rosewood-matakauri-queenstown" data-shortlist-icon-only="1" data-resort-name="Rosewood Matakauri" aria-label="Save Rosewood Matakauri to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Rosewood</span>
             </div>
             <h3><a href="/stayodds/rosewood-matakauri-queenstown/">Rosewood Matakauri</a></h3>
@@ -689,14 +756,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Calile Hotel">
-          <a class="dest-card-media" href="/stayodds/the-calile-hotel-brisbane/">
-            <img src="/assets/thumbs/the-calile-hotel-brisbane.webp?v=169" alt="The Calile Hotel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#23</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-calile-hotel-brisbane/">
+              <img src="/assets/thumbs/the-calile-hotel-brisbane.webp?v=169" alt="The Calile Hotel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#23</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-calile-hotel-brisbane" data-shortlist-icon-only="1" data-resort-name="The Calile Hotel" aria-label="Save The Calile Hotel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/the-calile-hotel-brisbane/">The Calile Hotel</a></h3>
@@ -713,14 +783,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Eichardt&#x27;s Private Hotel">
-          <a class="dest-card-media" href="/stayodds/eichardts-private-hotel/">
-            <img src="/assets/thumbs/eichardts-private-hotel.webp?v=169" alt="Eichardt&#x27;s Private Hotel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#24</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/eichardts-private-hotel/">
+              <img src="/assets/thumbs/eichardts-private-hotel.webp?v=169" alt="Eichardt&#x27;s Private Hotel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#24</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="eichardts-private-hotel" data-shortlist-icon-only="1" data-resort-name="Eichardt&#x27;s Private Hotel" aria-label="Save Eichardt&#x27;s Private Hotel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Small Luxury Hotels</span>
             </div>
             <h3><a href="/stayodds/eichardts-private-hotel/">Eichardt&#x27;s Private Hotel</a></h3>
@@ -737,14 +810,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Cordis, Auckland">
-          <a class="dest-card-media" href="/stayodds/cordis-auckland/">
-            <img src="/assets/thumbs/cordis-auckland.webp?v=169" alt="Cordis, Auckland" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#25</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/cordis-auckland/">
+              <img src="/assets/thumbs/cordis-auckland.webp?v=169" alt="Cordis, Auckland" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#25</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="cordis-auckland" data-shortlist-icon-only="1" data-resort-name="Cordis, Auckland" aria-label="Save Cordis, Auckland to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/cordis-auckland/">Cordis, Auckland</a></h3>
@@ -761,14 +837,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Kimpton Margot Sydney">
-          <a class="dest-card-media" href="/stayodds/kimpton-margot-sydney/">
-            <img src="/assets/thumbs/kimpton-margot-sydney.webp?v=169" alt="Kimpton Margot Sydney" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#26</span>
-            <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/kimpton-margot-sydney/">
+              <img src="/assets/thumbs/kimpton-margot-sydney.webp?v=169" alt="Kimpton Margot Sydney" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#26</span>
+              <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="kimpton-margot-sydney" data-shortlist-icon-only="1" data-resort-name="Kimpton Margot Sydney" aria-label="Save Kimpton Margot Sydney to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Kimpton</span>
             </div>
             <h3><a href="/stayodds/kimpton-margot-sydney/">Kimpton Margot Sydney</a></h3>
@@ -785,14 +864,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="W Sydney">
-          <a class="dest-card-media" href="/stayodds/w-sydney/">
-            <img src="/assets/thumbs/w-sydney.webp?v=169" alt="W Sydney" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#27</span>
-            <span class="dest-card-odds"><strong>86%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/w-sydney/">
+              <img src="/assets/thumbs/w-sydney.webp?v=169" alt="W Sydney" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#27</span>
+              <span class="dest-card-odds"><strong>86%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="w-sydney" data-shortlist-icon-only="1" data-resort-name="W Sydney" aria-label="Save W Sydney to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">W Hotels</span>
             </div>
             <h3><a href="/stayodds/w-sydney/">W Sydney</a></h3>
@@ -809,14 +891,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Crown Towers Sydney">
-          <a class="dest-card-media" href="/stayodds/crown-towers-sydney/">
-            <img src="/assets/thumbs/crown-towers-sydney.webp?v=169" alt="Crown Towers Sydney" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#28</span>
-            <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/crown-towers-sydney/">
+              <img src="/assets/thumbs/crown-towers-sydney.webp?v=169" alt="Crown Towers Sydney" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#28</span>
+              <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="crown-towers-sydney" data-shortlist-icon-only="1" data-resort-name="Crown Towers Sydney" aria-label="Save Crown Towers Sydney to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/crown-towers-sydney/">Crown Towers Sydney</a></h3>
@@ -833,14 +918,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Longitude 131°">
-          <a class="dest-card-media" href="/stayodds/longitude-131-uluru/">
-            <img src="/assets/thumbs/longitude-131-uluru.webp?v=169" alt="Longitude 131°" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#29</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/longitude-131-uluru/">
+              <img src="/assets/thumbs/longitude-131-uluru.webp?v=169" alt="Longitude 131°" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#29</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="longitude-131-uluru" data-shortlist-icon-only="1" data-resort-name="Longitude 131°" aria-label="Save Longitude 131° to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Baillie Lodges</span>
             </div>
             <h3><a href="/stayodds/longitude-131-uluru/">Longitude 131°</a></h3>
@@ -857,14 +945,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Otahuna Lodge">
-          <a class="dest-card-media" href="/stayodds/otahuna-lodge-christchurch/">
-            <img src="/assets/thumbs/otahuna-lodge-christchurch.webp?v=169" alt="Otahuna Lodge" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#30</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/otahuna-lodge-christchurch/">
+              <img src="/assets/thumbs/otahuna-lodge-christchurch.webp?v=169" alt="Otahuna Lodge" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#30</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="otahuna-lodge-christchurch" data-shortlist-icon-only="1" data-resort-name="Otahuna Lodge" aria-label="Save Otahuna Lodge to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Relais &amp; Châteaux</span>
             </div>
             <h3><a href="/stayodds/otahuna-lodge-christchurch/">Otahuna Lodge</a></h3>
@@ -881,14 +972,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Saffire Freycinet">
-          <a class="dest-card-media" href="/stayodds/saffire-freycinet-tasmania/">
-            <img src="/assets/thumbs/saffire-freycinet-tasmania.webp?v=169" alt="Saffire Freycinet" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#31</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/saffire-freycinet-tasmania/">
+              <img src="/assets/thumbs/saffire-freycinet-tasmania.webp?v=169" alt="Saffire Freycinet" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#31</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="saffire-freycinet-tasmania" data-shortlist-icon-only="1" data-resort-name="Saffire Freycinet" aria-label="Save Saffire Freycinet to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Independent</span>
             </div>
             <h3><a href="/stayodds/saffire-freycinet-tasmania/">Saffire Freycinet</a></h3>
@@ -905,14 +999,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Southern Ocean Lodge">
-          <a class="dest-card-media" href="/stayodds/southern-ocean-lodge/">
-            <img src="/assets/thumbs/southern-ocean-lodge.webp?v=169" alt="Southern Ocean Lodge" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#32</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/southern-ocean-lodge/">
+              <img src="/assets/thumbs/southern-ocean-lodge.webp?v=169" alt="Southern Ocean Lodge" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#32</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="southern-ocean-lodge" data-shortlist-icon-only="1" data-resort-name="Southern Ocean Lodge" aria-label="Save Southern Ocean Lodge to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Baillie Lodges</span>
             </div>
             <h3><a href="/stayodds/southern-ocean-lodge/">Southern Ocean Lodge</a></h3>
@@ -958,6 +1055,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=2" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
 </body>
 </html>

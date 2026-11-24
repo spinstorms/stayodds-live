@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=41" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -59,17 +59,17 @@
 <body>
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" rel="noopener">
+      <div class="brand stayodds-brand-group">
         <span class="stayodds-brand-stack">
-          <span class="stayodds-wordmark-lg">StayOdds<span class="stayodds-dot">.</span></span>
-          <span class="stayodds-brand-by">by The Uncharted Itinerary</span>
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
-      </a>
+      </div>
       <nav class="nav-links" aria-label="Main site navigation">
-        <a href="https://uncharteditinerary.com/">Home</a>
-        <a href="/">StayOdds</a>
+        <a href="/" class="active">StayOdds</a>
         <a href="/hotels/">Hotel Map</a>
-        <a href="https://uncharteditinerary.com/">Videos</a>
+        <a href="/brands/">Brands</a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
         <a href="https://uncharteditinerary.com/about/">About</a>
         <a href="https://uncharteditinerary.com/faq/">FAQ</a>
         <a href="https://uncharteditinerary.com/contact/">Contact</a>
@@ -86,9 +86,10 @@
         <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Latest Videos</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
+        <a class="hub-tab" href="/brands/">Brands</a>
+        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
@@ -156,19 +157,22 @@
           </div>
         </div>
 
-        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Popular Head-to-Head Rival Matchups in Middle East</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=al-maha-dubai&amp;b=one-and-only-the-palm&amp;c=jumeirah-al-naseem">Compare Top 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=al-maha-dubai&amp;b=one-and-only-the-palm"><div class="rival-matchup-vs">Al Maha, a Luxury Collection Desert Resort <span style="color:var(--accent);">vs</span> One&amp;Only The Palm</div><div class="rival-matchup-meta"><span>98% vs 93%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=nujuma-ritz-carlton-reserve&amp;b=banyan-tree-alula"><div class="rival-matchup-vs">Nujuma, a Ritz-Carlton Reserve <span style="color:var(--accent);">vs</span> Banyan Tree AlUla</div><div class="rival-matchup-meta"><span>97% vs Market Odds</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=mandarin-oriental-doha&amp;b=waldorf-astoria-doha-lusail"><div class="rival-matchup-vs">Mandarin Oriental, Doha <span style="color:var(--accent);">vs</span> Waldorf Astoria Doha Lusail</div><div class="rival-matchup-meta"><span>96% vs 90%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
+        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Popular Head-to-Head Rival Matchups in Middle East</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=al-maha-dubai&amp;b=one-and-only-the-palm&amp;c=jumeirah-al-naseem">Compare Top 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=al-maha-dubai&amp;b=one-and-only-the-palm"><div class="rival-matchup-vs">Al Maha, a Luxury Collection Desert Resort <span style="color:var(--accent);">vs</span> One&amp;Only The Palm</div><div class="rival-matchup-meta"><span>98% vs 93%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=nujuma-ritz-carlton-reserve&amp;b=banyan-tree-alula"><div class="rival-matchup-vs">Nujuma, a Ritz-Carlton Reserve <span style="color:var(--accent);">vs</span> Banyan Tree AlUla</div><div class="rival-matchup-meta"><span>97% vs Global Directory</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=mandarin-oriental-doha&amp;b=waldorf-astoria-doha-lusail"><div class="rival-matchup-vs">Mandarin Oriental, Doha <span style="color:var(--accent);">vs</span> Waldorf Astoria Doha Lusail</div><div class="rival-matchup-meta"><span>96% vs 90%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
 
         <div class="dest-grid">
           
         <article class="dest-card" data-resort-name="Ciel Dubai Marina, Vignette Collection">
-          <a class="dest-card-media" href="/stayodds/ciel-dubai-marina/">
-            <img src="/assets/thumbs/ciel-dubai-marina.webp?v=169" alt="Ciel Dubai Marina, Vignette Collection" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#1</span>
-            <span class="dest-card-odds"><strong>81%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/ciel-dubai-marina/">
+              <img src="/assets/thumbs/ciel-dubai-marina.webp?v=169" alt="Ciel Dubai Marina, Vignette Collection" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#1</span>
+              <span class="dest-card-odds"><strong>81%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="ciel-dubai-marina" data-shortlist-icon-only="1" data-resort-name="Ciel Dubai Marina, Vignette Collection" aria-label="Save Ciel Dubai Marina, Vignette Collection to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Vignette Collection (IHG)</span>
             </div>
             <h3><a href="/stayodds/ciel-dubai-marina/">Ciel Dubai Marina, Vignette Collection</a></h3>
@@ -185,14 +189,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Nujuma, a Ritz-Carlton Reserve">
-          <a class="dest-card-media" href="/stayodds/nujuma-ritz-carlton-reserve/">
-            <img src="/assets/thumbs/nujuma-ritz-carlton-reserve.webp?v=169" alt="Nujuma, a Ritz-Carlton Reserve" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#2</span>
-            <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/nujuma-ritz-carlton-reserve/">
+              <img src="/assets/thumbs/nujuma-ritz-carlton-reserve.webp?v=169" alt="Nujuma, a Ritz-Carlton Reserve" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#2</span>
+              <span class="dest-card-odds"><strong>97%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="nujuma-ritz-carlton-reserve" data-shortlist-icon-only="1" data-resort-name="Nujuma, a Ritz-Carlton Reserve" aria-label="Save Nujuma, a Ritz-Carlton Reserve to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Marriott / Ritz-Carlton Reserve</span>
             </div>
             <h3><a href="/stayodds/nujuma-ritz-carlton-reserve/">Nujuma, a Ritz-Carlton Reserve</a></h3>
@@ -209,14 +216,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Al Maha, a Luxury Collection Desert Resort">
-          <a class="dest-card-media" href="/stayodds/al-maha-dubai/">
-            <img src="/assets/thumbs/al-maha-dubai.webp?v=169" alt="Al Maha, a Luxury Collection Desert Resort" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#3</span>
-            <span class="dest-card-odds"><strong>98%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/al-maha-dubai/">
+              <img src="/assets/thumbs/al-maha-dubai.webp?v=169" alt="Al Maha, a Luxury Collection Desert Resort" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#3</span>
+              <span class="dest-card-odds"><strong>98%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="al-maha-dubai" data-shortlist-icon-only="1" data-resort-name="Al Maha, a Luxury Collection Desert Resort" aria-label="Save Al Maha, a Luxury Collection Desert Resort to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">The Luxury Collection</span>
             </div>
             <h3><a href="/stayodds/al-maha-dubai/">Al Maha, a Luxury Collection Desert Resort</a></h3>
@@ -233,14 +243,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Mandarin Oriental, Doha">
-          <a class="dest-card-media" href="/stayodds/mandarin-oriental-doha/">
-            <img src="/assets/thumbs/mandarin-oriental-doha.webp?v=169" alt="Mandarin Oriental, Doha" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#4</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/mandarin-oriental-doha/">
+              <img src="/assets/thumbs/mandarin-oriental-doha.webp?v=169" alt="Mandarin Oriental, Doha" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#4</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="mandarin-oriental-doha" data-shortlist-icon-only="1" data-resort-name="Mandarin Oriental, Doha" aria-label="Save Mandarin Oriental, Doha to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Mandarin Oriental</span>
             </div>
             <h3><a href="/stayodds/mandarin-oriental-doha/">Mandarin Oriental, Doha</a></h3>
@@ -257,14 +270,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Qasr Al Sarab Desert Resort by Anantara">
-          <a class="dest-card-media" href="/stayodds/qasr-al-sarab-anantara/">
-            <img src="/assets/thumbs/qasr-al-sarab-anantara.webp?v=169" alt="Qasr Al Sarab Desert Resort by Anantara" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#5</span>
-            <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/qasr-al-sarab-anantara/">
+              <img src="/assets/thumbs/qasr-al-sarab-anantara.webp?v=169" alt="Qasr Al Sarab Desert Resort by Anantara" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#5</span>
+              <span class="dest-card-odds"><strong>96%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="qasr-al-sarab-anantara" data-shortlist-icon-only="1" data-resort-name="Qasr Al Sarab Desert Resort by Anantara" aria-label="Save Qasr Al Sarab Desert Resort by Anantara to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Anantara</span>
             </div>
             <h3><a href="/stayodds/qasr-al-sarab-anantara/">Qasr Al Sarab Desert Resort by Anantara</a></h3>
@@ -281,14 +297,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Four Seasons Resort Dubai at Jumeirah Beach">
-          <a class="dest-card-media" href="/stayodds/four-seasons-dubai-jumeirah/">
-            <img src="/assets/thumbs/four-seasons-dubai-jumeirah.webp?v=169" alt="Four Seasons Resort Dubai at Jumeirah Beach" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#6</span>
-            <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/four-seasons-dubai-jumeirah/">
+              <img src="/assets/thumbs/four-seasons-dubai-jumeirah.webp?v=169" alt="Four Seasons Resort Dubai at Jumeirah Beach" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#6</span>
+              <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="four-seasons-dubai-jumeirah" data-shortlist-icon-only="1" data-resort-name="Four Seasons Resort Dubai at Jumeirah Beach" aria-label="Save Four Seasons Resort Dubai at Jumeirah Beach to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Four Seasons</span>
             </div>
             <h3><a href="/stayodds/four-seasons-dubai-jumeirah/">Four Seasons Resort Dubai at Jumeirah Beach</a></h3>
@@ -305,14 +324,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Waldorf Astoria Dubai International Financial Centre">
-          <a class="dest-card-media" href="/stayodds/waldorf-astoria-difc-dubai/">
-            <img src="/assets/thumbs/waldorf-astoria-difc-dubai.webp?v=169" alt="Waldorf Astoria Dubai International Financial Centre" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#7</span>
-            <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/waldorf-astoria-difc-dubai/">
+              <img src="/assets/thumbs/waldorf-astoria-difc-dubai.webp?v=169" alt="Waldorf Astoria Dubai International Financial Centre" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#7</span>
+              <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="waldorf-astoria-difc-dubai" data-shortlist-icon-only="1" data-resort-name="Waldorf Astoria Dubai International Financial Centre" aria-label="Save Waldorf Astoria Dubai International Financial Centre to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Waldorf Astoria</span>
             </div>
             <h3><a href="/stayodds/waldorf-astoria-difc-dubai/">Waldorf Astoria Dubai International Financial Centre</a></h3>
@@ -329,14 +351,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Atlantis The Royal">
-          <a class="dest-card-media" href="/stayodds/atlantis-the-royal/">
-            <img src="/assets/thumbs/atlantis-the-royal.webp?v=169" alt="Atlantis The Royal" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#8</span>
-            <span class="dest-card-odds"><strong>86%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/atlantis-the-royal/">
+              <img src="/assets/thumbs/atlantis-the-royal.webp?v=169" alt="Atlantis The Royal" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#8</span>
+              <span class="dest-card-odds"><strong>86%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="atlantis-the-royal" data-shortlist-icon-only="1" data-resort-name="Atlantis The Royal" aria-label="Save Atlantis The Royal to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Kerzner / Atlantis</span>
             </div>
             <h3><a href="/stayodds/atlantis-the-royal/">Atlantis The Royal</a></h3>
@@ -353,14 +378,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Al Qasr">
-          <a class="dest-card-media" href="/stayodds/jumeirah-al-qasr-dubai/">
-            <img src="/assets/thumbs/jumeirah-al-qasr-dubai.webp?v=169" alt="Jumeirah Al Qasr" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#9</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-al-qasr-dubai/">
+              <img src="/assets/thumbs/jumeirah-al-qasr-dubai.webp?v=169" alt="Jumeirah Al Qasr" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#9</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-al-qasr-dubai" data-shortlist-icon-only="1" data-resort-name="Jumeirah Al Qasr" aria-label="Save Jumeirah Al Qasr to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-al-qasr-dubai/">Jumeirah Al Qasr</a></h3>
@@ -377,14 +405,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="One&amp;Only One Za&#x27;abeel">
-          <a class="dest-card-media" href="/stayodds/one-and-only-one-zaabeel/">
-            <img src="/assets/thumbs/one-and-only-one-zaabeel.webp?v=169" alt="One&amp;Only One Za&#x27;abeel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#10</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/one-and-only-one-zaabeel/">
+              <img src="/assets/thumbs/one-and-only-one-zaabeel.webp?v=169" alt="One&amp;Only One Za&#x27;abeel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#10</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="one-and-only-one-zaabeel" data-shortlist-icon-only="1" data-resort-name="One&amp;Only One Za&#x27;abeel" aria-label="Save One&amp;Only One Za&#x27;abeel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">One&amp;Only</span>
             </div>
             <h3><a href="/stayodds/one-and-only-one-zaabeel/">One&amp;Only One Za&#x27;abeel</a></h3>
@@ -401,14 +432,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="One&amp;Only The Palm">
-          <a class="dest-card-media" href="/stayodds/one-and-only-the-palm/">
-            <img src="/assets/thumbs/one-and-only-the-palm.webp?v=169" alt="One&amp;Only The Palm" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#11</span>
-            <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/one-and-only-the-palm/">
+              <img src="/assets/thumbs/one-and-only-the-palm.webp?v=169" alt="One&amp;Only The Palm" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#11</span>
+              <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="one-and-only-the-palm" data-shortlist-icon-only="1" data-resort-name="One&amp;Only The Palm" aria-label="Save One&amp;Only The Palm to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">One&amp;Only</span>
             </div>
             <h3><a href="/stayodds/one-and-only-the-palm/">One&amp;Only The Palm</a></h3>
@@ -425,14 +459,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Raffles Doha">
-          <a class="dest-card-media" href="/stayodds/raffles-doha/">
-            <img src="/assets/thumbs/raffles-doha.webp?v=169" alt="Raffles Doha" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#12</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/raffles-doha/">
+              <img src="/assets/thumbs/raffles-doha.webp?v=169" alt="Raffles Doha" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#12</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="raffles-doha" data-shortlist-icon-only="1" data-resort-name="Raffles Doha" aria-label="Save Raffles Doha to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Accor / Raffles</span>
             </div>
             <h3><a href="/stayodds/raffles-doha/">Raffles Doha</a></h3>
@@ -449,14 +486,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="One&amp;Only Royal Mirage">
-          <a class="dest-card-media" href="/stayodds/one-and-only-royal-mirage/">
-            <img src="/assets/thumbs/one-and-only-royal-mirage.webp?v=169" alt="One&amp;Only Royal Mirage" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#13</span>
-            <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/one-and-only-royal-mirage/">
+              <img src="/assets/thumbs/one-and-only-royal-mirage.webp?v=169" alt="One&amp;Only Royal Mirage" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#13</span>
+              <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="one-and-only-royal-mirage" data-shortlist-icon-only="1" data-resort-name="One&amp;Only Royal Mirage" aria-label="Save One&amp;Only Royal Mirage to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">One&amp;Only</span>
             </div>
             <h3><a href="/stayodds/one-and-only-royal-mirage/">One&amp;Only Royal Mirage</a></h3>
@@ -473,14 +513,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Six Senses Zighy Bay">
-          <a class="dest-card-media" href="/stayodds/six-senses-zighy-bay/">
-            <img src="/assets/thumbs/six-senses-zighy-bay.webp?v=169" alt="Six Senses Zighy Bay" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#14</span>
-            <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/six-senses-zighy-bay/">
+              <img src="/assets/thumbs/six-senses-zighy-bay.webp?v=169" alt="Six Senses Zighy Bay" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#14</span>
+              <span class="dest-card-odds"><strong>94%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="six-senses-zighy-bay" data-shortlist-icon-only="1" data-resort-name="Six Senses Zighy Bay" aria-label="Save Six Senses Zighy Bay to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">IHG / Six Senses</span>
             </div>
             <h3><a href="/stayodds/six-senses-zighy-bay/">Six Senses Zighy Bay</a></h3>
@@ -497,14 +540,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Chedi Muscat">
-          <a class="dest-card-media" href="/stayodds/the-chedi-muscat/">
-            <img src="/assets/thumbs/the-chedi-muscat.webp?v=169" alt="The Chedi Muscat" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#15</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-chedi-muscat/">
+              <img src="/assets/thumbs/the-chedi-muscat.webp?v=169" alt="The Chedi Muscat" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#15</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-chedi-muscat" data-shortlist-icon-only="1" data-resort-name="The Chedi Muscat" aria-label="Save The Chedi Muscat to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">GHM / LHW</span>
             </div>
             <h3><a href="/stayodds/the-chedi-muscat/">The Chedi Muscat</a></h3>
@@ -521,14 +567,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Al Bustan Palace, a Ritz-Carlton Hotel">
-          <a class="dest-card-media" href="/stayodds/al-bustan-palace-a-ritz-carlton/">
-            <img src="/assets/thumbs/al-bustan-palace-a-ritz-carlton.webp?v=169" alt="Al Bustan Palace, a Ritz-Carlton Hotel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#16</span>
-            <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/al-bustan-palace-a-ritz-carlton/">
+              <img src="/assets/thumbs/al-bustan-palace-a-ritz-carlton.webp?v=169" alt="Al Bustan Palace, a Ritz-Carlton Hotel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#16</span>
+              <span class="dest-card-odds"><strong>93%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="al-bustan-palace-a-ritz-carlton" data-shortlist-icon-only="1" data-resort-name="Al Bustan Palace, a Ritz-Carlton Hotel" aria-label="Save Al Bustan Palace, a Ritz-Carlton Hotel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">The Ritz-Carlton</span>
             </div>
             <h3><a href="/stayodds/al-bustan-palace-a-ritz-carlton/">Al Bustan Palace, a Ritz-Carlton Hotel</a></h3>
@@ -545,14 +594,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Armani Hotel Dubai">
-          <a class="dest-card-media" href="/stayodds/armani-hotel-dubai/">
-            <img src="/assets/thumbs/armani-hotel-dubai.webp?v=169" alt="Armani Hotel Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#17</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/armani-hotel-dubai/">
+              <img src="/assets/thumbs/armani-hotel-dubai.webp?v=169" alt="Armani Hotel Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#17</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="armani-hotel-dubai" data-shortlist-icon-only="1" data-resort-name="Armani Hotel Dubai" aria-label="Save Armani Hotel Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Armani</span>
             </div>
             <h3><a href="/stayodds/armani-hotel-dubai/">Armani Hotel Dubai</a></h3>
@@ -569,14 +621,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Burj Al Arab">
-          <a class="dest-card-media" href="/stayodds/burj-al-arab/">
-            <img src="/assets/thumbs/burj-al-arab.webp?v=169" alt="Jumeirah Burj Al Arab" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#18</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/burj-al-arab/">
+              <img src="/assets/thumbs/burj-al-arab.webp?v=169" alt="Jumeirah Burj Al Arab" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#18</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="burj-al-arab" data-shortlist-icon-only="1" data-resort-name="Jumeirah Burj Al Arab" aria-label="Save Jumeirah Burj Al Arab to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/burj-al-arab/">Jumeirah Burj Al Arab</a></h3>
@@ -593,14 +648,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Dar Al Masyaf">
-          <a class="dest-card-media" href="/stayodds/jumeirah-dar-al-masyaf/">
-            <img src="/assets/thumbs/jumeirah-dar-al-masyaf.webp?v=169" alt="Jumeirah Dar Al Masyaf" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#19</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-dar-al-masyaf/">
+              <img src="/assets/thumbs/jumeirah-dar-al-masyaf.webp?v=169" alt="Jumeirah Dar Al Masyaf" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#19</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-dar-al-masyaf" data-shortlist-icon-only="1" data-resort-name="Jumeirah Dar Al Masyaf" aria-label="Save Jumeirah Dar Al Masyaf to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-dar-al-masyaf/">Jumeirah Dar Al Masyaf</a></h3>
@@ -617,14 +675,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Lana, Dubai">
-          <a class="dest-card-media" href="/stayodds/the-lana-dorchester-dubai/">
-            <img src="/assets/thumbs/the-lana-dorchester-dubai.webp?v=169" alt="The Lana, Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#20</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-lana-dorchester-dubai/">
+              <img src="/assets/thumbs/the-lana-dorchester-dubai.webp?v=169" alt="The Lana, Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#20</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-lana-dorchester-dubai" data-shortlist-icon-only="1" data-resort-name="The Lana, Dubai" aria-label="Save The Lana, Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Dorchester Collection</span>
             </div>
             <h3><a href="/stayodds/the-lana-dorchester-dubai/">The Lana, Dubai</a></h3>
@@ -641,14 +702,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The St. Regis Saadiyat Island Resort, Abu Dhabi">
-          <a class="dest-card-media" href="/stayodds/st-regis-saadiyat-island/">
-            <img src="/assets/thumbs/st-regis-saadiyat-island.webp?v=169" alt="The St. Regis Saadiyat Island Resort, Abu Dhabi" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#21</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/st-regis-saadiyat-island/">
+              <img src="/assets/thumbs/st-regis-saadiyat-island.webp?v=169" alt="The St. Regis Saadiyat Island Resort, Abu Dhabi" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#21</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="st-regis-saadiyat-island" data-shortlist-icon-only="1" data-resort-name="The St. Regis Saadiyat Island Resort, Abu Dhabi" aria-label="Save The St. Regis Saadiyat Island Resort, Abu Dhabi to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Marriott / St. Regis</span>
             </div>
             <h3><a href="/stayodds/st-regis-saadiyat-island/">The St. Regis Saadiyat Island Resort, Abu Dhabi</a></h3>
@@ -665,14 +729,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Alila Hinu Bay">
-          <a class="dest-card-media" href="/stayodds/alila-hinu-bay/">
-            <img src="/assets/thumbs/alila-hinu-bay.webp?v=169" alt="Alila Hinu Bay" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#22</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/alila-hinu-bay/">
+              <img src="/assets/thumbs/alila-hinu-bay.webp?v=169" alt="Alila Hinu Bay" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#22</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="alila-hinu-bay" data-shortlist-icon-only="1" data-resort-name="Alila Hinu Bay" aria-label="Save Alila Hinu Bay to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Alila</span>
             </div>
             <h3><a href="/stayodds/alila-hinu-bay/">Alila Hinu Bay</a></h3>
@@ -689,14 +756,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Park Hyatt Dubai">
-          <a class="dest-card-media" href="/stayodds/park-hyatt-dubai/">
-            <img src="/assets/thumbs/park-hyatt-dubai.webp?v=169" alt="Park Hyatt Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#23</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/park-hyatt-dubai/">
+              <img src="/assets/thumbs/park-hyatt-dubai.webp?v=169" alt="Park Hyatt Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#23</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="park-hyatt-dubai" data-shortlist-icon-only="1" data-resort-name="Park Hyatt Dubai" aria-label="Save Park Hyatt Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Hyatt / Park Hyatt</span>
             </div>
             <h3><a href="/stayodds/park-hyatt-dubai/">Park Hyatt Dubai</a></h3>
@@ -713,14 +783,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Raffles The Palm Dubai">
-          <a class="dest-card-media" href="/stayodds/raffles-the-palm-dubai/">
-            <img src="/assets/thumbs/raffles-the-palm-dubai.webp?v=169" alt="Raffles The Palm Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#24</span>
-            <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/raffles-the-palm-dubai/">
+              <img src="/assets/thumbs/raffles-the-palm-dubai.webp?v=169" alt="Raffles The Palm Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#24</span>
+              <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="raffles-the-palm-dubai" data-shortlist-icon-only="1" data-resort-name="Raffles The Palm Dubai" aria-label="Save Raffles The Palm Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Accor / Raffles</span>
             </div>
             <h3><a href="/stayodds/raffles-the-palm-dubai/">Raffles The Palm Dubai</a></h3>
@@ -737,14 +810,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Hilton Dubai Palm Jumeirah">
-          <a class="dest-card-media" href="/stayodds/hilton-dubai-palm-jumeirah/">
-            <img src="/assets/thumbs/hilton-dubai-palm-jumeirah.webp?v=169" alt="Hilton Dubai Palm Jumeirah" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#25</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/hilton-dubai-palm-jumeirah/">
+              <img src="/assets/thumbs/hilton-dubai-palm-jumeirah.webp?v=169" alt="Hilton Dubai Palm Jumeirah" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#25</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="hilton-dubai-palm-jumeirah" data-shortlist-icon-only="1" data-resort-name="Hilton Dubai Palm Jumeirah" aria-label="Save Hilton Dubai Palm Jumeirah to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/hilton-dubai-palm-jumeirah/">Hilton Dubai Palm Jumeirah</a></h3>
@@ -761,14 +837,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Mandarin Oriental Jumeira, Dubai">
-          <a class="dest-card-media" href="/stayodds/mandarin-oriental-jumeira-dubai/">
-            <img src="/assets/thumbs/mandarin-oriental-jumeira-dubai.webp?v=169" alt="Mandarin Oriental Jumeira, Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#26</span>
-            <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/mandarin-oriental-jumeira-dubai/">
+              <img src="/assets/thumbs/mandarin-oriental-jumeira-dubai.webp?v=169" alt="Mandarin Oriental Jumeira, Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#26</span>
+              <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="mandarin-oriental-jumeira-dubai" data-shortlist-icon-only="1" data-resort-name="Mandarin Oriental Jumeira, Dubai" aria-label="Save Mandarin Oriental Jumeira, Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Mandarin Oriental</span>
             </div>
             <h3><a href="/stayodds/mandarin-oriental-jumeira-dubai/">Mandarin Oriental Jumeira, Dubai</a></h3>
@@ -785,14 +864,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="SIRO One Za&#x27;abeel">
-          <a class="dest-card-media" href="/stayodds/siro-one-zaabeel-dubai/">
-            <img src="/assets/thumbs/siro-one-zaabeel-dubai.webp?v=169" alt="SIRO One Za&#x27;abeel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#27</span>
-            <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/siro-one-zaabeel-dubai/">
+              <img src="/assets/thumbs/siro-one-zaabeel-dubai.webp?v=169" alt="SIRO One Za&#x27;abeel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#27</span>
+              <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="siro-one-zaabeel-dubai" data-shortlist-icon-only="1" data-resort-name="SIRO One Za&#x27;abeel" aria-label="Save SIRO One Za&#x27;abeel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">SIRO (Kerzner)</span>
             </div>
             <h3><a href="/stayodds/siro-one-zaabeel-dubai/">SIRO One Za&#x27;abeel</a></h3>
@@ -809,14 +891,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Al Naseem">
-          <a class="dest-card-media" href="/stayodds/jumeirah-al-naseem/">
-            <img src="/assets/thumbs/jumeirah-al-naseem.webp?v=169" alt="Jumeirah Al Naseem" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#28</span>
-            <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-al-naseem/">
+              <img src="/assets/thumbs/jumeirah-al-naseem.webp?v=169" alt="Jumeirah Al Naseem" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#28</span>
+              <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-al-naseem" data-shortlist-icon-only="1" data-resort-name="Jumeirah Al Naseem" aria-label="Save Jumeirah Al Naseem to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-al-naseem/">Jumeirah Al Naseem</a></h3>
@@ -833,14 +918,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Waldorf Astoria Doha Lusail">
-          <a class="dest-card-media" href="/stayodds/waldorf-astoria-doha-lusail/">
-            <img src="/assets/thumbs/waldorf-astoria-doha-lusail.webp?v=169" alt="Waldorf Astoria Doha Lusail" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#29</span>
-            <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/waldorf-astoria-doha-lusail/">
+              <img src="/assets/thumbs/waldorf-astoria-doha-lusail.webp?v=169" alt="Waldorf Astoria Doha Lusail" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#29</span>
+              <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="waldorf-astoria-doha-lusail" data-shortlist-icon-only="1" data-resort-name="Waldorf Astoria Doha Lusail" aria-label="Save Waldorf Astoria Doha Lusail to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Waldorf Astoria</span>
             </div>
             <h3><a href="/stayodds/waldorf-astoria-doha-lusail/">Waldorf Astoria Doha Lusail</a></h3>
@@ -857,14 +945,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Beach Hotel">
-          <a class="dest-card-media" href="/stayodds/jumeirah-beach-hotel-dubai/">
-            <img src="/assets/thumbs/jumeirah-beach-hotel-dubai.webp?v=169" alt="Jumeirah Beach Hotel" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#30</span>
-            <span class="dest-card-odds"><strong>88%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-beach-hotel-dubai/">
+              <img src="/assets/thumbs/jumeirah-beach-hotel-dubai.webp?v=169" alt="Jumeirah Beach Hotel" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#30</span>
+              <span class="dest-card-odds"><strong>88%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-beach-hotel-dubai" data-shortlist-icon-only="1" data-resort-name="Jumeirah Beach Hotel" aria-label="Save Jumeirah Beach Hotel to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-beach-hotel-dubai/">Jumeirah Beach Hotel</a></h3>
@@ -881,14 +972,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Nurai Island Resort">
-          <a class="dest-card-media" href="/stayodds/zaya-nurai-island/">
-            <img src="/assets/thumbs/zaya-nurai-island.webp?v=169" alt="Nurai Island Resort" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#31</span>
-            <span class="dest-card-odds"><strong>84%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/zaya-nurai-island/">
+              <img src="/assets/thumbs/zaya-nurai-island.webp?v=169" alt="Nurai Island Resort" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#31</span>
+              <span class="dest-card-odds"><strong>84%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="zaya-nurai-island" data-shortlist-icon-only="1" data-resort-name="Nurai Island Resort" aria-label="Save Nurai Island Resort to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Boutique</span>
             </div>
             <h3><a href="/stayodds/zaya-nurai-island/">Nurai Island Resort</a></h3>
@@ -905,14 +999,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Marsa Al Arab">
-          <a class="dest-card-media" href="/stayodds/jumeirah-marsa-al-arab-dubai/">
-            <img src="/assets/thumbs/jumeirah-marsa-al-arab-dubai.webp?v=169" alt="Jumeirah Marsa Al Arab" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#32</span>
-            <span class="dest-card-odds"><strong>74%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-marsa-al-arab-dubai/">
+              <img src="/assets/thumbs/jumeirah-marsa-al-arab-dubai.webp?v=169" alt="Jumeirah Marsa Al Arab" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#32</span>
+              <span class="dest-card-odds"><strong>74%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-marsa-al-arab-dubai" data-shortlist-icon-only="1" data-resort-name="Jumeirah Marsa Al Arab" aria-label="Save Jumeirah Marsa Al Arab to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-marsa-al-arab-dubai/">Jumeirah Marsa Al Arab</a></h3>
@@ -929,14 +1026,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Alila Jabal Akhdar">
-          <a class="dest-card-media" href="/stayodds/alila-jabal-akhdar/">
-            <img src="/assets/thumbs/alila-jabal-akhdar.webp?v=169" alt="Alila Jabal Akhdar" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#33</span>
-            <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/alila-jabal-akhdar/">
+              <img src="/assets/thumbs/alila-jabal-akhdar.webp?v=169" alt="Alila Jabal Akhdar" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#33</span>
+              <span class="dest-card-odds"><strong>90%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="alila-jabal-akhdar" data-shortlist-icon-only="1" data-resort-name="Alila Jabal Akhdar" aria-label="Save Alila Jabal Akhdar to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Hyatt / Alila</span>
             </div>
             <h3><a href="/stayodds/alila-jabal-akhdar/">Alila Jabal Akhdar</a></h3>
@@ -953,14 +1053,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Andaz Capital Gate, Abu Dhabi, by Hyatt">
-          <a class="dest-card-media" href="/stayodds/andaz-capital-gate-abu-dhabi-by/">
-            <img src="/assets/thumbs/andaz-capital-gate-abu-dhabi-by.webp?v=169" alt="Andaz Capital Gate, Abu Dhabi, by Hyatt" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#34</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/andaz-capital-gate-abu-dhabi-by/">
+              <img src="/assets/thumbs/andaz-capital-gate-abu-dhabi-by.webp?v=169" alt="Andaz Capital Gate, Abu Dhabi, by Hyatt" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#34</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="andaz-capital-gate-abu-dhabi-by" data-shortlist-icon-only="1" data-resort-name="Andaz Capital Gate, Abu Dhabi, by Hyatt" aria-label="Save Andaz Capital Gate, Abu Dhabi, by Hyatt to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Andaz</span>
             </div>
             <h3><a href="/stayodds/andaz-capital-gate-abu-dhabi-by/">Andaz Capital Gate, Abu Dhabi, by Hyatt</a></h3>
@@ -977,14 +1080,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Banyan Tree AlUla">
-          <a class="dest-card-media" href="/stayodds/banyan-tree-alula/">
-            <img src="/assets/thumbs/banyan-tree-alula.webp?v=169" alt="Banyan Tree AlUla" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#35</span>
-            <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/banyan-tree-alula/">
+              <img src="/assets/thumbs/banyan-tree-alula.webp?v=169" alt="Banyan Tree AlUla" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#35</span>
+              <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="banyan-tree-alula" data-shortlist-icon-only="1" data-resort-name="Banyan Tree AlUla" aria-label="Save Banyan Tree AlUla to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Banyan Tree</span>
             </div>
             <h3><a href="/stayodds/banyan-tree-alula/">Banyan Tree AlUla</a></h3>
@@ -1001,14 +1107,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Bulgari Resort Dubai">
-          <a class="dest-card-media" href="/stayodds/bulgari-resort-dubai/">
-            <img src="/assets/thumbs/bulgari-resort-dubai.webp?v=169" alt="Bulgari Resort Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#36</span>
-            <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/bulgari-resort-dubai/">
+              <img src="/assets/thumbs/bulgari-resort-dubai.webp?v=169" alt="Bulgari Resort Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#36</span>
+              <span class="dest-card-odds"><strong>85%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="bulgari-resort-dubai" data-shortlist-icon-only="1" data-resort-name="Bulgari Resort Dubai" aria-label="Save Bulgari Resort Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Bulgari Hotels</span>
             </div>
             <h3><a href="/stayodds/bulgari-resort-dubai/">Bulgari Resort Dubai</a></h3>
@@ -1025,14 +1134,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Emirates Palace Mandarin Oriental">
-          <a class="dest-card-media" href="/stayodds/emirates-palace-abu-dhabi/">
-            <img src="/assets/thumbs/emirates-palace-abu-dhabi.webp?v=169" alt="Emirates Palace Mandarin Oriental" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#37</span>
-            <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/emirates-palace-abu-dhabi/">
+              <img src="/assets/thumbs/emirates-palace-abu-dhabi.webp?v=169" alt="Emirates Palace Mandarin Oriental" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#37</span>
+              <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="emirates-palace-abu-dhabi" data-shortlist-icon-only="1" data-resort-name="Emirates Palace Mandarin Oriental" aria-label="Save Emirates Palace Mandarin Oriental to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Mandarin Oriental</span>
             </div>
             <h3><a href="/stayodds/emirates-palace-abu-dhabi/">Emirates Palace Mandarin Oriental</a></h3>
@@ -1049,14 +1161,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Jumeirah Muscat Bay">
-          <a class="dest-card-media" href="/stayodds/jumeirah-muscat-bay/">
-            <img src="/assets/thumbs/jumeirah-muscat-bay.webp?v=169" alt="Jumeirah Muscat Bay" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#38</span>
-            <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/jumeirah-muscat-bay/">
+              <img src="/assets/thumbs/jumeirah-muscat-bay.webp?v=169" alt="Jumeirah Muscat Bay" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#38</span>
+              <span class="dest-card-odds"><strong>91%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="jumeirah-muscat-bay" data-shortlist-icon-only="1" data-resort-name="Jumeirah Muscat Bay" aria-label="Save Jumeirah Muscat Bay to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Jumeirah</span>
             </div>
             <h3><a href="/stayodds/jumeirah-muscat-bay/">Jumeirah Muscat Bay</a></h3>
@@ -1073,14 +1188,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The St. Regis Downtown Dubai">
-          <a class="dest-card-media" href="/stayodds/the-st-regis-downtown-dubai/">
-            <img src="/assets/thumbs/the-st-regis-downtown-dubai.webp?v=169" alt="The St. Regis Downtown Dubai" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#39</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-st-regis-downtown-dubai/">
+              <img src="/assets/thumbs/the-st-regis-downtown-dubai.webp?v=169" alt="The St. Regis Downtown Dubai" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#39</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-st-regis-downtown-dubai" data-shortlist-icon-only="1" data-resort-name="The St. Regis Downtown Dubai" aria-label="Save The St. Regis Downtown Dubai to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">St. Regis</span>
             </div>
             <h3><a href="/stayodds/the-st-regis-downtown-dubai/">The St. Regis Downtown Dubai</a></h3>
@@ -1097,14 +1215,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The St. Regis Red Sea Resort">
-          <a class="dest-card-media" href="/stayodds/st-regis-red-sea/">
-            <img src="/assets/thumbs/st-regis-red-sea.webp?v=169" alt="The St. Regis Red Sea Resort" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#40</span>
-            <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/st-regis-red-sea/">
+              <img src="/assets/thumbs/st-regis-red-sea.webp?v=169" alt="The St. Regis Red Sea Resort" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#40</span>
+              <span class="dest-card-odds"><strong>Award</strong><small>Official Award</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="st-regis-red-sea" data-shortlist-icon-only="1" data-resort-name="The St. Regis Red Sea Resort" aria-label="Save The St. Regis Red Sea Resort to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Marriott / St. Regis</span>
             </div>
             <h3><a href="/stayodds/st-regis-red-sea/">The St. Regis Red Sea Resort</a></h3>
@@ -1150,6 +1271,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=2" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
 </body>
 </html>

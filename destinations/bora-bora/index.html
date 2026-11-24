@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=41" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -59,17 +59,17 @@
 <body>
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" rel="noopener">
+      <div class="brand stayodds-brand-group">
         <span class="stayodds-brand-stack">
-          <span class="stayodds-wordmark-lg">StayOdds<span class="stayodds-dot">.</span></span>
-          <span class="stayodds-brand-by">by The Uncharted Itinerary</span>
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
-      </a>
+      </div>
       <nav class="nav-links" aria-label="Main site navigation">
-        <a href="https://uncharteditinerary.com/">Home</a>
-        <a href="/">StayOdds</a>
+        <a href="/" class="active">StayOdds</a>
         <a href="/hotels/">Hotel Map</a>
-        <a href="https://uncharteditinerary.com/">Videos</a>
+        <a href="/brands/">Brands</a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
         <a href="https://uncharteditinerary.com/about/">About</a>
         <a href="https://uncharteditinerary.com/faq/">FAQ</a>
         <a href="https://uncharteditinerary.com/contact/">Contact</a>
@@ -86,9 +86,10 @@
         <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Latest Videos</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
+        <a class="hub-tab" href="/brands/">Brands</a>
+        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
@@ -161,14 +162,17 @@
         <div class="dest-grid">
           
         <article class="dest-card" data-resort-name="The St. Regis Bora Bora Resort">
-          <a class="dest-card-media" href="/stayodds/st-regis-bora-bora/">
-            <img src="/assets/thumbs/st-regis-bora-bora.webp?v=169" alt="The St. Regis Bora Bora Resort" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#1</span>
-            <span class="dest-card-odds"><strong>84%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/st-regis-bora-bora/">
+              <img src="/assets/thumbs/st-regis-bora-bora.webp?v=169" alt="The St. Regis Bora Bora Resort" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#1</span>
+              <span class="dest-card-odds"><strong>84%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="st-regis-bora-bora" data-shortlist-icon-only="1" data-resort-name="The St. Regis Bora Bora Resort" aria-label="Save The St. Regis Bora Bora Resort to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-accent">Verified StayOdds</span>
+              <span class="tag tag-accent">Founder Verified</span>
               <span class="tag">St. Regis</span>
             </div>
             <h3><a href="/stayodds/st-regis-bora-bora/">The St. Regis Bora Bora Resort</a></h3>
@@ -185,14 +189,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Westin Bora Bora Resort &amp; Spa">
-          <a class="dest-card-media" href="/stayodds/westin-bora-bora/">
-            <img src="/assets/thumbs/westin-bora-bora.webp?v=169" alt="The Westin Bora Bora Resort &amp; Spa" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#2</span>
-            <span class="dest-card-odds"><strong>87%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/westin-bora-bora/">
+              <img src="/assets/thumbs/westin-bora-bora.webp?v=169" alt="The Westin Bora Bora Resort &amp; Spa" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#2</span>
+              <span class="dest-card-odds"><strong>87%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="westin-bora-bora" data-shortlist-icon-only="1" data-resort-name="The Westin Bora Bora Resort &amp; Spa" aria-label="Save The Westin Bora Bora Resort &amp; Spa to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-accent">Verified StayOdds</span>
+              <span class="tag tag-accent">Founder Verified</span>
               <span class="tag">Westin</span>
             </div>
             <h3><a href="/stayodds/westin-bora-bora/">The Westin Bora Bora Resort &amp; Spa</a></h3>
@@ -209,14 +216,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Brando">
-          <a class="dest-card-media" href="/stayodds/the-brando/">
-            <img src="/assets/thumbs/the-brando.webp?v=169" alt="The Brando" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#3</span>
-            <span class="dest-card-odds"><strong>100%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-brando/">
+              <img src="/assets/thumbs/the-brando.webp?v=169" alt="The Brando" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#3</span>
+              <span class="dest-card-odds"><strong>100%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-brando" data-shortlist-icon-only="1" data-resort-name="The Brando" aria-label="Save The Brando to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Boutique Ultra-Luxury</span>
             </div>
             <h3><a href="/stayodds/the-brando/">The Brando</a></h3>
@@ -233,14 +243,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Four Seasons Resort Bora Bora">
-          <a class="dest-card-media" href="/stayodds/four-seasons-bora-bora/">
-            <img src="/assets/thumbs/four-seasons-bora-bora.webp?v=169" alt="Four Seasons Resort Bora Bora" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#4</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/four-seasons-bora-bora/">
+              <img src="/assets/thumbs/four-seasons-bora-bora.webp?v=169" alt="Four Seasons Resort Bora Bora" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#4</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="four-seasons-bora-bora" data-shortlist-icon-only="1" data-resort-name="Four Seasons Resort Bora Bora" aria-label="Save Four Seasons Resort Bora Bora to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 2 Sources</span>
               <span class="tag">Four Seasons</span>
             </div>
             <h3><a href="/stayodds/four-seasons-bora-bora/">Four Seasons Resort Bora Bora</a></h3>
@@ -257,14 +270,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Conrad Bora Bora Nui">
-          <a class="dest-card-media" href="/stayodds/conrad-bora-bora-nui/">
-            <img src="/assets/thumbs/conrad-bora-bora-nui.webp?v=169" alt="Conrad Bora Bora Nui" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#5</span>
-            <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/conrad-bora-bora-nui/">
+              <img src="/assets/thumbs/conrad-bora-bora-nui.webp?v=169" alt="Conrad Bora Bora Nui" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#5</span>
+              <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="conrad-bora-bora-nui" data-shortlist-icon-only="1" data-resort-name="Conrad Bora Bora Nui" aria-label="Save Conrad Bora Bora Nui to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Conrad</span>
             </div>
             <h3><a href="/stayodds/conrad-bora-bora-nui/">Conrad Bora Bora Nui</a></h3>
@@ -310,6 +326,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=2" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
 </body>
 </html>

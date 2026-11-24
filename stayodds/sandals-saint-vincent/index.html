@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=41" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,17 +56,17 @@
 <body>
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" rel="noopener">
+      <div class="brand stayodds-brand-group">
         <span class="stayodds-brand-stack">
-          <span class="stayodds-wordmark-lg">StayOdds<span class="stayodds-dot">.</span></span>
-          <span class="stayodds-brand-by">by The Uncharted Itinerary</span>
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
-      </a>
+      </div>
       <nav class="nav-links" aria-label="Main site navigation">
-        <a href="https://uncharteditinerary.com/">Home</a>
-        <a href="/">StayOdds</a>
+        <a href="/" class="active">StayOdds</a>
         <a href="/hotels/">Hotel Map</a>
-        <a href="https://uncharteditinerary.com/">Videos</a>
+        <a href="/brands/">Brands</a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
         <a href="https://uncharteditinerary.com/about/">About</a>
         <a href="https://uncharteditinerary.com/faq/">FAQ</a>
         <a href="https://uncharteditinerary.com/contact/">Contact</a>
@@ -83,9 +83,10 @@
         <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Latest Videos</a>
-        <a class="hub-tab" id="hubTabMap" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab active" id="hubTabStayOdds" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" id="hubTabMap" href="/hotels/">Hotel Map &amp; Scores</a>
+        <a class="hub-tab" href="/brands/">Brands</a>
+        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
@@ -111,7 +112,7 @@
         <div class="detail-hero-media">
           <img src="/assets/thumbs/sandals-saint-vincent.webp?v=169" alt="Sandals Saint Vincent and the Grenadines" fetchpriority="high" decoding="async" />
           <div class="detail-hero-badges">
-            <span class="tag tag-slate">Market Odds</span>
+            <span class="tag tag-slate">Global Directory</span>
             <span class="tag tag-slate" id="heroStatusBadge">Global Directory</span>
             
           </div>
@@ -147,14 +148,14 @@
 
           <details class="stayodds-explainer">
             <summary>
-              <span>How is this Market Odds % calculated?</span>
+              <span>How is this StayOdds % calculated?</span>
               <span class="stayodds-explainer-caret" aria-hidden="true">&#9662;</span>
             </summary>
             <div class="stayodds-explainer-body">
               <div class="stayodds-explainer-eq" id="stayOddsEquation">Waiting for live Google guest rating — StayOdds blends whichever verified numeric scores exist.</div>
               <ul class="stayodds-explainer-list">
-                <li><strong>Two-Track Scoring (My Voice Leads):</strong> When I have personally stayed and scored a hotel (/25), <strong>Verified StayOdds</strong> weights <strong>70% My Stay + 30% Market Odds</strong> (or 100% My Stay if no external score exists), with a transparent <strong>Founder vs. Market</strong> delta.</li>
-                <li><strong>Market Odds Baseline (All Hotels):</strong> Unvisited properties display an outlined <strong>Market Odds</strong> baseline (35% Published Critics &bull; 65% Verified Guests when both exist, or 100% of whichever verified source exists), with gentle Bayesian dampening on tiny (&lt;40 review) guest samples so thin 100% outliers don&rsquo;t distort rankings.</li>
+                <li><strong>Founder Verified (Audited Stays):</strong> When I have personally stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% My Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% My Stay if no external score exists), with a transparent <strong>Founder vs. Consensus</strong> delta.</li>
+                <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Verified Guests when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
                 <li><strong>Zero Fabricated Numbers:</strong> Official awards (MICHELIN Keys, 50 Best, Forbes 5-Star) and comments-only reviews are linked transparently without invented numeric conversions.</li>
               </ul>
             </div>
@@ -190,16 +191,36 @@
         </div>
       </section>
 
+      
+      <section class="detail-section" aria-label="At a glance summary">
+        <div class="at-a-glance-card">
+          <div class="at-a-glance-head">
+            <div>
+              <span class="at-a-glance-eyebrow">At a Glance &bull; 10-Second Summary</span>
+              <h2>Key Takeaways for Sandals Saint Vincent and the Grenadines</h2>
+            </div>
+            <div class="at-a-glance-jumps">
+              <a href="#opinion-gap">Score Gap &darr;</a>
+              <a href="#key-facts">Specs &amp; Facts &darr;</a>
+              <a href="#score-sources">All Sources &darr;</a>
+            </div>
+          </div>
+          <div class="at-a-glance-grid">
+            <div class="glance-item"><span class="glance-kicker">Score &amp; Basis</span><p id="glanceScoreBasis"><strong>Live Google Check</strong> — Live Google guest reviews check on this page.</p></div><div class="glance-item"><span class="glance-kicker">Trip Fit</span><p>Best Dry Months: <strong>Dec–Apr</strong> &bull; Indicative: <strong>£800+/night (All-Inclusive)</strong></p></div><div class="glance-item is-pro"><span class="glance-kicker">&#10003; Top Highlight</span><p>Sandals&#x27; newest flagship (opened March 2024) nestled in a dramatic rainforest-backed cove with two-story overwater villas, beachfront private-pool villas, elevated dining (Buccan…</p></div><div class="glance-item is-con"><span class="glance-kicker">&#9888; Key Watch-Out</span><p>Fewer direct international flights into Argyle International Airport (SVD) plus a winding 45-minute island drive; couples seeking lively late-night clubs often prefer Dunn&#x27;s River</p></div>
+          </div>
+        </div>
+      </section>
+
       <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Price Tier</span><strong class="detail-trip-val">£800+/night (All-Inclusive)</strong><span class="detail-trip-sub">Select dates above to check live partner rates on Booking.com.</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Dec–Apr</strong><span class="detail-trip-sub">Dry season with lower hurricane &amp; summer sargassum seaweed risk</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div>
 
       <!-- Dual-Mode Comparison & Opinion Gap Module -->
-      <section class="detail-section">
+      <section class="detail-section" id="opinion-gap">
         <div class="opinion-gap-card ">
           <div class="opinion-gap-head">
             <div>
               <span class="tag tag-slate" id="gapStatusBadge">Global Directory</span>
               <h2>Published Critics vs. Real Guests</h2>
-              <p class="opinion-gap-headline" id="gapHeadline">Market Odds baseline from verified external reviews.</p>
+              <p class="opinion-gap-headline" id="gapHeadline">Live Google guest reviews check on this page..</p>
             </div>
             <div class="opinion-gap-delta" id="gapDeltaPill">
               <strong>—</strong>
@@ -226,7 +247,7 @@
       </section>
 
       <!-- Structured Middle Key Facts Panel (Strictly Verified Specs) -->
-      <section class="detail-section">
+      <section class="detail-section" id="key-facts">
         <div class="key-facts-panel">
           <div class="detail-panel-head" style="margin-bottom:14px;">
             <div>
@@ -253,12 +274,12 @@
       </section>
 
       <!-- Formula Transparency & First-Hand Scorecard -->
-      <section class="detail-section">
+      <section class="detail-section" id="score-sources">
         <div class="detail-two-col">
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>StayOdds Weighting</h3>
-              <span class="tag">Market Odds</span>
+              <span class="tag">StayOdds</span>
             </div>
             <p class="detail-panel-sub" id="weightFormulaSub">Live Google guest reviews check on this page.</p>
             <div class="formula-grid" style="margin-top:14px; grid-template-columns: repeat(3, 1fr);">
@@ -272,7 +293,7 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>My Uncharted Scorecard</h3>
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">Global Directory</span>
             </div>
             <p class="detail-panel-sub" style="margin-top:12px;">We have not scored a personal stay here yet. Once we stay and publish a scored review, our Uncharted Scorecard will appear here.</p>
           </div>
@@ -322,7 +343,7 @@
             <div class="related-card-body">
               <div class="meta-line">
                 <span class="tag tag-slate">100% StayOdds</span>
-                <span>Market Odds (1 Source)</span>
+                <span>1 Data Source</span>
               </div>
               <h4>Spice Island Beach Resort</h4>
               <p>Grand Anse Beach, Grenada, Grenada</p>
@@ -337,7 +358,7 @@
             <div class="related-card-body">
               <div class="meta-line">
                 <span class="tag tag-slate">98% StayOdds</span>
-                <span>Market Odds (1 Source)</span>
+                <span>1 Data Source</span>
               </div>
               <h4>Grand Velas Boutique Los Cabos</h4>
               <p>San José del Cabo / Corridor, Mexico</p>
@@ -352,7 +373,7 @@
             <div class="related-card-body">
               <div class="meta-line">
                 <span class="tag tag-slate">96% StayOdds</span>
-                <span>Market Odds (1 Source)</span>
+                <span>1 Data Source</span>
               </div>
               <h4>Atelier Playa Mujeres</h4>
               <p>Playa Mujeres, Cancún, Mexico</p>
@@ -392,7 +413,7 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=2" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
   <script type="module">
     const pageRegion = "Caribbean & Mexico";
     const qsParams = new URLSearchParams(window.location.search);
@@ -613,19 +634,19 @@
               wCr = critic100 != null ? 11 : 0;
               wGu = critic100 != null ? 19 : 30;
               odds = Math.round(ours100 * 0.70 + mkt * 0.30);
-              formula = `70% My Stay • 30% Market Odds (${mkt}%)`;
+              formula = `70% My Stay • 30% Consensus (${mkt}%)`;
             } else if (critic100 != null) {
               wFH = 0; wCr = 35; wGu = 65;
               odds = mkt;
-              formula = "Market Odds: 35% Published Critics • 65% Google Guests";
+              formula = "Based on 2 sources: Published Critics (35%) + Google Reviews (65%)";
             } else {
               wFH = 0; wCr = 0; wGu = 100;
               odds = mkt;
-              formula = "Market Odds: 100% Google Guest Rating";
+              formula = "Based on 1 source (Google Reviews)";
             }
 
             const active = [firstHand ? ours100 : null, critic100, g100].filter((v) => v != null);
-            let badgeText = active.length === 1 ? "Market Odds (1 Source)" : "Mostly Aligned";
+            let badgeText = active.length === 1 ? "1 Data Source" : "Mostly Aligned";
             let badgeClass = "tag-teal";
             if (active.length >= 2) {
               const spread = firstHand && ours100 != null ? Math.abs(ours100 - mkt) : Math.max(...active) - Math.min(...active);
@@ -638,8 +659,19 @@
             const kpiOddsLbl = document.getElementById("kpiOddsLbl");
             const kpiOddsCard = document.getElementById("kpiOddsCard");
             if (kpiOdds && odds != null) kpiOdds.textContent = `${odds}%`;
-            if (kpiOddsLbl) kpiOddsLbl.textContent = firstHand ? "Verified StayOdds" : "Market Odds";
+            if (kpiOddsLbl) {
+              kpiOddsLbl.textContent = firstHand
+                ? "Founder Verified"
+                : active.length >= 2
+                ? `StayOdds • ${active.length} Sources`
+                : "StayOdds • 1 Source (Google)";
+            }
             if (kpiOddsCard) kpiOddsCard.classList.toggle("is-caution", badgeClass === "tag-caution");
+
+            const glanceScoreEl = document.getElementById("glanceScoreBasis");
+            if (glanceScoreEl && odds != null) {
+              glanceScoreEl.innerHTML = `<strong>${odds}% StayOdds</strong> — ${formula}`;
+            }
 
             const heroBadge = document.getElementById("heroStatusBadge");
             const gapBadge = document.getElementById("gapStatusBadge");
@@ -652,20 +684,20 @@
             const rhs = firstHand ? mkt : g100;
             if (left100 != null && rhs != null) {
               const d = left100 - rhs;
-              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Founder vs Market" : "Opinion Gap"}</span>`;
+              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Founder vs Consensus" : "Opinion Gap"}</span>`;
               const gapHead = document.getElementById("gapHeadline");
               if (gapHead) {
                 if (Math.abs(d) <= 5) {
                   gapHead.textContent = firstHand
-                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — my stay matched Market Odds.`
+                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — my stay matched the wider consensus.`
                     : `Tight agreement (${d >= 0 ? "+" + d : d} pts) — ${criticLabel} and real guests agree.`;
                 } else if (d > 5) {
                   gapHead.textContent = firstHand
-                    ? `I rated this +${d} pts higher than Market Odds — see what stood out.`
+                    ? `I rated this +${d} pts higher than the wider consensus — see what stood out.`
                     : `${criticLabel} rated this +${d} pts higher than real guests.`;
                 } else {
                   gapHead.textContent = firstHand
-                    ? `I rated this ${d} pts stricter than Market Odds — see what held it back.`
+                    ? `I rated this ${d} pts stricter than the wider consensus — see what held it back.`
                     : `Real guests rated this +${Math.abs(d)} pts higher than ${criticLabel}.`;
                 }
               }
@@ -674,8 +706,8 @@
             const eqEl = document.getElementById("stayOddsEquation");
             if (eqEl && odds != null) {
               eqEl.textContent = firstHand && ours100 != null
-                ? `70% My Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Market Odds (${mkt}%) = ${odds}% Verified StayOdds`
-                : `${formula} = ${odds}% Market Odds`;
+                ? `70% My Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Consensus (${mkt}%) = ${odds}% StayOdds`
+                : `${formula} = ${odds}% StayOdds`;
             }
 
             const wSub = document.getElementById("weightFormulaSub");
@@ -701,7 +733,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "sandals-saint-vincent", "name": "Sandals Saint Vincent and the Grenadines", "location": "Buccament Bay", "country": "Saint Vincent and the Grenadines", "brand": "Sandals Resorts", "priceRange": "£800+/night (All-Inclusive)", "standout": "Sandals' newest flagship (opened March 2024) nestled in a dramatic rainforest-backed cove with two-story overwater villas, beachfront private-pool villas, elevated dining (Buccan family-style hearth), and tranquil nature-first atmosphere", "watchOut": "Fewer direct international flights into Argyle International Airport (SVD) plus a winding 45-minute island drive; couples seeking lively late-night clubs often prefer Dunn's River", "keyFacts": {"poolHeating": "", "beachOrReef": "Sheltered Buccament Bay cove framed by volcanic green cliffs; snorkeling off-beach", "renovationYear": 2024, "transferLogistics": "Approx. 45 minutes by car (or boat transfer for butler suites) from Argyle International Airport (SVD)"}, "thumbnail": "assets/thumbs/sandals-saint-vincent.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": null, "statusBadge": "Global Directory", "tierLabel": "Market Odds", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": null, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Market Odds baseline from verified external reviews.", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "sandals-saint-vincent", "name": "Sandals Saint Vincent and the Grenadines", "location": "Buccament Bay", "country": "Saint Vincent and the Grenadines", "brand": "Sandals Resorts", "priceRange": "£800+/night (All-Inclusive)", "standout": "Sandals' newest flagship (opened March 2024) nestled in a dramatic rainforest-backed cove with two-story overwater villas, beachfront private-pool villas, elevated dining (Buccan family-style hearth), and tranquil nature-first atmosphere", "watchOut": "Fewer direct international flights into Argyle International Airport (SVD) plus a winding 45-minute island drive; couples seeking lively late-night clubs often prefer Dunn's River", "keyFacts": {"poolHeating": "", "beachOrReef": "Sheltered Buccament Bay cove framed by volcanic green cliffs; snorkeling off-beach", "renovationYear": 2024, "transferLogistics": "Approx. 45 minutes by car (or boat transfer for butler suites) from Argyle International Airport (SVD)"}, "thumbnail": "assets/thumbs/sandals-saint-vincent.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": null, "statusBadge": "Global Directory", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": null, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Live Google guest reviews check on this page..", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=9");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);

@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=41" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -59,17 +59,17 @@
 <body>
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" rel="noopener">
+      <div class="brand stayodds-brand-group">
         <span class="stayodds-brand-stack">
-          <span class="stayodds-wordmark-lg">StayOdds<span class="stayodds-dot">.</span></span>
-          <span class="stayodds-brand-by">by The Uncharted Itinerary</span>
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
-      </a>
+      </div>
       <nav class="nav-links" aria-label="Main site navigation">
-        <a href="https://uncharteditinerary.com/">Home</a>
-        <a href="/">StayOdds</a>
+        <a href="/" class="active">StayOdds</a>
         <a href="/hotels/">Hotel Map</a>
-        <a href="https://uncharteditinerary.com/">Videos</a>
+        <a href="/brands/">Brands</a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
         <a href="https://uncharteditinerary.com/about/">About</a>
         <a href="https://uncharteditinerary.com/faq/">FAQ</a>
         <a href="https://uncharteditinerary.com/contact/">Contact</a>
@@ -86,9 +86,10 @@
         <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Latest Videos</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
+        <a class="hub-tab" href="/brands/">Brands</a>
+        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
@@ -156,24 +157,27 @@
           </div>
         </div>
 
-        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Popular Head-to-Head Rival Matchups in Egypt</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=the-st-regis-cairo&amp;b=four-seasons-cairo-nile-plaza&amp;c=marriott-mena-house-cairo">Compare Top 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=the-st-regis-cairo&amp;b=four-seasons-cairo-nile-plaza"><div class="rival-matchup-vs">The St. Regis Cairo <span style="color:var(--accent);">vs</span> Four Seasons Hotel Cairo at Nile Plaza</div><div class="rival-matchup-meta"><span>95% vs 92%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=sofitel-winter-palace-luxor&amp;b=sofitel-legend-old-cataract-aswan"><div class="rival-matchup-vs">Sofitel Winter Palace Luxor <span style="color:var(--accent);">vs</span> Sofitel Legend Old Cataract Aswan</div><div class="rival-matchup-meta"><span>92% vs Market Odds</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=marriott-mena-house-cairo&amp;b=the-st-regis-cairo"><div class="rival-matchup-vs">Marriott Mena House, Cairo <span style="color:var(--accent);">vs</span> The St. Regis Cairo</div><div class="rival-matchup-meta"><span>89% vs 95%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
+        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Popular Head-to-Head Rival Matchups in Egypt</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=the-st-regis-cairo&amp;b=four-seasons-cairo-nile-plaza&amp;c=marriott-mena-house-cairo">Compare Top 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=the-st-regis-cairo&amp;b=four-seasons-cairo-nile-plaza"><div class="rival-matchup-vs">The St. Regis Cairo <span style="color:var(--accent);">vs</span> Four Seasons Hotel Cairo at Nile Plaza</div><div class="rival-matchup-meta"><span>95% vs 92%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=sofitel-winter-palace-luxor&amp;b=sofitel-legend-old-cataract-aswan"><div class="rival-matchup-vs">Sofitel Winter Palace Luxor <span style="color:var(--accent);">vs</span> Sofitel Legend Old Cataract Aswan</div><div class="rival-matchup-meta"><span>92% vs Global Directory</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=marriott-mena-house-cairo&amp;b=the-st-regis-cairo"><div class="rival-matchup-vs">Marriott Mena House, Cairo <span style="color:var(--accent);">vs</span> The St. Regis Cairo</div><div class="rival-matchup-meta"><span>89% vs 95%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
 
         <div class="dest-grid">
           
         <article class="dest-card" data-resort-name="The St. Regis Cairo">
-          <a class="dest-card-media" href="/stayodds/the-st-regis-cairo/">
-            <img src="/assets/thumbs/the-st-regis-cairo.webp?v=169" alt="The St. Regis Cairo" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#1</span>
-            <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/the-st-regis-cairo/">
+              <img src="/assets/thumbs/the-st-regis-cairo.webp?v=169" alt="The St. Regis Cairo" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#1</span>
+              <span class="dest-card-odds"><strong>95%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="the-st-regis-cairo" data-shortlist-icon-only="1" data-resort-name="The St. Regis Cairo" aria-label="Save The St. Regis Cairo to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">St. Regis</span>
             </div>
             <h3><a href="/stayodds/the-st-regis-cairo/">The St. Regis Cairo</a></h3>
             <div class="dest-card-loc">Cairo, Egypt &bull; £420+/night</div>
-            
+            <p class="dest-card-blurb">Exceptional staff/service (front desk, concierge, pool) • Very clean; frequent housekeeping</p>
             
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-st-regis-cairo/">Full Breakdown &rarr;</a>
@@ -185,14 +189,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Four Seasons Hotel Cairo at Nile Plaza">
-          <a class="dest-card-media" href="/stayodds/four-seasons-cairo-nile-plaza/">
-            <img src="/assets/thumbs/four-seasons-cairo-nile-plaza.webp?v=169" alt="Four Seasons Hotel Cairo at Nile Plaza" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#2</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/four-seasons-cairo-nile-plaza/">
+              <img src="/assets/thumbs/four-seasons-cairo-nile-plaza.webp?v=169" alt="Four Seasons Hotel Cairo at Nile Plaza" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#2</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="four-seasons-cairo-nile-plaza" data-shortlist-icon-only="1" data-resort-name="Four Seasons Hotel Cairo at Nile Plaza" aria-label="Save Four Seasons Hotel Cairo at Nile Plaza to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Four Seasons</span>
             </div>
             <h3><a href="/stayodds/four-seasons-cairo-nile-plaza/">Four Seasons Hotel Cairo at Nile Plaza</a></h3>
@@ -209,14 +216,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Sofitel Winter Palace Luxor">
-          <a class="dest-card-media" href="/stayodds/sofitel-winter-palace-luxor/">
-            <img src="/assets/thumbs/sofitel-winter-palace-luxor.webp?v=169" alt="Sofitel Winter Palace Luxor" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#3</span>
-            <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/sofitel-winter-palace-luxor/">
+              <img src="/assets/thumbs/sofitel-winter-palace-luxor.webp?v=169" alt="Sofitel Winter Palace Luxor" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#3</span>
+              <span class="dest-card-odds"><strong>92%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="sofitel-winter-palace-luxor" data-shortlist-icon-only="1" data-resort-name="Sofitel Winter Palace Luxor" aria-label="Save Sofitel Winter Palace Luxor to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Sofitel</span>
             </div>
             <h3><a href="/stayodds/sofitel-winter-palace-luxor/">Sofitel Winter Palace Luxor</a></h3>
@@ -233,14 +243,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Marriott Mena House, Cairo">
-          <a class="dest-card-media" href="/stayodds/marriott-mena-house-cairo/">
-            <img src="/assets/thumbs/marriott-mena-house-cairo.webp?v=169" alt="Marriott Mena House, Cairo" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#4</span>
-            <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/marriott-mena-house-cairo/">
+              <img src="/assets/thumbs/marriott-mena-house-cairo.webp?v=169" alt="Marriott Mena House, Cairo" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#4</span>
+              <span class="dest-card-odds"><strong>89%</strong><small>StayOdds</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="marriott-mena-house-cairo" data-shortlist-icon-only="1" data-resort-name="Marriott Mena House, Cairo" aria-label="Save Marriott Mena House, Cairo to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds • 1 Source</span>
               <span class="tag">Marriott Bonvoy</span>
             </div>
             <h3><a href="/stayodds/marriott-mena-house-cairo/">Marriott Mena House, Cairo</a></h3>
@@ -257,14 +270,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="Sofitel Legend Old Cataract Aswan">
-          <a class="dest-card-media" href="/stayodds/sofitel-legend-old-cataract-aswan/">
-            <img src="/assets/thumbs/sofitel-legend-old-cataract-aswan.webp?v=169" alt="Sofitel Legend Old Cataract Aswan" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#5</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/sofitel-legend-old-cataract-aswan/">
+              <img src="/assets/thumbs/sofitel-legend-old-cataract-aswan.webp?v=169" alt="Sofitel Legend Old Cataract Aswan" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#5</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="sofitel-legend-old-cataract-aswan" data-shortlist-icon-only="1" data-resort-name="Sofitel Legend Old Cataract Aswan" aria-label="Save Sofitel Legend Old Cataract Aswan to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Sofitel</span>
             </div>
             <h3><a href="/stayodds/sofitel-legend-old-cataract-aswan/">Sofitel Legend Old Cataract Aswan</a></h3>
@@ -281,14 +297,17 @@
         </article>
 
         <article class="dest-card" data-resort-name="The Oberoi Beach Resort, Sahl Hasheesh">
-          <a class="dest-card-media" href="/stayodds/oberoi-beach-resort-sahl-hasheesh/">
-            <img src="/assets/thumbs/oberoi-beach-resort-sahl-hasheesh.webp?v=169" alt="The Oberoi Beach Resort, Sahl Hasheesh" loading="lazy" decoding="async" />
-            <span class="dest-card-rank">#6</span>
-            <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
-          </a>
+          <div class="dest-card-media-wrap">
+            <a class="dest-card-media" href="/stayodds/oberoi-beach-resort-sahl-hasheesh/">
+              <img src="/assets/thumbs/oberoi-beach-resort-sahl-hasheesh.webp?v=169" alt="The Oberoi Beach Resort, Sahl Hasheesh" loading="lazy" decoding="async" />
+              <span class="dest-card-rank">#6</span>
+              <span class="dest-card-odds"><strong>Open</strong><small>Breakdown</small></span>
+            </a>
+            <button type="button" class="card-heart-fab shortlist-btn" data-shortlist-id="oberoi-beach-resort-sahl-hasheesh" data-shortlist-icon-only="1" data-resort-name="The Oberoi Beach Resort, Sahl Hasheesh" aria-label="Save The Oberoi Beach Resort, Sahl Hasheesh to shortlist" aria-pressed="false" title="Save to shortlist">&#9825;</button>
+          </div>
           <div class="dest-card-body">
             <div class="meta-line">
-              <span class="tag tag-slate">Market Odds</span>
+              <span class="tag tag-slate">StayOdds</span>
               <span class="tag">Oberoi</span>
             </div>
             <h3><a href="/stayodds/oberoi-beach-resort-sahl-hasheesh/">The Oberoi Beach Resort, Sahl Hasheesh</a></h3>
@@ -334,6 +353,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=2" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
 </body>
 </html>
