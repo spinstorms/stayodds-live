@@ -1018,8 +1018,13 @@ function drawHeaderBrand(ctx, W, padX, topY, rightTag) {
   ctx.fillText(".", padX + w1, topY);
 
   ctx.font = `600 18px ${FONT_STACK}`;
-  ctx.fillStyle = "#94A3B8";
-  ctx.fillText("by The Uncharted Itinerary", padX, topY + 26);
+  ctx.fillStyle = "#E2E8F0";
+  const byPrefix = "by ";
+  ctx.fillText(byPrefix, padX, topY + 28);
+  const byW = ctx.measureText(byPrefix).width;
+  ctx.font = `800 19px ${FONT_STACK}`;
+  ctx.fillStyle = "#FFD166";
+  ctx.fillText("The Uncharted Itinerary", padX + byW, topY + 28);
 
   // Right pill
   ctx.font = `800 17px ${FONT_STACK}`;

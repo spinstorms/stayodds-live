@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=38" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=39" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -40,9 +40,17 @@
         var script = document.createElement("script");
         script.async = 1;
         script.setAttribute("data-cmp-ab","2");
-        script.src = 'https://emrld.ltd/NjA0NzQ3.js?t=604747';
+        script.src = 'https://emrld.ltd/NjA2MTYz.js?t=606163';
         document.head.appendChild(script);
     })();
+  </script>
+  <!-- Google tag (gtag.js) — StayOdds.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR74H0P96J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
 <body>
@@ -695,7 +703,7 @@
 
     const shareCardState = {"hotel": {"id": "splendido-belmond-portofino", "name": "Splendido, A Belmond Hotel, Portofino", "location": "Portofino, Italian Riviera", "country": "Italy", "brand": "Belmond", "priceRange": "£1,800+/night", "standout": "Portofino's legendary hillside monastery-turned-glamour icon newly restored by Martin Brudnizki with larger suites, Italy's first permanent Dior Spa, iconic saltwater pool overlooking Portofino Bay, and shuttle to sister Splendido Mare", "watchOut": "Seasonal summer operation (closed winter months) and among Europe's steepest nightly rates; sits up on the hillside above the harbor rather than directly on the water", "keyFacts": {"poolHeating": "Outdoor pool (heating not listed)", "beachOrReef": "", "renovationYear": 2025, "transferLogistics": "Approx. 50 minutes from Genoa Airport (GOA) or 2 hours from Milan"}, "thumbnail": "assets/thumbs/splendido-belmond-portofino.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": {"operatingStatus": "Open", "renovationsExtensions": "Completed multi-phase Martin Brudnizki suite restoration and debuted Italy's first Dior Spa; operates seasonally (spring through autumn, closed winter months).", "nearbyConstruction": "", "sourceUrl": "https://www.forbestravelguide.com/hotels/italian-riviera-italy/splendido-a-belmond-hotel-portofino", "sourceNote": "Forbes Travel Guide property profile", "verifiedAt": "2026-11-23T19:05:09.716021+00:00"}}, "odds": {"greatStayOdds": 96, "statusBadge": "Market Odds (1 Source)", "tierLabel": "Market Odds", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 1, "youtubeCount": 0, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Market Odds baseline from verified external reviews.", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
-      const mod = await import("/assets/stayodds-share-card.js?v=7");
+      const mod = await import("/assets/stayodds-share-card.js?v=8");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
       if (typeof window.trackEvent === "function") {
         window.trackEvent("open_share_card", "single_hotel", shareCardState.hotel.name);

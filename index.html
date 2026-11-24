@@ -16,12 +16,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="StayOdds. — Hotel Score Compare: Critics vs Real Guest Reviews" />
   <meta property="og:description" content="Personally curated luxury hotel comparisons separating First-Hand Verified stays from our Global Directory." />
-  <meta property="og:image" content="https://stayodds.com/assets/promo/stayodds_v3_bright_og_hero_1200x630.png" />
+  <meta property="og:image" content="https://stayodds.com/assets/promo/stayodds_v4_bright_og_hero_1200x630.png" />
   <meta property="og:url" content="https://stayodds.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="StayOdds. — Hotel Score Compare: Critics vs Real Guest Reviews" />
   <meta name="twitter:description" content="Transparent luxury hotel score comparison: First-Hand Verified stays, sourced critics, and live verified guest ratings." />
-  <meta name="twitter:image" content="https://stayodds.com/assets/promo/stayodds_v3_bright_og_hero_1200x630.png" />
+  <meta name="twitter:image" content="https://stayodds.com/assets/promo/stayodds_v4_bright_og_hero_1200x630.png" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,7 +42,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=38" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=39" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,9 +56,17 @@
         var script = document.createElement("script");
         script.async = 1;
         script.setAttribute("data-cmp-ab","2");
-        script.src = 'https://emrld.ltd/NjA0NzQ3.js?t=604747';
+        script.src = 'https://emrld.ltd/NjA2MTYz.js?t=606163';
         document.head.appendChild(script);
     })();
+  </script>
+  <!-- Google tag (gtag.js) — StayOdds.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR74H0P96J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
 <body>
@@ -350,6 +358,9 @@
             <select id="consensusSort" class="select-control" aria-label="Sort StayOdds directory">
               <option value="visited">Sort: Verified Stays First</option>
               <option value="odds">Sort: Highest StayOdds / Market %</option>
+              <option value="award_50best">Awards: World&rsquo;s 50 Best (#1 &rarr; #100)</option>
+              <option value="award_michelin">Awards: MICHELIN Keys (3 &rarr; 1 Key)</option>
+              <option value="award_forbes">Awards: Forbes Star Tier (5&#9733; &rarr; Rec.)</option>
               <option value="gap">Sort: Biggest Founder vs. Market Gap</option>
               <option value="price_asc">Sort: Indicative Price (Low &rarr; High)</option>
               <option value="reviews">Sort: Most Verified Guest Reviews</option>
@@ -360,9 +371,28 @@
               <option value="pillar_value">Pillar: Best Value (My Stay)</option>
               <option value="name">Sort: A–Z Name</option>
             </select>
-            <button type="button" class="btn btn-outline more-filters-toggle-btn" id="compareMoreFiltersBtn" aria-expanded="false" aria-controls="compareMoreFiltersDrawer">
-              &#9881; More Filters <span class="filter-count-badge" id="compareFilterCountBadge" hidden>0</span>
-            </button>
+            <div class="more-filters-wrap">
+              <button type="button" class="btn btn-outline more-filters-toggle-btn" id="compareMoreFiltersBtn" aria-expanded="false" aria-controls="compareMoreFiltersDrawer">
+                <span class="more-filters-hint-dot" aria-hidden="true"></span>
+                &#9881; More Filters <span class="filter-count-badge" id="compareFilterCountBadge" hidden>0</span>
+              </button>
+              <div class="more-filters-preview-popover" id="compareFiltersPreviewPopover" role="region" aria-label="Quick preview of hidden filters">
+                <div class="mfp-head">
+                  <span>Power Filters Inside</span>
+                  <span>Click any to apply</span>
+                </div>
+                <p class="mfp-sub">Filter by exact World&rsquo;s 50 Best (#1–50 / #1–100), MICHELIN Keys (3&rarr;1), Travel Style, Best Dry Month, Nightly Budget &amp; Loyalty Perks.</p>
+                <div class="mfp-chips">
+                  <button type="button" class="mfp-chip" data-quick-preset="50best_50">&#127942; Top 50 (#1–50)</button>
+                  <button type="button" class="mfp-chip" data-quick-preset="50best_100">&#128175; Top 100 (#1–100)</button>
+                  <button type="button" class="mfp-chip" data-quick-preset="michelin">&#128477;&#65039; MICHELIN (3&rarr;1)</button>
+                  <button type="button" class="mfp-chip" data-quick-preset="michelin_3">&#128477;&#65039; 3 Keys Only</button>
+                  <button type="button" class="mfp-chip" data-quick-preset="style_island">&#127965;&#65039; Private Islands</button>
+                  <button type="button" class="mfp-chip" data-quick-preset="budget_under500">&#128142; Under &pound;500/nt</button>
+                  <button type="button" class="mfp-chip" data-open-more-drawer="1">Open All Filters &darr;</button>
+                </div>
+              </div>
+            </div>
             <div class="view-toggle" role="group" aria-label="Switch StayOdds layout">
               <button class="view-toggle-btn active" id="consensusViewCardsBtn" type="button">Cards</button>
               <button class="view-toggle-btn" id="consensusViewTableBtn" type="button">Table</button>
@@ -373,6 +403,19 @@
 
         <!-- Clean 8 Macro Regions Strip -->
         <div class="filter-pills macro-region-pills" id="consensusRegionPills" role="tablist" aria-label="Filter by macro region" style="margin-bottom:10px;"></div>
+
+        <!-- 1-Click Quick Filter Presets Strip (Discoverability for Awards, Style, Budget & More Filters) -->
+        <div class="quick-presets-bar" id="compareQuickPresets" role="group" aria-label="Quick filter presets">
+          <span class="quick-presets-label">Quick Filters:</span>
+          <button type="button" class="quick-preset-pill" data-quick-preset="50best_50">&#127942; Top 50 (#1&rarr;50)</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="50best_100">&#128175; Top 100 (#1&rarr;100)</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="michelin">&#128477;&#65039; MICHELIN Keys (3&rarr;1)</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="michelin_3">&#128477;&#65039; 3 Keys</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="style_island">&#127965;&#65039; Islands</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="adults">&#129346; Adults-Only</button>
+          <button type="button" class="quick-preset-pill" data-quick-preset="budget_under500">&#128142; Under &pound;500/nt</button>
+          <button type="button" class="quick-preset-pill preset-more-cta" data-open-more-drawer="1">&#9881; Travel Style, Months &amp; Perks&hellip;</button>
+        </div>
 
         <!-- Active Secondary Filter Chips Bar (only visible when drawer filters are active) -->
         <div class="active-filters-strip" id="compareActiveFiltersStrip" hidden></div>
@@ -504,6 +547,6 @@
   </footer>
 
   <script src="/assets/stayodds-feedback.js?v=2" defer></script>
-  <script type="module" src="/assets/compare.js?v=38"></script>
+  <script type="module" src="/assets/compare.js?v=16"></script>
 </body>
 </html>

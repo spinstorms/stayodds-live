@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=38" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=39" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -40,9 +40,17 @@
         var script = document.createElement("script");
         script.async = 1;
         script.setAttribute("data-cmp-ab","2");
-        script.src = 'https://emrld.ltd/NjA0NzQ3.js?t=604747';
+        script.src = 'https://emrld.ltd/NjA2MTYz.js?t=606163';
         document.head.appendChild(script);
     })();
+  </script>
+  <!-- Google tag (gtag.js) — StayOdds.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR74H0P96J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
 <body>
@@ -695,7 +703,7 @@
 
     const shareCardState = {"hotel": {"id": "mandarin-oriental-costa-navarino", "name": "Mandarin Oriental, Costa Navarino", "location": "Navarino Bay, Peloponnese", "country": "Greece", "brand": "Mandarin Oriental", "priceRange": "£950+/night", "standout": "Greece's first double 2026 Forbes Five-Star winner (hotel & spa) built earth-sheltered into the hills above Navarino Bay — featuring 99 suites and private-pool villas, dramatic indoor-outdoor bay-view spa, four championship golf courses, and Pizza Sapienza", "watchOut": "Seasonal April–November operation; Peloponnese setting is ~45 min from Kalamata (KLX) or 3+ hours by car from Athens", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct tranquil golden-sand Navarino Bay beachfront", "renovationYear": 2023, "transferLogistics": "Approx. 45 minutes from Kalamata Airport (KLX) or 3h 15m from Athens (ATH)"}, "thumbnail": "assets/thumbs/mandarin-oriental-costa-navarino.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 91, "statusBadge": "Market Odds (1 Source)", "tierLabel": "Market Odds", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 1, "youtubeCount": 0, "verifiedGuest": {"rating": 9.1, "scale": 10}, "officialAwards": [{"label": "Forbes Five-Star"}], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Recognised with Forbes Five-Star — compare with real guest reviews below.", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
-      const mod = await import("/assets/stayodds-share-card.js?v=7");
+      const mod = await import("/assets/stayodds-share-card.js?v=8");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
       if (typeof window.trackEvent === "function") {
         window.trackEvent("open_share_card", "single_hotel", shareCardState.hotel.name);
