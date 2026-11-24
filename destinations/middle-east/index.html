@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=44" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,53 +56,63 @@
     gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
-<body>
+<body class="stayodds-warm-canvas">
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
       <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
         <span class="stayodds-brand-stack">
           <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
           <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
       </div>
-      <nav class="nav-links" aria-label="Main site navigation">
-        <a href="/" class="active">StayOdds</a>
-        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
-        <a href="/hotels/">Hotel Map</a>
-        <a href="/brands/">Brands</a>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
-        <a href="https://uncharteditinerary.com/about/">About</a>
-        <a href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a href="https://uncharteditinerary.com/contact/">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a class="btn btn-primary" href="/?region=Middle%20East">Compare Interactive</a>
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
   </header>
 
-  <div class="hub-tabs-bar">
-    <div class="container hub-tabs-inner">
-      <a class="hub-embed-brand" href="/" aria-label="StayOdds Home">
-        <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
-      </a>
-      <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
-        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
-        <a class="hub-tab" href="/brands/">Brands</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/contact/">Contact</a>
-      </nav>
-      <a class="hub-back-link" href="/">&larr; All StayOdds Hotels</a>
-    </div>
-  </div>
 
-  <main>
+  <main class="has-top-band">
+    <div class="detail-top-band" aria-hidden="true"></div>
     <section class="page-intro">
       <div class="container">
         <div class="detail-breadcrumb" style="margin-bottom:14px;">
@@ -180,7 +190,7 @@
             <h3><a href="/stayodds/ciel-dubai-marina/">Ciel Dubai Marina, Vignette Collection</a></h3>
             <div class="dest-card-loc">Dubai Marina, Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Verified Nonstop Dan score: 63/100 (Essentials /60 + Experience /30 + X-Factor /10).</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ciel-dubai-marina/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ciel-dubai-marina">Compare VS</a>
@@ -207,7 +217,7 @@
             <h3><a href="/stayodds/nujuma-ritz-carlton-reserve/">Nujuma, a Ritz-Carlton Reserve</a></h3>
             <div class="dest-card-loc">Red Sea, Saudi Arabia</div>
             <p class="dest-card-blurb">Friendly staff • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/red-sea-saudi-arabia-saudi-arabia/nujuma-a-ritz-carlton-reserve" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/hotels/nujuma-a-ritz-carlton-reserve-red-sea-saudi-arabia" target="_blank" rel="noopener noreferrer">&#128240; Wallpaper* &nearr;</a><a class="source-chip" href="https://www.afar.com/magazine/new-hotels-in-saudi-arabias-red-sea-region" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/red-sea-saudi-arabia-saudi-arabia/nujuma-a-ritz-carlton-reserve" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/hotels/nujuma-a-ritz-carlton-reserve-red-sea-saudi-arabia" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Wallpaper* &nearr;</a><a class="source-chip" href="https://www.afar.com/magazine/new-hotels-in-saudi-arabias-red-sea-region" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/nujuma-ritz-carlton-reserve/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=nujuma-ritz-carlton-reserve">Compare VS</a>
@@ -234,7 +244,7 @@
             <h3><a href="/stayodds/al-maha-dubai/">Al Maha, a Luxury Collection Desert Resort</a></h3>
             <div class="dest-card-loc">Dubai Desert Conservation Reserve, UAE</div>
             <p class="dest-card-blurb">All-inclusive meals + two daily desert activities (falconry, camel sundowners, dune drives) and private heated pools visited by wild Arabian oryx</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/al-maha-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=al-maha-dubai">Compare VS</a>
@@ -261,7 +271,7 @@
             <h3><a href="/stayodds/mandarin-oriental-doha/">Mandarin Oriental, Doha</a></h3>
             <div class="dest-card-loc">Doha, Qatar</div>
             <p class="dest-card-blurb">Exceptional service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/doha-qatar/mandarin-oriental-doha" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/forbestravelguide/2024/02/20/the-12-best-doha-hotels/" target="_blank" rel="noopener noreferrer">&#128240; Forbes &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/doha-qatar/mandarin-oriental-doha" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/forbestravelguide/2024/02/20/the-12-best-doha-hotels/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/mandarin-oriental-doha/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=mandarin-oriental-doha">Compare VS</a>
@@ -288,7 +298,7 @@
             <h3><a href="/stayodds/qasr-al-sarab-anantara/">Qasr Al Sarab Desert Resort by Anantara</a></h3>
             <div class="dest-card-loc">Liwa Desert, Abu Dhabi, United Arab Emirates</div>
             <p class="dest-card-blurb">Amazing location • Incredible friendly and competent staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.afar.com/places/qasr-al-sarab-resort-abu-dhabi" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.afar.com/places/qasr-al-sarab-resort-abu-dhabi" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/qasr-al-sarab-anantara/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=qasr-al-sarab-anantara">Compare VS</a>
@@ -315,7 +325,7 @@
             <h3><a href="/stayodds/four-seasons-dubai-jumeirah/">Four Seasons Resort Dubai at Jumeirah Beach</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Exceptional staff and service (multiple named staff praised) • Excellent pools, beach and water-sports activities</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/four-seasons-resort-dubai-at-jumeirah-beach" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/four-seasons-resort-dubai-at-jumeirah-beach" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-dubai-jumeirah/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-dubai-jumeirah">Compare VS</a>
@@ -342,7 +352,7 @@
             <h3><a href="/stayodds/waldorf-astoria-difc-dubai/">Waldorf Astoria Dubai International Financial Centre</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Exceptional staff and service • Luxurious, spacious rooms</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/waldorf-astoria-dubai-international-financial-centre" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/waldorf-astoria-dubai-international-financial-centre" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/waldorf-astoria-difc-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=waldorf-astoria-difc-dubai">Compare VS</a>
@@ -369,7 +379,7 @@
             <h3><a href="/stayodds/atlantis-the-royal/">Atlantis The Royal</a></h3>
             <div class="dest-card-loc">Palm Jumeirah, Dubai, UAE</div>
             <p class="dest-card-blurb">Cloud 22 cantilevered sky pool, celebrity-chef dining venues, and Aquaventure waterpark access</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/atlantis-the-royal" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/atlantis-the-royal-dubai" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/atlantis-the-royal" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/atlantis-the-royal-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/atlantis-the-royal/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=atlantis-the-royal">Compare VS</a>
@@ -396,7 +406,7 @@
             <h3><a href="/stayodds/jumeirah-al-qasr-dubai/">Jumeirah Al Qasr</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Grand Arabian palace-style resort at the heart of Madinat Jumeirah with ornate Arabesque suites, winding abra-boat canals, private beachfront, and vast dining choices</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-al-qasr" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-al-qasr" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumeirah-al-qasr-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumeirah-al-qasr-dubai">Compare VS</a>
@@ -423,7 +433,7 @@
             <h3><a href="/stayodds/one-and-only-one-zaabeel/">One&amp;Only One Za&#x27;abeel</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Clean, new and beautiful rooms • Stunning Burj Khalifa/downtown views</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://fat.voyage/hotels/one-and-only-one-zaabeel" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://fat.voyage/hotels/one-and-only-one-zaabeel" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/one-and-only-one-zaabeel/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=one-and-only-one-zaabeel">Compare VS</a>
@@ -450,7 +460,7 @@
             <h3><a href="/stayodds/one-and-only-the-palm/">One&amp;Only The Palm</a></h3>
             <div class="dest-card-loc">Palm Jumeirah, Dubai, UAE</div>
             <p class="dest-card-blurb">Boutique 94-key Andalusian-Moorish oasis on the Palm&#x27;s quietest tip, Guerlain Spa, and 3-Michelin-star STAY by Yannick Alléno</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-the-palm" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-the-palm" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/one-and-only-the-palm/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=one-and-only-the-palm">Compare VS</a>
@@ -477,7 +487,7 @@
             <h3><a href="/stayodds/raffles-doha/">Raffles Doha</a></h3>
             <div class="dest-card-loc">Lusail, Doha, Qatar</div>
             <p class="dest-card-blurb">Luxury • Excellent service</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/doha-qatar/raffles-doha" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/doha-qatar/raffles-doha" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/raffles-doha/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=raffles-doha">Compare VS</a>
@@ -531,7 +541,7 @@
             <h3><a href="/stayodds/six-senses-zighy-bay/">Six Senses Zighy Bay</a></h3>
             <div class="dest-card-loc">Musandam Peninsula, Oman</div>
             <p class="dest-card-blurb">Exceptional service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-six-senses-zighy-bay-oman/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-six-senses-zighy-bay-oman/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/six-senses-zighy-bay/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=six-senses-zighy-bay">Compare VS</a>
@@ -558,7 +568,7 @@
             <h3><a href="/stayodds/the-chedi-muscat/">The Chedi Muscat</a></h3>
             <div class="dest-card-loc">Muscat, Oman</div>
             <p class="dest-card-blurb">Excellent service • High-quality food</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-the-chedi-muscat-oman/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-the-chedi-muscat-oman/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-chedi-muscat/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-chedi-muscat">Compare VS</a>
@@ -585,7 +595,7 @@
             <h3><a href="/stayodds/al-bustan-palace-a-ritz-carlton/">Al Bustan Palace, a Ritz-Carlton Hotel</a></h3>
             <div class="dest-card-loc">Muscat, Oman</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=17582949651604021793" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=17582949651604021793" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/al-bustan-palace-a-ritz-carlton/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=al-bustan-palace-a-ritz-carlton">Compare VS</a>
@@ -612,7 +622,7 @@
             <h3><a href="/stayodds/armani-hotel-dubai/">Armani Hotel Dubai</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Exceptional, personalized service and concierge (Gracer, Ashraf Khattab, Lifestyle Managers) • Prime location inside Burj Khalifa with direct access to The Dubai Mall and fountain views</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/armani-hotel-dubai" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-armani-hotel-dubai/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/armani-hotel-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-armani-hotel-dubai/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/armani-hotel-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=armani-hotel-dubai">Compare VS</a>
@@ -639,7 +649,7 @@
             <h3><a href="/stayodds/burj-al-arab/">Jumeirah Burj Al Arab</a></h3>
             <div class="dest-card-loc">Umm Suqeim, Dubai, UAE</div>
             <p class="dest-card-blurb">Every room is a huge two-story duplex with 24/7 butler service, Hermès amenities, and the SAL infinity pool terrace</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-burj-al-arab" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-burj-al-arab" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/burj-al-arab/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=burj-al-arab">Compare VS</a>
@@ -693,7 +703,7 @@
             <h3><a href="/stayodds/the-lana-dorchester-dubai/">The Lana, Dubai</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Luxury details • Friendly staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/the-lana-dorchester-collection-dubai" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/the-lana-dorchester-collection-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-lana-dorchester-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-lana-dorchester-dubai">Compare VS</a>
@@ -720,7 +730,7 @@
             <h3><a href="/stayodds/st-regis-saadiyat-island/">The St. Regis Saadiyat Island Resort, Abu Dhabi</a></h3>
             <div class="dest-card-loc">Abu Dhabi, United Arab Emirates</div>
             <p class="dest-card-blurb">Exceptional service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/abu-dhabi-united-arab-emirates/the-st-regis-saadiyat-island-resort-abu-dhabi" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/st-regis-saadiyat-island-resort/" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/abu-dhabi-united-arab-emirates/the-st-regis-saadiyat-island-resort-abu-dhabi" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/st-regis-saadiyat-island-resort/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-saadiyat-island/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-saadiyat-island">Compare VS</a>
@@ -747,7 +757,7 @@
             <h3><a href="/stayodds/alila-hinu-bay/">Alila Hinu Bay</a></h3>
             <div class="dest-card-loc">Salalah, Dhofar, Oman</div>
             <p class="dest-card-blurb">Breakfast Score: 5/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9521883575639603858" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9521883575639603858" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/alila-hinu-bay/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=alila-hinu-bay">Compare VS</a>
@@ -801,7 +811,7 @@
             <h3><a href="/stayodds/raffles-the-palm-dubai/">Raffles The Palm Dubai</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Palatial European-baroque beachfront resort on Palm Jumeirah&#x27;s West Crescent with gold-leaf interiors, 500m private white-sand beach, vast Cinq Mondes Spa, and butler service</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://fat.voyage/hotels/raffles-the-palm-dubai" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://fat.voyage/hotels/raffles-the-palm-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/raffles-the-palm-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=raffles-the-palm-dubai">Compare VS</a>
@@ -828,7 +838,7 @@
             <h3><a href="/stayodds/hilton-dubai-palm-jumeirah/">Hilton Dubai Palm Jumeirah</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14715670122581462338" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14715670122581462338" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hilton-dubai-palm-jumeirah/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hilton-dubai-palm-jumeirah">Compare VS</a>
@@ -855,7 +865,7 @@
             <h3><a href="/stayodds/mandarin-oriental-jumeira-dubai/">Mandarin Oriental Jumeira, Dubai</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Exceptional staff service and attentiveness (many mentions) • Spacious, beautiful rooms with good housekeeping</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/mandarin-oriental-jumeira-dubai" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/mandarin-oriental-jumeira-dubai" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/mandarin-oriental-jumeira-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/mandarin-oriental-jumeira-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/mandarin-oriental-jumeira-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=mandarin-oriental-jumeira-dubai">Compare VS</a>
@@ -882,7 +892,7 @@
             <h3><a href="/stayodds/siro-one-zaabeel-dubai/">SIRO One Za&#x27;abeel</a></h3>
             <div class="dest-card-loc">Za&#x27;abeel, Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Verified Nonstop Dan score: 75/100 (Essentials /60 + Experience /30 + X-Factor /10).</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/blog/siro-one-zaabeel-hotel-review" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/blog/siro-one-zaabeel-hotel-review" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/siro-one-zaabeel-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=siro-one-zaabeel-dubai">Compare VS</a>
@@ -909,7 +919,7 @@
             <h3><a href="/stayodds/jumeirah-al-naseem/">Jumeirah Al Naseem</a></h3>
             <div class="dest-card-loc">Madinat Jumeirah, Dubai, UAE</div>
             <p class="dest-card-blurb">Fresh modern beachfront rooms staring straight at the Burj Al Arab, turtle rehabilitation lagoon, and 50+ Madinat Jumeirah restaurants</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-al-naseem" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/jumeirah-al-naseem" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumeirah-al-naseem/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumeirah-al-naseem">Compare VS</a>
@@ -936,7 +946,7 @@
             <h3><a href="/stayodds/waldorf-astoria-doha-lusail/">Waldorf Astoria Doha Lusail</a></h3>
             <div class="dest-card-loc">Doha, Qatar</div>
             <p class="dest-card-blurb">Breakfast Score: 8/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13394545339115125216" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13394545339115125216" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/waldorf-astoria-doha-lusail/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=waldorf-astoria-doha-lusail">Compare VS</a>
@@ -963,7 +973,7 @@
             <h3><a href="/stayodds/jumeirah-beach-hotel-dubai/">Jumeirah Beach Hotel</a></h3>
             <div class="dest-card-loc">Jumeirah, Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Verified Nonstop Dan score: 87/100 (Essentials /60 + Experience /30 + X-Factor /10).</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/blog/jumeirah-beach-hotel-dubai-review" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/blog/jumeirah-beach-hotel-dubai-review" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumeirah-beach-hotel-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumeirah-beach-hotel-dubai">Compare VS</a>
@@ -1017,7 +1027,7 @@
             <h3><a href="/stayodds/jumeirah-marsa-al-arab-dubai/">Jumeirah Marsa Al Arab</a></h3>
             <div class="dest-card-loc">Jumeirah, Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Verified Nonstop Dan score: 82/100 (Essentials /60 + Experience /30 + X-Factor /10).</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumeirah-marsa-al-arab-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumeirah-marsa-al-arab-dubai">Compare VS</a>
@@ -1044,7 +1054,7 @@
             <h3><a href="/stayodds/alila-jabal-akhdar/">Alila Jabal Akhdar</a></h3>
             <div class="dest-card-loc">Jabal Akhdar, Oman</div>
             <p class="dest-card-blurb">Quiet and relaxing environment • Friendly and lovely staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/alila-jabal-akhdar" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-alila-jabal-akhdar-oman/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/alila-jabal-akhdar" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-alila-jabal-akhdar-oman/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/alila-jabal-akhdar/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=alila-jabal-akhdar">Compare VS</a>
@@ -1071,7 +1081,7 @@
             <h3><a href="/stayodds/andaz-capital-gate-abu-dhabi-by/">Andaz Capital Gate, Abu Dhabi, by Hyatt</a></h3>
             <div class="dest-card-loc">Corniche, Abu Dhabi, UAE</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=7980930221946522906" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=7980930221946522906" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/andaz-capital-gate-abu-dhabi-by/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=andaz-capital-gate-abu-dhabi-by">Compare VS</a>
@@ -1098,7 +1108,7 @@
             <h3><a href="/stayodds/banyan-tree-alula/">Banyan Tree AlUla</a></h3>
             <div class="dest-card-loc">AlUla, Saudi Arabia</div>
             <p class="dest-card-blurb">Close to Maraya • Excellent location and facilities</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/banyan-tree-alula/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=banyan-tree-alula">Compare VS</a>
@@ -1125,7 +1135,7 @@
             <h3><a href="/stayodds/bulgari-resort-dubai/">Bulgari Resort Dubai</a></h3>
             <div class="dest-card-loc">Jumeirah Bay Island, Dubai, UAE</div>
             <p class="dest-card-blurb">Private seahorse-shaped island with Dubai&#x27;s only Bulgari Yacht Club, two-Michelin-star Il Ristorante, and understated Milanese calm</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/bvlgari-resort-and-residences-dubai" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/bulgari-resort-dubai" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dubai-united-arab-emirates/bvlgari-resort-and-residences-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/bulgari-resort-dubai" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/bulgari-resort-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=bulgari-resort-dubai">Compare VS</a>
@@ -1152,7 +1162,7 @@
             <h3><a href="/stayodds/emirates-palace-abu-dhabi/">Emirates Palace Mandarin Oriental</a></h3>
             <div class="dest-card-loc">Corniche, Abu Dhabi, UAE</div>
             <p class="dest-card-blurb">1.3km private beach, 24k gold-flake cappuccinos, Michelin-starred Talea, and Mandarin Oriental&#x27;s elevated service standards</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/abu-dhabi-united-arab-emirates/emirates-palace-mandarin-oriental-abu-dhabi" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/abu-dhabi-united-arab-emirates/emirates-palace-mandarin-oriental-abu-dhabi" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/emirates-palace-abu-dhabi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=emirates-palace-abu-dhabi">Compare VS</a>
@@ -1179,7 +1189,7 @@
             <h3><a href="/stayodds/jumeirah-muscat-bay/">Jumeirah Muscat Bay</a></h3>
             <div class="dest-card-loc">Muscat, Oman</div>
             <p class="dest-card-blurb">Breakfast Score: 5/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=3180219714430788350" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=3180219714430788350" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumeirah-muscat-bay/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumeirah-muscat-bay">Compare VS</a>
@@ -1206,7 +1216,7 @@
             <h3><a href="/stayodds/the-st-regis-downtown-dubai/">The St. Regis Downtown Dubai</a></h3>
             <div class="dest-card-loc">Dubai, United Arab Emirates</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9901286419957195072" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9901286419957195072" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-st-regis-downtown-dubai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-st-regis-downtown-dubai">Compare VS</a>
@@ -1233,7 +1243,7 @@
             <h3><a href="/stayodds/st-regis-red-sea/">The St. Regis Red Sea Resort</a></h3>
             <div class="dest-card-loc">Ummahat Island, Saudi Arabia</div>
             <p class="dest-card-blurb">Kengo Kuma-designed private-island Red Sea resort on Ummahat Island featuring dune and coral-shaped overwater pool villas, pristine reefs, and signature St. Regis butler service</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-red-sea/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-red-sea">Compare VS</a>
@@ -1242,6 +1252,67 @@
             </div>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+    <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
+      <div class="container">
+        <div class="partner-deals-card">
+          <div class="partner-deals-head">
+            <div>
+              <span class="partner-deals-eyebrow">Trip Essentials &amp; Verified Booking Partners</span>
+              <h2>Compare Rates, Flights, Tours &amp; Travel Perks</h2>
+              <p>Trusted booking platforms, eSIM discount codes, and hotel points cards we use on trips filmed for The Uncharted Itinerary.</p>
+            </div>
+            <a class="btn btn-outline" href="https://uncharteditinerary.com/links/" style="font-size:13px;padding:8px 14px;">All Deals &amp; Gear &nearr;</a>
+          </div>
+
+          <div class="partner-deals-grid">
+            <a class="partner-deal-tile" href="https://holafly.sjv.io/Tripready" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Unlimited Travel eSIM</span><span class="partner-deal-code">Code: TRIPREADY</span></div>
+              <h3>Holafly Unlimited Data eSIM</h3>
+              <p>Instant data on arrival across 200+ destinations &mdash; 5% off with code <strong>TRIPREADY</strong>.</p>
+              <span class="partner-deal-cta">Claim 5% Discount &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://marriottbonvoy.currensea.co.uk/refer-a-friend?utm_source=refer-a-friend&amp;friend-referral-code=OKM2ZH" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Hotel Points Card</span><span class="partner-deal-code">Code: OKM2ZH</span></div>
+              <h3>Marriott Bonvoy Currensea Card</h3>
+              <p>Earn Marriott Bonvoy points on everyday &amp; overseas spending (up to 2,000 bonus pts via referral).</p>
+              <span class="partner-deal-cta">See Referral Offer &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://americanexpress.com/en-gb/referral/gold-credit?ref=oLIVEK1B4w" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Rewards Card (UK)</span><span class="partner-deal-code">Bonus Offer</span></div>
+              <h3>Amex Preferred Rewards Gold</h3>
+              <p>Convert Membership Rewards into airline Avios or hotel points with our UK referral bonus.</p>
+              <span class="partner-deal-cta">View UK Referral &nearr;</span>
+            </a>
+          </div>
+
+          <div class="partner-platforms-bar">
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Hotel Rates:</span>
+              <a class="partner-platform-pill" href="https://booking.tpx.lu/dddKFSMf" target="_blank" rel="sponsored noopener noreferrer">Booking.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+              <a class="partner-platform-pill" href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+              <a class="partner-platform-pill" href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Flights &amp; Tours:</span>
+              <a class="partner-platform-pill" href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi.com Flights &nearr;</a>
+              <a class="partner-platform-pill" href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+              <a class="partner-platform-pill" href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
+              <a class="partner-platform-pill" href="https://klook.tpx.lu/TsCmTC1L" target="_blank" rel="sponsored noopener noreferrer">Klook Transfers &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">eSIMs &amp; FX:</span>
+              <a class="partner-platform-pill" href="https://airalo.tpx.lu/WSdkjcJz" target="_blank" rel="sponsored noopener noreferrer">Airalo eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://saily.tpx.lu/bIVFTBvq" target="_blank" rel="sponsored noopener noreferrer">Saily eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://wise.com/invite/dic/oliverarrashk" target="_blank" rel="sponsored noopener noreferrer">Wise Travel Card &nearr;</a>
+            </div>
+          </div>
+
+          <p class="partner-deals-disclosure">Affiliate disclosure: Partner links may earn a small commission at zero extra cost to you and never influence StayOdds scores or rankings.</p>
         </div>
       </div>
     </section>
@@ -1273,6 +1344,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=4" defer></script>
 </body>
 </html>

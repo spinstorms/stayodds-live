@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=44" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,53 +56,63 @@
     gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
-<body>
+<body class="stayodds-warm-canvas">
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
       <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
         <span class="stayodds-brand-stack">
           <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
           <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
       </div>
-      <nav class="nav-links" aria-label="Main site navigation">
-        <a href="/" class="active">StayOdds</a>
-        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
-        <a href="/hotels/">Hotel Map</a>
-        <a href="/brands/">Brands</a>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
-        <a href="https://uncharteditinerary.com/about/">About</a>
-        <a href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a href="https://uncharteditinerary.com/contact/">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a class="btn btn-primary" href="/?region=Asia">Compare Interactive</a>
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
   </header>
 
-  <div class="hub-tabs-bar">
-    <div class="container hub-tabs-inner">
-      <a class="hub-embed-brand" href="/" aria-label="StayOdds Home">
-        <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
-      </a>
-      <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
-        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
-        <a class="hub-tab" href="/brands/">Brands</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/contact/">Contact</a>
-      </nav>
-      <a class="hub-back-link" href="/">&larr; All StayOdds Hotels</a>
-    </div>
-  </div>
 
-  <main>
+  <main class="has-top-band">
+    <div class="detail-top-band" aria-hidden="true"></div>
     <section class="page-intro">
       <div class="container">
         <div class="detail-breadcrumb" style="margin-bottom:14px;">
@@ -180,7 +190,7 @@
             <h3><a href="/stayodds/phulay-bay-krabi/">Phulay Bay, a Ritz-Carlton Reserve</a></h3>
             <div class="dest-card-loc">Tubkaak / Krabi, Thailand &bull; £600+/night</div>
             <p class="dest-card-blurb">Dramatic floating candlelit entrance, cavernous 20ft-ceiling pool villas &amp; incredible 80k Bonvoy points value</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.tatlerasia.com/lifestyle/travel/krabi-thailand-what-to-do-see-eat" target="_blank" rel="noopener noreferrer">&#128240; Tatler Asia &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=IwINJWzc6wY" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.tatlerasia.com/lifestyle/travel/krabi-thailand-what-to-do-see-eat" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Tatler Asia &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=IwINJWzc6wY" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/phulay-bay-krabi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=phulay-bay-krabi">Compare VS</a>
@@ -207,7 +217,7 @@
             <h3><a href="/stayodds/four-seasons-koh-samui/">Four Seasons Resort Koh Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand &bull; £900+/night</div>
             <p class="dest-card-blurb">Jaw-dropping palm-lined hillside views &amp; unmistakable Four Seasons hospitality</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/four-seasons-koh-samui-resort" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-of-the-the-four-seasons-koh-samui-thailand-sublime/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/four-seasons-koh-samui-resort" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-of-the-the-four-seasons-koh-samui-thailand-sublime/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-koh-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-koh-samui">Compare VS</a>
@@ -234,7 +244,7 @@
             <h3><a href="/stayodds/four-seasons-bangkok/">Four Seasons Hotel Bangkok at Chao Phraya River</a></h3>
             <div class="dest-card-loc">Chao Phraya River, Bangkok, Thailand &bull; £420–£700/night</div>
             <p class="dest-card-blurb">World-class architecture, riverside infinity pools, BKK Social Club, and free luxury boat shuttle to ICONSIAM</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 3 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=rCG7ZLaeRHs" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/four-seasons-bangkok-chao-phraya" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 3 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=rCG7ZLaeRHs" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/four-seasons-bangkok-chao-phraya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-bangkok">Compare VS</a>
@@ -261,7 +271,7 @@
             <h3><a href="/stayodds/w-koh-samui/">W Koh Samui</a></h3>
             <div class="dest-card-loc">Mae Nam, Koh Samui, Thailand &bull; £550–£900/night</div>
             <p class="dest-card-blurb">All-pool-villa layout, iconic sunken WOOBAR arrival views &amp; unlimited free ice cream Sweet Spots</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://theluxurytravelexpert.com/w-retreat-koh-samui-thailand/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://theluxurytravelexpert.com/w-retreat-koh-samui-thailand/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/w-koh-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=w-koh-samui">Compare VS</a>
@@ -288,7 +298,7 @@
             <h3><a href="/stayodds/rayavadee-krabi/">Rayavadee Resort</a></h3>
             <div class="dest-card-loc">Railay / Krabi, Thailand &bull; £550+/night</div>
             <p class="dest-card-blurb">Boat-only arrival, two-story jungle pavilions &amp; The Grotto beachfront cave dining</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.tatlerasia.com/lifestyle/travel/neighbourhood-guide-where-to-eat-drink-and-explore-in-krabi" target="_blank" rel="noopener noreferrer">&#128240; Tatler Asia &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.tatlerasia.com/lifestyle/travel/neighbourhood-guide-where-to-eat-drink-and-explore-in-krabi" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Tatler Asia &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rayavadee-krabi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rayavadee-krabi">Compare VS</a>
@@ -315,7 +325,7 @@
             <h3><a href="/stayodds/four-seasons-tented-camp-golden-triangle/">Four Seasons Tented Camp Golden Triangle</a></h3>
             <div class="dest-card-loc">Chiang Rai, Thailand</div>
             <p class="dest-card-blurb">All-inclusive 15-tent Chiang Rai bamboo-jungle luxury camp overlooking the Mekong borderlands, with handcrafted copper tubs, elephant sanctuary encounters, and Burma Bar sunsets</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.tatlerasia.com/places/four-seasons-tented-camp-golden-triangle" target="_blank" rel="noopener noreferrer">&#128240; Tatler Asia &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-tented-camp-golden-triangle/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.tatlerasia.com/places/four-seasons-tented-camp-golden-triangle" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Tatler Asia &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-tented-camp-golden-triangle/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-tented-camp-golden-triangle/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-tented-camp-golden-triangle">Compare VS</a>
@@ -342,7 +352,7 @@
             <h3><a href="/stayodds/garrya-tongsai-bay-samui/">Garrya Tongsai Bay Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=2801370402233243531" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=2801370402233243531" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/garrya-tongsai-bay-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=garrya-tongsai-bay-samui">Compare VS</a>
@@ -369,7 +379,7 @@
             <h3><a href="/stayodds/the-ritz-carlton-bangkok/">The Ritz-Carlton, Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 10/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=1266830578180514812" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=1266830578180514812" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-ritz-carlton-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-ritz-carlton-bangkok">Compare VS</a>
@@ -396,7 +406,7 @@
             <h3><a href="/stayodds/vana-belle-a-luxury-collection-resort/">Vana Belle, a Luxury Collection Resort, Koh Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Boutique atmosphere, fantastic Chaweng Beach setting, excellent food, and great room, suite and villa layouts.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8355706030719100549" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8355706030719100549" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/vana-belle-a-luxury-collection-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=vana-belle-a-luxury-collection-resort">Compare VS</a>
@@ -423,7 +433,7 @@
             <h3><a href="/stayodds/mandarin-oriental-bangkok/">Mandarin Oriental, Bangkok</a></h3>
             <div class="dest-card-loc">Bang Rak, Bangkok, Thailand</div>
             <p class="dest-card-blurb">Spacious room with great river and city views • Warm, attentive service and staff who remember guests</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 10 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/mandarin-oriental-bangkok" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-mandarin-oriental-bangkok/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 10 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/mandarin-oriental-bangkok" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-mandarin-oriental-bangkok/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/mandarin-oriental-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=mandarin-oriental-bangkok">Compare VS</a>
@@ -450,7 +460,7 @@
             <h3><a href="/stayodds/andaz-pattaya-jomtien-beach-by-hyatt/">Andaz Pattaya Jomtien Beach, by Hyatt</a></h3>
             <div class="dest-card-loc">Pattaya, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13245800864908470844" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13245800864908470844" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/andaz-pattaya-jomtien-beach-by-hyatt/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=andaz-pattaya-jomtien-beach-by-hyatt">Compare VS</a>
@@ -477,7 +487,7 @@
             <h3><a href="/stayodds/banyan-tree-krabi/">Banyan Tree Krabi</a></h3>
             <div class="dest-card-loc">Tubkaak / Krabi, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13595006372899407752" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13595006372899407752" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/banyan-tree-krabi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=banyan-tree-krabi">Compare VS</a>
@@ -504,7 +514,7 @@
             <h3><a href="/stayodds/capella-bangkok/">Capella Bangkok</a></h3>
             <div class="dest-card-loc">Chao Phraya River, Bangkok, Thailand</div>
             <p class="dest-card-blurb">Exceptional service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 2 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/capella-bangkok" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 2 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/capella-bangkok" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/capella-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=capella-bangkok">Compare VS</a>
@@ -531,7 +541,7 @@
             <h3><a href="/stayodds/dusit-thani-bangkok/">Dusit Thani Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 8/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13632326805190161517" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=13632326805190161517" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/dusit-thani-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=dusit-thani-bangkok">Compare VS</a>
@@ -558,7 +568,7 @@
             <h3><a href="/stayodds/four-seasons-chiang-mai/">Four Seasons Resort Chiang Mai</a></h3>
             <div class="dest-card-loc">Chiang Mai, Thailand</div>
             <p class="dest-card-blurb">Very kind hotel staff • Beautiful setting and facilities</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-chiang-mai/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-chiang-mai/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-chiang-mai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-chiang-mai">Compare VS</a>
@@ -585,7 +595,7 @@
             <h3><a href="/stayodds/napasai-samui-residence/">Napasai Samui Residence</a></h3>
             <div class="dest-card-loc">Mae Nam, Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Gorgeous resort.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16149481287430848524" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16149481287430848524" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/napasai-samui-residence/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=napasai-samui-residence">Compare VS</a>
@@ -612,7 +622,7 @@
             <h3><a href="/stayodds/sindhorn-kempinski-hotel-bangkok/">Sindhorn Kempinski Hotel Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Room layouts, pool, ambiance, and service.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=487671488644984313" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=487671488644984313" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sindhorn-kempinski-hotel-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sindhorn-kempinski-hotel-bangkok">Compare VS</a>
@@ -639,7 +649,7 @@
             <h3><a href="/stayodds/kimpton-maa-lai-bangkok/">Kimpton Maa-Lai Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Room layouts and size, value for what you get, location, food, rooftop bar, and lounge.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14335413063641348252" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14335413063641348252" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/kimpton-maa-lai-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=kimpton-maa-lai-bangkok">Compare VS</a>
@@ -666,7 +676,7 @@
             <h3><a href="/stayodds/sala-samui-chaweng-beach-resort/">SALA Samui Chaweng Beach Resort</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">SALA brand feel, impeccable rooms, unique layout, and great beach atmosphere.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=2520803605712367357" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=2520803605712367357" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sala-samui-chaweng-beach-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sala-samui-chaweng-beach-resort">Compare VS</a>
@@ -693,7 +703,7 @@
             <h3><a href="/stayodds/six-senses-yao-noi/">Six Senses Yao Noi</a></h3>
             <div class="dest-card-loc">Phang Nga Bay, Thailand</div>
             <p class="dest-card-blurb">The Hilltop Pool framing Phang Nga Bay&#x27;s dramatic limestone sea stacks — arguably Thailand&#x27;s most famous view</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/six-senses-yao-noi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=six-senses-yao-noi">Compare VS</a>
@@ -720,7 +730,7 @@
             <h3><a href="/stayodds/trisara-phuket/">Trisara</a></h3>
             <div class="dest-card-loc">Phuket, Thailand</div>
             <p class="dest-card-blurb">Luxury • Friendly staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/trisara-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=trisara-phuket">Compare VS</a>
@@ -747,7 +757,7 @@
             <h3><a href="/stayodds/hyatt-regency-bangkok-sukhumvit/">Hyatt Regency Bangkok Sukhumvit</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 8/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16785789923362954701" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16785789923362954701" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hyatt-regency-bangkok-sukhumvit/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hyatt-regency-bangkok-sukhumvit">Compare VS</a>
@@ -774,7 +784,7 @@
             <h3><a href="/stayodds/rosewood-phuket/">Rosewood Phuket</a></h3>
             <div class="dest-card-loc">Emerald Bay, Phuket, Thailand</div>
             <p class="dest-card-blurb">Friendly staff • Exceptional breakfast</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/rosewood-phuket" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/rosewood-phuket" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-phuket">Compare VS</a>
@@ -801,7 +811,7 @@
             <h3><a href="/stayodds/sala-phuket-mai-khao-beach-resort/">SALA Phuket Mai Khao Beach Resort</a></h3>
             <div class="dest-card-loc">Phuket, Thailand</div>
             <p class="dest-card-blurb">Incredible lawns and beach.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14168071609919890580" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14168071609919890580" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sala-phuket-mai-khao-beach-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sala-phuket-mai-khao-beach-resort">Compare VS</a>
@@ -828,7 +838,7 @@
             <h3><a href="/stayodds/six-senses-samui/">Six Senses Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Excellent service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=767898859823854227" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=767898859823854227" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/six-senses-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=six-senses-samui">Compare VS</a>
@@ -855,7 +865,7 @@
             <h3><a href="/stayodds/the-naka-island-a-luxury-collection/">The Naka Island, a Luxury Collection Resort &amp; Spa, Phuket</a></h3>
             <div class="dest-card-loc">Phang Nga Bay, Thailand</div>
             <p class="dest-card-blurb">Six Senses vibe on a budget, but not cheap.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=7132404853830798237" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=7132404853830798237" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-naka-island-a-luxury-collection/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-naka-island-a-luxury-collection">Compare VS</a>
@@ -882,7 +892,7 @@
             <h3><a href="/stayodds/the-ritz-carlton-koh-samui/">The Ritz-Carlton, Koh Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Setting and pool-villa layouts.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=10426921296205225243" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=10426921296205225243" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-ritz-carlton-koh-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-ritz-carlton-koh-samui">Compare VS</a>
@@ -909,7 +919,7 @@
             <h3><a href="/stayodds/como-point-yamu/">COMO Point Yamu</a></h3>
             <div class="dest-card-loc">Pansea Beach, Phuket, Thailand</div>
             <p class="dest-card-blurb">Beautiful views and spotlessly clean.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6189018395898631851" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6189018395898631851" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/como-point-yamu/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=como-point-yamu">Compare VS</a>
@@ -936,7 +946,7 @@
             <h3><a href="/stayodds/kimpton-kitalay-samui/">Kimpton Kitalay Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=1792967035450585232" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=1792967035450585232" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/kimpton-kitalay-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=kimpton-kitalay-samui">Compare VS</a>
@@ -963,7 +973,7 @@
             <h3><a href="/stayodds/rosewood-bangkok/">Rosewood Bangkok</a></h3>
             <div class="dest-card-loc">Ploenchit, Bangkok, Thailand</div>
             <p class="dest-card-blurb">Verified Nonstop Dan score: 65/100 (Essentials /60 + Experience /30 + X-Factor /10).</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer">&#128240; Nonstop Dan &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://nonstopdan.com/hotel-rankings" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Nonstop Dan &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-bangkok">Compare VS</a>
@@ -990,7 +1000,7 @@
             <h3><a href="/stayodds/soneva-kiri/">Soneva Kiri</a></h3>
             <div class="dest-card-loc">Koh Kood, Thailand</div>
             <p class="dest-card-blurb">Private Soneva plane from Bangkok, iconic suspended Treepod dining in the rainforest canopy, and colossal pool villas</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://theluxurytravelexpert.com/review-soneva-kiri-thailand/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://theluxurytravelexpert.com/review-soneva-kiri-thailand/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/soneva-kiri/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=soneva-kiri">Compare VS</a>
@@ -1017,7 +1027,7 @@
             <h3><a href="/stayodds/the-okura-prestige-bangkok/">The Okura Prestige Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast, lobby-bar atmosphere, and service.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6955247198597743942" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6955247198597743942" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-okura-prestige-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-okura-prestige-bangkok">Compare VS</a>
@@ -1044,7 +1054,7 @@
             <h3><a href="/stayodds/anantara-bophut-koh-samui-resort/">Anantara Bophut Koh Samui Resort</a></h3>
             <div class="dest-card-loc">Mae Nam, Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6710052864053370971" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=6710052864053370971" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/anantara-bophut-koh-samui-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=anantara-bophut-koh-samui-resort">Compare VS</a>
@@ -1071,7 +1081,7 @@
             <h3><a href="/stayodds/banyan-tree-phuket/">Banyan Tree Phuket</a></h3>
             <div class="dest-card-loc">Pansea Beach, Phuket, Thailand</div>
             <p class="dest-card-blurb">Overall setting.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=11131421270184820686" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=11131421270184820686" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/banyan-tree-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=banyan-tree-phuket">Compare VS</a>
@@ -1098,7 +1108,7 @@
             <h3><a href="/stayodds/dusit-thani-krabi-beach-resort/">Dusit Thani Krabi Beach Resort</a></h3>
             <div class="dest-card-loc">Tubkaak / Krabi, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 4/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9937883116294605807" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=9937883116294605807" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/dusit-thani-krabi-beach-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=dusit-thani-krabi-beach-resort">Compare VS</a>
@@ -1125,7 +1135,7 @@
             <h3><a href="/stayodds/keemala-phuket/">Keemala</a></h3>
             <div class="dest-card-loc">Phuket, Thailand</div>
             <p class="dest-card-blurb">Unique, luxurious design and décor • Exceptional room and bathroom quality</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/keemala-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=keemala-phuket">Compare VS</a>
@@ -1152,7 +1162,7 @@
             <h3><a href="/stayodds/park-hyatt-bangkok/">Park Hyatt Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Exceptional staff/service • Spacious, comfortable rooms</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/park-hyatt-bangkok" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=ARsRFM9g_Wo" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/park-hyatt-bangkok" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://www.youtube.com/watch?v=ARsRFM9g_Wo" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/park-hyatt-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=park-hyatt-bangkok">Compare VS</a>
@@ -1179,7 +1189,7 @@
             <h3><a href="/stayodds/saii-koh-samui-villas-adult-only/">SAii Koh Samui Villas - Adult only 12 plus</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 1/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=11111376544373400117" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=11111376544373400117" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/saii-koh-samui-villas-adult-only/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=saii-koh-samui-villas-adult-only">Compare VS</a>
@@ -1206,7 +1216,7 @@
             <h3><a href="/stayodds/the-library-samui/">The Library Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">How weird it is, the blood-red pool, and amazing food.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8684707748716364934" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8684707748716364934" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-library-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-library-samui">Compare VS</a>
@@ -1233,7 +1243,7 @@
             <h3><a href="/stayodds/the-slate-phuket/">The Slate Phuket</a></h3>
             <div class="dest-card-loc">Phuket, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16624741518642141947" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=16624741518642141947" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-slate-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-slate-phuket">Compare VS</a>
@@ -1260,7 +1270,7 @@
             <h3><a href="/stayodds/waldorf-astoria-bangkok/">Waldorf Astoria Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14039714028640615752" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14039714028640615752" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/waldorf-astoria-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=waldorf-astoria-bangkok">Compare VS</a>
@@ -1287,7 +1297,7 @@
             <h3><a href="/stayodds/the-siam-bangkok/">The Siam</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Friendly staff • Great location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/the-siam" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/the-siam" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-siam-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-siam-bangkok">Compare VS</a>
@@ -1314,7 +1324,7 @@
             <h3><a href="/stayodds/aman-nai-lert-bangkok/">Aman Nai Lert Bangkok</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Aman&#x27;s April 2025 Bangkok urban sanctuary set inside century-old private Nai Lert Park gardens in Phloen Chit, with 52 serene sand-and-stone suites, banana-bark detailing, and skyline…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 48 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/in-depth-review-of-aman-nai-lert-in-bangkok" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/hotels/aman-nai-lert-bangkok" target="_blank" rel="noopener noreferrer">&#128240; Wallpaper* &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 48 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/in-depth-review-of-aman-nai-lert-in-bangkok" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/hotels/aman-nai-lert-bangkok" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Wallpaper* &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/aman-nai-lert-bangkok/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=aman-nai-lert-bangkok">Compare VS</a>
@@ -1341,7 +1351,7 @@
             <h3><a href="/stayodds/amanpuri-phuket/">Amanpuri</a></h3>
             <div class="dest-card-loc">Pansea Beach, Phuket, Thailand</div>
             <p class="dest-card-blurb">Private coconut-palm peninsula, iconic black-tiled infinity pool, and one of Phuket&#x27;s most secluded white-sand coves</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/amanpuri" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/amanpuri" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/amanpuri-phuket/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=amanpuri-phuket">Compare VS</a>
@@ -1368,7 +1378,7 @@
             <h3><a href="/stayodds/andaz-one-bangkok-by-hyatt/">Andaz One Bangkok, by Hyatt</a></h3>
             <div class="dest-card-loc">Bangkok, Thailand</div>
             <p class="dest-card-blurb">Breakfast Score: 5/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=951142303511011711" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=951142303511011711" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/andaz-one-bangkok-by-hyatt/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=andaz-one-bangkok-by-hyatt">Compare VS</a>
@@ -1395,7 +1405,7 @@
             <h3><a href="/stayodds/banyan-tree-samui/">Banyan Tree Samui</a></h3>
             <div class="dest-card-loc">Koh Samui, Thailand</div>
             <p class="dest-card-blurb">Exceptional service • Beautiful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/sg/en/article/travel/all-the-key-hotels-thailand-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/banyan-tree-samui/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=banyan-tree-samui">Compare VS</a>
@@ -1404,6 +1414,67 @@
             </div>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+    <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
+      <div class="container">
+        <div class="partner-deals-card">
+          <div class="partner-deals-head">
+            <div>
+              <span class="partner-deals-eyebrow">Trip Essentials &amp; Verified Booking Partners</span>
+              <h2>Compare Rates, Flights, Tours &amp; Travel Perks</h2>
+              <p>Trusted booking platforms, eSIM discount codes, and hotel points cards we use on trips filmed for The Uncharted Itinerary.</p>
+            </div>
+            <a class="btn btn-outline" href="https://uncharteditinerary.com/links/" style="font-size:13px;padding:8px 14px;">All Deals &amp; Gear &nearr;</a>
+          </div>
+
+          <div class="partner-deals-grid">
+            <a class="partner-deal-tile" href="https://holafly.sjv.io/Tripready" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Unlimited Travel eSIM</span><span class="partner-deal-code">Code: TRIPREADY</span></div>
+              <h3>Holafly Unlimited Data eSIM</h3>
+              <p>Instant data on arrival across 200+ destinations &mdash; 5% off with code <strong>TRIPREADY</strong>.</p>
+              <span class="partner-deal-cta">Claim 5% Discount &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://marriottbonvoy.currensea.co.uk/refer-a-friend?utm_source=refer-a-friend&amp;friend-referral-code=OKM2ZH" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Hotel Points Card</span><span class="partner-deal-code">Code: OKM2ZH</span></div>
+              <h3>Marriott Bonvoy Currensea Card</h3>
+              <p>Earn Marriott Bonvoy points on everyday &amp; overseas spending (up to 2,000 bonus pts via referral).</p>
+              <span class="partner-deal-cta">See Referral Offer &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://americanexpress.com/en-gb/referral/gold-credit?ref=oLIVEK1B4w" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Rewards Card (UK)</span><span class="partner-deal-code">Bonus Offer</span></div>
+              <h3>Amex Preferred Rewards Gold</h3>
+              <p>Convert Membership Rewards into airline Avios or hotel points with our UK referral bonus.</p>
+              <span class="partner-deal-cta">View UK Referral &nearr;</span>
+            </a>
+          </div>
+
+          <div class="partner-platforms-bar">
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Hotel Rates:</span>
+              <a class="partner-platform-pill" href="https://booking.tpx.lu/dddKFSMf" target="_blank" rel="sponsored noopener noreferrer">Booking.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+              <a class="partner-platform-pill" href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+              <a class="partner-platform-pill" href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Flights &amp; Tours:</span>
+              <a class="partner-platform-pill" href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi.com Flights &nearr;</a>
+              <a class="partner-platform-pill" href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+              <a class="partner-platform-pill" href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
+              <a class="partner-platform-pill" href="https://klook.tpx.lu/TsCmTC1L" target="_blank" rel="sponsored noopener noreferrer">Klook Transfers &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">eSIMs &amp; FX:</span>
+              <a class="partner-platform-pill" href="https://airalo.tpx.lu/WSdkjcJz" target="_blank" rel="sponsored noopener noreferrer">Airalo eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://saily.tpx.lu/bIVFTBvq" target="_blank" rel="sponsored noopener noreferrer">Saily eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://wise.com/invite/dic/oliverarrashk" target="_blank" rel="sponsored noopener noreferrer">Wise Travel Card &nearr;</a>
+            </div>
+          </div>
+
+          <p class="partner-deals-disclosure">Affiliate disclosure: Partner links may earn a small commission at zero extra cost to you and never influence StayOdds scores or rankings.</p>
         </div>
       </div>
     </section>
@@ -1435,6 +1506,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=4" defer></script>
 </body>
 </html>

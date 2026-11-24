@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=44" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,53 +56,63 @@
     gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
-<body>
+<body class="stayodds-warm-canvas">
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
       <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
         <span class="stayodds-brand-stack">
           <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
           <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
       </div>
-      <nav class="nav-links" aria-label="Main site navigation">
-        <a href="/" class="active">StayOdds</a>
-        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
-        <a href="/hotels/">Hotel Map</a>
-        <a href="/brands/">Brands</a>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
-        <a href="https://uncharteditinerary.com/about/">About</a>
-        <a href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a href="https://uncharteditinerary.com/contact/">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a class="btn btn-primary" href="/?region=Caribbean%20%26%20Mexico">Compare Interactive</a>
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
   </header>
 
-  <div class="hub-tabs-bar">
-    <div class="container hub-tabs-inner">
-      <a class="hub-embed-brand" href="/" aria-label="StayOdds Home">
-        <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
-      </a>
-      <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
-        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
-        <a class="hub-tab" href="/brands/">Brands</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/contact/">Contact</a>
-      </nav>
-      <a class="hub-back-link" href="/">&larr; All StayOdds Hotels</a>
-    </div>
-  </div>
 
-  <main>
+  <main class="has-top-band">
+    <div class="detail-top-band" aria-hidden="true"></div>
     <section class="page-intro">
       <div class="container">
         <div class="detail-breadcrumb" style="margin-bottom:14px;">
@@ -207,7 +217,7 @@
             <h3><a href="/stayodds/oil-nut-bay-bvi/">Oil Nut Bay</a></h3>
             <div class="dest-card-loc">Virgin Gorda, British Virgin Islands &bull; £1,600+/night</div>
             <p class="dest-card-blurb">400-acre boat-or-helicopter-only peninsula at the eastern tip of Virgin Gorda featuring cliffside and beachfront villas with private pools, Beach Club with swim-up bar, overwater Nova…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/oil-nut-bay-bvi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=oil-nut-bay-bvi">Compare VS</a>
@@ -234,7 +244,7 @@
             <h3><a href="/stayodds/palm-heights-grand-cayman/">Palm Heights</a></h3>
             <div class="dest-card-loc">Seven Mile Beach, Grand Cayman, Cayman Islands &bull; £950+/night</div>
             <p class="dest-card-blurb">52 all-suite fashion-and-design cult favorite right on Seven Mile Beach featuring iconic yellow-striped umbrellas, Garden Club spa &amp; athletic club, acclaimed Tillie&#x27;s dining, and vibrant…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/palm-heights-grand-cayman/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=palm-heights-grand-cayman">Compare VS</a>
@@ -261,7 +271,7 @@
             <h3><a href="/stayodds/sandy-lane-barbados/">Sandy Lane</a></h3>
             <div class="dest-card-loc">Paynes Bay, St. James, Barbados &bull; £1,400+/night</div>
             <p class="dest-card-blurb">Barbados&#x27; legendary Forbes Five-Star grand dame on the Platinum Coast with a 47,000-sq-ft spa, three championship golf courses (including Green Monkey), Rolls-Royce airport transfers,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/barbados-caribbean/sandy-lane-hotel" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/barbados-caribbean/sandy-lane-hotel" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sandy-lane-barbados/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sandy-lane-barbados">Compare VS</a>
@@ -288,7 +298,7 @@
             <h3><a href="/stayodds/spice-island-beach-resort-grenada/">Spice Island Beach Resort</a></h3>
             <div class="dest-card-loc">Grand Anse Beach, Grenada, Grenada &bull; £1,100+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Family-owned AAA Five-Diamond beachfront all-inclusive directly on Grand Anse Beach, famed for genuinely warm Grenadian hospitality, spacious private-pool garden and beachfront suites,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/spice-island-beach-resort-grenada/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=spice-island-beach-resort-grenada">Compare VS</a>
@@ -315,7 +325,7 @@
             <h3><a href="/stayodds/w-punta-cana-all-inclusive/">W Punta Cana, Adult All-Inclusive</a></h3>
             <div class="dest-card-loc">Uvero Alto, Punta Cana, Dominican Republic &bull; £550+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Marriott&#x27;s first-ever adults-only W all-inclusive (opened August 2025) on Uvero Alto beach, featuring modern swim-up suites, warm staff, creative Scena and Noodle Bar dining, and strong…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/w-punta-cana-all-inclusive" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://upgradedpoints.com/travel/hotels/w-punta-cana-adult-all-inclusive-review/" target="_blank" rel="noopener noreferrer">&#128240; Upgraded Points &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/w-punta-cana-all-inclusive" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://upgradedpoints.com/travel/hotels/w-punta-cana-adult-all-inclusive-review/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Upgraded Points &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/w-punta-cana-all-inclusive/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=w-punta-cana-all-inclusive">Compare VS</a>
@@ -342,7 +352,7 @@
             <h3><a href="/stayodds/bucuti-tara-beach-resort-aruba/">Bucuti &amp; Tara Beach Resort</a></h3>
             <div class="dest-card-loc">Eagle Beach, Aruba, Aruba &bull; £550+/night</div>
             <p class="dest-card-blurb">Carbon-neutral, strictly adults-only low-rise sanctuary directly on wide, uncrowded Eagle Beach — repeatedly ranked among the Caribbean&#x27;s most consistent romantic resorts with guaranteed…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/bucuti-tara-beach-resort-aruba/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=bucuti-tara-beach-resort-aruba">Compare VS</a>
@@ -369,7 +379,7 @@
             <h3><a href="/stayodds/coral-reef-club-barbados/">Coral Reef Club</a></h3>
             <div class="dest-card-loc">Holetown, St. James, Barbados &bull; £800+/night</div>
             <p class="dest-card-blurb">Family-owned since 1956 across 12 acres of manicured West Coast gardens, celebrated for warm loyal Bajan staff, colonial-style cottages with private plunge pools, serene spa, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/coral-reef-club-barbados/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=coral-reef-club-barbados">Compare VS</a>
@@ -396,7 +406,7 @@
             <h3><a href="/stayodds/silversands-grenada/">Silversands Grenada</a></h3>
             <div class="dest-card-loc">Grand Anse Beach, Grenada, Grenada &bull; £850+/night</div>
             <p class="dest-card-blurb">Ultra-sleek minimalist sanctuary right on iconic Grand Anse Beach boasting the Caribbean&#x27;s longest infinity pool (100 meters / 330 feet), 43 modern suites &amp; beachfront villas, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/silversands-grenada/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=silversands-grenada">Compare VS</a>
@@ -423,7 +433,7 @@
             <h3><a href="/stayodds/tortuga-bay-puntacana/">Tortuga Bay Puntacana</a></h3>
             <div class="dest-card-loc">Punta Cana, Dominican Republic &bull; £850+/night</div>
             <p class="dest-card-blurb">30-suite beachfront sanctuary designed by Oscar de la Renta with VIP fast-track airport tarmac greeting at PUJ (included!), private golf cart for every villa, Six Senses Spa access, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/tortuga-bay-puntacana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=tortuga-bay-puntacana">Compare VS</a>
@@ -450,7 +460,7 @@
             <h3><a href="/stayodds/ladera-resort-st-lucia/">Ladera Resort</a></h3>
             <div class="dest-card-loc">Soufrière, Saint Lucia &bull; £850+/night</div>
             <p class="dest-card-blurb">Adults-only UNESCO World Heritage ridge resort perched 1,000 feet directly between the Pitons — all 37 open-air three-walled suites feature private heated plunge pools with jaw-dropping…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ladera-resort-st-lucia/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ladera-resort-st-lucia">Compare VS</a>
@@ -477,7 +487,7 @@
             <h3><a href="/stayodds/le-barthelemy-st-barth/">Le Barthélemy Hotel &amp; Spa</a></h3>
             <div class="dest-card-loc">Grand Cul-de-Sac, Saint Barthélemy &bull; £1,100+/night</div>
             <p class="dest-card-blurb">Chic 44-room Parisian-designed beachfront boutique hotel directly on calm Grand Cul-de-Sac lagoon with a La Mer spa, refined French dining at Amis St. Barth, and sleek oceanfront…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/le-barthelemy-st-barth/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=le-barthelemy-st-barth">Compare VS</a>
@@ -504,7 +514,7 @@
             <h3><a href="/stayodds/baoase-luxury-resort-curacao/">Baoase Luxury Resort</a></h3>
             <div class="dest-card-loc">Willemstad, Curaçao, Curaçao &bull; £950+/night</div>
             <p class="dest-card-blurb">23-room Balinese-inspired private-lagoon sanctuary just 10 minutes from Willemstad — widely regarded as Curaçao&#x27;s undisputed top luxury stay with private-pool villas, acclaimed Culinary…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/baoase-luxury-resort-curacao/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=baoase-luxury-resort-curacao">Compare VS</a>
@@ -558,7 +568,7 @@
             <h3><a href="/stayodds/cap-juluca-anguilla/">Cap Juluca, A Belmond Hotel, Anguilla</a></h3>
             <div class="dest-card-loc">Anguilla, Anguilla</div>
             <p class="dest-card-blurb">Great service • Wonderful location</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/anguilla-caribbean/cap-juluca-a-belmond-hotel-anguilla" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-belmond-cap-juluca/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/anguilla-caribbean/cap-juluca-a-belmond-hotel-anguilla" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-belmond-cap-juluca/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/cap-juluca-anguilla/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=cap-juluca-anguilla">Compare VS</a>
@@ -585,7 +595,7 @@
             <h3><a href="/stayodds/harbour-village-beach-club-bonaire/">Harbour Village Beach Club</a></h3>
             <div class="dest-card-loc">Kralendijk, Bonaire, Bonaire &bull; £450+/night</div>
             <p class="dest-card-blurb">Bonaire&#x27;s premier beachfront luxury resort inside a private 4-acre peninsula marina enclave with its own white-sand beach (rare on rocky Bonaire) and PADI 5-Star house-reef shore diving…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/harbour-village-beach-club-bonaire/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=harbour-village-beach-club-bonaire">Compare VS</a>
@@ -612,7 +622,7 @@
             <h3><a href="/stayodds/jade-mountain-st-lucia/">Jade Mountain</a></h3>
             <div class="dest-card-loc">Soufrière, Saint Lucia</div>
             <p class="dest-card-blurb">Stunning views • Exceptional service</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.standard.co.uk/lifestyle/travel/jade-mountain-and-anse-chastanet-st-lucia-hotel-review-b1130161.html" target="_blank" rel="noopener noreferrer">&#128240; The Standard &nearr;</a><a class="source-chip" href="https://www.afar.com/places/jade-mountain-resort" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.standard.co.uk/lifestyle/travel/jade-mountain-and-anse-chastanet-st-lucia-hotel-review-b1130161.html" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Standard &nearr;</a><a class="source-chip" href="https://www.afar.com/places/jade-mountain-resort" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jade-mountain-st-lucia/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jade-mountain-st-lucia">Compare VS</a>
@@ -639,7 +649,7 @@
             <h3><a href="/stayodds/mandarin-oriental-canouan/">Mandarin Oriental, Canouan</a></h3>
             <div class="dest-card-loc">Canouan, Saint Vincent and the Grenadines</div>
             <p class="dest-card-blurb">Clean rooms • Friendly staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-vincent-and-the-grenadines-caribbean/mandarin-oriental-canouan" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/katiebell/2022/12/01/the-perfect-winter-break-is-on-canouan-island/" target="_blank" rel="noopener noreferrer">&#128240; Forbes &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/best-luxury-resorts-for-scuba-diving" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-vincent-and-the-grenadines-caribbean/mandarin-oriental-canouan" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/katiebell/2022/12/01/the-perfect-winter-break-is-on-canouan-island/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/best-luxury-resorts-for-scuba-diving" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/mandarin-oriental-canouan/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=mandarin-oriental-canouan">Compare VS</a>
@@ -666,7 +676,7 @@
             <h3><a href="/stayodds/pine-cay-turks-caicos/">Pine Cay</a></h3>
             <div class="dest-card-loc">Pine Cay, Turks and Caicos Islands &bull; £1,400+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Car-free 800-acre Relais &amp; Châteaux private island with a stunning two-mile empty white-sand beach, only 13 beachfront rooms/cottages (adults-focused, ages 12+), all-inclusive dining,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/pine-cay-turks-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=pine-cay-turks-caicos">Compare VS</a>
@@ -693,7 +703,7 @@
             <h3><a href="/stayodds/rosewood-le-guanahani-st-barth/">Rosewood Le Guanahani St. Barth</a></h3>
             <div class="dest-card-loc">Grand Cul-de-Sac, Saint Barthélemy &bull; £1,200+/night</div>
             <p class="dest-card-blurb">Rebuilt top-to-bottom in 2021 on an 18-acre private peninsula framed by two beaches (Maréchal Bay &amp; turtle-rich Grand Cul-de-Sac lagoon), with pastel Luis Pons cottages, Sense Spa, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-le-guanahani-st-barth/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-le-guanahani-st-barth">Compare VS</a>
@@ -720,7 +730,7 @@
             <h3><a href="/stayodds/secret-bay-dominica/">Secret Bay</a></h3>
             <div class="dest-card-loc">Portsmouth, Dominica, Dominica &bull; £1,050+/night</div>
             <p class="dest-card-blurb">Six-star Relais &amp; Châteaux rainforest clifftop sanctuary of sustainable hardwood villas — every villa has a private plunge pool, dedicated villa host, no-menu farm-to-table chef dining…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/secret-bay-dominica/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=secret-bay-dominica">Compare VS</a>
@@ -747,7 +757,7 @@
             <h3><a href="/stayodds/kimpton-seafire-grand-cayman/">Kimpton Seafire Resort + Spa</a></h3>
             <div class="dest-card-loc">Seven Mile Beach, Grand Cayman, Cayman Islands &bull; £750+/night</div>
             <p class="dest-card-blurb">Bright, contemporary 264-room beachfront resort at the wider, uncrowded northern end of Seven Mile Beach — praised for modern rooms, oceanfront bungalows, lively Ave &amp; Avecita dining,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cayman-islands-cayman-islands/kimpton-seafire-resort-spa" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cayman-islands-cayman-islands/kimpton-seafire-resort-spa" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/kimpton-seafire-grand-cayman/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=kimpton-seafire-grand-cayman">Compare VS</a>
@@ -801,7 +811,7 @@
             <h3><a href="/stayodds/the-loren-pink-beach-bermuda/">The Loren at Pink Beach</a></h3>
             <div class="dest-card-loc">Smith&#x27;s Parish, Bermuda &bull; £750+/night</div>
             <p class="dest-card-blurb">Sleek modernist 45-suite boutique alternative to Bermuda&#x27;s traditional colonial resorts — every suite features floor-to-ceiling Atlantic views, contemporary art, oceanfront pool, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/places/the-loren-at-pink-beach-hotel-smiths" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/places/the-loren-at-pink-beach-hotel-smiths" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/the-loren-pink-beach-bermuda/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=the-loren-pink-beach-bermuda">Compare VS</a>
@@ -828,7 +838,7 @@
             <h3><a href="/stayodds/casa-de-campo-resort-villas/">Casa de Campo Resort &amp; Villas</a></h3>
             <div class="dest-card-loc">La Romana, Dominican Republic &bull; £550+/night (Optional All-Inclusive)</div>
             <p class="dest-card-blurb">Sprawling 7,000-acre gated resort estate famous for Pete Dye&#x27;s Teeth of the Dog golf course, Altos de Chavón village, private golf carts per room, Minitas Beach Club, and the 2023…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dominican-republic-caribbean/casa-de-campo-resort-villas" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/dominican-republic-caribbean/casa-de-campo-resort-villas" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/casa-de-campo-resort-villas/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=casa-de-campo-resort-villas">Compare VS</a>
@@ -855,7 +865,7 @@
             <h3><a href="/stayodds/cobblers-cove-barbados/">Cobblers Cove</a></h3>
             <div class="dest-card-loc">Speightstown, St. Peter, Barbados &bull; £650+/night</div>
             <p class="dest-card-blurb">40-suite pink-and-white Relais &amp; Châteaux English country house by the sea with chic Soane Britain interiors, standout Camelot oceanfront dining, complimentary watersports, and intimate…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/cobblers-cove-barbados/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=cobblers-cove-barbados">Compare VS</a>
@@ -882,7 +892,7 @@
             <h3><a href="/stayodds/eden-roc-cap-cana/">Eden Roc Cap Cana</a></h3>
             <div class="dest-card-loc">Cap Cana, Punta Cana, Dominican Republic &bull; £900+/night</div>
             <p class="dest-card-blurb">Dominican Republic&#x27;s only Relais &amp; Châteaux resort inside gated Cap Cana — colorful private-pool boutique villas plus beachfront suites, private Caletón Beach Club, Jack Nicklaus Punta…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/eden-roc-cap-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=eden-roc-cap-cana">Compare VS</a>
@@ -936,7 +946,7 @@
             <h3><a href="/stayodds/malliouhana-anguilla/">Malliouhana</a></h3>
             <div class="dest-card-loc">Meads Bay, Anguilla, Anguilla &bull; £950+/night</div>
             <p class="dest-card-blurb">Historic 1984 clifftop Anguilla icon overlooking both Meads Bay and Turtle Cove with vibrant retro-glamour interiors, dramatic sunset terraced pools, and walkable access to Meads Bay&#x27;s…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/malliouhana-anguilla/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=malliouhana-anguilla">Compare VS</a>
@@ -963,7 +973,7 @@
             <h3><a href="/stayodds/rosewood-bermuda/">Rosewood Bermuda</a></h3>
             <div class="dest-card-loc">Tucker&#x27;s Point, Hamilton Parish, Bermuda &bull; £700+/night</div>
             <p class="dest-card-blurb">Set on 240 acres overlooking Castle Harbour with Bermuda&#x27;s largest private pink-sand beach club, 18-hole private golf course, Cliff Drysdale tennis, and freshly refurbished 88-room Manor…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/bermuda-bermuda/rosewood-bermuda" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/rosewood-bermuda-hamilton-parish" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/bermuda-bermuda/rosewood-bermuda" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/rosewood-bermuda-hamilton-parish" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-bermuda/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-bermuda">Compare VS</a>
@@ -1017,7 +1027,7 @@
             <h3><a href="/stayodds/zoetry-agua-punta-cana/">Zoëtry Agua Punta Cana</a></h3>
             <div class="dest-card-loc">Uvero Alto, Punta Cana, Dominican Republic &bull; £450+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Intimate 96-suite boutique wellness all-inclusive with cane-thatched suites, serpentine lagoon pool, no check-in/check-out restrictions, complimentary 20-minute wellness treatment, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/best-all-inclusives-punta-cana" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/best-all-inclusives-punta-cana" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/zoetry-agua-punta-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=zoetry-agua-punta-cana">Compare VS</a>
@@ -1071,7 +1081,7 @@
             <h3><a href="/stayodds/rock-house-turks-caicos/">Rock House</a></h3>
             <div class="dest-card-loc">Providenciales, Turks and Caicos Islands &bull; £950+/night</div>
             <p class="dest-card-blurb">Opened in 2022 carved into a limestone cliff on Provo&#x27;s quiet north shore — Mediterranean-inspired whitewashed cottages with plunge pools, a dramatic 100-foot infinity pool, jetty bar,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-boutique-hotels-in-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rock-house-turks-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rock-house-turks-caicos">Compare VS</a>
@@ -1179,7 +1189,7 @@
             <h3><a href="/stayodds/four-seasons-nevis/">Four Seasons Resort Nevis</a></h3>
             <div class="dest-card-loc">Pinney&#x27;s Beach, Nevis, Saint Kitts and Nevis &bull; £800+/night</div>
             <p class="dest-card-blurb">Renovated 189-room classic Caribbean resort along golden Pinney&#x27;s Beach backed by cloud-ringed Nevis Peak, offering three beachfront pools, Robert Trent Jones II golf (with green vervet…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-nevis/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-nevis">Compare VS</a>
@@ -1206,7 +1216,7 @@
             <h3><a href="/stayodds/secrets-cap-cana/">Secrets Cap Cana Resort &amp; Spa</a></h3>
             <div class="dest-card-loc">Juanillo Beach, Cap Cana, Dominican Republic &bull; £500+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Consistently top-rated adults-only all-inclusive inside gated Cap Cana with direct access to calm, powdery Juanillo Beach, Preferred Club private pool/beach section, and World of Hyatt…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/best-secrets-resorts" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=10629437336939861453" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/best-secrets-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=10629437336939861453" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/secrets-cap-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=secrets-cap-cana">Compare VS</a>
@@ -1287,7 +1297,7 @@
             <h3><a href="/stayodds/ritz-carlton-aruba/">The Ritz-Carlton, Aruba</a></h3>
             <div class="dest-card-loc">Palm Beach, Aruba, Aruba &bull; £700+/night</div>
             <p class="dest-card-blurb">Dependable 5-star beachfront resort at the quieter northern end of Palm Beach with separate family and adults-only pools, strong Club Lounge, BLT Steak &amp; Casa Nonna dining, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ritz-carlton-aruba/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ritz-carlton-aruba">Compare VS</a>
@@ -1314,7 +1324,7 @@
             <h3><a href="/stayodds/st-regis-bahia-beach-puerto-rico/">The St. Regis Bahia Beach Resort</a></h3>
             <div class="dest-card-loc">Río Grande, Puerto Rico &bull; £900+/night</div>
             <p class="dest-card-blurb">Set on a 483-acre Audubon Gold-certified nature sanctuary between El Yunque Rainforest and two miles of crescent beach — offering St. Regis butler service, Robert Trent Jones Jr. golf,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-bahia-beach-puerto-rico/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-bahia-beach-puerto-rico">Compare VS</a>
@@ -1341,7 +1351,7 @@
             <h3><a href="/stayodds/zemi-beach-house-anguilla/">Zemi Beach House, LXR Hotels &amp; Resorts</a></h3>
             <div class="dest-card-loc">Shoal Bay East, Anguilla, Anguilla &bull; £750+/night</div>
             <p class="dest-card-blurb">Sits directly on famous Shoal Bay East with a restored 300-year-old Thai House Spa, Rhum Room tasting bar, oceanfront glass-sided pool, and Hilton Honors points redemption availability</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/zemi-beach-house-anguilla/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=zemi-beach-house-anguilla">Compare VS</a>
@@ -1368,7 +1378,7 @@
             <h3><a href="/stayodds/castara-retreats-tobago/">Castara Retreats</a></h3>
             <div class="dest-card-loc">Castara Bay, Tobago, Trinidad and Tobago &bull; £250+/night</div>
             <p class="dest-card-blurb">Tobago&#x27;s top eco-luxury boutique hideaway of 17 open-air rainforest treehouse lodges overlooking unspoiled Castara Bay, praised for warm village integration, Caribbean Kitchen dining,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/castara-retreats-tobago/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=castara-retreats-tobago">Compare VS</a>
@@ -1422,7 +1432,7 @@
             <h3><a href="/stayodds/french-coco-martinique/">French Coco Luxury Boutique Hotel</a></h3>
             <div class="dest-card-loc">Tartane, Caravelle Peninsula, Martinique &bull; £380+/night</div>
             <p class="dest-card-blurb">Intimate 17-suite boutique retreat on Martinique&#x27;s lush Caravelle Peninsula (most suites feature private plunge pools), praised for refined Creole-French gastronomy and serene garden privacy</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/french-coco-martinique/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=french-coco-martinique">Compare VS</a>
@@ -1476,7 +1486,7 @@
             <h3><a href="/stayodds/park-hyatt-st-kitts/">Park Hyatt St. Kitts Christophe Harbour</a></h3>
             <div class="dest-card-loc">Banana Bay, St. Kitts, Saint Kitts and Nevis &bull; £600+/night</div>
             <p class="dest-card-blurb">Contemporary 126-room luxury resort on secluded Banana Bay facing Nevis across the Narrows, featuring dramatic Miraval Life in Balance Spa, adults-only Rampart Pool, beachfront dining,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/park-hyatt-st-kitts/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=park-hyatt-st-kitts">Compare VS</a>
@@ -1503,7 +1513,7 @@
             <h3><a href="/stayodds/rosewood-baha-mar/">Rosewood Baha Mar</a></h3>
             <div class="dest-card-loc">Cable Beach, Nassau, Bahamas &bull; £850+/night</div>
             <p class="dest-card-blurb">Quiet, refined 226-room sanctuary tucked at the tranquil end of Cable Beach — giving guests peaceful Rosewood pools &amp; Café Boulud while unlocking full access to Baha Mar&#x27;s Baha Bay…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/the-best-family-destinations-in-the-world-and-where-to-stay-there" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/the-best-family-destinations-in-the-world-and-where-to-stay-there" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-baha-mar/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-baha-mar">Compare VS</a>
@@ -1530,7 +1540,7 @@
             <h3><a href="/stayodds/sanctuary-cap-cana/">Sanctuary Cap Cana, a Luxury Collection Resort</a></h3>
             <div class="dest-card-loc">Cap Cana, Punta Cana, Dominican Republic &bull; £550+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Distinctive adults-only Spanish colonial castle-and-village architecture inside gated Cap Cana with five pools (including a saltwater pool), quiet couples-oriented atmosphere, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/sanctuary-cap-cana-review" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/sanctuary-cap-cana-review" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sanctuary-cap-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sanctuary-cap-cana">Compare VS</a>
@@ -1557,7 +1567,7 @@
             <h3><a href="/stayodds/carlisle-bay-antigua/">Carlisle Bay Antigua</a></h3>
             <div class="dest-card-loc">Old Road, Antigua, Antigua and Barbuda &bull; £700+/night</div>
             <p class="dest-card-blurb">87-suite resort framing a calm rainforest-backed horseshoe bay on Antigua&#x27;s south coast, offering strong tennis (9 courts), kids club, private cinema, and lower rates than private-island…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/carlisle-bay-antigua/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=carlisle-bay-antigua">Compare VS</a>
@@ -1584,7 +1594,7 @@
             <h3><a href="/stayodds/pink-sands-harbour-island/">Pink Sands Resort</a></h3>
             <div class="dest-card-loc">Harbour Island, Eleuthera, Bahamas &bull; £800+/night</div>
             <p class="dest-card-blurb">25 pastel stand-alone cottages tucked into 20 acres of tropical gardens directly behind Harbour Island&#x27;s famous three-mile blush-pink sand beach, with golf-cart access to charming…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/pink-sands-harbour-island/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=pink-sands-harbour-island">Compare VS</a>
@@ -1638,7 +1648,7 @@
             <h3><a href="/stayodds/secrets-la-romana-resort-and-spa/">Secrets La Romana Resort &amp; Spa</a></h3>
             <div class="dest-card-loc">La Romana, Dominican Republic</div>
             <p class="dest-card-blurb">Breakfast Score: 3/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=233066721908330490" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=233066721908330490" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/secrets-la-romana-resort-and-spa/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=secrets-la-romana-resort-and-spa">Compare VS</a>
@@ -1665,7 +1675,7 @@
             <h3><a href="/stayodds/beaches-turks-and-caicos/">Beaches Turks &amp; Caicos</a></h3>
             <div class="dest-card-loc">Grace Bay, Providenciales, Turks and Caicos Islands &bull; £950+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Flagship family all-inclusive directly on powdery Grace Bay Beach with 5 themed villages, a 45,000-sq-ft Pirates Island waterpark, 20+ restaurants, included scuba diving, and Sesame…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/beaches-turks-and-caicos" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/beaches-turks-and-caicos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/beaches-turks-and-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=beaches-turks-and-caicos">Compare VS</a>
@@ -1719,7 +1729,7 @@
             <h3><a href="/stayodds/ritz-carlton-st-thomas/">The Ritz-Carlton, St. Thomas</a></h3>
             <div class="dest-card-loc">Great Bay, St. Thomas, US Virgin Islands &bull; £850+/night</div>
             <p class="dest-card-blurb">Fully rebuilt in 2019 across 30 waterfront acres overlooking St. John — featuring a private 53-foot Lady Lynsey II sailing catamaran, family &amp; adults pools, Club Lounge, and zero…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ritz-carlton-st-thomas/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ritz-carlton-st-thomas">Compare VS</a>
@@ -1773,7 +1783,7 @@
             <h3><a href="/stayodds/st-regis-cap-cana/">The St. Regis Cap Cana Resort</a></h3>
             <div class="dest-card-loc">Cap Cana, Punta Cana, Dominican Republic &bull; £800+/night</div>
             <p class="dest-card-blurb">Brand-new 2025 luxury beachfront flagship inside Cap Cana featuring 200 rooms/suites (many swim-out), St. Regis Butler Service, Nina signature dining by chef Diego Muñoz, and immediate…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-cap-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-cap-cana">Compare VS</a>
@@ -1800,7 +1810,7 @@
             <h3><a href="/stayodds/amanera-dominican-republic/">Amanera</a></h3>
             <div class="dest-card-loc">Playa Grande, Dominican Republic</div>
             <p class="dest-card-blurb">Clifftop casitas with private pools perched above golden Playa Grande, pairing sleek Aman minimalism with energetic Dominican hospitality, golf, and dramatic Atlantic surf views</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.standard.co.uk/lifestyle/travel/amanyara-amanera-caribbean-hotel-reviews-b1262025.html" target="_blank" rel="noopener noreferrer">&#128240; The Standard &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/dominican-republic/cabrera/hotels/amanera" target="_blank" rel="noopener noreferrer">&#128240; Wallpaper* &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.standard.co.uk/lifestyle/travel/amanyara-amanera-caribbean-hotel-reviews-b1262025.html" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Standard &nearr;</a><a class="source-chip" href="https://www.wallpaper.com/travel/dominican-republic/cabrera/hotels/amanera" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Wallpaper* &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/amanera-dominican-republic/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=amanera-dominican-republic">Compare VS</a>
@@ -1827,7 +1837,7 @@
             <h3><a href="/stayodds/amanyara-turks-caicos/">Amanyara</a></h3>
             <div class="dest-card-loc">Providenciales, Turks and Caicos Islands</div>
             <p class="dest-card-blurb">Jean-Michel Gathy black-volcanic infinity pool bordering a pristine coral marine park and tranquil reflection ponds</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/amanyara" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 1 MICHELIN Key &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/amanyara" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/amanyara-turks-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=amanyara-turks-caicos">Compare VS</a>
@@ -1854,7 +1864,7 @@
             <h3><a href="/stayodds/ambergris-cay-turks-caicos/">Ambergris Cay</a></h3>
             <div class="dest-card-loc">Ambergris Cay, Turks and Caicos Islands &bull; £2,200+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">1,100-acre all-inclusive private island with its own 5,700-foot runway (plus complimentary guest air transfer from Provo), 10 beachfront pool bungalows, private golf carts, daily spa…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/what-to-love-about-traveling-to-turks-and-caicos" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/vacation-like-a-celebrity-in-turks-and-caicos" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/what-to-love-about-traveling-to-turks-and-caicos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/vacation-like-a-celebrity-in-turks-and-caicos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ambergris-cay-turks-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ambergris-cay-turks-caicos">Compare VS</a>
@@ -1881,7 +1891,7 @@
             <h3><a href="/stayodds/anse-chastanet-resort/">Anse Chastanet Resort</a></h3>
             <div class="dest-card-loc">Soufrière, Saint Lucia &bull; £650+/night (Optional All-Inclusive)</div>
             <p class="dest-card-blurb">Sister property to Jade Mountain set in a 600-acre tropical estate with Piton views, open-air hillside rooms, two volcanic beaches, jungle mountain biking at Anse Mamin, and a…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-lucia-saint-lucia/anse-chastanet-resort" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-lucia-saint-lucia/anse-chastanet-resort" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/anse-chastanet-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=anse-chastanet-resort">Compare VS</a>
@@ -1908,7 +1918,7 @@
             <h3><a href="/stayodds/cap-maison-st-lucia/">Cap Maison Resort &amp; Spa</a></h3>
             <div class="dest-card-loc">Cap Estate, Gros Islet, Saint Lucia &bull; £650+/night</div>
             <p class="dest-card-blurb">49-room Spanish-Caribbean Relais &amp; Châteaux cliffside boutique in northern St. Lucia — consistently praised on r/chubbytravel for having St. Lucia&#x27;s finest food (The Cliff at Cap), a…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/cap-maison-st-lucia/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=cap-maison-st-lucia">Compare VS</a>
@@ -1935,7 +1945,7 @@
             <h3><a href="/stayodds/cheval-blanc-st-barth/">Cheval Blanc St-Barth</a></h3>
             <div class="dest-card-loc">Flamands Bay, Saint Barthélemy</div>
             <p class="dest-card-blurb">The Caribbean&#x27;s only official French Palace hotel, white-sand Flamands Beach, and La Case by Jean Imbert</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-barts-st-barts/cheval-blanc-st-barth" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-barts-st-barts/cheval-blanc-st-barth" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/cheval-blanc-st-barth/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=cheval-blanc-st-barth">Compare VS</a>
@@ -1962,7 +1972,7 @@
             <h3><a href="/stayodds/dorado-beach-ritz-carlton-reserve/">Dorado Beach, a Ritz-Carlton Reserve</a></h3>
             <div class="dest-card-loc">Dorado, Puerto Rico &bull; £1,450+/night</div>
             <p class="dest-card-blurb">Forbes Five-Star former Rockefeller estate across 50 beachfront acres — every guestroom sits steps from the sand with private plunge pools, Embajador butlers, 5-acre Spa Botánico…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/puerto-rico-puerto-rico/dorado-beach-a-ritz-carlton-reserve" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/puerto-rico-puerto-rico/dorado-beach-a-ritz-carlton-reserve" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/dorado-beach-ritz-carlton-reserve/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=dorado-beach-ritz-carlton-reserve">Compare VS</a>
@@ -1989,7 +1999,7 @@
             <h3><a href="/stayodds/eclipse-at-half-moon-jamaica/">Eclipse at Half Moon</a></h3>
             <div class="dest-card-loc">Montego Bay, Jamaica &bull; £800+/night</div>
             <p class="dest-card-blurb">Newest 57-room ultra-luxury enclave inside Half Moon&#x27;s 400-acre estate — modern Jamaican architecture, dramatic two-story infinity pool, Fern Tree Spa, Robert Trent Jones Sr. golf,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/eclipse-at-half-moon-jamaica/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=eclipse-at-half-moon-jamaica">Compare VS</a>
@@ -2016,7 +2026,7 @@
             <h3><a href="/stayodds/eden-rock-st-barths/">Eden Rock - St Barths</a></h3>
             <div class="dest-card-loc">St. Barthélemy, Saint Barthélemy</div>
             <p class="dest-card-blurb">Iconic St. Jean Bay rocky-promontory glamour with individually styled suites and villas, Jean-Georges dining at Sand Bar, and prime beachside people-watching</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-barts-st-barts/eden-rock-st-barths" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/eden-rock-st-barths" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/st-barts-st-barts/eden-rock-st-barths" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/eden-rock-st-barths" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/eden-rock-st-barths/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=eden-rock-st-barths">Compare VS</a>
@@ -2043,7 +2053,7 @@
             <h3><a href="/stayodds/four-seasons-anguilla/">Four Seasons Resort and Residences Anguilla</a></h3>
             <div class="dest-card-loc">Anguilla, Anguilla</div>
             <p class="dest-card-blurb">Kelly Wearstler-designed cliffside retreat straddling both Barnes Bay and Meads Bay beaches, with dramatic sunset infinity pool, spacious residences, and strong family amenities</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/anguilla-caribbean/four-seasons-resort-and-residences-anguilla" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-anguilla/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/anguilla-caribbean/four-seasons-resort-and-residences-anguilla" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-four-seasons-anguilla/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-anguilla/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-anguilla">Compare VS</a>
@@ -2070,7 +2080,7 @@
             <h3><a href="/stayodds/goldeneye-jamaica/">GoldenEye</a></h3>
             <div class="dest-card-loc">Oracabessa, Ocho Rios, Jamaica &bull; £700+/night</div>
             <p class="dest-card-blurb">Ian Fleming&#x27;s historic estate where all 14 James Bond novels were written — now Chris Blackwell&#x27;s effortlessly cool lagoon-and-cliff sanctuary of lagoon cottages, beach villas, FieldSpa,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/goldeneye-jamaica/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=goldeneye-jamaica">Compare VS</a>
@@ -2097,7 +2107,7 @@
             <h3><a href="/stayodds/grace-bay-club-turks-caicos/">Grace Bay Club</a></h3>
             <div class="dest-card-loc">Grace Bay, Providenciales, Turks and Caicos Islands &bull; £950+/night</div>
             <p class="dest-card-blurb">Providenciales&#x27; original 1993 luxury all-suite flagship on 1,100 feet of iconic Grace Bay Beach — smartly divided into an Adults-Only Hotel wing, family-friendly Villas Suites, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/turks-caicos-turks-and-caicos-islands/grace-bay-club" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/grace-bay-club-caicos-islands" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/turks-caicos-turks-and-caicos-islands/grace-bay-club" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/grace-bay-club-caicos-islands" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/grace-bay-club-turks-caicos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=grace-bay-club-turks-caicos">Compare VS</a>
@@ -2124,7 +2134,7 @@
             <h3><a href="/stayodds/gran-hotel-manzana-kempinski-havana/">Gran Hotel Manzana Kempinski La Habana</a></h3>
             <div class="dest-card-loc">Old Havana, Cuba &bull; £350+/night</div>
             <p class="dest-card-blurb">Cuba&#x27;s first modern 5-star European-managed luxury hotel occupying the landmark 1917 Manzana de Gómez building in Old Havana, famed for its rooftop infinity pool overlooking the…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/gran-hotel-manzana-kempinski-havana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=gran-hotel-manzana-kempinski-havana">Compare VS</a>
@@ -2151,7 +2161,7 @@
             <h3><a href="/stayodds/guana-island-bvi/">Guana Island</a></h3>
             <div class="dest-card-loc">Guana Island, British Virgin Islands &bull; £1,200+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">850-acre private nature-preserve island with seven empty beaches, just 18 cottages/villas, an organic orchard farm-to-table kitchen, flamingos, and a fiercely loyal r/FATTravel following…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/guana-island-bvi/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=guana-island-bvi">Compare VS</a>
@@ -2178,7 +2188,7 @@
             <h3><a href="/stayodds/hermitage-bay-antigua/">Hermitage Bay</a></h3>
             <div class="dest-card-loc">Jennings, Antigua, Antigua and Barbuda &bull; £1,450+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">30 freestanding hillside and beachfront suites (recently refurbished in 2024 under new ownership with a new Beach Club), adults-only all-inclusive with private plunge pools on the…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/your-complete-winter-guide-to-the-caribbean" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hermitage-bay-antigua/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hermitage-bay-antigua">Compare VS</a>
@@ -2205,7 +2215,7 @@
             <h3><a href="/stayodds/hyatt-zilara-cap-cana/">Hyatt Zilara Cap Cana</a></h3>
             <div class="dest-card-loc">Juanillo Beach, Cap Cana, Dominican Republic &bull; £550+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Top-ranked adults-only all-inclusive on wide Juanillo Beach with full exchange access to adjacent Hyatt Ziva&#x27;s waterpark and restaurants, an exceptional fitness center, strong service,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/hyatt-zilara-cap-cana-all-inclusive-resort" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=13683082678322886106" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/hyatt-zilara-cap-cana-all-inclusive-resort" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=13683082678322886106" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hyatt-zilara-cap-cana/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hyatt-zilara-cap-cana">Compare VS</a>
@@ -2232,7 +2242,7 @@
             <h3><a href="/stayodds/jumby-bay-island-antigua/">Jumby Bay Island</a></h3>
             <div class="dest-card-loc">Antigua, Antigua and Barbuda</div>
             <p class="dest-card-blurb">Car-free 300-acre Oetker Collection private island off Antigua with assigned beach cruisers, restored 1830s Estate House Italian dining, three pools, and sugar-white beaches</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/antigua-caribbean/jumby-bay-island" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/antigua-caribbean/jumby-bay-island" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/jumby-bay-island-antigua/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=jumby-bay-island-antigua">Compare VS</a>
@@ -2259,7 +2269,7 @@
             <h3><a href="/stayodds/kamalame-cay-bahamas/">Kamalame Cay</a></h3>
             <div class="dest-card-loc">Andros Island, Bahamas &bull; £950+/night</div>
             <p class="dest-card-blurb">96-acre private island off Andros with three miles of deserted white sand, the Bahamas&#x27; only overwater spa, world-class bonefishing &amp; Andros Barrier Reef diving, and laid-back barefoot…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/kamalame-cay-bahamas/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=kamalame-cay-bahamas">Compare VS</a>
@@ -2286,7 +2296,7 @@
             <h3><a href="/stayodds/la-samanna-belmond-st-martin/">La Samanna, A Belmond Hotel, St. Martin</a></h3>
             <div class="dest-card-loc">Baie Longue, Terres Basses, Saint Martin &bull; £950+/night</div>
             <p class="dest-card-blurb">French Riviera glamour in the Caribbean on powdery Baie Longue beach — 76 whitewashed suites, Rottet Studio-refreshed cliffside pool villas, L&#x27;Oursin French-Caribbean dining, La Cave…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/la-samanna-belmond-st-martin/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=la-samanna-belmond-st-martin">Compare VS</a>
@@ -2313,7 +2323,7 @@
             <h3><a href="/stayodds/la-toubana-guadeloupe/">La Toubana Hotel &amp; Spa</a></h3>
             <div class="dest-card-loc">Sainte-Anne, Grande-Terre, Guadeloupe &bull; £400+/night</div>
             <p class="dest-card-blurb">Guadeloupe&#x27;s sole 5-star hotel perched on a cliff overlooking Marie-Galante and Les Saintes, offering 44 bungalows/suites, a panoramic infinity pool, Sisley/Payot spa, and private cove…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/best-luxury-caribbean-resorts" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/la-toubana-guadeloupe/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=la-toubana-guadeloupe">Compare VS</a>
@@ -2367,7 +2377,7 @@
             <h3><a href="/stayodds/petit-st-vincent-resort/">Petit St. Vincent Resort</a></h3>
             <div class="dest-card-loc">Petit St. Vincent, Grenadines, Saint Vincent and the Grenadines &bull; £1,400+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">115-acre unplugged private island in the Grenadines with just 22 stone cottages, hoisted-flag room service (no phones, TVs, or Wi-Fi in rooms), Jean-Michel Cousteau dive center, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/incredible-private-island-resorts-you-can-book" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/petit-st-vincent-resort/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=petit-st-vincent-resort">Compare VS</a>
@@ -2394,7 +2404,7 @@
             <h3><a href="/stayodds/round-hill-jamaica/">Round Hill Hotel and Villas</a></h3>
             <div class="dest-card-loc">Montego Bay, Jamaica &bull; £750+/night</div>
             <p class="dest-card-blurb">Timeless 1953 Jamaican icon on a private 110-acre peninsula with Ralph Lauren-designed oceanfront rooms, privately staffed hillside pool villas (including JFK&#x27;s honeymoon Villa 10), and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/round-hill-jamaica/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=round-hill-jamaica">Compare VS</a>
@@ -2475,7 +2485,7 @@
             <h3><a href="/stayodds/ritz-carlton-grand-cayman/">The Ritz-Carlton, Grand Cayman</a></h3>
             <div class="dest-card-loc">Seven Mile Beach, Grand Cayman, Cayman Islands &bull; £900+/night</div>
             <p class="dest-card-blurb">Forbes Five-Star flagship spanning 144 acres on Seven Mile Beach — widely voted on r/chubbytravel as the Caribbean&#x27;s strongest all-around luxury Marriott property, anchored by Eric…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cayman-islands-cayman-islands/the-ritz-carlton-grand-cayman" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cayman-islands-cayman-islands/the-ritz-carlton-grand-cayman" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://stories.forbestravelguide.com/30-caribbean-hotels-you-have-to-visit" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/ritz-carlton-grand-cayman/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=ritz-carlton-grand-cayman">Compare VS</a>
@@ -2484,6 +2494,67 @@
             </div>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+    <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
+      <div class="container">
+        <div class="partner-deals-card">
+          <div class="partner-deals-head">
+            <div>
+              <span class="partner-deals-eyebrow">Trip Essentials &amp; Verified Booking Partners</span>
+              <h2>Compare Rates, Flights, Tours &amp; Travel Perks</h2>
+              <p>Trusted booking platforms, eSIM discount codes, and hotel points cards we use on trips filmed for The Uncharted Itinerary.</p>
+            </div>
+            <a class="btn btn-outline" href="https://uncharteditinerary.com/links/" style="font-size:13px;padding:8px 14px;">All Deals &amp; Gear &nearr;</a>
+          </div>
+
+          <div class="partner-deals-grid">
+            <a class="partner-deal-tile" href="https://holafly.sjv.io/Tripready" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Unlimited Travel eSIM</span><span class="partner-deal-code">Code: TRIPREADY</span></div>
+              <h3>Holafly Unlimited Data eSIM</h3>
+              <p>Instant data on arrival across 200+ destinations &mdash; 5% off with code <strong>TRIPREADY</strong>.</p>
+              <span class="partner-deal-cta">Claim 5% Discount &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://marriottbonvoy.currensea.co.uk/refer-a-friend?utm_source=refer-a-friend&amp;friend-referral-code=OKM2ZH" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Hotel Points Card</span><span class="partner-deal-code">Code: OKM2ZH</span></div>
+              <h3>Marriott Bonvoy Currensea Card</h3>
+              <p>Earn Marriott Bonvoy points on everyday &amp; overseas spending (up to 2,000 bonus pts via referral).</p>
+              <span class="partner-deal-cta">See Referral Offer &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://americanexpress.com/en-gb/referral/gold-credit?ref=oLIVEK1B4w" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Rewards Card (UK)</span><span class="partner-deal-code">Bonus Offer</span></div>
+              <h3>Amex Preferred Rewards Gold</h3>
+              <p>Convert Membership Rewards into airline Avios or hotel points with our UK referral bonus.</p>
+              <span class="partner-deal-cta">View UK Referral &nearr;</span>
+            </a>
+          </div>
+
+          <div class="partner-platforms-bar">
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Hotel Rates:</span>
+              <a class="partner-platform-pill" href="https://booking.tpx.lu/dddKFSMf" target="_blank" rel="sponsored noopener noreferrer">Booking.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+              <a class="partner-platform-pill" href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+              <a class="partner-platform-pill" href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Flights &amp; Tours:</span>
+              <a class="partner-platform-pill" href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi.com Flights &nearr;</a>
+              <a class="partner-platform-pill" href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+              <a class="partner-platform-pill" href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
+              <a class="partner-platform-pill" href="https://klook.tpx.lu/TsCmTC1L" target="_blank" rel="sponsored noopener noreferrer">Klook Transfers &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">eSIMs &amp; FX:</span>
+              <a class="partner-platform-pill" href="https://airalo.tpx.lu/WSdkjcJz" target="_blank" rel="sponsored noopener noreferrer">Airalo eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://saily.tpx.lu/bIVFTBvq" target="_blank" rel="sponsored noopener noreferrer">Saily eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://wise.com/invite/dic/oliverarrashk" target="_blank" rel="sponsored noopener noreferrer">Wise Travel Card &nearr;</a>
+            </div>
+          </div>
+
+          <p class="partner-deals-disclosure">Affiliate disclosure: Partner links may earn a small commission at zero extra cost to you and never influence StayOdds scores or rankings.</p>
         </div>
       </div>
     </section>
@@ -2515,6 +2586,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=4" defer></script>
 </body>
 </html>

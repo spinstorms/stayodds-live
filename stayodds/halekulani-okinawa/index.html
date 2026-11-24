@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=44" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -53,53 +53,63 @@
     gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
-<body>
+<body class="stayodds-warm-canvas">
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
       <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
         <span class="stayodds-brand-stack">
           <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
           <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
       </div>
-      <nav class="nav-links" aria-label="Main site navigation">
-        <a href="/" class="active">StayOdds</a>
-        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
-        <a href="/hotels/">Hotel Map</a>
-        <a href="/brands/">Brands</a>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
-        <a href="https://uncharteditinerary.com/about/">About</a>
-        <a href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a href="https://uncharteditinerary.com/contact/">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a class="btn btn-primary" href="/?a=halekulani-okinawa">Compare VS</a>
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
   </header>
 
-  <div class="hub-tabs-bar">
-    <div class="container hub-tabs-inner">
-      <a class="hub-embed-brand" href="/" aria-label="StayOdds Home">
-        <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
-      </a>
-      <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab active" id="hubTabStayOdds" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
-        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
-        <a class="hub-tab" id="hubTabMap" href="/hotels/">Hotel Map &amp; Scores</a>
-        <a class="hub-tab" href="/brands/">Brands</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/contact/">Contact</a>
-      </nav>
-      <a class="hub-back-link" href="/">&larr; All 832 StayOdds Hotels</a>
-    </div>
-  </div>
 
-  <main>
+  <main class="has-top-band">
+    <div class="detail-top-band" aria-hidden="true"></div>
     <div class="container">
       <div class="detail-breadcrumb">
         <a id="crumbAllLink" href="/">&larr; All StayOdds Hotels</a>
@@ -107,7 +117,7 @@
         <a id="crumbRegionLink" href="/?region=Asia">Asia</a>
         <span>/</span>
         <strong>Halekulani Okinawa</strong>
-        <a id="crumbAltViewLink" href="/hotels/?region=Asia" style="margin-left:auto;font-size:12.5px;font-weight:600;color:var(--accent);white-space:nowrap;">&#x1F4CD; Asia Map &rarr;</a>
+        <a id="crumbAltViewLink" href="/hotels/?region=Asia" style="margin-left:auto;font-size:12.5px;font-weight:600;color:var(--accent);white-space:nowrap;"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg> Asia Map &rarr;</a>
       </div>
 
       <section class="detail-hero">
@@ -125,13 +135,13 @@
             <span>&bull;</span><span>Leading Hotels of the World</span>
             <span>&bull;</span><span><strong>From £385/nt</strong></span>
           </div>
-          <div class="meta-line" style="margin-top:8px;gap:6px;"><a class="tag tag-accent" href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">🏆 Forbes Five-Star ↗</a></div>
+          <div class="meta-line" style="margin-top:8px;gap:6px;"><a class="tag tag-accent" href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star ↗</a></div>
           <h1 class="detail-title">Halekulani Okinawa</h1>
 
           
           <div class="top-quick-summary " aria-label="Quick hotel summary">
             <div class="top-quick-summary-head">
-              <span class="top-quick-summary-eyebrow">&#10024; Quick Summary &bull; The Bottom Line</span>
+              <span class="top-quick-summary-eyebrow"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19.5 16l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg> Quick Summary &bull; The Bottom Line</span>
               <span class="top-quick-summary-jumps">
                 <a href="#opinion-gap">Score Gap &darr;</a>
                 <a href="#key-facts">Specs &amp; Facts &darr;</a>
@@ -201,9 +211,20 @@
             <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.booking.com/searchresults.html?ss=Halekulani+Okinawa+Onna%2C+Okinawa" href="https://www.booking.com/searchresults.html?ss=Halekulani+Okinawa+Onna%2C+Okinawa" target="_blank" rel="sponsored noopener noreferrer">Check Live Rates on Booking.com &nearr;</a>
             
             <a class="btn btn-outline" href="/?a=halekulani-okinawa">Compare Head-to-Head</a>
-            <button type="button" class="btn btn-outline" id="shareHotelCardBtn">&#x1F4F8; Share StayOdds Card</button>
+            <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share StayOdds Card</button>
             <button type="button" class="btn btn-outline shortlist-btn" data-shortlist-id="halekulani-okinawa" data-resort-name="Halekulani Okinawa" aria-pressed="false">&#9825; Save to Shortlist</button>
             <a class="tripadvisor-link" href="https://www.tripadvisor.com/Search?q=Halekulani%20Okinawa%20Onna%2C%20Okinawa&amp;ssrc=h" target="_blank" rel="noopener noreferrer">TripAdvisor &nearr;</a>
+          </div>
+          <div class="detail-ota-strip" aria-label="Compare booking platforms and trip extras">
+            <span class="detail-ota-label">Compare partners:</span>
+            <a href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+            <a href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+            <a href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+            <a href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            <span class="detail-ota-sep" aria-hidden="true">&bull;</span>
+            <a href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi Flights &nearr;</a>
+            <a href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+            <a href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
           </div>
         </div>
       </section>
@@ -237,7 +258,7 @@
             </div>
           </div>
 
-          <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px;"><strong style="font-size:13px;color:#334155;">Official Awards (Listed by Name, Never Scored):</strong> <a class="tag tag-accent" href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">🏆 Forbes Five-Star ↗</a></div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px;"><strong style="font-size:13px;color:#334155;">Official Awards (Listed by Name, Never Scored):</strong> <a class="tag tag-accent" href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star ↗</a></div>
           <div class="live-google-bar" id="liveGoogleStrip" style="display:none;"></div>
           
         </div>
@@ -306,7 +327,7 @@
               <span class="tag">1 sourced</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <article class="channel-row"><div class="channel-row-head"><div><span class="tag tag-accent">Forbes Travel Guide</span><h4><a href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer">🏆 Forbes Five-Star ↗</a></h4></div><div class="channel-row-score"><strong>2026</strong><span>Official Honour</span></div></div></article>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag tag-accent">Forbes Travel Guide</span><h4><a href="https://www.forbestravelguide.com/hotels/okinawa-japan/halekulani-okinawa" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star ↗</a></h4></div><div class="channel-row-score"><strong>2026</strong><span>Official Honour</span></div></div></article>
             </div>
           </div>
           <div class="detail-panel">
@@ -328,7 +349,7 @@
             <p class="section-subtitle">Explore other personally curated properties in Asia.</p>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-            <a class="btn btn-outline" id="nearbyMapLink" href="/hotels/?region=Asia">&#x1F4CD; All Asia on Map &rarr;</a>
+            <a class="btn btn-outline" id="nearbyMapLink" href="/hotels/?region=Asia"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg> All Asia on Map &rarr;</a>
             <a class="btn btn-outline" id="nearbyListLink" href="/?region=Asia">All Asia in StayOdds &rarr;</a>
             <button type="button" class="so-request-btn" data-open-resort-request>+ Request a Resort</button>
           </div>
@@ -382,6 +403,67 @@
           </article></div>
       </section>
     </div>
+    <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
+      <div class="container">
+        <div class="partner-deals-card">
+          <div class="partner-deals-head">
+            <div>
+              <span class="partner-deals-eyebrow">Trip Essentials &amp; Verified Booking Partners</span>
+              <h2>Compare Rates, Flights, Tours &amp; Travel Perks</h2>
+              <p>Trusted booking platforms, eSIM discount codes, and hotel points cards we use on trips filmed for The Uncharted Itinerary.</p>
+            </div>
+            <a class="btn btn-outline" href="https://uncharteditinerary.com/links/" style="font-size:13px;padding:8px 14px;">All Deals &amp; Gear &nearr;</a>
+          </div>
+
+          <div class="partner-deals-grid">
+            <a class="partner-deal-tile" href="https://holafly.sjv.io/Tripready" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Unlimited Travel eSIM</span><span class="partner-deal-code">Code: TRIPREADY</span></div>
+              <h3>Holafly Unlimited Data eSIM</h3>
+              <p>Instant data on arrival across 200+ destinations &mdash; 5% off with code <strong>TRIPREADY</strong>.</p>
+              <span class="partner-deal-cta">Claim 5% Discount &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://marriottbonvoy.currensea.co.uk/refer-a-friend?utm_source=refer-a-friend&amp;friend-referral-code=OKM2ZH" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Hotel Points Card</span><span class="partner-deal-code">Code: OKM2ZH</span></div>
+              <h3>Marriott Bonvoy Currensea Card</h3>
+              <p>Earn Marriott Bonvoy points on everyday &amp; overseas spending (up to 2,000 bonus pts via referral).</p>
+              <span class="partner-deal-cta">See Referral Offer &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://americanexpress.com/en-gb/referral/gold-credit?ref=oLIVEK1B4w" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Rewards Card (UK)</span><span class="partner-deal-code">Bonus Offer</span></div>
+              <h3>Amex Preferred Rewards Gold</h3>
+              <p>Convert Membership Rewards into airline Avios or hotel points with our UK referral bonus.</p>
+              <span class="partner-deal-cta">View UK Referral &nearr;</span>
+            </a>
+          </div>
+
+          <div class="partner-platforms-bar">
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Hotel Rates:</span>
+              <a class="partner-platform-pill" href="https://booking.tpx.lu/dddKFSMf" target="_blank" rel="sponsored noopener noreferrer">Booking.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+              <a class="partner-platform-pill" href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+              <a class="partner-platform-pill" href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Flights &amp; Tours:</span>
+              <a class="partner-platform-pill" href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi.com Flights &nearr;</a>
+              <a class="partner-platform-pill" href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+              <a class="partner-platform-pill" href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
+              <a class="partner-platform-pill" href="https://klook.tpx.lu/TsCmTC1L" target="_blank" rel="sponsored noopener noreferrer">Klook Transfers &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">eSIMs &amp; FX:</span>
+              <a class="partner-platform-pill" href="https://airalo.tpx.lu/WSdkjcJz" target="_blank" rel="sponsored noopener noreferrer">Airalo eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://saily.tpx.lu/bIVFTBvq" target="_blank" rel="sponsored noopener noreferrer">Saily eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://wise.com/invite/dic/oliverarrashk" target="_blank" rel="sponsored noopener noreferrer">Wise Travel Card &nearr;</a>
+            </div>
+          </div>
+
+          <p class="partner-deals-disclosure">Affiliate disclosure: Partner links may earn a small commission at zero extra cost to you and never influence StayOdds scores or rankings.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -410,7 +492,7 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script type="module">
     const pageRegion = "Asia";
     const qsParams = new URLSearchParams(window.location.search);

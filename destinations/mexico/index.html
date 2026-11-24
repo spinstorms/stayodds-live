@@ -29,7 +29,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=44" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -56,53 +56,63 @@
     gtag('config', 'G-NR74H0P96J');
   </script>
 </head>
-<body>
+<body class="stayodds-warm-canvas">
   <header class="site-header stayodds-site-header">
     <div class="container header-inner">
       <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
         <span class="stayodds-brand-stack">
           <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
           <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
         </span>
       </div>
-      <nav class="nav-links" aria-label="Main site navigation">
-        <a href="/" class="active">StayOdds</a>
-        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
-        <a href="/hotels/">Hotel Map</a>
-        <a href="/brands/">Brands</a>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
-        <a href="https://uncharteditinerary.com/about/">About</a>
-        <a href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a href="https://uncharteditinerary.com/contact/">Contact</a>
       </nav>
+
       <div class="header-actions">
-        <a class="btn btn-primary" href="/?region=Caribbean%20%26%20Mexico">Compare Interactive</a>
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
   </header>
 
-  <div class="hub-tabs-bar">
-    <div class="container hub-tabs-inner">
-      <a class="hub-embed-brand" href="/" aria-label="StayOdds Home">
-        <span class="stayodds-wordmark">StayOdds<span class="stayodds-dot">.</span></span>
-      </a>
-      <nav class="hub-tabs" aria-label="Switch hub sections">
-        <a class="hub-tab active" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
-        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
-        <a class="hub-tab" href="/hotels/">Hotel Map &amp; Scores</a>
-        <a class="hub-tab" href="/brands/">Brands</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/about/">About</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/faq/">FAQ</a>
-        <a class="hub-tab" href="https://uncharteditinerary.com/contact/">Contact</a>
-      </nav>
-      <a class="hub-back-link" href="/">&larr; All StayOdds Hotels</a>
-    </div>
-  </div>
 
-  <main>
+  <main class="has-top-band">
+    <div class="detail-top-band" aria-hidden="true"></div>
     <section class="page-intro">
       <div class="container">
         <div class="detail-breadcrumb" style="margin-bottom:14px;">
@@ -180,7 +190,7 @@
             <h3><a href="/stayodds/grand-velas-boutique-los-cabos/">Grand Velas Boutique Los Cabos</a></h3>
             <div class="dest-card-loc">San José del Cabo / Corridor, Mexico &bull; £1,050+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Intimate 79-suite adults-only all-inclusive boutique sister to Grand Velas Los Cabos (opened late 2023), combining tranquil infinity-pool serenity and private-terrace suites with full…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/grand-velas-boutique-los-cabos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=grand-velas-boutique-los-cabos">Compare VS</a>
@@ -207,7 +217,7 @@
             <h3><a href="/stayodds/rosewood-mandarina/">Rosewood Mandarina</a></h3>
             <div class="dest-card-loc">Riviera Nayarit, Mexico &bull; £1,150+/night</div>
             <p class="dest-card-blurb">Opened in 2025 next to One&amp;Only Mandarina across mountain, flatland, and Canalan beachfront landscapes — offering 134 suites all with private plunge pools, flatter easier beachfront…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-mandarina/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-mandarina">Compare VS</a>
@@ -234,7 +244,7 @@
             <h3><a href="/stayodds/grand-velas-los-cabos/">Grand Velas Los Cabos</a></h3>
             <div class="dest-card-loc">Los Cabos, Mexico &bull; £1,100+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Widely regarded as Los Cabos&#x27; top luxury all-inclusive: all 307 ocean-view suites face the Sea of Cortez, anchored by MICHELIN-starred Cocina de Autor tasting menus (included!),…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/grand-velas-los-cabos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/grand-velas-los-cabos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=grand-velas-los-cabos">Compare VS</a>
@@ -288,7 +298,7 @@
             <h3><a href="/stayodds/esperanza-auberge-cabo/">Esperanza, Auberge Resorts Collection</a></h3>
             <div class="dest-card-loc">Cabo San Lucas, Mexico &bull; £1,100+/night</div>
             <p class="dest-card-blurb">Forbes Five-Star cliffside Cabo legend perched over crashing Sea of Cortez waves, famous for dramatic Cocina del Mar cliffside dining, adults-focused casitas with infinity hot tubs, and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/esperanza-auberge-collection" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/esperanza-auberge-collection" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/esperanza-auberge-cabo/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=esperanza-auberge-cabo">Compare VS</a>
@@ -315,7 +325,7 @@
             <h3><a href="/stayodds/etereo-auberge-riviera-maya/">Etéreo, Auberge Resorts Collection</a></h3>
             <div class="dest-card-loc">Kanai, Riviera Maya, Mexico &bull; £950+/night</div>
             <p class="dest-card-blurb">Intimate 75-key oceanfront sanctuary in the gated Kanai reserve praised for warm organic Mayan design, attentive couples-friendly service, rooftop plunge-pool suites, and holistic SANA…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/etereo-auberge-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=etereo-auberge-riviera-maya">Compare VS</a>
@@ -342,7 +352,7 @@
             <h3><a href="/stayodds/las-ventanas-al-paraiso/">Las Ventanas al Paraíso, A Rosewood Resort</a></h3>
             <div class="dest-card-loc">Los Cabos, Mexico</div>
             <p class="dest-card-blurb">Excellent service and attention to detail • Outstanding food quality</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 25 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.afar.com/places/las-ventanas-municipio-de-los-cabos" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 25 in the World (2026) &nearr;</a><a class="source-chip" href="https://www.afar.com/places/las-ventanas-municipio-de-los-cabos" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/las-ventanas-al-paraiso/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=las-ventanas-al-paraiso">Compare VS</a>
@@ -369,7 +379,7 @@
             <h3><a href="/stayodds/maroma-belmond-riviera-maya/">Maroma, A Belmond Hotel, Riviera Maya</a></h3>
             <div class="dest-card-loc">Punta Maroma, Riviera Maya, Mexico &bull; £1,100+/night</div>
             <p class="dest-card-blurb">72-room beachfront hacienda completely reimagined by Tara Bernerd in 2023 on one of Riviera Maya&#x27;s softest white-sand stretches, with Maroma Spa by Guerlain and intimate couples-focused…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/maroma-a-belmond-hotel-riviera-maya" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/maroma-a-belmond-hotel-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/belmond-maroma-resort-and-spa-xelha" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/maroma-a-belmond-hotel-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/maroma-a-belmond-hotel-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/belmond-maroma-resort-and-spa-xelha" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/maroma-belmond-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=maroma-belmond-riviera-maya">Compare VS</a>
@@ -396,7 +406,7 @@
             <h3><a href="/stayodds/rosewood-mayakoba/">Rosewood Mayakoba</a></h3>
             <div class="dest-card-loc">Riviera Maya, Mexico</div>
             <p class="dest-card-blurb">Customer service • Beautiful property</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/rosewood-mayakoba" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-rosewood-mayakoba/" target="_blank" rel="noopener noreferrer">&#128240; The Luxury Travel Expert &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/rosewood-mayakoba" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a><a class="source-chip" href="https://theluxurytravelexpert.com/review-rosewood-mayakoba/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Luxury Travel Expert &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-mayakoba/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-mayakoba">Compare VS</a>
@@ -423,7 +433,7 @@
             <h3><a href="/stayodds/susurros-del-corazon-auberge/">Susurros del Corazón, Auberge Resorts Collection</a></h3>
             <div class="dest-card-loc">Punta de Mita, Riviera Nayarit, Mexico &bull; £950+/night</div>
             <p class="dest-card-blurb">Breezy 59-room modern surf-chic resort on its own pristine swimmable white-sand beach with three oceanfront infinity pools (top tier adults-only), Onda Spa, and rave Reddit reviews for…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/in-depth-review-of-susurros-del-corazon-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/in-depth-review-of-susurros-del-corazon-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/susurros-del-corazon-auberge/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=susurros-del-corazon-auberge">Compare VS</a>
@@ -450,7 +460,7 @@
             <h3><a href="/stayodds/atelier-playa-mujeres/">Atelier Playa Mujeres</a></h3>
             <div class="dest-card-loc">Playa Mujeres, Cancún, Mexico &bull; £550+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Forbes Four-Star adults-only all-inclusive widely ranked on Reddit as Mexico&#x27;s top all-inclusive for foodies, pairing sleek contemporary Mexican art/design with María Dolores fine…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cancun-mexico/atelier-playa-mujeres" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cancun-mexico/atelier-playa-mujeres" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/atelier-playa-mujeres/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=atelier-playa-mujeres">Compare VS</a>
@@ -477,7 +487,7 @@
             <h3><a href="/stayodds/grand-velas-riviera-maya/">Grand Velas Riviera Maya</a></h3>
             <div class="dest-card-loc">Playa del Carmen, Riviera Maya, Mexico &bull; £950+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Benchmark luxury all-inclusive on Riviera Maya split into three distinct sections (jungle Zen Grand, family beachfront Ambassador, adults-only oceanfront Grand Class) with fine-dining…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/grand-velas-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/grand-velas-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/grand-velas-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=grand-velas-riviera-maya">Compare VS</a>
@@ -504,7 +514,7 @@
             <h3><a href="/stayodds/la-casa-de-la-playa-xcaret/">La Casa de la Playa by Xcaret</a></h3>
             <div class="dest-card-loc">Playa del Carmen, Riviera Maya, Mexico &bull; £1,400+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">63-suite adults-only ultra-luxury boutique all-inclusive where every suite has an oceanfront plunge pool, plus 24-hour chocolatería, tequila/wine cellars, fine dining by Martha Ortiz &amp;…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/la-casa-de-la-playa" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/la-casa-de-la-playa" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/la-casa-de-la-playa-xcaret/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=la-casa-de-la-playa-xcaret">Compare VS</a>
@@ -531,7 +541,7 @@
             <h3><a href="/stayodds/montage-los-cabos/">Montage Los Cabos</a></h3>
             <div class="dest-card-loc">Los Cabos, Mexico</div>
             <p class="dest-card-blurb">Beautiful property • Exceptional service</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.the50.com/stories/News/the-50-best-hotels-2026-the-51-100-list.html" target="_blank" rel="noopener noreferrer">&#127942; No. 67 in the World (2026) &nearr;</a><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/forbes-personal-shopper/article/best-hotel-in-los-cabos/" target="_blank" rel="noopener noreferrer">&#128240; Forbes Vetted &nearr;</a><a class="source-chip" href="https://www.afar.com/places/montage-los-cabos-cabo-san-lucas" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.the50.com/stories/News/the-50-best-hotels-2026-the-51-100-list.html" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 67 in the World (2026) &nearr;</a><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.forbes.com/sites/forbes-personal-shopper/article/best-hotel-in-los-cabos/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Vetted &nearr;</a><a class="source-chip" href="https://www.afar.com/places/montage-los-cabos-cabo-san-lucas" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/montage-los-cabos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=montage-los-cabos">Compare VS</a>
@@ -558,7 +568,7 @@
             <h3><a href="/stayodds/one-and-only-mandarina/">One&amp;Only Mandarina</a></h3>
             <div class="dest-card-loc">Riviera Nayarit, Mexico</div>
             <p class="dest-card-blurb">Mitten im Dschungel • Wunderschöner Strand</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 23 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-mandarina" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 23 in the World (2026) &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-mandarina" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/one-and-only-mandarina/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=one-and-only-mandarina">Compare VS</a>
@@ -585,7 +595,7 @@
             <h3><a href="/stayodds/one-and-only-palmilla/">One&amp;Only Palmilla</a></h3>
             <div class="dest-card-loc">San José del Cabo, Mexico</div>
             <p class="dest-card-blurb">Spotless / immaculate property and grounds • Incredibly attentive, helpful staff</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-palmilla" target="_blank" rel="noopener noreferrer">&#128240; Fat Voyage &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://fat.voyage/hotels/oneonly-palmilla" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Fat Voyage &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/one-and-only-palmilla/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=one-and-only-palmilla">Compare VS</a>
@@ -612,7 +622,7 @@
             <h3><a href="/stayodds/rosewood-san-miguel-de-allende/">Rosewood San Miguel de Allende</a></h3>
             <div class="dest-card-loc">San Miguel de Allende, Mexico &bull; £600+/night</div>
             <p class="dest-card-blurb">Colonial hacienda-style luxury flagship just blocks from the Parroquia with lush gardens, Luna Rooftop Tapas Bar overlooking the city skyline, Sense Spa, and warm Rosewood hospitality</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/san-miguel-de-allende-mexico/rosewood-san-miguel-de-allende" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/san-miguel-de-allende-mexico/rosewood-san-miguel-de-allende" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/san-miguel-de-allende-mexico/rosewood-san-miguel-de-allende" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/san-miguel-de-allende-mexico/rosewood-san-miguel-de-allende" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/rosewood-san-miguel-de-allende/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=rosewood-san-miguel-de-allende">Compare VS</a>
@@ -666,7 +676,7 @@
             <h3><a href="/stayodds/riviera-maya-edition-kanai/">The Riviera Maya EDITION at Kanai</a></h3>
             <div class="dest-card-loc">Kanai, Riviera Maya, Mexico &bull; £700+/night</div>
             <p class="dest-card-blurb">Minimalist Ian Schrager design hotel inside Kanai featuring a dramatic lagoon-size pool, SO&#x27;OL Beach Club, and signature Mexican fine dining by chefs Tomás Bermúdez (Ki&#x27;is) and Francisco…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/riviera-maya-edition-kanai/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=riviera-maya-edition-kanai">Compare VS</a>
@@ -693,7 +703,7 @@
             <h3><a href="/stayodds/waldorf-astoria-los-cabos-pedregal/">Waldorf Astoria Los Cabos Pedregal</a></h3>
             <div class="dest-card-loc">Cabo San Lucas, Mexico &bull; £1,150+/night</div>
             <p class="dest-card-blurb">Entered via Mexico&#x27;s only privately owned mountain tunnel (Dos Mares), offering private heated plunge pools in every room, iconic cliffside seafood restaurant El Farallon, Hilton points…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/waldorf-astoria-los-cabos-pedregal" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/waldorf-astoria-los-cabos-pedregal" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/the-resort-at-pedregal-cabo-san-lucas" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/waldorf-astoria-los-cabos-pedregal" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/waldorf-astoria-los-cabos-pedregal" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/the-resort-at-pedregal-cabo-san-lucas" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/waldorf-astoria-los-cabos-pedregal/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=waldorf-astoria-los-cabos-pedregal">Compare VS</a>
@@ -720,7 +730,7 @@
             <h3><a href="/stayodds/waldorf-astoria-riviera-maya/">Waldorf Astoria Riviera Maya, an All-Inclusive Experience</a></h3>
             <div class="dest-card-loc">Puerto Morelos / Cancún, Mexico &bull; £800+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Modern beachfront Waldorf Astoria (formerly Waldorf Astoria Cancun) just 15–20 minutes from CUN airport with ocean-view rooms featuring private balcony plunge pools, widely praised…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/waldorf-astoria-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=16742601199224339762" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/waldorf-astoria-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.google.com/maps?cid=16742601199224339762" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/waldorf-astoria-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=waldorf-astoria-riviera-maya">Compare VS</a>
@@ -747,7 +757,7 @@
             <h3><a href="/stayodds/casa-polanco-mexico-city/">Casa Polanco</a></h3>
             <div class="dest-card-loc">Polanco, Mexico City, Mexico &bull; £550+/night</div>
             <p class="dest-card-blurb">Intimate 19-suite 1940s neoclassical mansion overlooking Parque Lincoln in Polanco — widely praised on r/FATTravel and r/chubbytravel as Mexico City&#x27;s quietest residential-feeling luxury…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/casa-polanco-mexico-city/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=casa-polanco-mexico-city">Compare VS</a>
@@ -774,7 +784,7 @@
             <h3><a href="/stayodds/banyan-tree-mayakoba/">Banyan Tree Mayakoba</a></h3>
             <div class="dest-card-loc">Mayakoba, Riviera Maya, Mexico &bull; £650+/night</div>
             <p class="dest-card-blurb">All-pool-villa resort inside the gated Mayakoba lagoon enclave offering Asian-inspired tranquility, Sands Beach Club, acclaimed Thai restaurant Saffron, and strong value compared to…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/banyan-tree-mayakoba/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=banyan-tree-mayakoba">Compare VS</a>
@@ -801,7 +811,7 @@
             <h3><a href="/stayodds/chable-maroma/">Chablé Maroma</a></h3>
             <div class="dest-card-loc">Punta Maroma, Riviera Maya, Mexico &bull; £800+/night</div>
             <p class="dest-card-blurb">70 freestanding jungle villas each with a private plunge pool and outdoor rain shower leading onto powdery Punta Maroma beach, backed by chef Jorge Vallejo&#x27;s Kaban and Bu&#x27;ul culinary program</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/chable-maroma/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=chable-maroma">Compare VS</a>
@@ -828,7 +838,7 @@
             <h3><a href="/stayodds/chileno-bay-auberge-cabo/">Chileno Bay Resort &amp; Residences, Auberge Resorts Collection</a></h3>
             <div class="dest-card-loc">Los Cabos, Mexico &bull; £1,050+/night</div>
             <p class="dest-card-blurb">Sits directly on Chileno Bay — one of the very few calm, swimmable and snorkelable beaches in Los Cabos — with a sleek three-tiered zero-edge pool, lively modern vibe, kids/teens clubs,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/chileno-bay-resort-residences-auberge-collection" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/chileno-bay-resort-residences-auberge-collection" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/chileno-bay-resort-and-residences-auberge-resorts-collection" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/chileno-bay-resort-residences-auberge-collection" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/los-cabos-mexico/chileno-bay-resort-residences-auberge-collection" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/places/chileno-bay-resort-and-residences-auberge-resorts-collection" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/chileno-bay-auberge-cabo/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=chileno-bay-auberge-cabo">Compare VS</a>
@@ -855,7 +865,7 @@
             <h3><a href="/stayodds/grand-fiesta-americana-coral-beach-cancun/">Grand Fiesta Americana Coral Beach Cancún All Inclusive Spa &amp; Resort</a></h3>
             <div class="dest-card-loc">Punta Nizuc, Cancún, Mexico</div>
             <p class="dest-card-blurb">Breakfast Score: 7/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=5080215386112429687" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=5080215386112429687" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/grand-fiesta-americana-coral-beach-cancun/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=grand-fiesta-americana-coral-beach-cancun">Compare VS</a>
@@ -882,7 +892,7 @@
             <h3><a href="/stayodds/hyatt-zilara-cancun-google-hoteles/">Hyatt Zilara Cancun - Google Hoteles</a></h3>
             <div class="dest-card-loc">Punta Nizuc, Cancún, Mexico</div>
             <p class="dest-card-blurb">Breakfast Score: 3/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=10349210534563466303" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=10349210534563466303" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hyatt-zilara-cancun-google-hoteles/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hyatt-zilara-cancun-google-hoteles">Compare VS</a>
@@ -909,7 +919,7 @@
             <h3><a href="/stayodds/st-regis-kanai-riviera-maya/">The St. Regis Kanai Resort, Riviera Maya</a></h3>
             <div class="dest-card-loc">Kanai, Riviera Maya, Mexico &bull; £850+/night</div>
             <p class="dest-card-blurb">Architectural elevated circular buildings hovering over a 620-acre protected mangrove reserve with ocean views from virtually every room, signature St. Regis butler service, adults &amp;…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/the-st-regis-kanai-resort-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/the-st-regis-kanai-resort-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-kanai-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-kanai-riviera-maya">Compare VS</a>
@@ -936,7 +946,7 @@
             <h3><a href="/stayodds/st-regis-punta-mita/">The St. Regis Punta Mita Resort</a></h3>
             <div class="dest-card-loc">Punta Mita, Riviera Nayarit, Mexico &bull; £800+/night</div>
             <p class="dest-card-blurb">Refreshed 120-room Mexican-Mediterranean resort inside gated Punta Mita with signature butler service, private beach club, three infinity pools, Marieta Islands views, and Marriott…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/the-st-regis-punta-mita-resort" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/the-st-regis-punta-mita-resort" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-punta-mita/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-punta-mita">Compare VS</a>
@@ -963,7 +973,7 @@
             <h3><a href="/stayodds/four-seasons-costa-palmas/">Four Seasons Resort Los Cabos at Costa Palmas</a></h3>
             <div class="dest-card-loc">East Cape, Los Cabos, Mexico &bull; £950+/night</div>
             <p class="dest-card-blurb">Set on two miles of calm, swimmable Sea of Cortez beachfront on Cabo&#x27;s quiet East Cape with its own private marina, Estiatorio Milos dining, Robert Trent Jones II golf, and spacious…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-costa-palmas/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-costa-palmas">Compare VS</a>
@@ -990,7 +1000,7 @@
             <h3><a href="/stayodds/hotel-xcaret-arte/">Hotel Xcaret Arte</a></h3>
             <div class="dest-card-loc">Playa del Carmen, Riviera Maya, Mexico &bull; £750+/night (All-Fun Inclusive)</div>
             <p class="dest-card-blurb">Forbes Four-Star adults-only (16+) &#x27;All-Fun Inclusive&#x27; masterpiece featuring turquoise river inlets, dramatic rooftop pools, authentic regional Mexican dining by celebrity chefs, artisan…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/hotel-xcaret-arte" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/hotel-xcaret-arte" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/hotel-xcaret-arte/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=hotel-xcaret-arte">Compare VS</a>
@@ -1017,7 +1027,7 @@
             <h3><a href="/stayodds/st-regis-mexico-city/">The St. Regis Mexico City</a></h3>
             <div class="dest-card-loc">Paseo de la Reforma, Mexico City, Mexico &bull; £550+/night</div>
             <p class="dest-card-blurb">31-story Reforma tower overlooking the Fountain of Diana with St. Regis Butler Service, 15th-floor Remède Spa and skyline indoor pool, King Cole Bar, and strong Marriott Bonvoy luxury…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/mexico-city-mexico/the-st-regis-mexico-city" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/mexico-city-mexico/the-st-regis-mexico-city" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-mexico-city/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-mexico-city">Compare VS</a>
@@ -1044,7 +1054,7 @@
             <h3><a href="/stayodds/viceroy-los-cabos/">Viceroy Los Cabos</a></h3>
             <div class="dest-card-loc">San José del Cabo, Mexico</div>
             <p class="dest-card-blurb">Breakfast Score: 5/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14687419469414271022" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=14687419469414271022" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/viceroy-los-cabos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=viceroy-los-cabos">Compare VS</a>
@@ -1125,7 +1135,7 @@
             <h3><a href="/stayodds/zadun-ritz-carlton-reserve/">Zadún, a Ritz-Carlton Reserve</a></h3>
             <div class="dest-card-loc">San José del Cabo, Mexico &bull; £1,050+/night</div>
             <p class="dest-card-blurb">115 desert-dune suites and villas (nearly all with private plunge pools) overlooking the Sea of Cortez, with dedicated Tosoani butlers, standout Alkemia Spa, and peaceful proximity to…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer">&#128240; Walker Hotel Index (Ryan Walker) &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a><a class="source-chip" href="https://ryanwalkert5.com/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Walker Hotel Index (Ryan Walker) &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/zadun-ritz-carlton-reserve/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=zadun-ritz-carlton-reserve">Compare VS</a>
@@ -1152,7 +1162,7 @@
             <h3><a href="/stayodds/four-seasons-punta-mita/">Four Seasons Resort Punta Mita</a></h3>
             <div class="dest-card-loc">Punta Mita, Riviera Nayarit, Mexico &bull; £1,050+/night</div>
             <p class="dest-card-blurb">Beloved multi-generational family powerhouse inside the gated Punta Mita peninsula featuring two swimmable white-sand beaches, lazy river, adults-only Tamai pool, two Jack Nicklaus golf…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-punta-mita/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-punta-mita">Compare VS</a>
@@ -1179,7 +1189,7 @@
             <h3><a href="/stayodds/nizuc-resort-spa-cancun/">NIZUC Resort &amp; Spa</a></h3>
             <div class="dest-card-loc">Punta Nizuc, Cancún, Mexico &bull; £600+/night</div>
             <p class="dest-card-blurb">Secluded 29-acre peninsula just 15 minutes from Cancún Airport with two calm private beaches, six strong restaurants (including Ramona and Indochine), ESPA spa, and both family and…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cancun-mexico/nizuc-resort-spa" target="_blank" rel="noopener noreferrer">&#127942; Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/cancun-mexico/nizuc-resort-spa" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> Forbes Five-Star &nearr;</a><a class="source-chip" href="https://www.afar.com/travel-tips/the-best-hotels-in-cancun-and-riviera-maya" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/nizuc-resort-spa-cancun/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=nizuc-resort-spa-cancun">Compare VS</a>
@@ -1233,7 +1243,7 @@
             <h3><a href="/stayodds/four-seasons-mexico-city/">Four Seasons Hotel Mexico City</a></h3>
             <div class="dest-card-loc">Paseo de la Reforma, Mexico City, Mexico &bull; £650+/night</div>
             <p class="dest-card-blurb">Mexico City&#x27;s classic luxury sanctuary built around a tranquil palm-filled colonial courtyard right beside Chapultepec Park, famous for Fifty Mils cocktail bar, Zanaya seafood, Sunday…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/mexico-city-mexico/four-seasons-hotel-mexico-city" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/mexico-city-mexico/four-seasons-hotel-mexico-city" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-mexico-city/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-mexico-city">Compare VS</a>
@@ -1260,7 +1270,7 @@
             <h3><a href="/stayodds/four-seasons-cabo-del-sol/">Four Seasons Resort and Residences Cabo San Lucas at Cabo Del Sol</a></h3>
             <div class="dest-card-loc">Cabo San Lucas, Mexico &bull; £1,200+/night</div>
             <p class="dest-card-blurb">Brand-new 2024 modern hacienda on the Golden Corridor with a swimmable cove beach, Palmerio Mediterranean dining, Sora rooftop bar, and much easier access to Cabo San Lucas than East…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-cabo-del-sol/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-cabo-del-sol">Compare VS</a>
@@ -1287,7 +1297,7 @@
             <h3><a href="/stayodds/sunscape-cancun-resort-and-spa/">Sunscape Cancun Resort &amp; Spa</a></h3>
             <div class="dest-card-loc">Punta Nizuc, Cancún, Mexico</div>
             <p class="dest-card-blurb">Strong value, decent food, good-sized rooms, and good service.</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=5578593283212832068" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=5578593283212832068" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/sunscape-cancun-resort-and-spa/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=sunscape-cancun-resort-and-spa">Compare VS</a>
@@ -1341,7 +1351,7 @@
             <h3><a href="/stayodds/alila-mayakoba/">Alila Mayakoba</a></h3>
             <div class="dest-card-loc">Mayakoba, Playa del Carmen, Mexico &bull; £600+/night</div>
             <p class="dest-card-blurb">Reborn in February 2026 from the former Andaz Mayakoba into Hyatt&#x27;s serene wellness-forward Alila flagship inside the gated Mayakoba eco-enclave, combining lagoon-side tranquility,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8309323845265410365" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=8309323845265410365" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/alila-mayakoba/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=alila-mayakoba">Compare VS</a>
@@ -1395,7 +1405,7 @@
             <h3><a href="/stayodds/chable-yucatan/">Chablé Yucatán</a></h3>
             <div class="dest-card-loc">Chocholá, Mexico</div>
             <p class="dest-card-blurb">Amazing staff • Beautiful property</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer">&#127942; No. 9 in the World (2026) &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys &nearr;</a><a class="source-chip" href="https://www.the50.com/hotels/best-in-the-world/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 9 in the World (2026) &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/chable-yucatan/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=chable-yucatan">Compare VS</a>
@@ -1422,7 +1432,7 @@
             <h3><a href="/stayodds/four-seasons-tamarindo/">Four Seasons Resort Tamarindo</a></h3>
             <div class="dest-card-loc">Costalegre, Jalisco, Mexico &bull; £950+/night</div>
             <p class="dest-card-blurb">Architectural showstopper set inside a 3,000-acre private coastal nature reserve (only 2% developed), with cliffside infinity-pool suites, chef Elena Reygadas&#x27; Coyul restaurant, 35-acre…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/costalegre-mexico/four-seasons-resort-tamarindo" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/costalegre-mexico/four-seasons-resort-tamarindo" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/best-resorts-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/four-seasons-tamarindo/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=four-seasons-tamarindo">Compare VS</a>
@@ -1449,7 +1459,7 @@
             <h3><a href="/stayodds/esencia-riviera-maya/">Hotel Esencia</a></h3>
             <div class="dest-card-loc">Riviera Maya, Mexico</div>
             <p class="dest-card-blurb">Great hospitality • Amazing experience</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.the50.com/stories/News/the-50-best-hotels-2026-the-51-100-list.html" target="_blank" rel="noopener noreferrer">&#127942; No. 64 in the World (2026) &nearr;</a><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer">&#127942; 3 MICHELIN Keys &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.the50.com/stories/News/the-50-best-hotels-2026-the-51-100-list.html" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> No. 64 in the World (2026) &nearr;</a><a class="source-chip" href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-mexico-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 3 MICHELIN Keys &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/esencia-riviera-maya/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=esencia-riviera-maya">Compare VS</a>
@@ -1476,7 +1486,7 @@
             <h3><a href="/stayodds/impression-moxche-by-secrets/">Impression Moxché by Secrets</a></h3>
             <div class="dest-card-loc">Playa del Carmen, Riviera Maya, Mexico &bull; £700+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Ultra-luxury adults-only all-suite enclave with exclusive rooftop infinity pools, signature Teodoro tasting-menu restaurant, butler service, and full exchange access to adjacent Secrets…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/secrets-impression-moxche" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/impression-moxche-by-secrets" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://thepointsguy.com/hotel/reviews/secrets-impression-moxche" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-maya-mexico/impression-moxche-by-secrets" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/impression-moxche-by-secrets/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=impression-moxche-by-secrets">Compare VS</a>
@@ -1530,7 +1540,7 @@
             <h3><a href="/stayodds/naviva-four-seasons-punta-mita/">Naviva, A Four Seasons Resort, Punta Mita</a></h3>
             <div class="dest-card-loc">Punta Mita, Riviera Nayarit, Mexico &bull; £2,800+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Adults-only all-inclusive luxury tented sanctuary (just 15 canvas-canopy bungalows across 48 acres of Pacific coastal jungle) — unscripted Four Seasons hospitality, private plunge pools,…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/naviva-a-four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer">&#128240; Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/naviva-a-four-seasons-resort-punta-mita-mexico-review" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.forbestravelguide.com/hotels/riviera-nayarit-mexico/naviva-a-four-seasons-resort-punta-mita-mexico" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> Forbes Travel Guide &nearr;</a><a class="source-chip" href="https://www.afar.com/hotels/naviva-a-four-seasons-resort-punta-mita-mexico-review" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/naviva-four-seasons-punta-mita/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=naviva-four-seasons-punta-mita">Compare VS</a>
@@ -1557,7 +1567,7 @@
             <h3><a href="/stayodds/palmaia-house-of-aia/">Palmaïa – The House of AïA</a></h3>
             <div class="dest-card-loc">Playacar, Playa del Carmen, Mexico &bull; £850+/night (All-Inclusive)</div>
             <p class="dest-card-blurb">Progressive plant-based-forward wellness all-inclusive with oceanfront swim-out suites, Architects of Life sound baths/ceremonies, jungle cenote spa, and surprising family-friendliness…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/hotels-offer-schoolcations-as-remote-learning-goes-global" target="_blank" rel="noopener noreferrer">&#128240; AFAR &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.afar.com/magazine/hotels-offer-schoolcations-as-remote-learning-goes-global" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> AFAR &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/palmaia-house-of-aia/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=palmaia-house-of-aia">Compare VS</a>
@@ -1584,7 +1594,7 @@
             <h3><a href="/stayodds/st-regis-costa-mujeres/">The St. Regis Costa Mujeres Resort, Cancun</a></h3>
             <div class="dest-card-loc">Costa Mujeres, Cancún, Mexico &bull; £850+/night</div>
             <p class="dest-card-blurb">Brand-new 163-key beachfront St. Regis (opened June 2026) set on one of northern Cancún&#x27;s prettiest, Isla Mujeres-sheltered white-sand beaches with St. Regis Butler Service, oceanfront…</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://onemileatatime.com/news/st-regis-costa-mujeres-cancun/" target="_blank" rel="noopener noreferrer">&#128240; One Mile at a Time &nearr;</a><a class="source-chip" href="https://thepointsguy.com/news/st-regis-costa-mujeres-taking-reservations" target="_blank" rel="noopener noreferrer">&#128240; The Points Guy &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://onemileatatime.com/news/st-regis-costa-mujeres-cancun/" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> One Mile at a Time &nearr;</a><a class="source-chip" href="https://thepointsguy.com/news/st-regis-costa-mujeres-taking-reservations" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Points Guy &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/st-regis-costa-mujeres/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=st-regis-costa-mujeres">Compare VS</a>
@@ -1638,7 +1648,7 @@
             <h3><a href="/stayodds/zoetry-casa-del-mar-los-cabos/">Zoëtry Casa del Mar Los Cabos</a></h3>
             <div class="dest-card-loc">Los Cabos, Mexico</div>
             <p class="dest-card-blurb">Breakfast Score: 6/10</p>
-            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=12761812227341529607" target="_blank" rel="noopener noreferrer">&#128240; The Flip-Flop Traveller &nearr;</a></div>
+            <div class="dest-card-sources"><a class="source-chip" href="https://www.google.com/maps?cid=12761812227341529607" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2.8-2.8a5 5 0 0 0-7.1-7.1L11.2 4.7"/><path d="M14 11a5 5 0 0 0-7.1 0L4.1 13.8a5 5 0 0 0 7.1 7.1l1.6-1.6"/></svg> The Flip-Flop Traveller &nearr;</a></div>
             <div class="dest-card-actions">
               <a class="btn btn-primary" href="/stayodds/zoetry-casa-del-mar-los-cabos/">Full Breakdown &rarr;</a>
               <a class="btn btn-outline" href="/?a=zoetry-casa-del-mar-los-cabos">Compare VS</a>
@@ -1647,6 +1657,67 @@
             </div>
           </div>
         </article>
+        </div>
+      </div>
+    </section>
+    <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
+      <div class="container">
+        <div class="partner-deals-card">
+          <div class="partner-deals-head">
+            <div>
+              <span class="partner-deals-eyebrow">Trip Essentials &amp; Verified Booking Partners</span>
+              <h2>Compare Rates, Flights, Tours &amp; Travel Perks</h2>
+              <p>Trusted booking platforms, eSIM discount codes, and hotel points cards we use on trips filmed for The Uncharted Itinerary.</p>
+            </div>
+            <a class="btn btn-outline" href="https://uncharteditinerary.com/links/" style="font-size:13px;padding:8px 14px;">All Deals &amp; Gear &nearr;</a>
+          </div>
+
+          <div class="partner-deals-grid">
+            <a class="partner-deal-tile" href="https://holafly.sjv.io/Tripready" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Unlimited Travel eSIM</span><span class="partner-deal-code">Code: TRIPREADY</span></div>
+              <h3>Holafly Unlimited Data eSIM</h3>
+              <p>Instant data on arrival across 200+ destinations &mdash; 5% off with code <strong>TRIPREADY</strong>.</p>
+              <span class="partner-deal-cta">Claim 5% Discount &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://marriottbonvoy.currensea.co.uk/refer-a-friend?utm_source=refer-a-friend&amp;friend-referral-code=OKM2ZH" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Hotel Points Card</span><span class="partner-deal-code">Code: OKM2ZH</span></div>
+              <h3>Marriott Bonvoy Currensea Card</h3>
+              <p>Earn Marriott Bonvoy points on everyday &amp; overseas spending (up to 2,000 bonus pts via referral).</p>
+              <span class="partner-deal-cta">See Referral Offer &nearr;</span>
+            </a>
+            <a class="partner-deal-tile" href="https://americanexpress.com/en-gb/referral/gold-credit?ref=oLIVEK1B4w" target="_blank" rel="sponsored noopener noreferrer">
+              <div class="partner-deal-top"><span class="partner-deal-kicker">Rewards Card (UK)</span><span class="partner-deal-code">Bonus Offer</span></div>
+              <h3>Amex Preferred Rewards Gold</h3>
+              <p>Convert Membership Rewards into airline Avios or hotel points with our UK referral bonus.</p>
+              <span class="partner-deal-cta">View UK Referral &nearr;</span>
+            </a>
+          </div>
+
+          <div class="partner-platforms-bar">
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Hotel Rates:</span>
+              <a class="partner-platform-pill" href="https://booking.tpx.lu/dddKFSMf" target="_blank" rel="sponsored noopener noreferrer">Booking.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
+              <a class="partner-platform-pill" href="https://hotels.tpx.lu/2JsCNIZh" target="_blank" rel="sponsored noopener noreferrer">Hotels.com &nearr;</a>
+              <a class="partner-platform-pill" href="https://agoda.tpx.lu/p5JSiiU0" target="_blank" rel="sponsored noopener noreferrer">Agoda &nearr;</a>
+              <a class="partner-platform-pill" href="https://trip.tpx.lu/BbtDtE5w" target="_blank" rel="sponsored noopener noreferrer">Trip.com &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">Flights &amp; Tours:</span>
+              <a class="partner-platform-pill" href="https://kiwi.tpx.lu/fDgPG9Ew" target="_blank" rel="sponsored noopener noreferrer">Kiwi.com Flights &nearr;</a>
+              <a class="partner-platform-pill" href="https://getyourguide.tpx.lu/q0UlPSkz" target="_blank" rel="sponsored noopener noreferrer">GetYourGuide &nearr;</a>
+              <a class="partner-platform-pill" href="https://viator.tpx.lu/ByHwSqC5" target="_blank" rel="sponsored noopener noreferrer">Viator &nearr;</a>
+              <a class="partner-platform-pill" href="https://klook.tpx.lu/TsCmTC1L" target="_blank" rel="sponsored noopener noreferrer">Klook Transfers &nearr;</a>
+            </div>
+            <div class="partner-platform-group">
+              <span class="partner-platform-label">eSIMs &amp; FX:</span>
+              <a class="partner-platform-pill" href="https://airalo.tpx.lu/WSdkjcJz" target="_blank" rel="sponsored noopener noreferrer">Airalo eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://saily.tpx.lu/bIVFTBvq" target="_blank" rel="sponsored noopener noreferrer">Saily eSIM &nearr;</a>
+              <a class="partner-platform-pill" href="https://wise.com/invite/dic/oliverarrashk" target="_blank" rel="sponsored noopener noreferrer">Wise Travel Card &nearr;</a>
+            </div>
+          </div>
+
+          <p class="partner-deals-disclosure">Affiliate disclosure: Partner links may earn a small commission at zero extra cost to you and never influence StayOdds scores or rankings.</p>
         </div>
       </div>
     </section>
@@ -1678,6 +1749,6 @@
     </div>
   </footer>
 
-  <script src="/assets/stayodds-feedback.js?v=3" defer></script>
+  <script src="/assets/stayodds-feedback.js?v=4" defer></script>
 </body>
 </html>
