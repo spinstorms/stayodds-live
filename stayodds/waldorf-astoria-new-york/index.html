@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -64,6 +64,7 @@
       </div>
       <nav class="nav-links" aria-label="Main site navigation">
         <a href="/" class="active">StayOdds</a>
+        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
         <a href="/hotels/">Hotel Map</a>
         <a href="/brands/">Brands</a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
@@ -84,6 +85,7 @@
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
         <a class="hub-tab active" id="hubTabStayOdds" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
         <a class="hub-tab" id="hubTabMap" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab" href="/brands/">Brands</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
@@ -125,7 +127,22 @@
           </div>
           
           <h1 class="detail-title">Waldorf Astoria New York</h1>
-          <p class="detail-verdict">Reopened in 2025 after a landmark multi-billion-dollar restoration by Pierre-Yves Rochon, bringing back Art Deco Park Avenue grandeur with spacious new 375-key rooms, Peacock Alley, Guerlain Wellness Spa, and Hilton Honors points eligibility</p>
+
+          
+          <div class="top-quick-summary " aria-label="Quick hotel summary">
+            <div class="top-quick-summary-head">
+              <span class="top-quick-summary-eyebrow">&#10024; Quick Summary &bull; The Bottom Line</span>
+              <span class="top-quick-summary-jumps">
+                <a href="#opinion-gap">Score Gap &darr;</a>
+                <a href="#key-facts">Specs &amp; Facts &darr;</a>
+                <a href="#score-sources">Sources &darr;</a>
+              </span>
+            </div>
+            <ul class="top-quick-summary-list">
+              <li class="qs-row"><span class="qs-label">Consensus:</span> <span id="glanceScoreBasis"><strong>Strong 88% StayOdds</strong> — Based on 2 sources: Published Critics (35%) + Verified Guests (65%)</span></li><li class="qs-row is-pro"><span class="qs-label">Why Guests Love It:</span> Reopened in 2025 after a landmark multi-billion-dollar restoration by Pierre-Yves Rochon, bringing back Art Deco Park Avenue grandeur with spacious new 375-key rooms, Peacock Alley, Guerlain…</li><li class="qs-row"><span class="qs-label">Best Weather:</span> <strong>Apr–Oct</strong> — pleasant spring, summer &amp; crisp autumn travel seasons • Indicative rate: <strong>From £780/nt</strong>.</li><li class="qs-row is-con"><span class="qs-label">Heads-Up:</span> Midtown Park Avenue location is business-centric rather than residential Upper East Side or Tribeca; prime rates sit alongside Aman New York and The Carlyle</li>
+            </ul>
+            
+          </div>
 
           <div class="detail-kpi-row">
             <div class="detail-kpi is-primary is-market-track is-caution" id="kpiOddsCard">
@@ -134,7 +151,7 @@
             </div>
             <div class="detail-kpi">
               <strong>Not Stayed</strong>
-              <span>My Stay Score</span>
+              <span>Uncharted Stay</span>
             </div>
             <div class="detail-kpi">
               <strong>88%</strong>
@@ -154,7 +171,7 @@
             <div class="stayodds-explainer-body">
               <div class="stayodds-explainer-eq" id="stayOddsEquation">35% Published Critics (79%) + 65% Verified Guests (9.3/10 → 93%) = 88% StayOdds</div>
               <ul class="stayodds-explainer-list">
-                <li><strong>Founder Verified (Audited Stays):</strong> When I have personally stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% My Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% My Stay if no external score exists), with a transparent <strong>Founder vs. Consensus</strong> delta.</li>
+                <li><strong>Uncharted Verified (Filmed Stays):</strong> When <strong>The Uncharted Itinerary</strong> has stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% Uncharted Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% Uncharted Stay if no external score exists), with a transparent <strong>Uncharted vs. Consensus</strong> delta.</li>
                 <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Verified Guests when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
                 <li><strong>Zero Fabricated Numbers:</strong> Official awards (MICHELIN Keys, 50 Best, Forbes 5-Star) and comments-only reviews are linked transparently without invented numeric conversions.</li>
               </ul>
@@ -187,26 +204,6 @@
             <button type="button" class="btn btn-outline" id="shareHotelCardBtn">&#x1F4F8; Share StayOdds Card</button>
             <button type="button" class="btn btn-outline shortlist-btn" data-shortlist-id="waldorf-astoria-new-york" data-resort-name="Waldorf Astoria New York" aria-pressed="false">&#9825; Save to Shortlist</button>
             <a class="tripadvisor-link" href="https://www.tripadvisor.com/Search?q=Waldorf%20Astoria%20New%20York%20Midtown%20Manhattan%2C%20New%20York&amp;ssrc=h" target="_blank" rel="noopener noreferrer">TripAdvisor &nearr;</a>
-          </div>
-        </div>
-      </section>
-
-      
-      <section class="detail-section" aria-label="At a glance summary">
-        <div class="at-a-glance-card">
-          <div class="at-a-glance-head">
-            <div>
-              <span class="at-a-glance-eyebrow">At a Glance &bull; 10-Second Summary</span>
-              <h2>Key Takeaways for Waldorf Astoria New York</h2>
-            </div>
-            <div class="at-a-glance-jumps">
-              <a href="#opinion-gap">Score Gap &darr;</a>
-              <a href="#key-facts">Specs &amp; Facts &darr;</a>
-              <a href="#score-sources">All Sources &darr;</a>
-            </div>
-          </div>
-          <div class="at-a-glance-grid">
-            <div class="glance-item"><span class="glance-kicker">Score &amp; Basis</span><p id="glanceScoreBasis"><strong>88% StayOdds</strong> — Based on 2 sources: Published Critics (35%) + Verified Guests (65%)</p></div><div class="glance-item"><span class="glance-kicker">Trip Fit</span><p>Best Dry Months: <strong>Apr–Oct</strong> &bull; Indicative: <strong>From £780/nt</strong></p></div><div class="glance-item is-pro"><span class="glance-kicker">&#10003; Top Highlight</span><p>Reopened in 2025 after a landmark multi-billion-dollar restoration by Pierre-Yves Rochon, bringing back Art Deco Park Avenue grandeur with spacious new 375-key rooms, Peacock Alley,…</p></div><div class="glance-item is-con"><span class="glance-kicker">&#9888; Key Watch-Out</span><p>Midtown Park Avenue location is business-centric rather than residential Upper East Side or Tribeca; prime rates sit alongside Aman New York and The Carlyle</p></div>
           </div>
         </div>
       </section>
@@ -252,7 +249,7 @@
           <div class="detail-panel-head" style="margin-bottom:14px;">
             <div>
               <h2 class="section-title" style="font-size:20px;">Key Hotel Facts &amp; Decision Details</h2>
-              <p class="section-subtitle">Strictly verified property specs, property status &amp; works, standout highlights, and honest watch-outs — blank fields are omitted rather than guessed.</p>
+              <p class="section-subtitle">Strictly verified property specs, property status &amp; works, standout highlights, honest watch-outs, and specific room guidance — blank fields are omitted rather than guessed.</p>
             </div>
           </div>
           <div class="key-facts-grid"><div class="key-fact-tile"><small>Pool &amp; Heating</small><strong>Full-service spa &amp; wellness</strong></div><div class="key-fact-tile"><small>Opened / Renovated</small><strong>2025</strong></div><div class="key-fact-tile"><small>Transfer Logistics</small><strong>Approx. 35–55 minutes from JFK, LGA, or EWR</strong></div><div class="key-fact-tile"><small>Price Tier</small><strong>£1,200+/night</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>Waldorf Astoria</strong></div></div>
@@ -283,7 +280,7 @@
             </div>
             <p class="detail-panel-sub" id="weightFormulaSub">Based on 2 sources: Published Critics (35%) + Verified Guests (65%)</p>
             <div class="formula-grid" style="margin-top:14px; grid-template-columns: repeat(3, 1fr);">
-              <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">0%</span><strong>—</strong><small>My Stay</small></div>
+              <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">0%</span><strong>—</strong><small>Uncharted Stay</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightCriticsPct">35%</span><strong>79%</strong><small>Published Critics</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightGuestsPct">65%</span><strong id="weightGuestVal">93%</strong><small>Verified Guests</small></div>
             </div>
@@ -634,7 +631,7 @@
               wCr = critic100 != null ? 11 : 0;
               wGu = critic100 != null ? 19 : 30;
               odds = Math.round(ours100 * 0.70 + mkt * 0.30);
-              formula = `70% My Stay • 30% Consensus (${mkt}%)`;
+              formula = `70% Uncharted Stay • 30% Consensus (${mkt}%)`;
             } else if (critic100 != null) {
               wFH = 0; wCr = 35; wGu = 65;
               odds = mkt;
@@ -661,7 +658,7 @@
             if (kpiOdds && odds != null) kpiOdds.textContent = `${odds}%`;
             if (kpiOddsLbl) {
               kpiOddsLbl.textContent = firstHand
-                ? "Founder Verified"
+                ? "Uncharted Verified"
                 : active.length >= 2
                 ? `StayOdds • ${active.length} Sources`
                 : "StayOdds • 1 Source (Google)";
@@ -684,20 +681,20 @@
             const rhs = firstHand ? mkt : g100;
             if (left100 != null && rhs != null) {
               const d = left100 - rhs;
-              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Founder vs Consensus" : "Opinion Gap"}</span>`;
+              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Uncharted vs Consensus" : "Opinion Gap"}</span>`;
               const gapHead = document.getElementById("gapHeadline");
               if (gapHead) {
                 if (Math.abs(d) <= 5) {
                   gapHead.textContent = firstHand
-                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — my stay matched the wider consensus.`
+                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — The Uncharted Itinerary stay matched the wider consensus.`
                     : `Tight agreement (${d >= 0 ? "+" + d : d} pts) — ${criticLabel} and real guests agree.`;
                 } else if (d > 5) {
                   gapHead.textContent = firstHand
-                    ? `I rated this +${d} pts higher than the wider consensus — see what stood out.`
+                    ? `The Uncharted Itinerary rated this +${d} pts higher than the wider consensus — see what stood out.`
                     : `${criticLabel} rated this +${d} pts higher than real guests.`;
                 } else {
                   gapHead.textContent = firstHand
-                    ? `I rated this ${d} pts stricter than the wider consensus — see what held it back.`
+                    ? `The Uncharted Itinerary rated this ${d} pts stricter than the wider consensus — see what held it back.`
                     : `Real guests rated this +${Math.abs(d)} pts higher than ${criticLabel}.`;
                 }
               }
@@ -706,7 +703,7 @@
             const eqEl = document.getElementById("stayOddsEquation");
             if (eqEl && odds != null) {
               eqEl.textContent = firstHand && ours100 != null
-                ? `70% My Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Consensus (${mkt}%) = ${odds}% StayOdds`
+                ? `70% Uncharted Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Consensus (${mkt}%) = ${odds}% StayOdds`
                 : `${formula} = ${odds}% StayOdds`;
             }
 
@@ -735,7 +732,7 @@
 
     const shareCardState = {"hotel": {"id": "waldorf-astoria-new-york", "name": "Waldorf Astoria New York", "location": "Midtown Manhattan, New York", "country": "United States", "brand": "Waldorf Astoria", "priceRange": "£1,200+/night", "standout": "Reopened in 2025 after a landmark multi-billion-dollar restoration by Pierre-Yves Rochon, bringing back Art Deco Park Avenue grandeur with spacious new 375-key rooms, Peacock Alley, Guerlain Wellness Spa, and Hilton Honors points eligibility", "watchOut": "Midtown Park Avenue location is business-centric rather than residential Upper East Side or Tribeca; prime rates sit alongside Aman New York and The Carlyle", "keyFacts": {"poolHeating": "Full-service spa & wellness", "beachOrReef": "", "renovationYear": 2025, "transferLogistics": "Approx. 35–55 minutes from JFK, LGA, or EWR"}, "thumbnail": "assets/thumbs/waldorf-astoria-new-york.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 88, "statusBadge": "Opinions Differ", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": 79, "scoredEditorial": [{"sourceName": "Walker Hotel Index (Ryan Walker)", "rawScore": "39.5/50", "normalized100": 79}], "unverifiedEditorial": [], "editorialCount": 1, "youtubeCount": 1, "verifiedGuest": {"rating": 9.3, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Real guests rated this +14 pts higher than Walker Hotel Index (Ryan Walker).", "deltaLabel": "-14 pts"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
-      const mod = await import("/assets/stayodds-share-card.js?v=9");
+      const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
       if (typeof window.trackEvent === "function") {
         window.trackEvent("open_share_card", "single_hotel", shareCardState.hotel.name);

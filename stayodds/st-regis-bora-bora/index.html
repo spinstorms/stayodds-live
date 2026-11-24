@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=42" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=43" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -64,6 +64,7 @@
       </div>
       <nav class="nav-links" aria-label="Main site navigation">
         <a href="/" class="active">StayOdds</a>
+        <a href="/?mode=finder" class="nav-finder-link">&#10024; Trip Finder</a>
         <a href="/hotels/">Hotel Map</a>
         <a href="/brands/">Brands</a>
         <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
@@ -84,6 +85,7 @@
       </a>
       <nav class="hub-tabs" aria-label="Switch hub sections">
         <a class="hub-tab active" id="hubTabStayOdds" href="/" aria-current="page">StayOdds<span class="stayodds-dot">.</span></a>
+        <a class="hub-tab" href="/?mode=finder">&#10024; Trip Finder</a>
         <a class="hub-tab" id="hubTabMap" href="/hotels/">Hotel Map &amp; Scores</a>
         <a class="hub-tab" href="/brands/">Brands</a>
         <a class="hub-tab" href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
@@ -112,7 +114,7 @@
         <div class="detail-hero-media">
           <img src="/assets/thumbs/st-regis-bora-bora.webp?v=169" alt="The St. Regis Bora Bora Resort" fetchpriority="high" decoding="async" />
           <div class="detail-hero-badges">
-            <span class="tag tag-accent">Founder Verified</span>
+            <span class="tag tag-accent">Uncharted Verified</span>
             <span class="tag tag-caution" id="heroStatusBadge">Opinions Differ</span>
             
           </div>
@@ -125,16 +127,31 @@
           </div>
           
           <h1 class="detail-title">The St. Regis Bora Bora Resort</h1>
-          <p class="detail-verdict">Featured in our Bora Bora Shorts — enormous overwater villas (among the largest in the South Pacific) with a private lagoonarium and classic St. Regis butler polish, though pricey vs. Westin next door.</p>
+
+          
+          <div class="top-quick-summary is-uncharted" aria-label="Quick hotel summary">
+            <div class="top-quick-summary-head">
+              <span class="top-quick-summary-eyebrow">&#10024; Quick Summary &bull; The Bottom Line</span>
+              <span class="top-quick-summary-jumps">
+                <a href="#opinion-gap">Score Gap &darr;</a>
+                <a href="#key-facts">Specs &amp; Facts &darr;</a>
+                <a href="#score-sources">Sources &darr;</a>
+              </span>
+            </div>
+            <ul class="top-quick-summary-list">
+              <li class="qs-row"><span class="qs-label">Consensus:</span> <span id="glanceScoreBasis"><strong>84% StayOdds</strong> — Uncharted Verified (20 / 25 from our filmed stay) • The Uncharted Itinerary is -14 pts vs. wider consensus</span></li><li class="qs-row is-pro"><span class="qs-label">Why Guests Love It:</span> Massive 1,550+ sq ft overwater villas, private snorkeling lagoonarium &amp; Lagoon by Jean-Georges</li><li class="qs-row"><span class="qs-label">Best Weather:</span> <strong>May–Oct</strong> — dry winter season with lower humidity and clear turquoise lagoons • Indicative rate: <strong>From £1,310/nt</strong>.</li><li class="qs-row is-con"><span class="qs-label">Heads-Up:</span> Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling</li>
+            </ul>
+            <div class="qs-room-callout"><span class="qs-room-kicker">&#x1F6CF;&#xFE0F; Rooms to Book (Uncharted Note)</span><p>Overwater Villas start at a massive 1,550+ sq ft — classic styling with one of Bora Bora&#x27;s largest room footprints.</p></div>
+          </div>
 
           <div class="detail-kpi-row">
             <div class="detail-kpi is-primary is-verified-track is-caution" id="kpiOddsCard">
               <strong id="kpiOdds">84%</strong>
-              <span id="kpiOddsLbl">Founder Verified</span>
+              <span id="kpiOddsLbl">Uncharted Verified</span>
             </div>
             <div class="detail-kpi">
               <strong>20<span>/25</span></strong>
-              <span>My Stay Score</span>
+              <span>Uncharted Stay</span>
             </div>
             <div class="detail-kpi">
               <strong>94%</strong>
@@ -154,7 +171,7 @@
             <div class="stayodds-explainer-body">
               <div class="stayodds-explainer-eq" id="stayOddsEquation">70% My Stay (20/25 → 80%) + 11% Published Critics (90%) + 19% Verified Guests (9.6/10 → 96%) = 84% StayOdds</div>
               <ul class="stayodds-explainer-list">
-                <li><strong>Founder Verified (Audited Stays):</strong> When I have personally stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% My Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% My Stay if no external score exists), with a transparent <strong>Founder vs. Consensus</strong> delta.</li>
+                <li><strong>Uncharted Verified (Filmed Stays):</strong> When <strong>The Uncharted Itinerary</strong> has stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% Uncharted Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% Uncharted Stay if no external score exists), with a transparent <strong>Uncharted vs. Consensus</strong> delta.</li>
                 <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Verified Guests when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
                 <li><strong>Zero Fabricated Numbers:</strong> Official awards (MICHELIN Keys, 50 Best, Forbes 5-Star) and comments-only reviews are linked transparently without invented numeric conversions.</li>
               </ul>
@@ -191,27 +208,7 @@
         </div>
       </section>
 
-      
-      <section class="detail-section" aria-label="At a glance summary">
-        <div class="at-a-glance-card">
-          <div class="at-a-glance-head">
-            <div>
-              <span class="at-a-glance-eyebrow">At a Glance &bull; 10-Second Summary</span>
-              <h2>Key Takeaways for The St. Regis Bora Bora Resort</h2>
-            </div>
-            <div class="at-a-glance-jumps">
-              <a href="#opinion-gap">Score Gap &darr;</a>
-              <a href="#key-facts">Specs &amp; Facts &darr;</a>
-              <a href="#score-sources">All Sources &darr;</a>
-            </div>
-          </div>
-          <div class="at-a-glance-grid">
-            <div class="glance-item"><span class="glance-kicker">Score &amp; Basis</span><p id="glanceScoreBasis"><strong>84% StayOdds</strong> — 70% My Stay (20 / 25) • 30% Consensus (94%) (My Stay is -14 pts vs Consensus)</p></div><div class="glance-item"><span class="glance-kicker">Trip Fit</span><p>Best Dry Months: <strong>May–Oct</strong> &bull; Indicative: <strong>From £1,310/nt</strong></p></div><div class="glance-item is-pro"><span class="glance-kicker">&#10003; Top Highlight</span><p>Massive 1,550+ sq ft overwater villas, private snorkeling lagoonarium &amp; Lagoon by Jean-Georges</p></div><div class="glance-item is-con"><span class="glance-kicker">&#9888; Key Watch-Out</span><p>Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling</p></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £1,310/nt</strong><span class="detail-trip-sub">10% above the French Polynesia luxury median (£1,190/nt across 4 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">May–Oct</strong><span class="detail-trip-sub">Dry winter season with lower humidity and clear turquoise lagoons</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div><div class="detail-trip-tile is-tip"><span class="detail-trip-kicker">🛏️ First-Hand Room / Booking Tip</span><strong class="detail-trip-val">Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling</strong></div></div>
+      <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £1,310/nt</strong><span class="detail-trip-sub">10% above the French Polynesia luxury median (£1,190/nt across 4 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">May–Oct</strong><span class="detail-trip-sub">Dry winter season with lower humidity and clear turquoise lagoons</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div><div class="detail-trip-tile is-tip"><span class="detail-trip-kicker">&#x1F6CF;&#xFE0F; Rooms to Book (Uncharted Note)</span><strong class="detail-trip-val">Overwater Villas start at a massive 1,550+ sq ft — classic styling with one of Bora Bora&#x27;s largest room footprints.</strong></div></div>
 
       <!-- Dual-Mode Comparison & Opinion Gap Module -->
       <section class="detail-section" id="opinion-gap">
@@ -219,12 +216,12 @@
           <div class="opinion-gap-head">
             <div>
               <span class="tag tag-caution" id="gapStatusBadge">Opinions Differ</span>
-              <h2>Founder vs. Consensus</h2>
-              <p class="opinion-gap-headline" id="gapHeadline">I rated this -14 pts stricter than the wider consensus — see what held it back below.</p>
+              <h2>The Uncharted Itinerary vs. Consensus</h2>
+              <p class="opinion-gap-headline" id="gapHeadline">The Uncharted Itinerary rated this -14 pts stricter than the wider consensus — see what held it back below.</p>
             </div>
             <div class="opinion-gap-delta" id="gapDeltaPill">
               <strong>-14 pts</strong>
-              <span>Founder vs Consensus</span>
+              <span>Uncharted vs Consensus</span>
             </div>
           </div>
 
@@ -245,7 +242,7 @@
 
           
           <div class="live-google-bar" id="liveGoogleStrip" style="display:none;"></div>
-          <p class="opinion-gap-narrative"><strong>What I Liked &amp; Where My Take Differs:</strong> Featured in our Bora Bora Shorts — enormous overwater villas (among the largest in the South Pacific) with a private lagoonarium and classic St. Regis butler polish, though pricey vs. Westin next door.</p>
+          <p class="opinion-gap-narrative"><strong>What We Liked &amp; Where Our Take Differs:</strong> Featured in our Bora Bora Shorts — enormous overwater villas (among the largest in the South Pacific) with a private lagoonarium and classic St. Regis butler polish, though pricey vs. Westin next door.</p>
         </div>
       </section>
 
@@ -255,7 +252,7 @@
           <div class="detail-panel-head" style="margin-bottom:14px;">
             <div>
               <h2 class="section-title" style="font-size:20px;">Key Hotel Facts &amp; Decision Details</h2>
-              <p class="section-subtitle">Strictly verified property specs, property status &amp; works, standout highlights, and honest watch-outs — blank fields are omitted rather than guessed.</p>
+              <p class="section-subtitle">Strictly verified property specs, property status &amp; works, standout highlights, honest watch-outs, and specific room guidance — blank fields are omitted rather than guessed.</p>
             </div>
           </div>
           <div class="key-facts-grid"><div class="key-fact-tile"><small>Pool &amp; Heating</small><strong>Outdoor pool (heating not listed)</strong></div><div class="key-fact-tile"><small>Beach &amp; Reef</small><strong>Private beach area</strong></div><div class="key-fact-tile"><small>Transfer Logistics</small><strong>Airport transfers available (nearest code: BOB)</strong></div><div class="key-fact-tile"><small>Price Tier</small><strong>£1,200+/night</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>St. Regis</strong></div></div>
@@ -271,7 +268,7 @@
           <div class="verdict-trio" style="margin-top:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
             <div class="verdict-card"><span class="tag tag-accent">Standout Strengths</span><h3>What Stands Out</h3><p>Massive 1,550+ sq ft overwater villas, private snorkeling lagoonarium &amp; Lagoon by Jean-Georges</p></div>
             <div class="verdict-card is-warn"><span class="tag tag-caution">Watch-Outs</span><h3>Know Before Booking</h3><p>Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling</p></div>
-            
+            <div class="verdict-card" style="border-color:#fed7aa;background:#fff7ed;"><span class="tag" style="background:#ffedd5;color:#9a3412;">&#x1F6CF;&#xFE0F; Rooms to Book (Uncharted Note)</span><h3>Rooms to Book</h3><p>Overwater Villas start at a massive 1,550+ sq ft — classic styling with one of Bora Bora&#x27;s largest room footprints.</p></div>
           </div>
         </div>
       </section>
@@ -282,11 +279,11 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>StayOdds Weighting</h3>
-              <span class="tag">Founder Verified</span>
+              <span class="tag">Uncharted Verified</span>
             </div>
-            <p class="detail-panel-sub" id="weightFormulaSub">70% My Stay (20 / 25) • 30% Consensus (94%)</p>
+            <p class="detail-panel-sub" id="weightFormulaSub">70% Uncharted Stay (20 / 25) • 30% Consensus (94%)</p>
             <div class="formula-grid" style="margin-top:14px; grid-template-columns: repeat(3, 1fr);">
-              <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">70%</span><strong>20/25 → 80%</strong><small>My Stay</small></div>
+              <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">70%</span><strong>20/25 → 80%</strong><small>Uncharted Stay</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightCriticsPct">11%</span><strong>90%</strong><small>Published Critics</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightGuestsPct">19%</span><strong id="weightGuestVal">96%</strong><small>Verified Guests</small></div>
             </div>
@@ -637,7 +634,7 @@
               wCr = critic100 != null ? 11 : 0;
               wGu = critic100 != null ? 19 : 30;
               odds = Math.round(ours100 * 0.70 + mkt * 0.30);
-              formula = `70% My Stay • 30% Consensus (${mkt}%)`;
+              formula = `70% Uncharted Stay • 30% Consensus (${mkt}%)`;
             } else if (critic100 != null) {
               wFH = 0; wCr = 35; wGu = 65;
               odds = mkt;
@@ -664,7 +661,7 @@
             if (kpiOdds && odds != null) kpiOdds.textContent = `${odds}%`;
             if (kpiOddsLbl) {
               kpiOddsLbl.textContent = firstHand
-                ? "Founder Verified"
+                ? "Uncharted Verified"
                 : active.length >= 2
                 ? `StayOdds • ${active.length} Sources`
                 : "StayOdds • 1 Source (Google)";
@@ -687,20 +684,20 @@
             const rhs = firstHand ? mkt : g100;
             if (left100 != null && rhs != null) {
               const d = left100 - rhs;
-              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Founder vs Consensus" : "Opinion Gap"}</span>`;
+              if (pill) pill.innerHTML = `<strong>${d > 0 ? "+" + d : d} pts</strong><span>${firstHand ? "Uncharted vs Consensus" : "Opinion Gap"}</span>`;
               const gapHead = document.getElementById("gapHeadline");
               if (gapHead) {
                 if (Math.abs(d) <= 5) {
                   gapHead.textContent = firstHand
-                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — my stay matched the wider consensus.`
+                    ? `Tight agreement (${d >= 0 ? "+" + d : d} pts) — The Uncharted Itinerary stay matched the wider consensus.`
                     : `Tight agreement (${d >= 0 ? "+" + d : d} pts) — ${criticLabel} and real guests agree.`;
                 } else if (d > 5) {
                   gapHead.textContent = firstHand
-                    ? `I rated this +${d} pts higher than the wider consensus — see what stood out.`
+                    ? `The Uncharted Itinerary rated this +${d} pts higher than the wider consensus — see what stood out.`
                     : `${criticLabel} rated this +${d} pts higher than real guests.`;
                 } else {
                   gapHead.textContent = firstHand
-                    ? `I rated this ${d} pts stricter than the wider consensus — see what held it back.`
+                    ? `The Uncharted Itinerary rated this ${d} pts stricter than the wider consensus — see what held it back.`
                     : `Real guests rated this +${Math.abs(d)} pts higher than ${criticLabel}.`;
                 }
               }
@@ -709,7 +706,7 @@
             const eqEl = document.getElementById("stayOddsEquation");
             if (eqEl && odds != null) {
               eqEl.textContent = firstHand && ours100 != null
-                ? `70% My Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Consensus (${mkt}%) = ${odds}% StayOdds`
+                ? `70% Uncharted Stay (${personalLabel ? personalLabel + " → " : ""}${ours100}%) + 30% Consensus (${mkt}%) = ${odds}% StayOdds`
                 : `${formula} = ${odds}% StayOdds`;
             }
 
@@ -736,9 +733,9 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "st-regis-bora-bora", "name": "The St. Regis Bora Bora Resort", "location": "Motu Ome'e, Bora Bora", "country": "French Polynesia", "brand": "St. Regis", "priceRange": "£1,200+/night", "standout": "Massive 1,550+ sq ft overwater villas, private snorkeling lagoonarium & Lagoon by Jean-Georges", "watchOut": "Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling", "keyFacts": {"poolHeating": "Outdoor pool (heating not listed)", "beachOrReef": "Private beach area", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: BOB)"}, "thumbnail": "assets/thumbs/st-regis-bora-bora.webp", "cardPhoto": "assets/card-photos/st-regis-bora-bora.webp", "videoId": "Yph8Xt8FEE0", "coverageType": "Full Review", "propertyStatus": null}, "odds": {"greatStayOdds": 84, "statusBadge": "Opinions Differ", "tierLabel": "Founder Verified", "firstHand": true, "visited": true, "personalScoreLabel": "20 / 25", "critic100": 90, "scoredEditorial": [{"sourceName": "The Luxury Travel Expert", "rawScore": "9/10", "normalized100": 90}], "unverifiedEditorial": [], "editorialCount": 2, "youtubeCount": 4, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "My Score vs. Real Guest Score", "headline": "I rated this -14 pts stricter than the wider consensus — see what held it back below.", "deltaLabel": "-14 pts"}}};
+    const shareCardState = {"hotel": {"id": "st-regis-bora-bora", "name": "The St. Regis Bora Bora Resort", "location": "Motu Ome'e, Bora Bora", "country": "French Polynesia", "brand": "St. Regis", "priceRange": "£1,200+/night", "standout": "Massive 1,550+ sq ft overwater villas, private snorkeling lagoonarium & Lagoon by Jean-Georges", "watchOut": "Significantly pricier than the brand-new Westin Bora Bora with slightly more classic villa styling", "keyFacts": {"poolHeating": "Outdoor pool (heating not listed)", "beachOrReef": "Private beach area", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: BOB)"}, "thumbnail": "assets/thumbs/st-regis-bora-bora.webp", "cardPhoto": "assets/card-photos/st-regis-bora-bora.webp", "videoId": "Yph8Xt8FEE0", "coverageType": "Full Review", "propertyStatus": null}, "odds": {"greatStayOdds": 84, "statusBadge": "Opinions Differ", "tierLabel": "Uncharted Verified", "firstHand": true, "visited": true, "personalScoreLabel": "20 / 25", "critic100": 90, "scoredEditorial": [{"sourceName": "The Luxury Travel Expert", "rawScore": "9/10", "normalized100": 90}], "unverifiedEditorial": [], "editorialCount": 2, "youtubeCount": 4, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Uncharted Stay vs. Consensus", "headline": "The Uncharted Itinerary rated this -14 pts stricter than the wider consensus — see what held it back below.", "deltaLabel": "-14 pts"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
-      const mod = await import("/assets/stayodds-share-card.js?v=9");
+      const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
       if (typeof window.trackEvent === "function") {
         window.trackEvent("open_share_card", "single_hotel", shareCardState.hotel.name);
