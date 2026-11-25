@@ -185,7 +185,7 @@
             </div>
             <div class="detail-kpi">
               <strong id="kpiGuestVal">9.4<span>/10</span></strong>
-              <span id="kpiGuestLbl">Verified Guests (1,627)</span>
+              <span id="kpiGuestLbl">Guest Reviews (1,627)</span>
             </div>
           </div>
 
@@ -195,10 +195,10 @@
               <span class="stayodds-explainer-caret" aria-hidden="true">&#9662;</span>
             </summary>
             <div class="stayodds-explainer-body">
-              <div class="stayodds-explainer-eq" id="stayOddsEquation">70% My Stay (22/25 → 88%) + 30% Verified Guests (9.4/10 → 94%) = 90% StayOdds</div>
+              <div class="stayodds-explainer-eq" id="stayOddsEquation">70% My Stay (22/25 → 88%) + 30% Guest Reviews (9.4/10 → 94%) = 90% StayOdds</div>
               <ul class="stayodds-explainer-list">
                 <li><strong>Uncharted Verified (Filmed Stays):</strong> When <strong>The Uncharted Itinerary</strong> has stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% Uncharted Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% Uncharted Stay if no external score exists), with a transparent <strong>Uncharted vs. Consensus</strong> delta.</li>
-                <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Verified Guests when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
+                <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Guest Reviews when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
                 <li><strong>Zero Fabricated Numbers:</strong> Official awards (MICHELIN Keys, 50 Best, Forbes 5-Star) and comments-only reviews are linked transparently without invented numeric conversions.</li>
               </ul>
             </div>
@@ -271,6 +271,7 @@
             <div class="gap-side">
               <div class="gap-side-top"><span>Guest &amp; Critic Consensus</span><strong id="gapGuestDisplay">94%</strong></div>
               <div class="detail-bar-track"><div class="detail-bar-fill is-secondary" id="gapGuestBar" style="width:94%"></div></div>
+              
             </div>
           </div>
 
@@ -319,7 +320,7 @@
             <div class="formula-grid" style="margin-top:14px; grid-template-columns: repeat(3, 1fr);">
               <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">70%</span><strong>22/25 → 88%</strong><small>Uncharted Stay</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightCriticsPct">0%</span><strong>—</strong><small>Published Critics</small></div>
-              <div class="formula-step"><span class="formula-weight" id="weightGuestsPct">30%</span><strong id="weightGuestVal">94%</strong><small>Verified Guests</small></div>
+              <div class="formula-step"><span class="formula-weight" id="weightGuestsPct">30%</span><strong id="weightGuestVal">94%</strong><small>Guest Reviews</small></div>
             </div>
             
           </div>
@@ -843,7 +844,7 @@
 
     const shareCardState = {"hotel": {"id": "ritz-carlton-bali", "name": "The Ritz-Carlton, Bali", "location": "Nusa Dua, Bali", "country": "Indonesia", "brand": "The Ritz-Carlton", "priceRange": "£450–£750/night", "standout": "Half the price of St. Regis Bali with newer villas and better cliff-to-beach views", "watchOut": "Recycled grey-water toilet system can look brown and cause occasional bathroom odors", "keyFacts": {"poolHeating": "Outdoor pool (heating not listed)", "beachOrReef": "Private beach area", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: DPS)"}, "thumbnail": "assets/card-photos/ritz-carlton-bali.webp", "cardPhoto": "assets/card-photos/ritz-carlton-bali.webp", "videoId": "NL2ccUHteZs", "coverageType": "Full Review", "propertyStatus": null}, "odds": {"greatStayOdds": 90, "statusBadge": "Strong Agreement", "tierLabel": "Uncharted Verified", "firstHand": true, "visited": true, "personalScoreLabel": "22 / 25", "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 1, "youtubeCount": 2, "verifiedGuest": {"rating": 9.4, "scale": 10}, "officialAwards": [{"label": "Forbes Four-Star"}], "opinionGap": {"title": "Uncharted Stay vs. Consensus", "headline": "The Uncharted Itinerary rated this -6 pts stricter than the wider consensus — see what held it back below.", "deltaLabel": "-6 pts"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
-      const mod = await import("/assets/stayodds-share-card.js?v=10");
+      const mod = await import("/assets/stayodds-share-card.js?v=11");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
       if (typeof window.trackEvent === "function") {
         window.trackEvent("open_share_card", "single_hotel", shareCardState.hotel.name);
