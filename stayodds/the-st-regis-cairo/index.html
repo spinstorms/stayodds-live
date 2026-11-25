@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=45" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -582,7 +582,12 @@
       const ci = ciEl?.value || "";
       const co = coEl?.value || "";
       const ad = adEl?.value || "2";
-      if (!nid || !ci || !co || co <= ci) {
+      if (!nid) {
+        // Not covered by live pricing: say so and point to where rates can be checked.
+        if (rateStatus) rateStatus.innerHTML = "<span class=\"live-rate-note\"><strong>Live pricing isn&rsquo;t available<\/strong> for The St. Regis Cairo right now. Compare current rates on: <a href=\"https://www.booking.com/searchresults.html?ss=The+St.+Regis+Cairo+Cairo\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Booking.com &nearr;<\/a> &bull; <a href=\"https://trip.tpx.lu/BbtDtE5w\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Trip.com &nearr;<\/a> &bull; <a href=\"https://agoda.tpx.lu/p5JSiiU0\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Agoda &nearr;<\/a> &bull; <a href=\"https://expedia.tpx.lu/9LHschol\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Expedia &nearr;<\/a> &bull; <a href=\"https://hotels.tpx.lu/2JsCNIZh\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Hotels.com &nearr;<\/a><\/span>";
+        return;
+      }
+      if (!ci || !co || co <= ci) {
         if (rateStatus) rateStatus.textContent = "Please select a valid check-in and check-out date.";
         return;
       }

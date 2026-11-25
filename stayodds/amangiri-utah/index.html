@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=45" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -203,15 +203,15 @@
                   <option value="4">4 Adults</option>
                 </select>
               </label>
-              
+              <button type="button" class="btn btn-outline date-rate-check-btn is-unavailable" id="detailLiveRateBtn" data-nuitee-id="">Check Live Rate</button>
             </div>
             <div class="date-rate-status" id="detailLiveRateStatus">
-              Select trip dates to pass them straight into Booking.com.
+              Official rates are on Aman.com &mdash; choose your dates there.
             </div>
           </div>
 
           <div class="detail-actions">
-            <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.booking.com/searchresults.html?ss=Amangiri+USA" href="https://www.booking.com/searchresults.html?ss=Amangiri+USA" target="_blank" rel="sponsored noopener noreferrer">Check Live Rates on Booking.com &nearr;</a>
+            <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.aman.com/resorts/amangiri" href="https://www.aman.com/resorts/amangiri" target="_blank" rel="noopener noreferrer">Check Rates on Aman.com &nearr;</a>
             
             <a class="btn btn-outline" href="/?a=amangiri-utah">Compare Head-to-Head</a>
             <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share StayOdds Card</button>
@@ -357,7 +357,7 @@
             <button type="button" class="so-request-btn" data-open-resort-request>+ Request a Resort</button>
           </div>
         </div>
-        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Pre-Loaded Head-to-Head Matchups</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=amangiri-utah&amp;b=post-ranch-inn&amp;c=four-seasons-maui">Compare All 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=post-ranch-inn"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Post Ranch Inn</div><div class="rival-matchup-meta"><span>Post Ranch Inn: 94%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=four-seasons-maui"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Four Seasons Resort Maui at Wailea</div><div class="rival-matchup-meta"><span>Four Seasons Resort Maui at Wailea: 87% · From £905/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=aman-new-york"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Aman New York</div><div class="rival-matchup-meta"><span>Aman New York: 89% · From £2,485/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
+        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Pre-Loaded Head-to-Head Matchups</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=amangiri-utah&amp;b=post-ranch-inn&amp;c=four-seasons-maui">Compare All 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=post-ranch-inn"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Post Ranch Inn</div><div class="rival-matchup-meta"><span>Post Ranch Inn: 94%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=four-seasons-maui"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Four Seasons Resort Maui at Wailea</div><div class="rival-matchup-meta"><span>Four Seasons Resort Maui at Wailea: 87% · From £905/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=amangiri-utah&amp;b=aman-new-york"><div class="rival-matchup-vs">Amangiri <span style="color:var(--accent);">vs</span> Aman New York</div><div class="rival-matchup-meta"><span>Aman New York: 89%</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
         <div class="related-grid">
           <article class="related-card">
             <img src="/assets/thumbs/post-ranch-inn.webp?v=169" alt="Post Ranch Inn" loading="lazy" decoding="async" />
@@ -582,7 +582,12 @@
       const ci = ciEl?.value || "";
       const co = coEl?.value || "";
       const ad = adEl?.value || "2";
-      if (!nid || !ci || !co || co <= ci) {
+      if (!nid) {
+        // Not covered by live pricing: say so and point to where rates can be checked.
+        if (rateStatus) rateStatus.innerHTML = "<span class=\"live-rate-note\"><strong>Live pricing isn&rsquo;t available<\/strong> for Amangiri. Check current rates and availability on the official site: <a href=\"https://www.aman.com/resorts/amangiri\" target=\"_blank\" rel=\"noopener noreferrer\">Aman.com &nearr;<\/a><\/span>";
+        return;
+      }
+      if (!ci || !co || co <= ci) {
         if (rateStatus) rateStatus.textContent = "Please select a valid check-in and check-out date.";
         return;
       }

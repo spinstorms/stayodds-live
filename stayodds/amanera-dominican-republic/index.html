@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=45" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -203,15 +203,15 @@
                   <option value="4">4 Adults</option>
                 </select>
               </label>
-              
+              <button type="button" class="btn btn-outline date-rate-check-btn is-unavailable" id="detailLiveRateBtn" data-nuitee-id="">Check Live Rate</button>
             </div>
             <div class="date-rate-status" id="detailLiveRateStatus">
-              Select trip dates to pass them straight into Booking.com.
+              Official rates are on Aman.com &mdash; choose your dates there.
             </div>
           </div>
 
           <div class="detail-actions">
-            <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.booking.com/searchresults.html?ss=Amanera+Playa+Grande" href="https://www.booking.com/searchresults.html?ss=Amanera+Playa+Grande" target="_blank" rel="sponsored noopener noreferrer">Check Live Rates on Booking.com &nearr;</a>
+            <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.aman.com/resorts/amanera" href="https://www.aman.com/resorts/amanera" target="_blank" rel="noopener noreferrer">Check Rates on Aman.com &nearr;</a>
             
             <a class="btn btn-outline" href="/?a=amanera-dominican-republic">Compare Head-to-Head</a>
             <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share StayOdds Card</button>
@@ -582,7 +582,12 @@
       const ci = ciEl?.value || "";
       const co = coEl?.value || "";
       const ad = adEl?.value || "2";
-      if (!nid || !ci || !co || co <= ci) {
+      if (!nid) {
+        // Not covered by live pricing: say so and point to where rates can be checked.
+        if (rateStatus) rateStatus.innerHTML = "<span class=\"live-rate-note\"><strong>Live pricing isn&rsquo;t available<\/strong> for Amanera. Check current rates and availability on the official site: <a href=\"https://www.aman.com/resorts/amanera\" target=\"_blank\" rel=\"noopener noreferrer\">Aman.com &nearr;<\/a><\/span>";
+        return;
+      }
+      if (!ci || !co || co <= ci) {
         if (rateStatus) rateStatus.textContent = "Please select a valid check-in and check-out date.";
         return;
       }

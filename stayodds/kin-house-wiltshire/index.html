@@ -26,7 +26,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
-  <link rel="stylesheet" href="/assets/styles.min.css?v=45" />
+  <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -203,7 +203,7 @@
                   <option value="4">4 Adults</option>
                 </select>
               </label>
-              
+              <button type="button" class="btn btn-outline date-rate-check-btn is-unavailable" id="detailLiveRateBtn" data-nuitee-id="">Check Live Rate</button>
             </div>
             <div class="date-rate-status" id="detailLiveRateStatus">
               Select trip dates to pass them straight into Booking.com.
@@ -357,7 +357,7 @@
             <button type="button" class="so-request-btn" data-open-resort-request>+ Request a Resort</button>
           </div>
         </div>
-        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Pre-Loaded Head-to-Head Matchups</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=kin-house-wiltshire&amp;b=manor-house-castle-combe&amp;c=estelle-manor-oxfordshire">Compare All 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=manor-house-castle-combe"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> The Manor House, Castle Combe</div><div class="rival-matchup-meta"><span>The Manor House, Castle Combe: 73% · From £85/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=estelle-manor-oxfordshire"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> Estelle Manor</div><div class="rival-matchup-meta"><span>Estelle Manor: Global Directory · £700+/night</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=gleneagles-scotland"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> The Gleneagles Hotel</div><div class="rival-matchup-meta"><span>The Gleneagles Hotel: 94% · From £720/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
+        <div class="rival-matchups-box"><div class="rival-matchups-head"><h3>Pre-Loaded Head-to-Head Matchups</h3><a class="btn btn-outline" style="font-size:12.5px;padding:7px 12px;" href="/?a=kin-house-wiltshire&amp;b=manor-house-castle-combe&amp;c=estelle-manor-oxfordshire">Compare All 3 Side-by-Side &rarr;</a></div><div class="rival-matchups-grid"><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=manor-house-castle-combe"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> The Manor House, Castle Combe</div><div class="rival-matchup-meta"><span>The Manor House, Castle Combe: 73% · £350–£600/night</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=estelle-manor-oxfordshire"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> Estelle Manor</div><div class="rival-matchup-meta"><span>Estelle Manor: Global Directory · £700+/night</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a><a class="rival-matchup-card" href="/?a=kin-house-wiltshire&amp;b=gleneagles-scotland"><div class="rival-matchup-vs">Kin House, Wiltshire <span style="color:var(--accent);">vs</span> The Gleneagles Hotel</div><div class="rival-matchup-meta"><span>The Gleneagles Hotel: 94% · From £720/nt</span><span class="rival-matchup-cta">Compare &rarr;</span></div></a></div></div>
         <div class="related-grid">
           <article class="related-card">
             <img src="/assets/card-photos/manor-house-castle-combe.webp?v=169" alt="The Manor House, Castle Combe" loading="lazy" decoding="async" />
@@ -582,7 +582,12 @@
       const ci = ciEl?.value || "";
       const co = coEl?.value || "";
       const ad = adEl?.value || "2";
-      if (!nid || !ci || !co || co <= ci) {
+      if (!nid) {
+        // Not covered by live pricing: say so and point to where rates can be checked.
+        if (rateStatus) rateStatus.innerHTML = "<span class=\"live-rate-note\"><strong>Live pricing isn&rsquo;t available<\/strong> for Kin House, Wiltshire right now. Compare current rates on: <a href=\"https://www.booking.com/searchresults.html?ss=Kin+House+Kington+Langley+Wiltshire\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Booking.com &nearr;<\/a> &bull; <a href=\"https://trip.tpx.lu/BbtDtE5w\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Trip.com &nearr;<\/a> &bull; <a href=\"https://agoda.tpx.lu/p5JSiiU0\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Agoda &nearr;<\/a> &bull; <a href=\"https://expedia.tpx.lu/9LHschol\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Expedia &nearr;<\/a> &bull; <a href=\"https://hotels.tpx.lu/2JsCNIZh\" target=\"_blank\" rel=\"sponsored noopener noreferrer\">Hotels.com &nearr;<\/a><\/span>";
+        return;
+      }
+      if (!ci || !co || co <= ci) {
         if (rateStatus) rateStatus.textContent = "Please select a valid check-in and check-out date.";
         return;
       }
