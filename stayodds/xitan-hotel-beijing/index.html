@@ -504,6 +504,17 @@
       const ad = adEl?.value || "2";
       try {
         const u = new URL(baseUrl);
+        if (/prf\.hn$/i.test(u.hostname) && ci && co && co > ci) {
+          const m = baseUrl.match(/destination:(.+)$/);
+          if (m) {
+            const d = new URL(decodeURIComponent(m[1]));
+            const us = (x) => x.slice(5, 7) + "/" + x.slice(8, 10) + "/" + x.slice(0, 4);
+            d.searchParams.set("fromDate", us(ci));
+            d.searchParams.set("toDate", us(co));
+            d.searchParams.set("numAdultsPerRoom", ad);
+            bookBtn.href = baseUrl.slice(0, m.index) + "destination:" + encodeURIComponent(d.toString());
+          }
+        }
         if (/booking\.com/i.test(u.hostname) && ci && co && co > ci) {
           u.searchParams.set("checkin", ci);
           u.searchParams.set("checkout", co);
