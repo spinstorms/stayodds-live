@@ -27,6 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=1" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -155,82 +156,31 @@
           <h1 class="detail-title">Thyme</h1>
 
           
-          <div class="top-quick-summary " aria-label="Quick hotel summary">
-            <div class="top-quick-summary-head">
-              <span class="top-quick-summary-eyebrow"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19.5 16l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2z"/></svg> Quick Summary &bull; The Bottom Line</span>
-              <span class="top-quick-summary-jumps">
-                <a href="#opinion-gap">Score Gap &darr;</a>
-                <a href="#key-facts">Specs &amp; Facts &darr;</a>
-                <a href="#score-sources">Sources &darr;</a>
-              </span>
-            </div>
-            <ul class="top-quick-summary-list">
-              <li class="qs-row"><span class="qs-label">Consensus:</span> <span id="glanceScoreBasis"><strong>Standout 93% StayOdds</strong> — Based on 1 source (Guest Reviews) • <strong>2 MICHELIN Keys</strong></span></li><li class="qs-row is-pro"><span class="qs-label">Why Guests Love It:</span> Welcoming hosts • Cosy atmosphere</li><li class="qs-row"><span class="qs-label">Best Weather:</span> <strong>Dec–Mar (Ski) &amp; Jun–Sep</strong> — prime snowpack in winter; crisp alpine hiking &amp; lakes in summer.</li><li class="qs-row is-con"><span class="qs-label">Heads-Up:</span> Sofa bed was a bit cold in the morning • Towel drying options could be improved</li>
-            </ul>
+          <div class="so2-score"><div class="so2-ring" style="background:conic-gradient(#FF5D22 0 93%,#F1E7E0 93% 100%)"><div><b>93%</b><span>StayOdds</span></div></div><div class="so2-verdict"><strong>A great stay, rated 93/100 by guests, but United Kingdom has better-rated options at this price.</strong><span>Built from 551 guest reviews. No published critic score yet. We haven&#x27;t stayed yet.</span></div></div>
+          
+          <div class="so2-actions">
+            <a class="so2-btn-price" id="detailPrimaryBookingBtn" data-base-url="https://www.booking.com/searchresults.html?ss=Thyme+Lechlade" href="https://www.booking.com/searchresults.html?ss=Thyme+Lechlade" target="_blank" rel="sponsored noopener noreferrer">Check prices &nearr;</a>
             
+            <a class="btn btn-outline" href="/?a=thyme">Compare</a>
+            <button type="button" class="btn btn-outline shortlist-btn" data-shortlist-id="thyme" data-resort-name="Thyme" aria-pressed="false">&#9825; Save</button>
+            <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share</button>
           </div>
-
-          <div class="detail-kpi-row">
-            <div class="detail-kpi is-primary is-market-track " id="kpiOddsCard">
-              <strong id="kpiOdds">93%</strong>
-              <span id="kpiOddsLbl">StayOdds • 551 reviews</span>
-            </div>
-            <div class="detail-kpi">
-              <strong>Not Stayed</strong>
-              <span>Uncharted Stay</span>
-            </div>
-            <div class="detail-kpi">
-              <strong>93%</strong>
-              <span>Consensus (1 src)</span>
-            </div>
-            <div class="detail-kpi">
-              <strong id="kpiGuestVal">9.3<span>/10</span></strong>
-              <span id="kpiGuestLbl">Guest Reviews (551)</span>
-            </div>
-          </div>
-
-          <details class="stayodds-explainer">
-            <summary>
-              <span>How is this StayOdds % calculated?</span>
-              <span class="stayodds-explainer-caret" aria-hidden="true">&#9662;</span>
-            </summary>
-            <div class="stayodds-explainer-body">
-              <div class="stayodds-explainer-eq" id="stayOddsEquation">100% Guest Reviews (9.3/10 → 93%) = 93% StayOdds</div>
-              <ul class="stayodds-explainer-list">
-                <li><strong>Uncharted Verified (Filmed Stays):</strong> When <strong>The Uncharted Itinerary</strong> has stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% Uncharted Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% Uncharted Stay if no external score exists), with a transparent <strong>Uncharted vs. Consensus</strong> delta.</li>
-                <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Guest Reviews when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
-                <li><strong>Zero Fabricated Numbers:</strong> Official awards (MICHELIN Keys, 50 Best, Forbes 5-Star) and comments-only reviews are linked transparently without invented numeric conversions.</li>
-              </ul>
+          <details class="so2-dates">
+            <summary>Pick dates for live prices</summary>
+            <div class="date-rate-bar" id="detailDateRateBar">
+              <div class="date-rate-inputs">
+                <label><span>Check-in</span><input type="date" id="detailCheckin" /></label>
+                <label><span>Check-out</span><input type="date" id="detailCheckout" /></label>
+                <label><span>Guests</span>
+                  <select id="detailAdults"><option value="1">1 Adult</option><option value="2" selected>2 Adults</option><option value="3">3 Adults</option><option value="4">4 Adults</option></select>
+                </label>
+                <button type="button" class="btn btn-outline date-rate-check-btn" id="detailLiveRateBtn" data-nuitee-id="lp656a2a89">Check Live Rate</button>
+              </div>
+              <div class="date-rate-status" id="detailLiveRateStatus">
+                Select trip dates to pass them straight into Booking.com.
+              </div>
             </div>
           </details>
-
-          <div class="date-rate-bar" id="detailDateRateBar">
-            <div class="date-rate-inputs">
-              <label><span>Check-in</span><input type="date" id="detailCheckin" /></label>
-              <label><span>Check-out</span><input type="date" id="detailCheckout" /></label>
-              <label><span>Guests</span>
-                <select id="detailAdults">
-                  <option value="1">1 Adult</option>
-                  <option value="2" selected>2 Adults</option>
-                  <option value="3">3 Adults</option>
-                  <option value="4">4 Adults</option>
-                </select>
-              </label>
-              <button type="button" class="btn btn-outline date-rate-check-btn" id="detailLiveRateBtn" data-nuitee-id="lp656a2a89">Check Live Rate</button>
-            </div>
-            <div class="date-rate-status" id="detailLiveRateStatus">
-              Select trip dates to pass them straight into Booking.com.
-            </div>
-          </div>
-
-          <div class="detail-actions">
-            <a class="btn btn-primary" id="detailPrimaryBookingBtn" data-base-url="https://www.booking.com/searchresults.html?ss=Thyme+Lechlade" href="https://www.booking.com/searchresults.html?ss=Thyme+Lechlade" target="_blank" rel="sponsored noopener noreferrer">Check Live Rates on Booking.com &nearr;</a>
-            
-            <a class="btn btn-outline" href="/?a=thyme">Compare Head-to-Head</a>
-            <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share StayOdds Card</button>
-            <button type="button" class="btn btn-outline shortlist-btn" data-shortlist-id="thyme" data-resort-name="Thyme" aria-pressed="false">&#9825; Save to Shortlist</button>
-            <a class="tripadvisor-link" href="https://www.tripadvisor.com/Search?q=Thyme%20Lechlade&amp;ssrc=h" target="_blank" rel="noopener noreferrer">TripAdvisor &nearr;</a>
-          </div>
           <div class="detail-ota-strip" aria-label="Compare booking platforms and trip extras">
             <span class="detail-ota-label">Compare partners:</span>
             <a href="https://expedia.tpx.lu/9LHschol" target="_blank" rel="sponsored noopener noreferrer">Expedia &nearr;</a>
@@ -245,40 +195,11 @@
         </div>
       </section>
 
-      <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Dec–Mar (Ski) &amp; Jun–Sep</strong><span class="detail-trip-sub">Prime snowpack in winter; crisp alpine hiking &amp; lakes in summer</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div>
-
-      <!-- Dual-Mode Comparison & Opinion Gap Module -->
-      <section class="detail-section" id="opinion-gap">
-        <div class="opinion-gap-card ">
-          <div class="opinion-gap-head">
-            <div>
-              <span class="tag tag-teal" id="gapStatusBadge">1 Data Source</span>
-              <h2>Published Critics vs. Real Guests</h2>
-              <p class="opinion-gap-headline" id="gapHeadline">Recognised with 2 MICHELIN Keys — compare with real guest reviews below.</p>
-            </div>
-            <div class="opinion-gap-delta" id="gapDeltaPill">
-              <strong>—</strong>
-              <span>Opinion Gap</span>
-            </div>
-          </div>
-
-          <div class="opinion-gap-bars">
-            <div class="gap-side">
-              <div class="gap-side-top"><span>Published Critics</span><strong>No numeric critic review yet</strong></div>
-              <div class="detail-bar-track"><div class="detail-bar-fill" style="width:0%"></div></div>
-            </div>
-            
-            <div class="gap-side">
-              <div class="gap-side-top"><span>Real Guest Score</span><strong id="gapGuestDisplay">93 / 100 (551 reviews)</strong></div>
-              <div class="detail-bar-track"><div class="detail-bar-fill is-secondary" id="gapGuestBar" style="width:93%"></div></div>
-              <small class="detail-panel-sub" style="display:block;margin-top:6px;">Verified booking guests 9.5/10 (184) · Google 4.6/5 (367) — combined by number of reviews</small>
-            </div>
-          </div>
-
-          <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px;"><strong style="font-size:13px;color:#334155;">Official Awards (Listed by Name, Never Scored):</strong> <a class="tag tag-accent" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys ↗</a></div>
-          <div class="live-google-bar" id="liveGoogleStrip" style="display:none;"></div>
-          
-        </div>
+      
+      <section class="so2-three">
+        <div class="so2-card"><div class="so2-kicker is-accent">Our stay</div><div class="so2-mid">Not stayed yet</div><p class="so2-muted">When we stay and publish a scored review, our score appears here and counts for 70% of StayOdds.</p></div>
+        <div class="so2-card"><div class="so2-kicker">Guests</div><div class="so2-big">9.3<small>/10</small></div><p class="so2-muted">from 551 reviews, combined by number of reviews</p><div class="so2-row"><span>Verified booking guests</span><b>9.5/10 <small>(184)</small></b></div><div class="so2-row"><span>Google</span><b>4.6/5 <small>(367)</small></b></div></div>
+        <div class="so2-card"><div class="so2-kicker">Critics &amp; awards</div><div class="so2-mid">No published critic score yet</div><div class="so2-chips"><a class="tag tag-accent" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys ↗</a></div></div>
       </section>
 
       <section class="detail-section" id="guest-rank">
@@ -289,34 +210,18 @@
         </div>
       </section>
 
-      <!-- Structured Middle Key Facts Panel (Strictly Verified Specs) -->
-      <section class="detail-section" id="key-facts">
-        <div class="key-facts-panel">
-          <div class="detail-panel-head" style="margin-bottom:14px;">
-            <div>
-              <h2 class="section-title" style="font-size:20px;">Key Hotel Facts &amp; Decision Details</h2>
-              <p class="section-subtitle">Strictly verified property specs, property status &amp; works, standout highlights, honest watch-outs, and specific room guidance — blank fields are omitted rather than guessed.</p>
-            </div>
-          </div>
-          <div class="key-facts-grid"><div class="key-fact-tile"><small>Brand / Collection</small><strong>Independent</strong></div></div>
-          <div class="key-facts-flags"><span class="tag tag-caution"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18.5a1.8 1.8 0 0 0 1.6 2.7h17.2a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.8" fill="currentColor"/></svg> Aging Finish Noted</span></div>
-          
-          <div class="property-status-box " id="propertyStatusBlock">
-            <div class="property-status-head">
-              <span class="property-status-title">Property Status &amp; Works</span>
-              <span class="tag tag-slate">No Confirmed Works Listed</span>
-            </div>
-            <p class="property-status-neutral">No confirmed renovations, closures, or nearby works listed. StayOdds never guesses or invents renovation dates or construction notices.</p>
-          </div>
-          <div class="verdict-trio" style="margin-top:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
-            <div class="verdict-card"><span class="tag tag-accent">Standout Strengths</span><h3>What Stands Out</h3><p>Welcoming hosts • Cosy atmosphere</p></div>
-            <div class="verdict-card is-warn"><span class="tag tag-caution">Watch-Outs</span><h3>Know Before Booking</h3><p>Sofa bed was a bit cold in the morning • Towel drying options could be improved</p></div>
-            
-          </div>
-        </div>
-      </section>
+      <section class="so2-section"><h2 class="so2-h2">Before you book</h2><div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Dec–Mar (Ski) &amp; Jun–Sep</strong><span class="detail-trip-sub">Prime snowpack in winter; crisp alpine hiking &amp; lakes in summer</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div><details class="so2-more"><summary>Hotel facts &amp; property status</summary><div class='key-facts-grid'><div class="key-fact-tile"><small>Brand / Collection</small><strong>Independent</strong></div></div><div class='key-facts-flags'><span class="tag tag-caution"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9L1.8 18.5a1.8 1.8 0 0 0 1.6 2.7h17.2a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.8 1.8 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.8" fill="currentColor"/></svg> Aging Finish Noted</span></div></details></section>
+      <section class="so2-two"><div class="so2-card is-love"><h3>Why guests love it</h3><p>Welcoming hosts • Cosy atmosphere</p></div><div class="so2-card is-know"><h3>Know before you book</h3><p>Sofa bed was a bit cold in the morning • Towel drying options could be improved</p></div></section>
 
-      <!-- Formula Transparency & First-Hand Scorecard -->
+      <section class="so2-tabs" data-so2-tabs>
+        <div class="so2-tablist" role="tablist">
+          <button type="button" role="tab" aria-selected="true" data-tab="comments">Guest comments</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="nearby">Compare nearby</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="score">How the score works</button>
+        </div>
+      <div class="so2-panel" data-panel="score" hidden>
+      <details class="stayodds-explainer" open><summary><span>How is this StayOdds % calculated?</span></summary><div class="stayodds-explainer-body"><div class="stayodds-explainer-eq" id="stayOddsEquation">100% Guest Reviews (9.3/10 → 93%) = 93% StayOdds</div><ul class="stayodds-explainer-list"><li><strong>Hotels we stayed at:</strong> 70% our filmed stay + 30% guest &amp; critic consensus.</li><li><strong>Other hotels:</strong> 35% published critics + 65% guest reviews when both exist, otherwise the one source.</li><li><strong>No made-up numbers:</strong> awards and comment-only reviews are linked, never converted into points.</li></ul></div></details>
       <section class="detail-section" id="score-sources">
         <div class="detail-two-col">
           <div class="detail-panel">
@@ -343,7 +248,8 @@
         </div>
       </section>
 
-      <!-- Curated Awards, Critics & YouTube Reviews -->
+      </div>
+      <div class="so2-panel" data-panel="reviews" hidden>
       <section class="detail-section">
         <div class="detail-two-col">
           <div class="detail-panel">
@@ -367,12 +273,13 @@
         </div>
       </section>
 
-      <section class="detail-section"><h2 class="section-title" style="margin-bottom:14px;">What Guests &amp; Travellers Say</h2>
+      </div>
+      <div class="so2-panel" data-panel="comments"><section class="detail-section"><h2 class="section-title" style="margin-bottom:14px;">What Guests &amp; Travellers Say</h2>
       <div class="detail-two-col"><div class="detail-panel"><div class="detail-panel-head"><h3>Recent Guest Comments</h3><span class="tag">4 real reviews</span></div>
       <p class="detail-panel-sub">The most recent reviews written by guests who stayed here, shown word for word, whether positive or negative. Each one shows the guest's score, their type of trip, the date and the source of the review. Last updated 25 November 2026.</p>
-      <div class="channel-breakdown-list" style="margin-top:12px;"><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Friendly, wecolming, cosy, peaceful holiday.</strong><span><b>Liked:</b> Lovely, cosy cottage. Ideal location close to Robin Hoods Bay and Whitby. Dog friendly, lovely welcoming hosts. Would definitely recommend it. We will definitely be returning for a future holiday.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Couple · 15 November 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Brilliant cottage, service and location</strong><span><b>Liked:</b> Great location, parking, space for dogs, log burner, WiFi, cleanliness and considerate touches.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Couple · 11 November 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Cosy and comfortable.</strong><span><b>Liked:</b> This was our 3rd visit to Thyme Cottage. We take a short break here because it suits our needs of a comfortable small room with everything we need to relax with our dog Jack. The hosts Robert and Debby are the best and look after us very well without &quot;being there&quot; if you know what I mean. We have a very relaxing break with great walks on beaches and in forests nearby and of course Whitby which there&#x27;s a great view of…</span><span><b>Disliked:</b> Nothing we didn&#x27;t like.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Family With Children · 26 October 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><span><b>Liked:</b> There was nothing not to like. The place is lovely and cosy. Great views.</span><span><b>Disliked:</b> Nothing</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Family With Children · 13 October 2026 · Verified booking guest review</small></div></div></div></div></section>
-
-      <section class="detail-section" style="margin-bottom:56px;">
+      <div class="channel-breakdown-list" style="margin-top:12px;"><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Friendly, wecolming, cosy, peaceful holiday.</strong><span><b>Liked:</b> Lovely, cosy cottage. Ideal location close to Robin Hoods Bay and Whitby. Dog friendly, lovely welcoming hosts. Would definitely recommend it. We will definitely be returning for a future holiday.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Couple · 15 November 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Brilliant cottage, service and location</strong><span><b>Liked:</b> Great location, parking, space for dogs, log burner, WiFi, cleanliness and considerate touches.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Couple · 11 November 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><strong>Cosy and comfortable.</strong><span><b>Liked:</b> This was our 3rd visit to Thyme Cottage. We take a short break here because it suits our needs of a comfortable small room with everything we need to relax with our dog Jack. The hosts Robert and Debby are the best and look after us very well without &quot;being there&quot; if you know what I mean. We have a very relaxing break with great walks on beaches and in forests nearby and of course Whitby which there&#x27;s a great view of…</span><span><b>Disliked:</b> Nothing we didn&#x27;t like.</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Family With Children · 26 October 2026 · Verified booking guest review</small></div><div class="channel-row" style="display:block;"><div style="display:flex;flex-direction:column;gap:4px;"><span><b>Liked:</b> There was nothing not to like. The place is lovely and cosy. Great views.</span><span><b>Disliked:</b> Nothing</span></div><small class="detail-panel-sub" style="display:block;margin-top:6px;">10/10 · Family With Children · 13 October 2026 · Verified booking guest review</small></div></div></div></div></section></div>
+      <div class="so2-panel" data-panel="nearby" hidden>
+      <section class="detail-section" style="margin-bottom:24px;">
         <div class="section-header" style="margin-bottom:18px;flex-wrap:wrap;gap:12px;">
           <div>
             <h2 class="section-title">Compare Nearby Luxury Stays</h2>
@@ -431,6 +338,8 @@
               </div>
             </div>
           </article></div>
+      </section>
+      </div>
       </section>
     </div>
     <section class="partner-deals-section" id="partnerDealsStrip" aria-label="Travel perks and booking partners">
@@ -524,6 +433,15 @@
 
   <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script src="/assets/stayodds-video.js?v=2" defer></script>
+  <script>
+    document.querySelectorAll("[data-so2-tabs]").forEach(function (box) {
+      box.addEventListener("click", function (e) {
+        var b = e.target.closest("[data-tab]"); if (!b) return;
+        box.querySelectorAll("[data-tab]").forEach(function (x) { x.setAttribute("aria-selected", x === b ? "true" : "false"); });
+        box.querySelectorAll("[data-panel]").forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== b.getAttribute("data-tab"); });
+      });
+    });
+  </script>
   <script type="module">
     const pageRegion = "Europe";
     const qsParams = new URLSearchParams(window.location.search);
@@ -681,7 +599,8 @@
       }
     }
 
-    if (placeId) {
+    if (placeId && !document.getElementById("kpiOdds")) { showMapsFallback(mapsFallbackUrl); }
+    if (false && placeId) {
       const grCacheKey = "stayodds_gr_v1_" + placeId;
       const GR_TTL_MS = 24 * 60 * 60 * 1000;
       let cachedGr = null;
