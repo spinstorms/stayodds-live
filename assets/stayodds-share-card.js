@@ -1607,7 +1607,7 @@ export function renderSingleHotelCanvas(canvas, hotel, odds, format = "1:1") {
     ctx.fillStyle = "#CBD5E1";
     drawWrappedText(
       ctx,
-      "Compare 1313+ luxury hotels • Zero fabricated scores • Real verified data only",
+      "Compare 1309+ luxury hotels • Zero fabricated scores • Real verified data only",
       padX + 28,
       footY + 134,
       W - padX * 2 - 260,
