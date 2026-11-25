@@ -348,10 +348,10 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>Linked YouTube Video Reviews</h3>
-              <span class="tag">0 linked</span>
+              <span class="tag">3 linked</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <p class="detail-panel-sub">No video tours linked yet — we only feature full hotel walkthroughs we have personally checked.</p>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=uQnXTd0dU6o" target="_blank" rel="noopener noreferrer">Alma Rose Reviews ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Royal Hideaway Corales Tenerife Review | Was it worth it?&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=kn8I8UgcUPY" target="_blank" rel="noopener noreferrer">Benjamin Bryant ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Royal Hideaway Corales Suites: Two-Bedroom Deluxe Suite + Private Pool Tour (4K) | Tenerife Luxury🇪🇸&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=Y8rUY_JJ9Ww" target="_blank" rel="noopener noreferrer">Benjamin Bryant ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Royal Hideaway Corales Suites Tour (4K) | One-Bedroom Villa + Private Pool! 🇪🇸 Spanish Luxury&quot;</p></article>
             </div>
           </div>
         </div>
@@ -833,7 +833,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "royal-hideaway-corales-suites-tenerife", "name": "Royal Hideaway Corales Suites", "location": "Costa Adeje, Tenerife", "country": "Spain", "brand": "Royal Hideaway", "priceRange": "", "standout": "Clean rooms • Friendly staff", "watchOut": "Limited amenities • Mixed reviews on value for money", "keyFacts": {"poolHeating": "Full-service spa & wellness", "beachOrReef": "", "renovationYear": null, "transferLogistics": "Nearest airport code: TFS"}, "thumbnail": "assets/thumbs/royal-hideaway-corales-suites-tenerife.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 98, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": {"rating": 9.8, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "royal-hideaway-corales-suites-tenerife", "name": "Royal Hideaway Corales Suites", "location": "Costa Adeje, Tenerife", "country": "Spain", "brand": "Royal Hideaway", "priceRange": "", "standout": "Clean rooms • Friendly staff", "watchOut": "Limited amenities • Mixed reviews on value for money", "keyFacts": {"poolHeating": "Full-service spa & wellness", "beachOrReef": "", "renovationYear": null, "transferLogistics": "Nearest airport code: TFS"}, "thumbnail": "assets/thumbs/royal-hideaway-corales-suites-tenerife.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 98, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 3, "verifiedGuest": {"rating": 9.8, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);

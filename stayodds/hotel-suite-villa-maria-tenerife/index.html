@@ -348,10 +348,10 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>Linked YouTube Video Reviews</h3>
-              <span class="tag">0 linked</span>
+              <span class="tag">3 linked</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <p class="detail-panel-sub">No video tours linked yet — we only feature full hotel walkthroughs we have personally checked.</p>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=9dD_WK5n-DE" target="_blank" rel="noopener noreferrer">Hotel Suite Villa María ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Suite Villa Maria&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=qegF5Qg9hWQ" target="_blank" rel="noopener noreferrer">Food &amp; Travel with James ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Hotel suite VILLA MARIA review UPDATE 2025 LA CALETA Costa Adeje TENERIFE Canary Islands SPAIN&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=ohf0C6KK3Ms" target="_blank" rel="noopener noreferrer">Food &amp; Travel with James ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Hotel Suite VILLA MARIA TENERIFE Review&quot;</p></article>
             </div>
           </div>
         </div>
@@ -833,7 +833,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "hotel-suite-villa-maria-tenerife", "name": "Hotel Suite Villa María", "location": "Costa Adeje, Tenerife", "country": "Spain", "brand": "Independent", "priceRange": "", "standout": "Welcoming staff • Comfortable beds", "watchOut": "Limited menu at the main restaurant • Gym facilities could use modernization", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront / coastal access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: TFS)"}, "thumbnail": "assets/thumbs/hotel-suite-villa-maria-tenerife.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 94, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": {"rating": 9.4, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "hotel-suite-villa-maria-tenerife", "name": "Hotel Suite Villa María", "location": "Costa Adeje, Tenerife", "country": "Spain", "brand": "Independent", "priceRange": "", "standout": "Welcoming staff • Comfortable beds", "watchOut": "Limited menu at the main restaurant • Gym facilities could use modernization", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront / coastal access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: TFS)"}, "thumbnail": "assets/thumbs/hotel-suite-villa-maria-tenerife.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 94, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 3, "verifiedGuest": {"rating": 9.4, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);

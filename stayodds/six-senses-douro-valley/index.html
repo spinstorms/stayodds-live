@@ -348,10 +348,10 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>Linked YouTube Video Reviews</h3>
-              <span class="tag">0 linked</span>
+              <span class="tag">3 linked</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <p class="detail-panel-sub">No video tours linked yet — we only feature full hotel walkthroughs we have personally checked.</p>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=Nl3P8pyjT4g" target="_blank" rel="noopener noreferrer">FlyOver Travel - Luxury Travel Agency ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Six Senses Douro Valley: Spa, Wine &amp; River Views | Luxury Hotel Tour&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=Cf44odS8L04" target="_blank" rel="noopener noreferrer">Luxury Travel Expert ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;SIX SENSES DOURO VALLEY, best luxury hotel in Portugal: full tour&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=55VVcsh2dIo" target="_blank" rel="noopener noreferrer">Stay With Theo ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Six Senses Douro Valley Review: Is It Worth Your Stay?&quot;</p></article>
             </div>
           </div>
         </div>
@@ -387,7 +387,7 @@
             </div>
           </article>
           <article class="related-card">
-            <img src="/assets/placeholders/default-stayodds.webp?v=169" alt="Penha Longa Resort" loading="lazy" decoding="async" />
+            <img src="https://static.cupid.travel/hotels/548885440.jpg" alt="Penha Longa Resort" loading="lazy" decoding="async" />
             <div class="related-card-body">
               <div class="meta-line">
                 <span class="tag tag-slate">93% StayOdds</span>
@@ -833,7 +833,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "six-senses-douro-valley", "name": "Six Senses Douro Valley", "location": "Douro Valley", "country": "Portugal", "brand": "IHG / Six Senses", "priceRange": "", "standout": "Magical ambiance • Beautifully redone estate", "watchOut": "Not worth the price • Freezing pool", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront / coastal access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: OPO)"}, "thumbnail": "assets/thumbs/six-senses-douro-valley.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 96, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 3, "youtubeCount": 0, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [{"label": "1 MICHELIN Key"}], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Recognised with 1 MICHELIN Key — compare with real guest reviews below.", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "six-senses-douro-valley", "name": "Six Senses Douro Valley", "location": "Douro Valley", "country": "Portugal", "brand": "IHG / Six Senses", "priceRange": "", "standout": "Magical ambiance • Beautifully redone estate", "watchOut": "Not worth the price • Freezing pool", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront / coastal access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: OPO)"}, "thumbnail": "assets/thumbs/six-senses-douro-valley.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 96, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 3, "youtubeCount": 3, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [{"label": "1 MICHELIN Key"}], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Recognised with 1 MICHELIN Key — compare with real guest reviews below.", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);

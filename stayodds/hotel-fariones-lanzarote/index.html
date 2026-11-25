@@ -348,10 +348,10 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>Linked YouTube Video Reviews</h3>
-              <span class="tag">0 linked</span>
+              <span class="tag">3 linked</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <p class="detail-panel-sub">No video tours linked yet — we only feature full hotel walkthroughs we have personally checked.</p>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=_QZz3yq0Mzc" target="_blank" rel="noopener noreferrer">Jon&#x27;s Kitchen Official ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;HOTEL FARIONES - Is it WORTH the PRICE TAG??? - WATCH TILL THE END.&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=r2xLRywSh3s" target="_blank" rel="noopener noreferrer">Hotel Journeys ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;[4K] Hotel Fariones - Puerto del Carmen, Lanzarote (review)&quot;</p></article><article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=3SUF-DyRBoQ" target="_blank" rel="noopener noreferrer">Mr TravelON ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;👀Wait until you see the 5-Star Fariones Hotel Rooms!👀 | Room Tour &amp; Terrace Talk with Val &amp; Nuala&quot;</p></article>
             </div>
           </div>
         </div>
@@ -833,7 +833,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "hotel-fariones-lanzarote", "name": "Hotel Fariones", "location": "Puerto del Carmen, Lanzarote", "country": "Spain", "brand": "Independent", "priceRange": "", "standout": "Exceptional service • Lovely rooms", "watchOut": "Limited kid-friendly amenities", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: ACE)"}, "thumbnail": "assets/thumbs/hotel-fariones-lanzarote.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 96, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "hotel-fariones-lanzarote", "name": "Hotel Fariones", "location": "Puerto del Carmen, Lanzarote", "country": "Spain", "brand": "Independent", "priceRange": "", "standout": "Exceptional service • Lovely rooms", "watchOut": "Limited kid-friendly amenities", "keyFacts": {"poolHeating": "Heated pool confirmed", "beachOrReef": "Direct beachfront access", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: ACE)"}, "thumbnail": "assets/thumbs/hotel-fariones-lanzarote.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 96, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 3, "verifiedGuest": {"rating": 9.6, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);

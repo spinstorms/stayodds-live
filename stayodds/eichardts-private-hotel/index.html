@@ -244,7 +244,7 @@
         </div>
       </section>
 
-      <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £1,810/nt</strong><span class="detail-trip-sub">Right around the New Zealand luxury median (£1,810/nt across 5 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Nov–Apr</strong><span class="detail-trip-sub">Warm Southern Hemisphere spring, summer &amp; early autumn</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div>
+      <div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £1,810/nt</strong><span class="detail-trip-sub">70% above the New Zealand luxury median (£1,062/nt across 6 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Nov–Apr</strong><span class="detail-trip-sub">Warm Southern Hemisphere spring, summer &amp; early autumn</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div>
 
       <!-- Dual-Mode Comparison & Opinion Gap Module -->
       <section class="detail-section" id="opinion-gap">
@@ -348,10 +348,10 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h3>Linked YouTube Video Reviews</h3>
-              <span class="tag">0 linked</span>
+              <span class="tag">1 linked</span>
             </div>
             <div class="channel-breakdown-list" style="margin-top:12px;">
-              <p class="detail-panel-sub">No video tours linked yet — we only feature full hotel walkthroughs we have personally checked.</p>
+              <article class="channel-row"><div class="channel-row-head"><div><span class="tag">Review</span><h4><a href="https://www.youtube.com/watch?v=Q0PS39Ticu8" target="_blank" rel="noopener noreferrer">Stay With Theo ↗</a></h4></div></div><p class="channel-takeaway">Video: &quot;Eichardt&#x27;s Private Hotel Review: Pros and Cons&quot;</p></article>
             </div>
           </div>
         </div>
@@ -833,7 +833,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "eichardts-private-hotel", "name": "Eichardt's Private Hotel", "location": "Queenstown", "country": "New Zealand", "brand": "Small Luxury Hotels", "priceRange": "£900+/night", "standout": "Great location • Helpful staff", "watchOut": "Poor mattress quality • Steep road access", "keyFacts": {"poolHeating": "", "beachOrReef": "Alpine / ski access listed", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: ZQN)"}, "thumbnail": "assets/thumbs/eichardts-private-hotel.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 91, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 0, "verifiedGuest": {"rating": 9.1, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
+    const shareCardState = {"hotel": {"id": "eichardts-private-hotel", "name": "Eichardt's Private Hotel", "location": "Queenstown", "country": "New Zealand", "brand": "Small Luxury Hotels", "priceRange": "£900+/night", "standout": "Great location • Helpful staff", "watchOut": "Poor mattress quality • Steep road access", "keyFacts": {"poolHeating": "", "beachOrReef": "Alpine / ski access listed", "renovationYear": null, "transferLogistics": "Airport transfers available (nearest code: ZQN)"}, "thumbnail": "assets/thumbs/eichardts-private-hotel.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 91, "statusBadge": "1 Data Source", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": null, "scoredEditorial": [], "unverifiedEditorial": [], "editorialCount": 0, "youtubeCount": 1, "verifiedGuest": {"rating": 9.1, "scale": 10}, "officialAwards": [], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Based on 1 source (Verified Guests).", "deltaLabel": "—"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=10");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
