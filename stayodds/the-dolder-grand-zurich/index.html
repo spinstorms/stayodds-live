@@ -195,7 +195,7 @@
               <span class="stayodds-explainer-caret" aria-hidden="true">&#9662;</span>
             </summary>
             <div class="stayodds-explainer-body">
-              <div class="stayodds-explainer-eq" id="stayOddsEquation">35% Published Critics (86%) + 65% Guest Reviews (9.2/10 → 92%) = 90% StayOdds</div>
+              <div class="stayodds-explainer-eq" id="stayOddsEquation">35% Published Critics (87%) + 65% Guest Reviews (9.2/10 → 92%) = 90% StayOdds</div>
               <ul class="stayodds-explainer-list">
                 <li><strong>Uncharted Verified (Filmed Stays):</strong> When <strong>The Uncharted Itinerary</strong> has stayed and scored a hotel (/25), <strong>StayOdds</strong> weights <strong>70% Uncharted Stay + 30% Guest &amp; Critic Consensus</strong> (or 100% Uncharted Stay if no external score exists), with a transparent <strong>Uncharted vs. Consensus</strong> delta.</li>
                 <li><strong>Global Directory (Unvisited Hotels):</strong> Unvisited properties display a unified <strong>StayOdds %</strong> alongside the exact data-source count (35% Published Critics + 65% Guest Reviews when both exist, or clearly tagged <strong>1 Source</strong> when based on a single guest/critic feed), with gentle Bayesian dampening on tiny (&lt;40 review) samples.</li>
@@ -254,18 +254,18 @@
             <div>
               <span class="tag tag-accent" id="gapStatusBadge">Strong Agreement</span>
               <h2>Published Critics vs. Real Guests</h2>
-              <p class="opinion-gap-headline" id="gapHeadline">Real guests rated this +6 pts higher than 2 published critics.</p>
+              <p class="opinion-gap-headline" id="gapHeadline">Tight agreement (-5 pts) — 2 published critics and real guests agree.</p>
             </div>
             <div class="opinion-gap-delta" id="gapDeltaPill">
-              <strong>-6 pts</strong>
+              <strong>-5 pts</strong>
               <span>Opinion Gap</span>
             </div>
           </div>
 
           <div class="opinion-gap-bars">
             <div class="gap-side">
-              <div class="gap-side-top"><span>Published Critics</span><strong>86 / 100 (2 critics)</strong></div>
-              <div class="detail-bar-track"><div class="detail-bar-fill" style="width:86%"></div></div>
+              <div class="gap-side-top"><span>Published Critics</span><strong>87 / 100 (2 critics)</strong></div>
+              <div class="detail-bar-track"><div class="detail-bar-fill" style="width:87%"></div></div>
             </div>
             
             <div class="gap-side">
@@ -319,7 +319,7 @@
             <p class="detail-panel-sub" id="weightFormulaSub">Based on 2 sources: Published Critics (35%) + Guest Reviews (65%)</p>
             <div class="formula-grid" style="margin-top:14px; grid-template-columns: repeat(3, 1fr);">
               <div class="formula-step"><span class="formula-weight" id="weightFirstHandPct">0%</span><strong>—</strong><small>Uncharted Stay</small></div>
-              <div class="formula-step"><span class="formula-weight" id="weightCriticsPct">35%</span><strong>86%</strong><small>Published Critics</small></div>
+              <div class="formula-step"><span class="formula-weight" id="weightCriticsPct">35%</span><strong>87%</strong><small>Published Critics</small></div>
               <div class="formula-step"><span class="formula-weight" id="weightGuestsPct">65%</span><strong id="weightGuestVal">92%</strong><small>Guest Reviews</small></div>
             </div>
             
@@ -641,9 +641,9 @@
     const firstHand = false;
     const ours100 = null;
     const personalLabel = null;
-    const critic100 = 86;
+    const critic100 = 87;
     const staticGuest100 = 92;
-    const left100 = 86;
+    const left100 = 87;
     const criticLabel = "2 published critics";
     const mapsFallbackUrl = placeId
       ? "https://www.google.com/maps/place/?q=place_id:" + encodeURIComponent(placeId)
@@ -842,7 +842,7 @@
       showMapsFallback("");
     }
 
-    const shareCardState = {"hotel": {"id": "the-dolder-grand-zurich", "name": "The Dolder Grand", "location": "Zurich", "country": "Switzerland", "brand": "Leading Hotels", "priceRange": "", "standout": "Friendly staff • Beautiful property", "watchOut": "Issues with cleanliness • High prices", "keyFacts": {"poolHeating": "Full-service spa & wellness", "beachOrReef": "On-site or adjacent golf course", "renovationYear": null, "transferLogistics": "Nearest airport code: ZRH"}, "thumbnail": "assets/thumbs/the-dolder-grand-zurich.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 90, "statusBadge": "Strong Agreement", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": 86, "scoredEditorial": [{"sourceName": "Fat Voyage", "rawScore": "17/20", "normalized100": 85}, {"sourceName": "The Luxury Travel Expert", "rawScore": "8.8/10", "normalized100": 88}], "unverifiedEditorial": [], "editorialCount": 2, "youtubeCount": 3, "verifiedGuest": {"rating": 9.2, "scale": 10}, "officialAwards": [{"label": "2 MICHELIN Keys"}, {"label": "Forbes Five-Star"}], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Real guests rated this +6 pts higher than 2 published critics.", "deltaLabel": "-6 pts"}}};
+    const shareCardState = {"hotel": {"id": "the-dolder-grand-zurich", "name": "The Dolder Grand", "location": "Zurich", "country": "Switzerland", "brand": "Leading Hotels", "priceRange": "", "standout": "Friendly staff • Beautiful property", "watchOut": "Issues with cleanliness • High prices", "keyFacts": {"poolHeating": "Full-service spa & wellness", "beachOrReef": "On-site or adjacent golf course", "renovationYear": null, "transferLogistics": "Nearest airport code: ZRH"}, "thumbnail": "assets/thumbs/the-dolder-grand-zurich.webp", "cardPhoto": "", "videoId": "", "coverageType": "Global Directory", "propertyStatus": null}, "odds": {"greatStayOdds": 90, "statusBadge": "Strong Agreement", "tierLabel": "Global Directory", "firstHand": false, "visited": false, "personalScoreLabel": null, "critic100": 87, "scoredEditorial": [{"sourceName": "Fat Voyage", "rawScore": "17/20", "normalized100": 85}, {"sourceName": "The Luxury Travel Expert", "rawScore": "8.8/10", "normalized100": 88}], "unverifiedEditorial": [], "editorialCount": 2, "youtubeCount": 3, "verifiedGuest": {"rating": 9.2, "scale": 10}, "officialAwards": [{"label": "2 MICHELIN Keys"}, {"label": "Forbes Five-Star"}], "opinionGap": {"title": "Critics & Awards vs. Real Guest Score", "headline": "Tight agreement (-5 pts) — 2 published critics and real guests agree.", "deltaLabel": "-5 pts"}}};
     document.getElementById("shareHotelCardBtn")?.addEventListener("click", async () => {
       const mod = await import("/assets/stayodds-share-card.js?v=11");
       mod.openSingleHotelShareModal(shareCardState.hotel, shareCardState.odds);
