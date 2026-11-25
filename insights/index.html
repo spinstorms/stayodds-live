@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=2" />
+  <link rel="shortcut icon" href="/favicon.ico?v=2?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=2" />
+  <meta name="google-adsense-account" content="ca-pub-4618281487216833" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4618281487216833" crossorigin="anonymous"></script>
+  <title>Guest Insights | StayOdds</title>
+  <meta name="description" content="How guests rate award-winning luxury hotels: rankings, brands, critics versus guests." />
+  <link rel="canonical" href="https://stayodds.com/insights/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="World Luxury Hotel Map (All 1312 Hotels) &amp; Scorecards | StayOdds" />
+  <meta property="og:description" content="Interactive world map of all 1312 StayOdds luxury hotels — color-coded for First-Hand stays, 2026 MICHELIN Key winners, and Global Directory icons." />
+  <meta property="og:image" content="https://stayodds.com/assets/banners/bora-bora.jpg" />
+  <meta property="og:url" content="https://stayodds.com/hotels/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "StayOdds World Luxury Hotel Map (All 1312 Hotels)",
+    "url": "https://stayodds.com/hotels/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Uncharted Itinerary",
+      "url": "https://uncharteditinerary.com/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://basemaps.cartocdn.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="preload" href="/data/stayodds-index.json?v=20261125a" as="fetch" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
+  <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
+  <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
+  <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "zhmuw1amoy");
+  </script>
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+    (function () {
+        var script = document.createElement("script");
+        script.async = 1;
+        script.setAttribute("data-cmp-ab","2");
+        script.src = 'https://emrld.ltd/NjA0NzQ3.js?t=604747';
+        document.head.appendChild(script);
+    })();
+  </script>
+  <!-- Google tag (gtag.js) — StayOdds.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR74H0P96J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NR74H0P96J');
+  </script>
+</head>
+<body class="stayodds-warm-canvas">
+  <header class="site-header stayodds-site-header">
+    <div class="container header-inner">
+      <div class="brand stayodds-brand-group">
+        <a href="/" class="stayodds-brand-emblem-link" aria-label="StayOdds Home">
+          <img src="/assets/stayodds-logo.png?v=2" alt="SO." width="36" height="36" class="stayodds-header-emblem" />
+        </a>
+        <span class="stayodds-brand-stack">
+          <a class="stayodds-wordmark-lg" href="/" rel="noopener">StayOdds<span class="stayodds-dot">.</span></a>
+          <a class="stayodds-brand-by" href="https://uncharteditinerary.com/" rel="noopener">by The Uncharted Itinerary &nearr;</a>
+        </span>
+      </div>
+
+      <nav class="nav-links stayodds-clean-nav" aria-label="Main site navigation">
+        <a href="/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><line x1="20.5" y1="20.5" x2="16.35" y2="16.35"/></svg>
+          Discover
+        </a>
+        <a href="/?mode=compare">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7.5" height="16" rx="1.8"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.8"/></svg>
+          Compare
+        </a>
+        <a href="/hotels/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.75"/></svg>
+          World Map
+        </a>
+        <a href="/brands/">
+          <svg class="so-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          Brands
+        </a>
+        <a href="https://uncharteditinerary.com/" class="nav-uncharted-pill">Uncharted Videos &nearr;</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline nav-deals-btn" href="https://uncharteditinerary.com/links/">Deals &amp; Codes</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="/">Discover Hotels</a>
+      <a href="/?mode=compare">Compare VS &amp; Directory</a>
+      <a href="/hotels/">Interactive World Map</a>
+      <a href="/brands/">Brand Leaderboard</a>
+      <a href="/lists/">Award Lists</a>
+      <a href="https://uncharteditinerary.com/links/">Travel Deals &amp; Codes</a>
+      <a href="https://uncharteditinerary.com/">Uncharted Videos &nearr;</a>
+      <a href="https://uncharteditinerary.com/about/">About</a>
+      <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+      <a href="https://uncharteditinerary.com/contact/">Contact</a>
+    </nav>
+    <script>(function(){var b=document.getElementById("mobileMenuBtn"),n=document.getElementById("mobileNav");if(!b||!n||b.dataset.menuBound)return;b.dataset.menuBound="1";b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));});})();</script>
+  </header>
+
+  <main><div style="max-width:960px;margin:0 auto;padding:28px 16px 56px"><style>
+.gi{--bg:#f4f6f9;--panel:#ffffff;--ink:#0f172a;--ink2:#475569;--muted:#8392a6;--line:#e3e8ef;--track:#e9edf3;--accent:#ff5d22;--accent-soft:#ffe3d8;--display:inherit;--body:inherit;color:var(--ink)}
+.gi 
+/* Layout: one reading column of mock-up panels, each panel = one idea, chart first, then what it adds */
+.wrap{max-width:880px;margin:0 auto;display:grid;gap:22px}
+.gi header h1{font-family:var(--display);font-weight:800;font-size:clamp(26px,5vw,38px);line-height:1.1;letter-spacing:-.02em;margin:6px 0 8px;text-wrap:balance}
+.gi header p{color:var(--ink2);max-width:62ch;margin:0}
+.gi .eyebrow{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.gi .panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}
+.gi .panel h2{font-family:var(--display);font-weight:700;font-size:21px;line-height:1.2;margin:4px 0 4px;text-wrap:balance}
+.gi .panel .sub{color:var(--ink2);margin:0 0 16px;font-size:14px}
+.gi .note{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;font-size:14px;color:var(--ink2)}
+.gi .note b{color:var(--ink)}
+.gi .foot{font-size:12px;color:var(--muted);margin-top:10px}
+.gi .chart{overflow-x:auto}
+.gi svg text{font-family:var(--body)}
+.gi .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--panel);font-size:12.5px;padding:7px 10px;border-radius:8px;max-width:260px;z-index:20;line-height:1.4}
+.gi .ideas{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.gi .idea{border:1px solid var(--line);border-radius:14px;padding:14px 16px;min-width:0}
+.gi .idea h3{font-family:var(--display);font-size:15.5px;margin:0 0 4px}
+.gi .idea p{margin:0;font-size:13.5px;color:var(--ink2)}
+.gi .tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--ink);margin:0 4px 4px 0}
+.gi .mod{border:1px solid var(--line);border-radius:14px;padding:16px;max-width:420px}
+.gi .mod .big{font-family:var(--display);font-weight:800;font-size:30px;line-height:1}
+.gi .mod .lbl{font-size:13px;color:var(--ink2)}
+.gi :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+</style>
+<div class="gi"><div class="wrap">
+<header>
+  <div class="eyebrow">StayOdds insights · updated 25 November 2026</div>
+  <h1>How guests really rate award-winning hotels</h1>
+  <p>What 1,184 luxury hotels look like when you put real guest reviews next to the critics and the awards. Every chart uses hotels with a guest score from 20 or more reviews, and every rank is among the hotels on StayOdds.</p>
+</header>
+
+<section class="panel" aria-labelledby="h1a">
+  <div class="eyebrow">Guests versus awards</div>
+  <h2 id="h1a">Award winners guests don't love</h2>
+  <p class="sub">Award-winning hotels that rank lowest with guests in their own country. Each is ranked by guest score against the other hotels in that country on StayOdds (only countries with 10 or more hotels). Left is guests' best, right is guests' worst.</p>
+  <div id="disappoint" style="display:grid;gap:14px"></div>
+  <div class="note">Luxury guest scores sit close together (most are between 88 and 98), so a hotel can rank last in its country on a score that is still good. That is why the score and the number of reviews are shown under every rank.</div>
+</section>
+
+<section class="panel" aria-labelledby="h3a">
+  <div class="eyebrow" id="brands-chart">Hotel brands</div>
+  <h2 id="h3a">How guests rate each luxury brand</h2>
+  <p class="sub">Dot = the brand's typical (median) hotel. Thick bar = the middle half of its hotels. Thin line = best to worst hotel. A short bar means a consistent brand. Brands with 8 or more rated hotels.</p>
+  <div class="chart" id="brands"></div>
+  <div class="note">Most consistent: The Peninsula, where every rated hotel scores between 90 and 94. Widest spread: One&Only, from 72 to 100. Hover over or tap a brand to see its best and lowest-rated hotel.</div>
+</section>
+
+<section class="panel" aria-labelledby="h4a">
+  <div class="eyebrow">Critics versus guests</div>
+  <h2 id="h4a">Where critics and guests disagree</h2>
+  <p class="sub">Every hotel with both a published critic score and a guest score (386 hotels). Above the line, guests like it more than critics; below it, critics like it more. Orange dots are the six biggest "critics loved it, guests less so" gaps; hover or tap any dot for its name.</p>
+  <div class="chart" id="scatter"></div>
+  <div class="note">Critic scores are the published scores linked on each hotel page, converted to a score out of 100.</div>
+</section>
+
+<section class="panel" aria-labelledby="h5a">
+  <div class="eyebrow">Awards</div>
+  <h2 id="h5a">Do awards match guest opinion?</h2>
+  <p class="sub">Typical guest score by award. Dot = median hotel, bar = middle half.</p>
+  <div class="chart" id="tiers"></div>
+  <div class="note">Award-winning hotels have a typical guest score of 94 to 95, against 92 for hotels with no major award. Awards point to good hotels, but guests separate them far less than the lists do.</div>
+</section>
+
+<p class="foot">Sources: StayOdds hotel scorecards (guest reviews from booking sites and Tripadvisor, published critic scores, World's 50 Best Hotels 2026, MICHELIN Guide 2026 Keys, Forbes Travel Guide 2026). Groups and ranks are among hotels on StayOdds only.</p>
+</div>
+</div><div class="tip gi-tip" id="tip" hidden></div>
+<script>
+const D = {"disappoint":[{"name":"Estelle Manor","guest":66,"reviews":171,"rank":56,"of":56,"group":"United Kingdom","awards":["No. 43 in the World (2026)"]},{"name":"The Johri","guest":77,"reviews":157,"rank":28,"of":28,"group":"India","awards":["No. 94 in the World (2026)"]},{"name":"The Siam","guest":82,"reviews":117,"rank":56,"of":56,"group":"Thailand","awards":["3 MICHELIN Keys"]},{"name":"Bürgenstock Hotel & Alpine Spa","guest":92,"reviews":1649,"rank":14,"of":14,"group":"Switzerland","awards":["3 MICHELIN Keys"]},{"name":"Hôtel du Couvent","guest":84,"reviews":155,"rank":56,"of":57,"group":"France","awards":["No. 38 in the World (2026)"]},{"name":"Amanpuri","guest":90,"reviews":459,"rank":55,"of":56,"group":"Thailand","awards":["3 MICHELIN Keys"]}],"brands":[{"brand":"Auberge Resorts Collection","n":14,"median":97.0,"q1":92.8,"q3":98.0,"min":90,"max":100,"best":"Hacienda AltaGracia, Auberge Resorts Collection","worst":"Wildflower Farms, Auberge Collection"},{"brand":"Belmond","n":21,"median":96,"q1":94.0,"q3":96.0,"min":90,"max":98,"best":"Palacio Nazarenas, A Belmond Hotel","worst":"La Samanna, A Belmond Hotel, St. Martin"},{"brand":"Anantara","n":8,"median":96.0,"q1":92.5,"q3":97.5,"min":87,"max":98,"best":"Anantara Kihavah Maldives Villas","worst":"Anantara Uluwatu Bali Resort"},{"brand":"Banyan Tree","n":8,"median":96.0,"q1":93.8,"q3":97.5,"min":92,"max":98,"best":"Banyan Tree Lăng Cô","worst":"Banyan Tree Phuket"},{"brand":"Mandarin Oriental","n":28,"median":95.0,"q1":93.0,"q3":96.0,"min":87,"max":100,"best":"Mandarin Oriental, Shenzhen","worst":"Mandarin Oriental Mayfair, London"},{"brand":"Raffles","n":11,"median":95,"q1":93.0,"q3":98.0,"min":89,"max":100,"best":"Raffles Al Areen Palace Bahrain","worst":"Raffles Boston"},{"brand":"Waldorf Astoria","n":10,"median":95.0,"q1":89.8,"q3":97.0,"min":82,"max":98,"best":"Waldorf Astoria Amsterdam","worst":"Waldorf Astoria Las Vegas"},{"brand":"Four Seasons","n":75,"median":94,"q1":92.0,"q3":96.0,"min":83,"max":98,"best":"Four Seasons Hotel Hong Kong","worst":"The Ocean Club, A Four Seasons Resort, Bahamas"},{"brand":"Aman","n":25,"median":94,"q1":90.0,"q3":95.0,"min":76,"max":96,"best":"Amanjiwo","worst":"Aman New York"},{"brand":"Six Senses","n":15,"median":94,"q1":91.0,"q3":96.0,"min":85,"max":98,"best":"Six Senses Laamu","worst":"Six Senses Ibiza"},{"brand":"One&Only","n":12,"median":94.0,"q1":93.0,"q3":95.5,"min":72,"max":100,"best":"One&Only Gorilla's Nest","worst":"One&Only Moonlight Basin"},{"brand":"St. Regis","n":11,"median":94,"q1":92.0,"q3":96.0,"min":76,"max":96,"best":"The St. Regis Cairo","worst":"The St. Regis Cap Cana Resort"},{"brand":"Fairmont","n":11,"median":94,"q1":88.0,"q3":94.0,"min":86,"max":98,"best":"Fairmont Udaipur Palace","worst":"Fairmont Miramar Hotel & Bungalows"},{"brand":"The Peninsula","n":11,"median":94,"q1":94.0,"q3":94.0,"min":90,"max":94,"best":"The Peninsula Bangkok","worst":"The Peninsula New York"},{"brand":"Park Hyatt","n":10,"median":94.0,"q1":91.5,"q3":96.0,"min":88,"max":96,"best":"Park Hyatt Siem Reap","worst":"Park Hyatt Seoul"},{"brand":"The Luxury Collection","n":14,"median":93.5,"q1":89.5,"q3":96.5,"min":84,"max":98,"best":"Vana Belle, a Luxury Collection Resort, Koh Samui","worst":"The London, a Luxury Collection Hotel, New York City"},{"brand":"Dorchester Collection","n":8,"median":93.5,"q1":92.0,"q3":94.8,"min":92,"max":96,"best":"Coworth Park, Dorchester Collection","worst":"The Dorchester"},{"brand":"Rosewood","n":23,"median":93,"q1":90.0,"q3":97.0,"min":76,"max":98,"best":"Rosewood Beijing","worst":"The Chancery Rosewood"},{"brand":"Jumeirah","n":10,"median":93.0,"q1":92.0,"q3":96.0,"min":92,"max":100,"best":"Jumeirah Marsa Al Arab","worst":"Hilton Dubai Palm Jumeirah"},{"brand":"Ritz-Carlton","n":19,"median":92,"q1":88.0,"q3":96.0,"min":84,"max":98,"best":"The Ritz-Carlton, Hong Kong","worst":"The Ritz-Carlton, Abama"}],"tiers":{"No major award":{"n":374,"median":92.0,"q1":89.0,"q3":96.0},"3 MICHELIN Keys":{"n":132,"median":95.0,"q1":93.0,"q3":96.0},"2 MICHELIN Keys":{"n":467,"median":95,"q1":92.0,"q3":96.0},"1 MICHELIN Key":{"n":57,"median":94,"q1":92.5,"q3":96.0},"World's 50 Best Top 100":{"n":93,"median":94,"q1":92.0,"q3":96.0},"Forbes Five-Star":{"n":187,"median":94,"q1":93.0,"q3":96.0}},"scatter":[{"n":"Regent Bali Canggu","c":58,"g":98},{"n":"The Sira, a Luxury Collection Resort & Spa","c":94,"g":98},{"n":"Phulay Bay, a Ritz-Carlton Reserve","c":94,"g":97},{"n":"Four Seasons Resort Koh Samui","c":90,"g":96},{"n":"The St. Regis Bora Bora Resort","c":90,"g":96},{"n":"Four Seasons Hotel Bangkok at Chao Phraya River","c":94,"g":95},{"n":"Four Seasons Resort Bali at Jimbaran Bay","c":90,"g":94},{"n":"W Koh Samui","c":78,"g":94},{"n":"Mandapa, a Ritz-Carlton Reserve","c":92,"g":98},{"n":"Park Hyatt Maldives Hadahaa","c":90,"g":96},{"n":"InterContinental Maldives Maamunagau Resort","c":90,"g":100},{"n":"Jumeirah Marsa Al Arab","c":82,"g":100},{"n":"Mandarin Oriental Qianmen, Beijing","c":90,"g":100},{"n":"Nayara Tented Camp","c":86,"g":100},{"n":"Taj Lalit Bagh, Udaipur","c":90,"g":100},{"n":"The Oberoi, Marrakech","c":90,"g":100},{"n":"COMO The Halkin","c":90,"g":99},{"n":"Alila Kothaifaru Maldives","c":88,"g":98},{"n":"Amilla Maldives","c":85,"g":98},{"n":"Anantara Kihavah Maldives Villas","c":88,"g":98},{"n":"Ballyfin Demesne","c":90,"g":98},{"n":"Canaves Ena & Epitome","c":94,"g":98},{"n":"Capella Bangkok","c":76,"g":98},{"n":"Capella Ubud, Bali","c":92,"g":98},{"n":"Dusit Thani Bangkok","c":90,"g":98},{"n":"Eden Rock - St Barths","c":88,"g":98},{"n":"Fairmont Udaipur Palace","c":32,"g":98},{"n":"Four Seasons Hotel Hong Kong","c":90,"g":98},{"n":"Four Seasons Resort Maldives at Kuda Huraa","c":85,"g":98},{"n":"Four Seasons Resort Maldives at Landaa Giraavaru","c":89,"g":98},{"n":"Four Seasons Tented Camp Golden Triangle","c":86,"g":98},{"n":"Giraffe Manor","c":75,"g":98},{"n":"Hyatt Zilara Cap Cana","c":95,"g":98},{"n":"La Réserve Paris","c":94,"g":98},{"n":"Las Ventanas al Paraíso, A Rosewood Resort","c":99,"g":98},{"n":"Le Bristol Paris","c":85,"g":98},{"n":"Mandarin Oriental, Hong Kong","c":90,"g":98},{"n":"NIHI Sumba","c":90,"g":98},{"n":"Raffles Bali","c":72,"g":98},{"n":"Raffles Jakarta","c":96,"g":98},{"n":"Raffles Udaipur","c":91,"g":98},{"n":"Regent Phu Quoc","c":95,"g":98},{"n":"Rosewood Beijing","c":85,"g":98},{"n":"Shinta Mani Angkor And Bensley Collection Pool Villas","c":96,"g":98},{"n":"Singita Boulders Lodge","c":90,"g":98},{"n":"Six Senses Krabey Island","c":90,"g":98},{"n":"Soneva Fushi","c":96,"g":98},{"n":"Taj Lake Palace","c":91,"g":98},{"n":"The Cadogan, A Belmond Hotel, London","c":90,"g":98},{"n":"The Langham, Jakarta","c":90,"g":98},{"n":"The Leela Palace Chennai","c":85,"g":98},{"n":"The Leela Palace Jaipur","c":95,"g":98},{"n":"The Oberoi Udaivilas, Udaipur","c":83,"g":98},{"n":"The Oberoi, Bengaluru","c":95,"g":98},{"n":"The Ritz-Carlton Maldives, Fari Islands","c":91,"g":98},{"n":"The Ritz-Carlton, Hong Kong","c":75,"g":98},{"n":"Vana Belle, a Luxury Collection Resort, Koh Samui","c":96,"g":98},{"n":"Villa San Michele, A Belmond Hotel, Florence","c":90,"g":98},{"n":"Waldorf Astoria Los Cabos Pedregal","c":84,"g":98},{"n":"Ana Mandara Cam Ranh","c":82,"g":97},{"n":"Forestis Dolomites","c":92,"g":97},{"n":"Four Seasons Hotel London at Park Lane","c":88,"g":97},{"n":"Kimpton Maa-Lai Bangkok","c":94,"g":97},{"n":"LUX Marijani, Zanzibar","c":77,"g":97},{"n":"Mandarin Oriental, Istanbul (Bosphorus)","c":85,"g":97},{"n":"Patina Maldives, Fari Islands","c":87,"g":97},{"n":"Rambagh Palace, Jaipur","c":96,"g":97},{"n":"Regent Hong Kong","c":80,"g":97},{"n":"Rosewood Castiglion del Bosco","c":88,"g":97},{"n":"Rosewood Luang Prabang","c":90,"g":97},{"n":"Sindhorn Kempinski Hotel Bangkok","c":95,"g":97},{"n":"The Oberoi Amarvilas, Agra","c":100,"g":97},{"n":"The Oberoi Beach Resort, Lombok","c":89,"g":97},{"n":"Waldorf Astoria New York","c":85,"g":97},{"n":"Alila Jabal Akhdar","c":90,"g":96},{"n":"Aman Nai Lert Bangkok","c":87,"g":96},{"n":"Aman-i-Khas","c":92,"g":96},{"n":"An Lam Retreats Ninh Van Bay","c":80,"g":96},{"n":"Anantara Ubud Bali Resort","c":91,"g":96},{"n":"Andaz Bali, by Hyatt","c":95,"g":96},{"n":"Andaz Pattaya Jomtien Beach, by Hyatt","c":95,"g":96},{"n":"Atlantis The Royal","c":72,"g":96},{"n":"Badrutt's Palace Hotel","c":99,"g":96},{"n":"Banyan Tree Krabi","c":75,"g":96},{"n":"Banyan Tree Kuala Lumpur","c":79,"g":96},{"n":"Brenners Park-Hotel & Spa","c":90,"g":96},{"n":"COMO Shambhala Estate","c":92,"g":96},{"n":"Cap Juluca, A Belmond Hotel, Anguilla","c":86,"g":96},{"n":"Caruso, A Belmond Hotel","c":95,"g":96},{"n":"Explora Atacama","c":85,"g":96},{"n":"Four Seasons Hotel Firenze","c":92,"g":96},{"n":"Four Seasons Hotel Istanbul at Sultanahmet","c":90,"g":96},{"n":"Four Seasons Resort Bali at Sayan","c":88,"g":96},{"n":"Four Seasons Resort Bora Bora","c":86,"g":96},{"n":"Four Seasons Resort Chiang Mai","c":84,"g":96},{"n":"Four Seasons Safari Lodge Serengeti","c":90,"g":96},{"n":"Garrya Tongsai Bay Samui","c":94,"g":96},{"n":"Heritage Le Telfair Golf & Wellness Resort","c":86,"g":96},{"n":"Hotel Wailea, Relais & Châteaux","c":77,"g":96},{"n":"ITC Grand Chola, a Luxury Collection Hotel, Chennai","c":73,"g":96},{"n":"Il San Pietro di Positano","c":99,"g":96},{"n":"InterContinental Phu Quoc Long Beach Resort by IHG","c":56,"g":96},{"n":"JOALI BEING","c":90,"g":96},{"n":"Jumeirah Bali","c":38,"g":96},{"n":"Jumeirah Muscat Bay","c":91,"g":96},{"n":"L'Alya Ninh Van Bay","c":95,"g":96},{"n":"Mandarin Oriental Downtown, Dubai","c":88,"g":96},{"n":"Mandarin Oriental Jumeira, Dubai","c":87,"g":96},{"n":"Mandarin Oriental, Bangkok","c":92,"g":96},{"n":"Mandarin Oriental, Marrakech","c":90,"g":96},{"n":"Mandarin Oriental, Paris","c":90,"g":96},{"n":"Mia Resort Nha Trang","c":86,"g":96},{"n":"Mount Nelson, A Belmond Hotel, Cape Town","c":90,"g":96},{"n":"One&Only Reethi Rah","c":91,"g":96},{"n":"One&Only The Palm","c":90,"g":96},{"n":"Park Hyatt Jakarta","c":93,"g":96},{"n":"Park Hyatt Siem Reap","c":91,"g":96},{"n":"RAAS Devigarh","c":99,"g":96},{"n":"Raffles Singapore","c":88,"g":96},{"n":"Rosewood Hong Kong","c":86,"g":96},{"n":"Rosewood Mayakoba","c":90,"g":96},{"n":"SALA Samui Chaweng Beach Resort","c":92,"g":96},{"n":"Secrets Cap Cana Resort & Spa","c":86,"g":96},{"n":"Six Senses Fiji","c":85,"g":96},{"n":"Six Senses Fort Barwara","c":85,"g":96},{"n":"Sofitel Legend Metropole Hanoi","c":96,"g":96},{"n":"Soneva Jani","c":94,"g":96},{"n":"Taj Falaknuma Palace, Hyderabad","c":90,"g":96},{"n":"Taj Fateh Prakash Palace","c":71,"g":96},{"n":"The Connaught","c":90,"g":96},{"n":"The Datai Langkawi","c":100,"g":96},{"n":"The Emory","c":88,"g":96},{"n":"The Landmark Mandarin Oriental, Hong Kong","c":82,"g":96},{"n":"The Lanesborough","c":90,"g":96},{"n":"The Leela Palace Bengaluru","c":98,"g":96},{"n":"The Leela Palace New Delhi","c":89,"g":96},{"n":"The Oberoi, Mumbai","c":90,"g":96},{"n":"The Ritz-Carlton, Bangkok","c":84,"g":96},{"n":"The Ritz-Carlton, Langkawi","c":89,"g":96},{"n":"The Sanchaya","c":92,"g":96},{"n":"The St. Regis Downtown Dubai","c":92,"g":96},{"n":"Waldorf Astoria Maldives Ithaafushi","c":92,"g":96},{"n":"Waldorf Astoria Riviera Maya, an All-Inclusive Experience","c":70,"g":96},{"n":"Zannier Hotels Bãi San Hô","c":95,"g":96},{"n":"COMO Uma Ubud","c":100,"g":95},{"n":"Four Seasons Hotel Jakarta","c":88,"g":95},{"n":"Hotel Cipriani, A Belmond Hotel, Venice","c":89,"g":95},{"n":"Hotel Indigo Bintan Lagoi Beach by IHG","c":95,"g":95},{"n":"JW Marriott Phu Quoc Emerald Bay Resort & Spa","c":93,"g":95},{"n":"Kimpton Kitalay Samui","c":80,"g":95},{"n":"Napasai Samui Residence","c":93,"g":95},{"n":"Raffles Grand Hotel d'Angkor","c":82,"g":95},{"n":"Royal Mansour Marrakech","c":90,"g":95},{"n":"San Domenico Palace, Taormina, A Four Seasons Hotel","c":90,"g":95},{"n":"The Bodrum EDITION","c":83,"g":95},{"n":"The Leela Hyderabad","c":90,"g":95},{"n":"The Okura Prestige Bangkok","c":82,"g":95},{"n":"The Ruma Hotel and Residences","c":92,"g":95},{"n":"Alila Fort Bishangarh","c":86,"g":94},{"n":"Alila Villas Uluwatu","c":77,"g":94},{"n":"Aman Venice","c":85,"g":94},{"n":"Aman Villas at Nusa Dua","c":82,"g":94},{"n":"Amandari","c":92,"g":94},{"n":"Amanfayun","c":88,"g":94},{"n":"Andaz Capital Gate, Abu Dhabi, by Hyatt","c":91,"g":94},{"n":"Andaz One Bangkok, by Hyatt","c":84,"g":94},{"n":"Bulgari Resort Dubai","c":85,"g":94},{"n":"COMO Point Yamu","c":91,"g":94},{"n":"Cheval Blanc Courchevel","c":90,"g":94},{"n":"Ciel Dubai Marina, Vignette Collection","c":63,"g":94},{"n":"Claridge's","c":85,"g":94},{"n":"Copacabana Palace, A Belmond Hotel, Rio de Janeiro","c":88,"g":94},{"n":"Domes Noruz Chania, Autograph Collection","c":85,"g":94},{"n":"Equinox Hotel New York","c":68,"g":94},{"n":"Fairmont Jaipur","c":51,"g":94},{"n":"Four Seasons Hotel George V, Paris","c":85,"g":94},{"n":"Four Seasons Hotel Istanbul at the Bosphorus","c":85,"g":94},{"n":"Four Seasons Hotel Las Vegas","c":69,"g":94},{"n":"Four Seasons Hotel London at Tower Bridge","c":88,"g":94},{"n":"Four Seasons Hotel Tokyo at Marunouchi","c":88,"g":94},{"n":"Four Seasons Hotel des Bergues Geneva","c":90,"g":94},{"n":"Four Seasons Resort Lanai","c":86,"g":94},{"n":"Four Seasons Resort Langkawi, Malaysia","c":81,"g":94},{"n":"Four Seasons Resort Marrakech","c":88,"g":94},{"n":"Four Seasons Resort Maui at Wailea","c":80,"g":94},{"n":"Grand Fiesta Americana Coral Beach Cancún All Inclusive Spa & Resort","c":95,"g":94},{"n":"Grand Hotel Tremezzo","c":90,"g":94},{"n":"Gstaad Palace","c":90,"g":94},{"n":"HOTEL PROVERBS TAIPEI","c":94,"g":94},{"n":"Hotel Unique","c":93,"g":94},{"n":"Hyatt Regency Bangkok Sukhumvit","c":94,"g":94},{"n":"Hyatt Zilara Cancun - Google Hoteles","c":87,"g":94},{"n":"JW Marriott Hotel & Suites Saigon, The Apartments","c":80,"g":94},{"n":"Jimbaran Puri, A Belmond Hotel, Bali","c":98,"g":94},{"n":"L'Apogée Courchevel","c":85,"g":94},{"n":"LUX Grand Gaube","c":84,"g":94},{"n":"La Residencia, A Belmond Hotel, Mallorca","c":88,"g":94},{"n":"Le Meurice","c":99,"g":94},{"n":"Le Royal Monceau","c":85,"g":94},{"n":"Mandarin Oriental Lutetia, Paris","c":90,"g":94},{"n":"Mandarin Oriental, Costa Navarino","c":88,"g":94},{"n":"Mandarin Oriental, Lake Como","c":90,"g":94},{"n":"Mandarin Oriental, Singapore","c":84,"g":94},{"n":"Mandarin Oriental, Tokyo","c":90,"g":94},{"n":"Marina Bay Sands","c":80,"g":94},{"n":"One&Only Mandarina","c":85,"g":94},{"n":"One&Only One Za'abeel","c":88,"g":94},{"n":"One&Only Palmilla","c":80,"g":94},{"n":"One&Only Portonovi","c":99,"g":94},{"n":"Park Hyatt Auckland","c":77,"g":94},{"n":"Park Hyatt Paris-Vendôme","c":88,"g":94},{"n":"Park Hyatt Saigon","c":95,"g":94},{"n":"Park Hyatt Tokyo","c":84,"g":94},{"n":"Park Hyatt Zanzibar","c":92,"g":94},{"n":"Passalacqua","c":90,"g":94},{"n":"Post Ranch Inn","c":88,"g":94},{"n":"Raffles The Palm Dubai","c":85,"g":94},{"n":"Rosewood Bangkok","c":77,"g":94},{"n":"Rosewood Phuket","c":88,"g":94},{"n":"Royal Champagne Hotel & Spa","c":92,"g":94},{"n":"Shangri-La Le Touessrok, Mauritius","c":86,"g":94},{"n":"Signiel Seoul","c":79,"g":94},{"n":"Six Senses Ninh Van Bay","c":94,"g":94},{"n":"Taj Cape Town, South Africa","c":88,"g":94},{"n":"The Apurva Kempinski Bali","c":89,"g":94},{"n":"The Leela Palace Udaipur","c":84,"g":94},{"n":"The Naka Island, a Luxury Collection Resort & Spa, Phuket","c":96,"g":94},{"n":"The Peninsula Bangkok","c":88,"g":94},{"n":"The Peninsula Chicago","c":99,"g":94},{"n":"The Peninsula Hong Kong","c":77,"g":94},{"n":"The Peninsula Istanbul","c":90,"g":94},{"n":"The Peninsula London","c":88,"g":94},{"n":"The Peninsula Paris","c":85,"g":94},{"n":"The Peninsula Shanghai","c":99,"g":94},{"n":"The Ritz-Carlton, Koh Samui","c":60,"g":94},{"n":"The Ritz-Carlton, Kyoto","c":90,"g":94},{"n":"Viceroy Los Cabos","c":85,"g":94},{"n":"Waldorf Astoria Chicago","c":76,"g":94},{"n":"Zoëtry Casa del Mar Los Cabos","c":94,"g":94},{"n":"Almanac Barcelona","c":81,"g":93},{"n":"Amanjena","c":88,"g":93},{"n":"Bulgari Resort Bali","c":90,"g":93},{"n":"COMO Metropolitan London","c":88,"g":93},{"n":"Dusit Thani Krabi Beach Resort","c":93,"g":93},{"n":"Four Seasons Astir Palace Hotel Athens","c":88,"g":93},{"n":"Four Seasons Hotel Madrid","c":82,"g":93},{"n":"Four Seasons Hotel Seoul","c":81,"g":93},{"n":"Four Seasons Hotel Singapore","c":77,"g":93},{"n":"Four Seasons Resort Mauritius at Anahita","c":82,"g":93},{"n":"Mandarin Oriental, Bodrum","c":88,"g":93},{"n":"Mandarin Oriental, Hyde Park, London","c":90,"g":93},{"n":"Mango Bay Resort","c":97,"g":93},{"n":"One&Only Cape Town","c":89,"g":93},{"n":"One&Only Le Saint Géran","c":94,"g":93},{"n":"RAAS Jodhpur","c":98,"g":93},{"n":"Rosewood London","c":91,"g":93},{"n":"Rosewood Villa Magna","c":72,"g":93},{"n":"Sensei Lanai, A Four Seasons Resort","c":78,"g":93},{"n":"Six Senses Zighy Bay","c":95,"g":93},{"n":"Sofitel Bali Nusa Dua Beach Resort","c":68,"g":93},{"n":"Soneva Kiri","c":100,"g":93},{"n":"The Chedi Muscat","c":88,"g":93},{"n":"The St. Regis Kanai Resort, Riviera Maya","c":78,"g":93},{"n":"The St. Regis Maldives Vommuli Resort","c":95,"g":93},{"n":"Alila Hinu Bay","c":94,"g":92},{"n":"Alila Seminyak","c":96,"g":92},{"n":"Alila Ubud","c":93,"g":92},{"n":"Alvear Icon Hotel","c":81,"g":92},{"n":"Amiana Resort Nha Trang","c":94,"g":92},{"n":"Anantara Bophut Koh Samui Resort","c":90,"g":92},{"n":"Armani Hotel Dubai","c":88,"g":92},{"n":"Banyan Tree Phuket","c":49,"g":92},{"n":"Bürgenstock Hotel & Alpine Spa","c":85,"g":92},{"n":"Dorado Beach, a Ritz-Carlton Reserve","c":75,"g":92},{"n":"Excelsior Hotel Gallia, a Luxury Collection Hotel, Milan","c":96,"g":92},{"n":"Four Seasons Hotel Casa Medina Bogota","c":80,"g":92},{"n":"Four Seasons Hotel Miami","c":85,"g":92},{"n":"Four Seasons Hotel New York","c":82,"g":92},{"n":"Four Seasons Hotel New York Downtown","c":88,"g":92},{"n":"Four Seasons Hotel Ritz Lisbon","c":88,"g":92},{"n":"Four Seasons Hotel Tokyo at Otemachi","c":92,"g":92},{"n":"Four Seasons Hotel at The Surf Club","c":88,"g":92},{"n":"Four Seasons Resort Nevis","c":82,"g":92},{"n":"Four Seasons Resort Seychelles","c":90,"g":92},{"n":"Four Seasons Resort and Residences Anguilla","c":85,"g":92},{"n":"Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel","c":98,"g":92},{"n":"Hilton Dubai Palm Jumeirah","c":93,"g":92},{"n":"Hyatt Centric Ginza Tokyo","c":94,"g":92},{"n":"Hyatt Regency Bali","c":96,"g":92},{"n":"Hôtel de Crillon, A Rosewood Hotel","c":93,"g":92},{"n":"Jumeirah Beach Hotel","c":87,"g":92},{"n":"Kimpton Naluria Kuala Lumpur by IHG","c":82,"g":92},{"n":"Mandarin Oriental Ritz, Madrid","c":81,"g":92},{"n":"Mandarin Oriental, Kuala Lumpur","c":83,"g":92},{"n":"Park Hyatt Bangkok","c":92,"g":92},{"n":"Park Hyatt Kyoto","c":90,"g":92},{"n":"Raffles Seychelles","c":82,"g":92},{"n":"SALA Phuket Mai Khao Beach Resort","c":91,"g":92},{"n":"SAii Koh Samui Villas - Adult only 12 plus","c":64,"g":92},{"n":"Six Senses Kaplankaya","c":83,"g":92},{"n":"The Chedi Andermatt","c":90,"g":92},{"n":"The Dolder Grand","c":87,"g":92},{"n":"The Library Samui","c":89,"g":92},{"n":"The Peninsula Tokyo","c":88,"g":92},{"n":"The Slate Phuket","c":87,"g":92},{"n":"The Taj Mahal Palace, Mumbai","c":93,"g":92},{"n":"Waldorf Astoria Doha Lusail","c":91,"g":92},{"n":"Zadún, a Ritz-Carlton Reserve","c":69,"g":92},{"n":"Al Bustan Palace, a Ritz-Carlton Hotel","c":94,"g":91},{"n":"Cap Rocat","c":80,"g":91},{"n":"Domes Zeen Chania, a Luxury Collection Resort, Crete","c":96,"g":91},{"n":"Four Seasons Hotel Kyoto","c":92,"g":91},{"n":"Gorgeous George Hotel","c":96,"g":91},{"n":"InterContinental Bali Resort by IHG","c":87,"g":91},{"n":"Kimpton Margot Sydney","c":93,"g":91},{"n":"Mango House Seychelles, LXR Hotels & Resorts","c":80,"g":91},{"n":"Regent Taipei","c":72,"g":91},{"n":"Rosewood Miramar Beach","c":85,"g":91},{"n":"Six Senses Kyoto","c":88,"g":91},{"n":"Six Senses Samui","c":98,"g":91},{"n":"Amangiri","c":82,"g":90},{"n":"Amanpuri","c":92,"g":90},{"n":"Conrad Bali","c":86,"g":90},{"n":"Cordis, Auckland","c":92,"g":90},{"n":"Fiji Marriott Resort Momi Bay","c":92,"g":90},{"n":"Four Seasons Hotel Osaka","c":90,"g":90},{"n":"Four Seasons Resort Mallorca at Formentor","c":90,"g":90},{"n":"Majestic Hotel & Spa Barcelona","c":88,"g":90},{"n":"Ritz Paris","c":80,"g":90},{"n":"Rosewood Schloss Fuschl","c":82,"g":90},{"n":"SIRO One Za'abeel","c":75,"g":90},{"n":"Secrets La Romana Resort & Spa","c":74,"g":90},{"n":"Six Senses Zil Pasyon","c":94,"g":90},{"n":"The Barcelona EDITION","c":86,"g":90},{"n":"The Shilla Seoul","c":63,"g":90},{"n":"Waldorf Astoria Bangkok","c":80,"g":90},{"n":"Waldorf Astoria Osaka","c":88,"g":90},{"n":"Wynn Las Vegas","c":77,"g":90},{"n":"Crowne Plaza Changi Airport","c":70,"g":89},{"n":"Four Seasons Hotel Minneapolis","c":71,"g":89},{"n":"Kimpton De Witt Hotel","c":88,"g":89},{"n":"The Berkeley","c":85,"g":89},{"n":"Andaz Seoul Gangnam, by Hyatt","c":80,"g":88},{"n":"CIVILIAN Hotel","c":62,"g":88},{"n":"Fairmont Monte Carlo","c":63,"g":88},{"n":"Four Seasons Resort and Residences Cabo San Lucas at Cabo Del Sol","c":88,"g":88},{"n":"Mandarin Oriental, New York","c":85,"g":88},{"n":"Park Hyatt Seoul","c":87,"g":88},{"n":"Sunscape Cancun Resort & Spa","c":87,"g":88},{"n":"The Bernic Hotel New York City, Tapestry Collection by Hilton","c":87,"g":88},{"n":"The Carlyle, A Rosewood Hotel","c":85,"g":88},{"n":"The Okura Tokyo","c":96,"g":88},{"n":"Alila Mayakoba","c":25,"g":87},{"n":"Anantara Uluwatu Bali Resort","c":76,"g":87},{"n":"Arlo Midtown - Building - SKYDB","c":91,"g":87},{"n":"Emiliano Rio, an SLH Hotel","c":96,"g":87},{"n":"Fontainebleau Las Vegas","c":73,"g":87},{"n":"Hyatt Centric Times Square New York","c":66,"g":87},{"n":"Hyatt Regency Kathmandu","c":94,"g":87},{"n":"Mandarin Oriental Mayfair, London","c":85,"g":87},{"n":"Six Senses Rome","c":85,"g":87},{"n":"The Westin Langkawi Resort & Spa","c":92,"g":87},{"n":"citizenM Tower of London","c":91,"g":87},{"n":"Aman Tokyo","c":88,"g":86},{"n":"Cheval Blanc Paris","c":82,"g":86},{"n":"Higashiyama Niseko Village, a Ritz-Carlton Reserve","c":67,"g":86},{"n":"La Mamounia","c":80,"g":86},{"n":"Canopy by Hilton Paris Eiffel Tower","c":92,"g":85},{"n":"Six Senses Ibiza","c":73,"g":85},{"n":"Aulani, A Disney Resort & Spa","c":72,"g":84},{"n":"Hotel Belleclaire","c":66,"g":84},{"n":"Hyatt Centric Milan Centrale","c":86,"g":84},{"n":"The London, a Luxury Collection Hotel, New York City","c":71,"g":84},{"n":"InterContinental New York Times Square","c":65,"g":83},{"n":"The Cosmopolitan of Las Vegas","c":74,"g":83},{"n":"Kimpton Hotel Theta New York","c":59,"g":82},{"n":"The Siam","c":90,"g":82},{"n":"The Times Square EDITION","c":63,"g":82},{"n":"Waldorf Astoria Las Vegas","c":70,"g":82},{"n":"JW Marriott Essex House New York","c":48,"g":80},{"n":"Aman Kyoto","c":88,"g":78},{"n":"Rosewood Amsterdam","c":78,"g":78},{"n":"W New York - Times Square","c":40,"g":78},{"n":"Aman New York","c":89,"g":76},{"n":"The Chancery Rosewood","c":88,"g":76},{"n":"TWA Hotel","c":99,"g":69}]};
+const css = (v) => getComputedStyle(document.querySelector('.gi')).getPropertyValue(v).trim();
+const tip = document.getElementById('tip');
+function showTip(e, html){ tip.innerHTML = html; tip.hidden = false; const x = Math.min(e.clientX + 14, innerWidth - 270); tip.style.left = x + 'px'; tip.style.top = (e.clientY + 14) + 'px'; }
+function hideTip(){ tip.hidden = true; }
+const ord = (n) => { const s=['th','st','nd','rd'], v=n%100; return n + (s[(v-20)%10]||s[v]||s[0]); };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const NS = 'http://www.w3.org/2000/svg';
+function el(tag, attrs, parent, text){ const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; if (parent) parent.appendChild(n); return n; }
+
+// Idea 1
+document.getElementById('disappoint').innerHTML = D.disappoint.map((r) => {
+  const pct = r.of > 1 ? (r.rank - 1) / (r.of - 1) * 100 : 0;
+  const chips = r.awards.map((a) => `<span class="tag">${esc(a.replace(' (2026)', '').replace('in the World', "World's 50 Best").replace(/^No\. (\d+) World's 50 Best$/, "World's 50 Best #$1"))}</span>`).join('');
+  return `<div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:10px 18px;align-items:center">
+    <div style="min-width:0"><div style="font-family:var(--display);font-weight:700;font-size:17px">${esc(r.name)}</div>${chips}</div>
+    <div style="min-width:0"><div style="position:relative;height:14px;border-radius:99px;background:var(--track)" aria-hidden="true">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:${pct}%;border-radius:99px;background:var(--accent-soft)"></div>
+      <div style="position:absolute;top:50%;left:${pct}%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--panel)"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px"><span>guests' best</span><span>guests' worst</span></div>
+      <div style="font-family:var(--display);font-weight:700;font-size:18px;color:var(--accent);line-height:1.2">${ord(r.rank)} of ${r.of}</div>
+      <div style="font-size:12.5px;color:var(--ink2)">${esc(r.group)} hotels on StayOdds · ${r.guest}/100 from ${r.reviews.toLocaleString('en-GB')} reviews</div></div></div>`;
+}).join('');
+
+
+// shared dot + range chart (Ideas 3 and 5)
+function rangeChart(id, rows, opts){
+  const box = document.getElementById(id); box.innerHTML = '';
+  const W = 760, rowH = 30, top = 26, left = opts.left, right = 70, H = top + rows.length * rowH + 30;
+  const svg = el('svg', {viewBox:`0 0 ${W} ${H}`, width:'100%', role:'img', 'aria-label': opts.label, style:'min-width:560px;display:block'}, box);
+  const x0 = opts.min, x1 = 100, sx = (v) => left + (v - x0) / (x1 - x0) * (W - left - right);
+  for (let v = x0; v <= x1; v += 5){
+    el('line', {x1:sx(v), x2:sx(v), y1:top-6, y2:H-26, stroke:css('--line'), 'stroke-width':1}, svg);
+    el('text', {x:sx(v), y:H-8, 'text-anchor':'middle', 'font-size':11, fill:css('--muted')}, svg, v);
+  }
+  el('text', {x:W-right+8, y:top-10, 'font-size':11, fill:css('--muted')}, svg, opts.nLabel);
+  rows.forEach((r, i) => {
+    const y = top + i * rowH + rowH / 2;
+    const g = el('g', {tabindex:0}, svg);
+    el('rect', {x:0, y:y-rowH/2, width:W, height:rowH, fill:'transparent'}, g);
+    el('text', {x:left-10, y:y+4, 'text-anchor':'end', 'font-size':12.5, fill:css('--ink')}, g, r.label);
+    if (r.min != null) el('line', {x1:sx(r.min), x2:sx(r.max), y1:y, y2:y, stroke:css('--muted'), 'stroke-width':2, 'stroke-linecap':'round'}, g);
+    el('rect', {x:sx(r.q1), y:y-5, width:Math.max(4, sx(r.q3)-sx(r.q1)), height:10, rx:5, fill:css('--accent-soft')}, g);
+    el('circle', {cx:sx(r.median), cy:y, r:6, fill:css('--accent'), stroke:css('--panel'), 'stroke-width':2}, g);
+    el('text', {x:W-right+8, y:y+4, 'font-size':12, fill:css('--ink2')}, g, r.n);
+    const enter = (e) => showTip(e, r.tip);
+    g.addEventListener('mousemove', enter); g.addEventListener('mouseleave', hideTip);
+    g.addEventListener('focus', () => { const b = g.getBoundingClientRect(); showTip({clientX:b.left+left, clientY:b.top}, r.tip); }); g.addEventListener('blur', hideTip);
+  });
+}
+function drawAll(){
+  rangeChart('brands', D.brands.map((b) => ({label:b.brand, n:b.n, median:b.median, q1:b.q1, q3:b.q3, min:b.min, max:b.max,
+    tip:`<b>${esc(b.brand)}</b><br>Typical hotel ${b.median}/100 · ${b.n} hotels<br>Best: ${esc(b.best)}<br>Lowest: ${esc(b.worst)}`})),
+    {left:190, min:70, nLabel:'hotels', label:'Guest score by hotel brand'});
+  const order = ["3 MICHELIN Keys","2 MICHELIN Keys","1 MICHELIN Key","Forbes Five-Star","World's 50 Best Top 100","No major award"];
+  rangeChart('tiers', order.filter((k) => D.tiers[k]).map((k) => ({label:k, n:D.tiers[k].n, median:D.tiers[k].median, q1:D.tiers[k].q1, q3:D.tiers[k].q3,
+    tip:`<b>${esc(k)}</b><br>Typical guest score ${D.tiers[k].median}/100<br>Middle half: ${D.tiers[k].q1.toFixed(0)}–${D.tiers[k].q3.toFixed(0)} · ${D.tiers[k].n} hotels`})),
+    {left:190, min:85, nLabel:'hotels', label:'Guest score by award'});
+  // Idea 4 scatter
+  const box = document.getElementById('scatter'); box.innerHTML = '';
+  const W = 760, H = 460, L = 54, R = 20, T = 16, B = 46;
+  const svg = el('svg', {viewBox:`0 0 ${W} ${H}`, width:'100%', role:'img', 'aria-label':'Critic score against guest score', style:'min-width:520px;display:block'}, box);
+  const xs = (v) => L + (v - 20) / 80 * (W - L - R), ys = (v) => T + (100 - v) / 40 * (H - T - B);
+  for (let v = 20; v <= 100; v += 10){ el('line',{x1:xs(v),x2:xs(v),y1:T,y2:H-B,stroke:css('--line')},svg); el('text',{x:xs(v),y:H-B+18,'text-anchor':'middle','font-size':11,fill:css('--muted')},svg,v); }
+  for (let v = 60; v <= 100; v += 10){ el('line',{x1:L,x2:W-R,y1:ys(v),y2:ys(v),stroke:css('--line')},svg); el('text',{x:L-8,y:ys(v)+4,'text-anchor':'end','font-size':11,fill:css('--muted')},svg,v); }
+  el('line',{x1:xs(60),y1:ys(60),x2:xs(100),y2:ys(100),stroke:css('--ink2'),'stroke-dasharray':'4 4','stroke-width':1.5},svg);
+  el('text',{x:xs(61)+8,y:ys(60)-8,'text-anchor':'start','font-size':11,fill:css('--ink2')},svg,'critics = guests');
+  el('text',{x:(L+W-R)/2,y:H-6,'text-anchor':'middle','font-size':12,fill:css('--ink2')},svg,'Published critic score (out of 100)');
+  el('text',{x:14,y:(T+H-B)/2,'text-anchor':'middle','font-size':12,fill:css('--ink2'),transform:`rotate(-90 14 ${(T+H-B)/2})`},svg,'Guest score (out of 100)');
+  const pts = D.scatter.filter((p) => p.g >= 60).map((p) => ({...p, gap:p.c - p.g}));
+  const labelled = [];
+  const hot = new Set(pts.slice().sort((a,b) => b.gap - a.gap).slice(0, 6).map((p) => p.n));
+  pts.sort((a,b) => hot.has(a.n) - hot.has(b.n)).forEach((p) => {
+    const isHot = hot.has(p.n);
+    const c = el('circle',{cx:xs(p.c),cy:ys(p.g),r:isHot?6:4,fill:isHot?css('--accent'):css('--muted'),'fill-opacity':isHot?1:.55,stroke:css('--panel'),'stroke-width':1.5},svg);
+    const hit = el('circle',{cx:xs(p.c),cy:ys(p.g),r:9,fill:'transparent'},svg);
+    hit.addEventListener('mousemove',(e)=>showTip(e,`<b>${esc(p.n)}</b><br>Critics ${p.c}/100 · Guests ${p.g}/100`)); hit.addEventListener('mouseleave',hideTip);
+    if (isHot) labelled.push(p);
+  });
+  // label orange dots, skipping any label that would overlap one already placed
+  const placed = [];
+  labelled.sort((a, b) => a.g - b.g).forEach((p) => {
+    const y = ys(p.g) + 4, x = xs(p.c) - 9;
+    if (placed.some((q) => Math.abs(q.y - y) < 15 && Math.abs(q.x - x) < 140)) return;
+    placed.push({x, y});
+    el('text',{x,y,'text-anchor':'end','font-size':11.5,'font-weight':600,fill:css('--ink')},svg,p.n);
+  });
+}
+drawAll();
+</script>
+</div></main><footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">The Uncharted Itinerary</div>
+          <p class="footer-muted">Honest, first-hand reviews of luxury resorts, boutique villas, flights, and travel gear around the world.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://uncharteditinerary.com/">uncharteditinerary.com</a>
+          <a href="https://uncharteditinerary.com/">Latest Videos</a>
+          <a href="/hotels/">Hotel Map &amp; Scores</a>
+          <a href="/">Discover</a>
+          <a href="/brands/">Brand Leaderboard</a>
+          <a href="/lists/">Award Lists</a>
+          <a href="https://uncharteditinerary.com/cameras/">Camera Reviews</a>
+          <a href="https://uncharteditinerary.com/links/">Deals &amp; Gear</a>
+          <a href="https://uncharteditinerary.com/about/">About</a>
+          <a href="https://uncharteditinerary.com/faq/">FAQ</a>
+          <a href="https://uncharteditinerary.com/contact/">Contact</a>
+          <a href="https://uncharteditinerary.com/privacy/">Privacy Policy</a>
+          <button type="button" class="so-request-footer-link" data-open-resort-request>+ Request a Resort</button>
+          <a href="mailto:hello@uncharteditinerary.com">hello@uncharteditinerary.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="yearNow"></span> The Uncharted Itinerary</span>
+        <span>Disclosure: Booking &amp; gear links may earn an affiliate commission at no extra cost to you (<a href="https://uncharteditinerary.com/privacy/" style="color:inherit;text-decoration:underline;">Privacy &amp; Ad Disclosure</a>).</span>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
