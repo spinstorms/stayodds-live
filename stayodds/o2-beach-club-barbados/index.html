@@ -27,7 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
-  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=1" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=2" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -196,6 +196,8 @@
       </section>
 
       
+
+      
       <section class="so2-three">
         <div class="so2-card"><div class="so2-kicker is-accent">Our stay</div><div class="so2-mid">Not stayed yet</div><p class="so2-muted">When we stay and publish a scored review, our score appears here and counts for 70% of StayOdds.</p></div>
         <div class="so2-card"><div class="so2-kicker">Guests</div><div class="so2-big">9.0<small>/10</small></div><p class="so2-muted">from 1,669 reviews, combined by number of reviews</p><div class="so2-row"><span>Tripadvisor</span><b>4.5/5 <small>(968)</small></b></div><div class="so2-row"><span>Google</span><b>4.5/5 <small>(701)</small></b></div></div>
@@ -213,7 +215,7 @@
       <section class="so2-section"><h2 class="so2-h2">Before you book</h2><div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £1,545/nt</strong><span class="detail-trip-sub">68% above the Caribbean &amp; Mexico luxury median (£922/nt across 108 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Dec–Apr</strong><span class="detail-trip-sub">Dry season with lower hurricane &amp; summer sargassum seaweed risk</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div><div class="detail-trip-tile is-tip"><span class="detail-trip-kicker"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v11"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3H8a2 2 0 0 0-2 2v4"/><circle cx="7" cy="10" r="1.2"/></svg> Room &amp; Villa Setup</span><strong class="detail-trip-val">Chic contemporary 130-room South Coast luxury all-inclusive with an adults-only rooftop tapas lounge and plunge pool.</strong></div></div><details class="so2-more"><summary>Hotel facts &amp; property status</summary><div class='key-facts-grid'><div class="key-fact-tile"><small>Pool &amp; Heating</small><strong>Outdoor pool on property</strong></div><div class="key-fact-tile"><small>Beach &amp; Reef</small><strong>1,000 feet of powdery Dover Beach frontage with lively turquoise waves</strong></div><div class="key-fact-tile"><small>Opened / Renovated</small><strong>2021</strong></div><div class="key-fact-tile"><small>Transfer Logistics</small><strong>Approx. 15–20 minutes from Grantley Adams International Airport (BGI)</strong></div><div class="key-fact-tile"><small>Price Tier</small><strong>£600+/night (All-Inclusive)</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>Ocean Hotels Barbados</strong></div></div></details></section>
       <section class="so2-two"><div class="so2-card is-love"><h3>Why guests love it</h3><p>Chic contemporary 130-room South Coast luxury all-inclusive with an adults-only rooftop tapas lounge and plunge pool, Acqua Spa with Barbados&#x27;s only hammam, and vibrant Dover Beach / St. Lawrence Gap walkability</p></div><div class="so2-card is-know"><h3>Know before you book</h3><p>Compact vertical footprint compared to sprawling resorts, and South Coast Dover Beach has livelier surf than the glassy Platinum West Coast</p></div></section>
 
-      <section class="so2-tabs" data-so2-tabs>
+      <section class="so2-tabs" data-so2-tabs id="more-reviews">
         <div class="so2-tablist" role="tablist">
           <button type="button" role="tab" aria-selected="true" data-tab="comments">Guest comments</button>
           <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos</button>
@@ -436,6 +438,13 @@
   <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script src="/assets/stayodds-video.js?v=2" defer></script>
   <script>
+    document.querySelectorAll("[data-open-tab]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var t = document.querySelector('[data-so2-tabs] [data-tab="' + a.getAttribute("data-open-tab") + '"]');
+        if (!t) return; e.preventDefault(); t.click();
+        document.getElementById("more-reviews").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
     document.querySelectorAll("[data-so2-tabs]").forEach(function (box) {
       box.addEventListener("click", function (e) {
         var b = e.target.closest("[data-tab]"); if (!b) return;

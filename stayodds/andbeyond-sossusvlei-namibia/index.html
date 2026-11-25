@@ -27,7 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
-  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=1" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=2" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -195,6 +195,8 @@
         </div>
       </section>
 
+      <section class="so2-highlights" aria-label="Videos and awards"><span class="so2-hl-label">Watch &amp; awards</span><a class="so2-chip is-video" href="#more-reviews" data-open-tab="reviews">&#9654; 3 more video reviews</a></section>
+
       
       <section class="so2-three">
         <div class="so2-card"><div class="so2-kicker is-accent">Our stay</div><div class="so2-mid">Not stayed yet</div><p class="so2-muted">When we stay and publish a scored review, our score appears here and counts for 70% of StayOdds.</p></div>
@@ -213,10 +215,10 @@
       <section class="so2-section"><h2 class="so2-h2">Before you book</h2><div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Price Tier</span><strong class="detail-trip-val">£1,600+/night (All-Inclusive)</strong><span class="detail-trip-sub">Select dates above to check live partner rates on Booking.com.</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Jun–Oct &amp; Jan–Feb</strong><span class="detail-trip-sub">Dry safari game-viewing season with sparse bush &amp; wildlife concentrations</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div><div class="detail-trip-tile is-tip"><span class="detail-trip-kicker"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v11"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3H8a2 2 0 0 0-2 2v4"/><circle cx="7" cy="10" r="1.2"/></svg> Room &amp; Villa Setup</span><strong class="detail-trip-val">Ultra-remote 10-suite stone-and-glass desert sanctuary in an International Dark Sky Reserve featuring retractable stargazing skylights over every bed.</strong></div></div><details class="so2-more"><summary>Hotel facts &amp; property status</summary><div class='key-facts-grid'><div class="key-fact-tile"><small>Opened / Renovated</small><strong>2019</strong></div><div class="key-fact-tile"><small>Transfer Logistics</small><strong>Approx. 70-minute scenic light aircraft charter from Windhoek (WDH)</strong></div><div class="key-fact-tile"><small>Price Tier</small><strong>£1,600+/night (All-Inclusive)</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>&amp;Beyond</strong></div></div></details></section>
       <section class="so2-two"><div class="so2-card is-love"><h3>Why guests love it</h3><p>Ultra-remote 10-suite stone-and-glass desert sanctuary in an International Dark Sky Reserve featuring retractable stargazing skylights over every bed, private plunge pools, resident astronomer observatory, and quad biking across red Namib dunes</p></div><div class="so2-card is-know"><h3>Know before you book</h3><p>Extreme desert remoteness (fly-in charter from Windhoek strongly recommended over bumpy 5-hour gravel roads); dramatic desert scenery rather than Big Five wildlife</p></div></section>
 
-      <section class="so2-tabs" data-so2-tabs>
+      <section class="so2-tabs" data-so2-tabs id="more-reviews">
         <div class="so2-tablist" role="tablist">
           <button type="button" role="tab" aria-selected="true" data-tab="comments">Guest comments</button>
-          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos <span class="so2-count">3</span></button>
           <button type="button" role="tab" aria-selected="false" data-tab="nearby">Compare nearby</button>
           <button type="button" role="tab" aria-selected="false" data-tab="score">How the score works</button>
         </div>
@@ -431,6 +433,13 @@
   <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script src="/assets/stayodds-video.js?v=2" defer></script>
   <script>
+    document.querySelectorAll("[data-open-tab]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var t = document.querySelector('[data-so2-tabs] [data-tab="' + a.getAttribute("data-open-tab") + '"]');
+        if (!t) return; e.preventDefault(); t.click();
+        document.getElementById("more-reviews").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
     document.querySelectorAll("[data-so2-tabs]").forEach(function (box) {
       box.addEventListener("click", function (e) {
         var b = e.target.closest("[data-tab]"); if (!b) return;

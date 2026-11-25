@@ -27,7 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
-  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=1" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=2" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -196,6 +196,8 @@
       </section>
 
       
+
+      
       <section class="so2-three">
         <div class="so2-card"><div class="so2-kicker is-accent">Our stay</div><div class="so2-mid">We filmed it</div><p class="so2-muted">We reviewed this stay on video without a numeric scorecard. We never add numbers afterwards.</p></div>
         <div class="so2-card"><div class="so2-kicker">Guests</div><div class="so2-big">9.6<small>/10</small></div><p class="so2-muted">from 108 reviews</p><div class="so2-row"><span>Google</span><b>4.8/5 <small>(108)</small></b></div></div>
@@ -213,10 +215,10 @@
       <section class="so2-section"><h2 class="so2-h2">Before you book</h2><div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Price Tier</span><strong class="detail-trip-val">£300+/night (Private Estate)</strong><span class="detail-trip-sub">Select dates above to check live partner rates on Booking.com.</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">May–Sep</strong><span class="detail-trip-sub">Long daylight hours, mild temperatures &amp; peak garden/terrace season</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div><div class="detail-trip-tile is-tip"><span class="detail-trip-kicker"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7v11"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3H8a2 2 0 0 0-2 2v4"/><circle cx="7" cy="10" r="1.2"/></svg> Rooms to Book (Uncharted Note)</span><strong class="detail-trip-val">Primarily booked as an exclusive-use Georgian house for private groups and weddings rather than individual rooms.</strong></div></div><details class="so2-more"><summary>Hotel facts &amp; property status</summary><div class='key-facts-grid'><div class="key-fact-tile"><small>Price Tier</small><strong>£300+/night (Private Estate)</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>Boutique Manor</strong></div></div></details></section>
       <section class="so2-two"><div class="so2-card is-love"><h3>Why guests love it</h3><p>Gorgeous modern-meets-Georgian interior design &amp; walled gardens near the Cotswolds</p></div><div class="so2-card is-know"><h3>Know before you book</h3><p>Primarily booked for exclusive-use stays, weddings, and private group retreats rather than single rooms</p></div></section>
 
-      <section class="so2-tabs" data-so2-tabs>
+      <section class="so2-tabs" data-so2-tabs id="more-reviews">
         <div class="so2-tablist" role="tablist">
           <button type="button" role="tab" aria-selected="true" data-tab="comments">Guest comments</button>
-          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos <span class="so2-count">1</span></button>
           <button type="button" role="tab" aria-selected="false" data-tab="nearby">Compare nearby</button>
           <button type="button" role="tab" aria-selected="false" data-tab="score">How the score works</button>
         </div>
@@ -431,6 +433,13 @@
   <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script src="/assets/stayodds-video.js?v=2" defer></script>
   <script>
+    document.querySelectorAll("[data-open-tab]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var t = document.querySelector('[data-so2-tabs] [data-tab="' + a.getAttribute("data-open-tab") + '"]');
+        if (!t) return; e.preventDefault(); t.click();
+        document.getElementById("more-reviews").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
     document.querySelectorAll("[data-so2-tabs]").forEach(function (box) {
       box.addEventListener("click", function (e) {
         var b = e.target.closest("[data-tab]"); if (!b) return;

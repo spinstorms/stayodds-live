@@ -27,7 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=46" />
-  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=1" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=2" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -195,6 +195,8 @@
         </div>
       </section>
 
+      <section class="so2-highlights" aria-label="Videos and awards"><span class="so2-hl-label">Watch &amp; awards</span><a class="so2-chip is-video" href="#more-reviews" data-open-tab="reviews">&#9654; 3 more video reviews</a><a class="so2-chip is-award" href="https://guide.michelin.com/en/article/travel/all-the-key-hotels-in-the-world-michelin-guide" target="_blank" rel="noopener noreferrer"><svg class="so-ico" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 21h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.7 7 20 7 21"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 1.8 2 2.8"/><path d="M18 3H6v6.5a6 6 0 0 0 12 0V3z"/></svg> 2 MICHELIN Keys</a></section>
+
       
       <section class="so2-three">
         <div class="so2-card"><div class="so2-kicker is-accent">Our stay</div><div class="so2-mid">Not stayed yet</div><p class="so2-muted">When we stay and publish a scored review, our score appears here and counts for 70% of StayOdds.</p></div>
@@ -213,10 +215,10 @@
       <section class="so2-section"><h2 class="so2-h2">Before you book</h2><div class="detail-trip-context-strip"><div class="detail-trip-tile"><span class="detail-trip-kicker">Indicative Nightly Rate</span><strong class="detail-trip-val">From £305/nt</strong><span class="detail-trip-sub">24% below the Canada luxury median (£400/nt across 10 priced stays).</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">☀ Best Dry Months</span><strong class="detail-trip-val">Apr–Oct</strong><span class="detail-trip-sub">Pleasant spring, summer &amp; crisp autumn travel seasons</span></div><div class="detail-trip-tile"><span class="detail-trip-kicker">Property Status &amp; Works</span><strong class="detail-trip-val">No Confirmed Works Listed</strong><span class="detail-trip-sub">No active closures, renovations, or nearby works flagged.</span></div></div><details class="so2-more"><summary>Hotel facts &amp; property status</summary><div class='key-facts-grid'><div class="key-fact-tile"><small>Pool &amp; Heating</small><strong>Outdoor pool (heating not listed)</strong></div><div class="key-fact-tile"><small>Beach &amp; Reef</small><strong>Private beach with snorkeling/diving access</strong></div><div class="key-fact-tile"><small>Transfer Logistics</small><strong>Nearest airport code: YUL</strong></div><div class="key-fact-tile"><small>Brand / Collection</small><strong>Independent</strong></div></div></details></section>
       <section class="so2-two"><div class="so2-card is-love"><h3>Why guests love it</h3><p>Beautiful location • Excellent spa services</p></div><div class="so2-card is-know"><h3>Know before you book</h3><p>Inconsistent service • Room quality issues</p></div></section>
 
-      <section class="so2-tabs" data-so2-tabs>
+      <section class="so2-tabs" data-so2-tabs id="more-reviews">
         <div class="so2-tablist" role="tablist">
           <button type="button" role="tab" aria-selected="true" data-tab="comments">Guest comments</button>
-          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="reviews">Reviews, awards &amp; videos <span class="so2-count">4</span></button>
           <button type="button" role="tab" aria-selected="false" data-tab="nearby">Compare nearby</button>
           <button type="button" role="tab" aria-selected="false" data-tab="score">How the score works</button>
         </div>
@@ -436,6 +438,13 @@
   <script src="/assets/stayodds-feedback.js?v=4" defer></script>
   <script src="/assets/stayodds-video.js?v=2" defer></script>
   <script>
+    document.querySelectorAll("[data-open-tab]").forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        var t = document.querySelector('[data-so2-tabs] [data-tab="' + a.getAttribute("data-open-tab") + '"]');
+        if (!t) return; e.preventDefault(); t.click();
+        document.getElementById("more-reviews").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
     document.querySelectorAll("[data-so2-tabs]").forEach(function (box) {
       box.addEventListener("click", function (e) {
         var b = e.target.closest("[data-tab]"); if (!b) return;
