@@ -1467,7 +1467,7 @@ async function boot() {
   window._renderMapMonthPills = renderMapMonthPills;
 
   try {
-    const IDX_CACHE_KEY = "stayodds_index_cache_v761367549e";
+    const IDX_CACHE_KEY = "stayodds_index_cache_vfbc9c3e535";
     const IDX_TTL_MS = 6 * 60 * 60 * 1000;
     let payload = null;
     try {
@@ -1480,7 +1480,7 @@ async function boot() {
       }
     } catch (_) {}
     if (!payload) {
-      const res = await fetch(`/data/stayodds-index.json?v=761367549e`);
+      const res = await fetch(`/data/stayodds-index.json?v=fbc9c3e535`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       payload = await res.json();
       try {
