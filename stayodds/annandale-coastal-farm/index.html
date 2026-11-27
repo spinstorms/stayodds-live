@@ -27,7 +27,7 @@
   <script>if(window.self!==window.top||location.search.includes("embed=1"))document.documentElement.classList.add("is-embedded");</script>
   <style>.site-header{background:#071323!important;}html.is-embedded .site-header,html.is-embedded .site-footer,html.is-embedded .hub-back-link{display:none!important;}</style>
   <link rel="stylesheet" href="/assets/styles.min.css?v=47" />
-  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=5" />
+  <link rel="stylesheet" href="/assets/stayodds-hotel.css?v=6" />
   <script data-goatcounter="https://stayodds.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
@@ -179,6 +179,10 @@
             <button type="button" class="btn btn-outline shortlist-btn" data-shortlist-id="annandale-coastal-farm" data-resort-name="Annandale Coastal Farm Escape" aria-pressed="false">&#9825; Save</button>
             <button type="button" class="btn btn-outline" id="shareHotelCardBtn"><svg class="so-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3.5l2-3h5l2 3H20a2 2 0 0 1 2 2z"/><circle cx="12" cy="13.5" r="3.5"/></svg> Share</button>
           </div>
+          <a class="so2-details-jump" href="#full-details">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l4 4 4-4M12 8v8"/></svg>
+            <span><strong>Full StayOdds details below</strong><small>What guests and critics say, best months, room tips and rivals</small></span>
+          </a>
           <section class="so2-dates" aria-label="Choose your dates">
             <div class="so2-dates-head"><strong>When are you going?</strong><span id="soDatesPicked"></span></div>
             <div class="so2-quick" id="soQuickDates" role="group" aria-label="Quick dates"></div>
@@ -211,6 +215,7 @@
           
         </div>
       </section>
+      <div id="full-details" style="scroll-margin-top:84px"></div>
 
       <section class="detail-section" id="guest-rank">
         <div class="key-facts-panel">
