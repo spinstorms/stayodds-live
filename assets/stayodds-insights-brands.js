@@ -9,14 +9,14 @@
   var general = [].slice.call(wrap.querySelectorAll("section.panel"));
   var css = document.createElement("style");
   css.textContent =
-    ".so-btabs{display:flex;flex-direction:column;gap:8px;margin:2px 0 0}" +
-    ".so-btabs-row{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}" +
+    ".so-btabs{display:flex;flex-direction:column;gap:8px;margin:2px 0 0;min-width:0;max-width:100%}" +
+    ".so-btabs-row{display:flex;gap:8px;overflow-x:auto;min-width:0;max-width:100%;padding:2px 2px 8px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}" +
     ".so-btabs-lbl{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}" +
     ".so-btab{flex:none;display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:8px 13px;font:600 13.5px/1 inherit;cursor:pointer;white-space:nowrap}" +
     ".so-btab small{font-weight:700;color:var(--muted);font-size:11.5px}" +
     ".so-btab:hover{border-color:#E8501A}" +
     ".so-btab[aria-selected=true]{background:#E8501A;border-color:#E8501A;color:#fff}.so-btab[aria-selected=true] small{color:#fff}" +
-    ".so-brand{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}.so-brand>section{min-width:0}.so-row[hidden]{display:none}" +
+    ".so-brand{display:grid;gap:22px;grid-template-columns:minmax(0,1fr);min-width:0;max-width:100%}.so-brand>section{min-width:0}.so-row[hidden]{display:none}" +
     ".so-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}" +
     ".so-stat{border:1px solid var(--line);border-radius:14px;padding:14px 16px}" +
     ".so-stat b{display:block;font-weight:800;font-size:28px;line-height:1.05}.so-stat span{font-size:13px;color:var(--ink2)}" +
@@ -43,6 +43,7 @@
   function ord(n) { var s = ["th", "st", "nd", "rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
   function fmt(x) { return String(Number((+x).toFixed(1))); }
   function n(x) { return (+x).toLocaleString("en-GB"); }
+  function hotels(k) { return k + (k === 1 ? " hotel" : " hotels"); }
   function link(h) { return '<a href="/stayodds/' + esc(h.id) + '/">' + esc(h.name) + "</a>"; }
   function bar(v, lo) { lo = lo || 70; var p = Math.max(2, Math.min(100, (v - lo) / (100 - lo) * 100)); return '<span class="bar"><i style="width:' + p.toFixed(1) + '%"></i></span>'; }
   function panel(eyebrow, title, sub, body, id) {
@@ -69,7 +70,7 @@
     if (group && d.members) {
       out.push(panel("Brands in " + nm, "Which " + esc(nm) + " brand do guests rate highest?", "Typical guest score of each brand in the group.",
         '<div class="so-rows">' + d.members.map(function (m, i) {
-          return '<div class="so-row"><span class="r">' + (i + 1) + "</span><span>" + esc(m.brand) + '<span class="w">' + m.n + " hotels · " + m.min + "–" + m.max + "</span></span>" + bar(m.median) + '<span class="s">' + fmt(m.median) + "</span></div>";
+          return '<div class="so-row"><span class="r">' + (i + 1) + "</span><span>" + esc(m.brand) + '<span class="w">' + hotels(m.n) + " · " + m.min + "–" + m.max + "</span></span>" + bar(m.median) + '<span class="s">' + fmt(m.median) + "</span></div>";
         }).join("") + "</div>", "b-" + key + "-members"));
     }
     // 3. league table
@@ -85,14 +86,14 @@
     if (d.countries && d.countries.length >= 2) {
       out.push(panel("Destinations", "Where " + esc(nm) + " guests are happiest", "Typical guest score by country (countries with 2 or more rated hotels).",
         '<div class="so-rows">' + d.countries.map(function (c, i) {
-          return '<div class="so-row"><span class="r">' + (i + 1) + "</span><span>" + esc(c.country) + '<span class="w">' + c.n + " hotels</span></span>" + bar(c.median) + '<span class="s">' + fmt(c.median) + "</span></div>";
+          return '<div class="so-row"><span class="r">' + (i + 1) + "</span><span>" + esc(c.country) + '<span class="w">' + hotels(c.n) + "</span></span>" + bar(c.median) + '<span class="s">' + fmt(c.median) + "</span></div>";
         }).join("") + "</div>", "b-" + key + "-countries"));
     }
     // 5. price
     if (d.bands && d.bands.length >= 2) {
       out.push(panel("Price and value", "Does a pricier " + esc(nm) + " mean happier guests?", "Typical guest score at each price level (from our latest nightly price checks).",
         '<div class="so-rows">' + d.bands.map(function (b) {
-          return '<div class="so-row"><span class="r"></span><span>' + esc(b.band) + '<span class="w">' + b.n + " hotels</span></span>" + bar(b.median) + '<span class="s">' + fmt(b.median) + "</span></div>";
+          return '<div class="so-row"><span class="r"></span><span>' + esc(b.band) + '<span class="w">' + hotels(b.n) + "</span></span>" + bar(b.median) + '<span class="s">' + fmt(b.median) + "</span></div>";
         }).join("") + "</div>", "b-" + key + "-price"));
     }
     // 6. nearby hotels rated higher
