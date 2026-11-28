@@ -4,7 +4,7 @@
   var sections = [].slice.call(document.querySelectorAll("section.panel")).filter(function (s) {
     return s.querySelector("h2") && !/for hotels/i.test(s.getAttribute("aria-label") || "");
   });
-  if (!sections.length) return;
+  if (!document.querySelector(".gi")) return;
   var LIB = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
   var css = document.createElement("style");
   css.textContent = "section.panel{position:relative}" +
@@ -68,9 +68,10 @@
     });
   }
 
-  sections.forEach(function (sec, i) {
+  function addShare(sec, i, baseUrl) {
+    if (sec.querySelector(".so-share")) return;
     var title = sec.querySelector("h2").textContent.trim();
-    var url = location.origin + "/insights/#" + anchorOf(sec, i);
+    var url = baseUrl || (location.origin + "/insights/#" + anchorOf(sec, i));
     var bar = document.createElement("div"); bar.className = "so-share";
     var main = document.createElement("button"); main.type = "button"; main.className = "so-share-main";
     main.innerHTML = ICON_SHARE + "<span>Share</span>"; main.title = "Share this insight as an image";
@@ -103,5 +104,7 @@
         if (navigator.clipboard) navigator.clipboard.writeText(url);
       }).then(function () { label.textContent = was; main.disabled = false; });
     });
-  });
+  }
+  sections.forEach(function (sec, i) { addShare(sec, i); });
+  window.soAddInsightShare = function (sec, url) { addShare(sec, 0, url); };
 })();
