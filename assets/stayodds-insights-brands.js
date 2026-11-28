@@ -29,6 +29,13 @@
     ".so-chip{display:inline-block;font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;background:var(--accent-soft);margin:3px 4px 0 0}" +
     ".so-chip.k{background:#EEF2F6}" +
     ".so-more{margin-top:10px;border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font:600 13px inherit;cursor:pointer}" +
+    ".so-vrow{display:grid;grid-template-columns:28px minmax(0,1fr) 80px 140px 48px;align-items:center;gap:10px;font-size:14px}" +
+    ".so-vrow .p{text-align:right;color:var(--ink2);font-weight:600}.so-vrow .s{font-weight:800;text-align:right}" +
+    ".so-dv{position:relative;height:10px}.so-dv:before{content:'';position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--line)}" +
+    ".so-dv i{position:absolute;top:0;bottom:0;border-radius:5px}.so-dv i.up{background:#1F8A4C}.so-dv i.dn{background:#E8501A}" +
+    ".so-vhead{display:grid;grid-template-columns:28px minmax(0,1fr) 80px 140px 48px;gap:10px;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}" +
+    ".so-vhead span:nth-child(3),.so-vhead span:nth-child(5){text-align:right}" +
+    "@media (max-width:560px){.so-vrow,.so-vhead{grid-template-columns:22px minmax(0,1fr) 62px 44px}.so-vrow .so-dv,.so-vhead span:nth-child(4){display:none}}" +
     "@media (max-width:560px){.so-row{grid-template-columns:24px minmax(0,1fr) 40px}.so-row .bar{display:none}}";
   document.head.appendChild(css);
 
@@ -46,6 +53,14 @@
   function hotels(k) { return k + (k === 1 ? " hotel" : " hotels"); }
   function link(h) { return '<a href="/stayodds/' + esc(h.id) + '/">' + esc(h.name) + "</a>"; }
   function bar(v, lo) { lo = lo || 70; var p = Math.max(2, Math.min(100, (v - lo) / (100 - lo) * 100)); return '<span class="bar"><i style="width:' + p.toFixed(1) + '%"></i></span>'; }
+  function sgn(x) { return (x > 0 ? "+" : x < 0 ? "\u2212" : "") + fmt(Math.abs(x)); }
+  function dv(x) { var w = Math.min(50, Math.abs(x) / 6 * 50); return '<span class="so-dv"><i class="' + (x >= 0 ? "up" : "dn") + '" style="' + (x >= 0 ? "left:50%" : "right:50%") + ";width:" + w.toFixed(1) + '%"></i></span>'; }
+  function gbp(x) { return "\u00a3" + n(x); }
+  var VHEAD = '<div class="so-vhead"><span></span><span></span><span>Typical price</span><span>vs same price</span><span>Points</span></div>';
+  function vrow(i, label, sub, price, vs) {
+    return '<div class="so-vrow"><span class="r" style="color:var(--muted);font-weight:700;text-align:right">' + (i || "") + "</span><span>" + label + (sub ? '<span class="w" style="display:block;font-size:12px;color:var(--ink2)">' + sub + "</span>" : "") +
+      '</span><span class="p">' + gbp(price) + "</span>" + dv(vs) + '<span class="s">' + sgn(vs) + "</span></div>";
+  }
   function panel(eyebrow, title, sub, body, id) {
     return '<section class="panel" data-brand-panel="1"><div class="eyebrow" id="' + id + '">' + esc(eyebrow) + "</div><h2>" + esc(title) +
       "</h2>" + (sub ? '<p class="sub">' + sub + "</p>" : "") + body + "</section>";
@@ -66,12 +81,28 @@
     var awNote = aw["with"] && aw.without ? '<p class="note"><b>Awards:</b> ' + aw["with"].n + " award-winning " + esc(nm) + " hotels have a typical guest score of " + fmt(aw["with"].median) +
       ", against " + fmt(aw.without.median) + " for its " + aw.without.n + " hotels without a major award.</p>" : "";
     out.push(panel(group ? "Hotel group" : "Brand", nm + ": how guests rate it", "Every number uses " + esc(nm) + " hotels with a guest score from 20 or more reviews.", stats + awNote, "b-" + key + "-overview"));
+    // 1b. value for money
+    var v = d.value;
+    if (v) {
+      var vsTxt = v.vs > 0 ? "score " + fmt(v.vs) + " points higher than" : v.vs < 0 ? "score " + fmt(-v.vs) + " points lower than" : "score the same as";
+      out.push(panel("Price and quality", "Is " + esc(nm) + " worth what it costs?",
+        "A typical " + esc(nm) + " night costs " + gbp(v.price) + ". On average its hotels " + vsTxt + " other StayOdds hotels at the same price level, and " + v.beats + " of " + v.n + " beat their price level. Prices are indicative, from our latest nightly price check.",
+        '<div class="ideas"><div class="idea"><h3>Best value</h3><p><a href="/stayodds/' + esc(v.best.id) + '/">' + esc(v.best.name) + "</a><br>Guests " + v.best.g + " · from " + gbp(v.best.gbp) + " · " + sgn(v.best.vs) + " vs its price level</p></div>" +
+        '<div class="idea"><h3>Least for the money</h3><p><a href="/stayodds/' + esc(v.worst.id) + '/">' + esc(v.worst.name) + "</a><br>Guests " + v.worst.g + " · from " + gbp(v.worst.gbp) + " · " + sgn(v.worst.vs) + " vs its price level</p></div></div>",
+        "b-" + key + "-value"));
+    }
     // 2. group members
     if (group && d.members) {
       out.push(panel("Brands in " + nm, "Which " + esc(nm) + " brand do guests rate highest?", "Typical guest score of each brand in the group.",
         '<div class="so-rows">' + d.members.map(function (m, i) {
           return '<div class="so-row"><span class="r">' + (i + 1) + "</span><span>" + esc(m.brand) + '<span class="w">' + hotels(m.n) + " · " + m.min + "–" + m.max + "</span></span>" + bar(m.median) + '<span class="s">' + fmt(m.median) + "</span></div>";
         }).join("") + "</div>", "b-" + key + "-members"));
+      var mv = d.members.filter(function (m) { return m.value; }).sort(function (a, b) { return b.value.vs - a.value.vs; });
+      if (mv.length >= 2) out.push(panel("Price and quality", "Which " + esc(nm) + " brand gives the most for the money?",
+        "Each brand's typical nightly price, and how far its hotels score above or below other StayOdds hotels at the same price level. A pricier brand isn't always the better-rated one.",
+        VHEAD + '<div class="so-rows">' + mv.map(function (m, i) {
+          return vrow(i + 1, esc(m.brand), m.value.n + " priced hotels · guests " + fmt(m.median), m.value.price, m.value.vs);
+        }).join("") + "</div>", "b-" + key + "-value-brands"));
     }
     // 3. league table
     var rows = d.hotels.map(function (h, i) {
@@ -130,6 +161,25 @@
     });
   }
 
+  function addAllValue(d) {
+    if (!d.value || !d.value.length || document.getElementById("brand-value")) return;
+    var host = document.getElementById("brands-chart"); host = host && host.closest("section");
+    var sec = document.createElement("div");
+    var rows = d.value.map(function (v, i) {
+      return '<div' + (i >= 12 ? ' data-vmore hidden' : "") + '>' + vrow(i + 1, '<a href="#brand=' + esc(v.key) + '" data-go="' + esc(v.key) + '" style="color:var(--ink);font-weight:600;text-decoration:none">' + esc(v.brand) + "</a>",
+        v.n + " priced hotels" + (v.group ? " · " + esc(v.group) : ""), v.price, v.vs) + "</div>";
+    }).join("");
+    sec.innerHTML = panel("Price and quality", "Which luxury brands give the most for the money?",
+      "Each brand's typical nightly price, and how far its hotels score above or below other StayOdds hotels at the same price level (brands with 3 or more priced hotels). Prices are indicative, from our latest nightly price check.",
+      VHEAD + '<div class="so-rows">' + rows + "</div>" + (d.value.length > 12 ? '<button type="button" class="so-more" data-vmore-btn>Show all ' + d.value.length + " brands</button>" : ""), "brand-value");
+    var el = sec.firstChild; el.removeAttribute("data-brand-panel");
+    if (host) host.parentNode.insertBefore(el, host.nextSibling); else wrap.appendChild(el);
+    general.push(el);
+    var mb = el.querySelector("[data-vmore-btn]");
+    if (mb) mb.addEventListener("click", function () { [].forEach.call(el.querySelectorAll("[data-vmore]"), function (r) { r.hidden = false; }); mb.remove(); });
+    [].forEach.call(el.querySelectorAll("[data-go]"), function (a) { a.addEventListener("click", function (e) { e.preventDefault(); select(a.getAttribute("data-go"), true); window.scrollTo(0, 0); }); });
+    if (window.soAddInsightShare) window.soAddInsightShare(el, location.origin + "/insights/#brand-value");
+  }
   function select(key, push) {
     Object.keys(btns).forEach(function (k) { btns[k].setAttribute("aria-selected", k === key ? "true" : "false"); });
     var all = key === "all";
@@ -156,6 +206,7 @@
   }
   fetch(BASE + "index.json").then(function (r) { return r.json(); }).then(function (d) {
     idx = d;
+    addAllValue(d);
     row("Hotel groups", [chip("all", "All hotels")].concat(d.groups.map(function (k) { return chip(k, d.tabs[k].name.replace(" (all brands)", ""), d.tabs[k].n); })));
     row("Brands", d.order.map(function (k) { return chip(k, d.tabs[k].name, d.tabs[k].n); }));
     var m = location.hash.match(/brand=([a-z0-9-]+)/);
