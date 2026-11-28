@@ -16,7 +16,7 @@
     ".so-btab small{font-weight:700;color:var(--muted);font-size:11.5px}" +
     ".so-btab:hover{border-color:#E8501A}" +
     ".so-btab[aria-selected=true]{background:#E8501A;border-color:#E8501A;color:#fff}.so-btab[aria-selected=true] small{color:#fff}" +
-    ".so-brand{display:grid;gap:22px}" +
+    ".so-brand{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}.so-brand>section{min-width:0}.so-row[hidden]{display:none}" +
     ".so-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}" +
     ".so-stat{border:1px solid var(--line);border-radius:14px;padding:14px 16px}" +
     ".so-stat b{display:block;font-weight:800;font-size:28px;line-height:1.05}.so-stat span{font-size:13px;color:var(--ink2)}" +
