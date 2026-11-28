@@ -45,14 +45,14 @@
     card.style.cssText = "position:fixed;left:-10000px;top:0;width:1080px;padding:56px;box-sizing:border-box;background:#F6EFE6;font-family:inherit;color:#1B1A17";
     var head = document.createElement("div");
     head.style.cssText = "display:flex;align-items:center;justify-content:space-between;margin-bottom:24px";
-    head.innerHTML = '<div style="display:flex;align-items:center;gap:12px"><img src="/assets/stayodds-favicon.svg" alt="" style="width:44px;height:44px"><span style="font-weight:800;font-size:28px">StayOdds<span style="color:#E8501A">.</span></span></div>' +
+    head.innerHTML = '<div style="display:flex;align-items:center;gap:12px"><img src="/assets/stayodds-favicon-128.png" alt="" style="width:44px;height:44px"><span style="font-weight:800;font-size:28px">StayOdds<span style="color:#E8501A">.</span></span></div>' +
       '<span style="font-weight:700;font-size:16px;letter-spacing:2px;color:#C2410C">GUEST INSIGHTS</span>';
     var body = sec.cloneNode(true);
     [].forEach.call(body.querySelectorAll(".so-share, script, button"), function (n) { n.remove(); });
-    body.style.cssText += ";margin:0;box-shadow:none;max-width:none";
+    body.style.cssText += ";margin:0;box-shadow:none;max-width:none;background:#FFFFFF;border-radius:24px;padding:36px;border:0";
     var foot = document.createElement("div");
     foot.style.cssText = "display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-size:17px;font-weight:600;color:#4A443C";
-    var date = (document.body.innerText.match(/updated\s+(\d{1,2}\s+\w+\s+\d{4})/i) || [])[1] || "";
+    var date = (document.body.textContent.match(/updated\s+(\d{1,2}\s+\w+\s+\d{4})/i) || [])[1] || "";
     foot.innerHTML = "<span>stayodds.com/insights</span><span>" + (date ? "Guest scores from 20+ reviews · " + date : "Guest scores from 20+ reviews") + "</span>";
     card.appendChild(head); card.appendChild(body); card.appendChild(foot);
     document.body.appendChild(card);
