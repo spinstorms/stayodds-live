@@ -93,6 +93,17 @@
     b.addEventListener("click", function () { show(i, false); });
     bar.appendChild(b);
   });
+  // Best months can be drawn by another script after this one runs: add the number when it appears.
+  function lateBest() {
+    var t = TABS[2]; if (!t.btn || t.btn.querySelector(".so-tab-n")) return;
+    var v = "";
+    document.querySelectorAll(".detail-trip-tile").forEach(function (x) {
+      var k = x.querySelector(".detail-trip-kicker"), val = x.querySelector(".detail-trip-val");
+      if (!v && k && val && /best/i.test(k.textContent)) v = val.textContent.trim();
+    });
+    if (v && v.length <= 12) t.btn.insertBefore(span("so-tab-n", v), t.btn.querySelector(".so-tab-s"));
+  }
+  window.addEventListener("load", lateBest); setTimeout(lateBest, 1500);
   wrap.appendChild(bar); wrap.appendChild(note);
   TABS.forEach(function (t) { wrap.appendChild(t.panel); });
   fd.parentNode.insertBefore(wrap, fd.nextSibling);
